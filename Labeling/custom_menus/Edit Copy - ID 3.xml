@@ -74,7 +74,7 @@
 				</Install>
 			</Conditions>
 			<Shortcut key="86" modifier="4"></Shortcut>
-			<Command name="Paste " id="57637"></Command>
+			<Command name="Paste" id="57637"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
 		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
