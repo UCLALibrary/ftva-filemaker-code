@@ -1,0 +1,250 @@
+<Script>
+	<ScriptReference id="169" name="printStorageLabels"></ScriptReference>
+	<ObjectList membercount="18">
+		<Step id="85" name="Allow User Abort" enable="True">
+			<Options>65536</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="86" name="Set Error Capture" enable="True">
+			<Options>196608</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="79" name="Freeze Window" enable="True">
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[StorageFormat::Inventory_number]]></Text>
+								<ChunkList hash="10D6C69FB84FA1CC0D4729BC5AF73569">
+									<Chunk type="FieldRef">
+										<FieldReference id="1" name="Inventory_number" repetition="1">
+											<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+										</FieldReference>
+									</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$recID"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="122" name="New Window" enable="True">
+			<Options>16394</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Style name="Dialog" value="3221291524"></Style>
+						<Name>
+							<Calculation datatype="1" position="0">
+								<Calculation>
+									<Text><![CDATA["Print Storage Label"]]></Text>
+									<ChunkList hash="F63716E091104E24B708BE96603B9693">
+										<Chunk type="NoRef">&quot;Print Storage Label&quot;</Chunk>
+									</ChunkList>
+								</Calculation>
+							</Calculation>
+						</Name>
+						<LayoutReferenceContainer value="5">
+							<LayoutReference id="95" name="StorageFormat_labels"></LayoutReference>
+						</LayoutReferenceContainer>
+						<Bounds>
+							<height></height>
+							<width></width>
+							<top></top>
+							<left></left>
+						</Bounds>
+						<Options value="3221291524">
+							<Close>True</Close>
+							<Minimize>False</Minimize>
+							<Maximize>False</Maximize>
+							<Resize>True</Resize>
+							<MenuBar>False</MenuBar>
+							<Toolbar>False</Toolbar>
+							<DimParentWindow>False</DimParentWindow>
+						</Options>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="22" name="Enter Find Mode" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean type="Pause" id="16777216" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="1" name="Inventory_number">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[$recID]]></Text>
+							<ChunkList hash="0D8DEB29A34DF5BB37DE1110FBFE969A">
+								<Chunk type="VariableReference">$recID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="28" name="Perform Find" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastError ) = 0 and Get ( FoundCount ) =1]]></Text>
+							<ChunkList hash="B210A50392F08291E2D229481DA5DBF5">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastError</Chunk>
+								<Chunk type="NoRef"> ) = 0 </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">FoundCount</Chunk>
+								<Chunk type="NoRef"> ) =1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="16" name="Go to Record/Request/Page" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Records">
+					<List name="First" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="42" name="Print Setup" enable="True">
+			<Options>33587200</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Restore">
+					<Restore value="True"></Restore>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="PageSetup">
+					<PageSetup>
+						<Orientation name="Portrait" value="0"></Orientation>
+						<size height="50" width="236.11"></size>
+						<scale value="100"></scale>
+					</PageSetup>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="43" name="Print" enable="True">
+			<Options>33587200</Options>
+			<ParameterValues membercount="4">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Restore">
+					<Restore value="True"></Restore>
+				</Parameter>
+				<Parameter type="Print">
+					<Print name="Records being browsed" type="1" toFile="False">
+						<Pages All="True"></Pages>
+						<Copies value="1"></Copies>
+					</Print>
+				</Parameter>
+				<Parameter type="PageSetup">
+					<PageSetup>
+						<Orientation name="Portrait" value="0"></Orientation>
+						<size height="50" width="236.11"></size>
+						<scale value="100"></scale>
+					</PageSetup>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="69" name="Else" enable="True">
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Print Label"]]></Text>
+							<ChunkList hash="D1D5937840E806E3DDB375B1883B548E">
+								<Chunk type="NoRef">&quot;Print Label&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["Could not find the current record on the label layout."]]></Text>
+							<ChunkList hash="0A409790CB26BA7899AC30EAF3F259D4">
+								<Chunk type="NoRef">&quot;Could not find the current record on the label layout.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="121" name="Close Window" enable="True">
+			<Options>-2147483646</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="0" type="current"></Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

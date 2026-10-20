@@ -1,0 +1,159 @@
+<Script>
+	<ScriptReference id="165" name="Export-NDM_Locations"></ScriptReference>
+	<ObjectList membercount="7">
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16389</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Export NDM Label Scans"]]></Text>
+							<ChunkList hash="8DE5652D76F1D796EEC88F1C35AE583E">
+								<Chunk type="NoRef">&quot;Export NDM Label Scans&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["Do you want to export NDM label scans for duplicate items?"]]></Text>
+							<ChunkList hash="75EC74DB84B16768B5DA19F4FCDCF3FE">
+								<Chunk type="NoRef">&quot;Do you want to export NDM label scans for duplicate items?&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
+							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
+								<Chunk type="NoRef"> ) = 1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="122" name="New Window" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Style name="Document" value="1076299266"></Style>
+						<Name></Name>
+						<LayoutReferenceContainer value="5">
+							<LayoutReference id="90" name="StorageFormat-ALLFields"></LayoutReference>
+						</LayoutReferenceContainer>
+						<Bounds>
+							<height></height>
+							<width></width>
+							<top></top>
+							<left></left>
+						</Bounds>
+						<Options value="1076299266">
+							<Close>True</Close>
+							<Minimize>True</Minimize>
+							<Maximize>True</Maximize>
+							<Resize>True</Resize>
+							<MenuBar>True</MenuBar>
+							<Toolbar>True</Toolbar>
+							<DimParentWindow>False</DimParentWindow>
+						</Options>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="55" name="Enter Browse Mode" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean type="Pause" id="16777216" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="39" name="Sort Records" enable="True">
+			<Options>33587328</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Restore">
+					<Restore value="True"></Restore>
+				</Parameter>
+				<Parameter type="SortSpecification">
+					<SortSpecification value="True" maintain="True">
+						<SortList membercount="1">
+							<Sort type="Ascending">
+								<PrimaryField>
+									<FieldReference id="8" name="Barcode">
+										<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+						</SortList>
+					</SortSpecification>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="36" name="Export Records" enable="True">
+			<Options>33587200</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Export">
+					<Export>
+						<Options name="Windows (ANSI)" value="0" Formatting="False"></Options>
+						<Order type="Group">
+							<Group value="1">
+								<FieldReference id="8" name="Barcode">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Group>
+						</Order>
+						<Order type="Field">
+							<Field value="1">
+								<FieldReference id="8" name="Barcode">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+							<Field value="2">
+								<FieldReference id="9" name="Location">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+							<Field value="3">
+								<FieldReference id="1" name="Inventory_number">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+						</Order>
+					</Export>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+	</ObjectList>
+</Script>

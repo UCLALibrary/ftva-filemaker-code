@@ -1,0 +1,6 @@
+<ExternalDataSource name="Labeling Database" type="FileMaker" id="1">
+	<File>
+		<UniversalPathList>file:Labeling Database</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">8EC2A899-9C5F-9A43-BF58-3E4EE0A6C37D</UUID>
+</ExternalDataSource>

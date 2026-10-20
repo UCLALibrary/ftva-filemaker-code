@@ -1,0 +1,5 @@
+<PrivilegeSet id="2" name="[Data Entry Only]">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">A73A1A3B-4E97-2E40-BC92-B73A1BE22BE2</UUID>
+	<Description>write access to all records, no design access</Description>
+	<access default="True"></access>
+</PrivilegeSet>

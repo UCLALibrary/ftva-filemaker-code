@@ -1,0 +1,25 @@
+<Relationship id="1">
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">0F0EEAA1-7C4E-BE4B-9229-98C07A1E240E</UUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</LeftTable>
+	<RightTable cascadeCreate="True" cascadeDelete="True" type="External">
+		<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="20" name="inventory_id">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="27" name="inventory_id">
+					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

@@ -1,0 +1,6 @@
+<ExternalDataSource name="Boolean" type="FileMaker" id="6">
+	<File>
+		<UniversalPathList>file:Boolean</UniversalPathList>
+	</File>
+	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">0DCC72F9-CE6C-0844-8E23-259ED8F64C4E</UUID>
+</ExternalDataSource>

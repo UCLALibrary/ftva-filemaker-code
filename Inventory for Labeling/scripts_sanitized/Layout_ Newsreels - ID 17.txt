@@ -1,0 +1,4 @@
+Go to Layout [ Layout: "Form - Newsreels" ; Animation: None ]
+Perform Script [ "Position and Resize Window" ; Specified: From list ; Parameter: ]
+Adjust Window [ Maximize ]
+

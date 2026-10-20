@@ -1,0 +1,7 @@
+<ValueList id="87" name="dm_languages">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[Amharic (am)Arabic (ar)Chinese (zh)Czech (cs)Danish (da)Dutch (nl)English (en)Ethiopic (gez)French (fr)German (de)Hebrew (he)Hindi (hi)Hungarian (hu)Indonesian (id)Italian (it)Japanese (ja)Korean (ko)Navajo (nv)No linguistic content (zxx)Norwegian (no)Persian (fa)Polish (pl)Portuguese (pt)Russian (ru)Spanish (es)Swedish (sv)Thai (th)Ukrainian (uk)Undetermined (und)Vietnamese (vi)Yupik languages (ypk)]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:32:03">9D8187A0-C5F6-3949-BF4C-CAF58EAF0AE9</UUID>
+</ValueList>

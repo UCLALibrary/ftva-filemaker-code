@@ -1,0 +1,1262 @@
+<Layout id="46" name="General Search" width="896">
+	<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="3">
+		<Part type="Header" kind="1">
+			<Definition type="Header" kind="1" size="83" absolute="0" Options="0">
+				<FieldReference id="0" name="">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</Definition>
+			<ObjectList membercount="5">
+				<LayoutObject id="1" type="Text" name="" kind="2">
+					<Bounds top="0" left="0" bottom="19" right="110"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>12</Options>
+						<StyledText>
+							<Data><![CDATA[{{CurrentDate}}]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(20%,60%,60%,1);
+	border-right-color: rgba(20%,60%,60%,1);
+	border-bottom-color: rgba(20%,60%,60%,1);
+	border-left-color: rgba(20%,60%,60%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 14pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList></FieldList>
+				</LayoutObject>
+				<LayoutObject id="27" type="Grouped Button" name="" kind="8">
+					<Bounds top="19" left="5" bottom="54" right="137"></Bounds>
+					<Options>805371904</Options>
+					<GroupedButton>
+						<action>
+							<Step id="28" name="Perform Find" enable="True">
+							</Step>
+						</action>
+						<ObjectList membercount="1">
+							<LayoutObject id="18" type="Text" name="" kind="2">
+								<Bounds top="0" left="0" bottom="35" right="132"></Bounds>
+								<Options>822083584</Options>
+								<Text>
+									<Options>4</Options>
+									<StyledText>
+										<Data><![CDATA[SEARCH]]></Data>
+									</StyledText>
+								</Text>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(75.2941%,75.2941%,75.2941%,1);
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 24pt;
+	color: rgba(46.6667%,46.6667%,46.6667%,1);
+	direction: ;
+	text-align: center;
+	-fm-fill-effect: 1;
+	-fm-text-vertical-align: center;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-right-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-bottom-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-left-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+							</LayoutObject>
+						</ObjectList>
+					</GroupedButton>
+				</LayoutObject>
+				<LayoutObject id="31" type="Grouped Button" name="" kind="8">
+					<Bounds top="5" left="469" bottom="35" right="574"></Bounds>
+					<Options>805371904</Options>
+					<GroupedButton>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="83" name="Donor List"></ScriptReference>
+						</action>
+						<ObjectList membercount="1">
+							<LayoutObject id="21" type="Text" name="" kind="2">
+								<Bounds top="0" left="0" bottom="30" right="105"></Bounds>
+								<Options>822083584</Options>
+								<Text>
+									<Options>4</Options>
+									<StyledText>
+										<Data><![CDATA[PRINT DONOR LIST]]></Data>
+									</StyledText>
+								</Text>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(75.2941%,75.2941%,75.2941%,1);
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	direction: ;
+	text-align: center;
+	-fm-fill-effect: 1;
+	-fm-text-vertical-align: center;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-right-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-bottom-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-left-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+							</LayoutObject>
+						</ObjectList>
+					</GroupedButton>
+				</LayoutObject>
+				<LayoutObject id="33" type="Grouped Button" name="" kind="8">
+					<Bounds top="38" left="471" bottom="76" right="576"></Bounds>
+					<Options>805371904</Options>
+					<GroupedButton>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="87" name="Print Episode List Cards"></ScriptReference>
+						</action>
+						<ObjectList membercount="1">
+							<LayoutObject id="22" type="Text" name="" kind="2">
+								<Bounds top="0" left="0" bottom="38" right="105"></Bounds>
+								<Options>822083584</Options>
+								<Text>
+									<Options>4</Options>
+									<StyledText>
+										<Data><![CDATA[PRINTEPISODE LIST CARD]]></Data>
+									</StyledText>
+								</Text>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(75.2941%,75.2941%,75.2941%,1);
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	direction: ;
+	text-align: center;
+	-fm-fill-effect: 1;
+	-fm-text-vertical-align: center;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-right-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-bottom-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-left-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+							</LayoutObject>
+						</ObjectList>
+					</GroupedButton>
+				</LayoutObject>
+				<LayoutObject id="34" type="Graphic" name="" kind="3">
+					<Bounds top="2" left="591" bottom="80" right="858"></Bounds>
+					<Options>805306368</Options>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+}
+]]></LocalCSS>
+					<Graphic>
+						<Formatting>
+							<Options>27</Options>
+						</Formatting>
+						<BinaryData>
+							<LibraryReference id="12" key="B6570F258786E5222291B91654442993"></LibraryReference>
+							<StreamList>
+								<Stream name="MAIN" type="id" size="4">JPEG</Stream>
+								<Stream name="SIZE" type="Hex" size="4">00600029</Stream>
+								<Stream name="JPEG" type="Base64" size="6316">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Yx7E5b9BXX1ylpF/bnjObUG5s9KBt7f0aY/6xvwHy1MtrHRhrRn7R7R1/wAvxOg06xj07T7ezi/1cEaxr9AKt0UVRg227szLu5tkvVQWv2i6A4AA4H1rNuZ7htXtXlt/IYMAO+QT61fntbq31Jry1RZQ4w6E4NQyWV/dX8E86xKiEHaDnABoEF1Alx4iiVxlRGGI9cZrQawgN1Hchdskf93gGozay/20LnC+V5e0nPOa0KAMbRI1ljnuXAaV5CCTzxWpFbwwFjHGqbzlsdzWZ9kvbG4leyEbxSncUbjBq5Yw3UYd7qbe7nO0dF+lAGbpNrDLdXckiq5WQhQRkDk1LbxrbeIZY4htjePJUdM1Z02zltXujJt/eSblxzxSC0l/ts3Xy+UY8ZzzmgCDXLaEWDSiNRIGHzAYPWrN1b/adI8sfe8sFfqBTtTtpLuxaKLbvJBGeO9WolKRIp6gAH8qAM21vsaF55PzxoV/EdKTTImtdIeX/lo4aT9OKpz6Ncm8ZIzi1dtx+bgfhW+EUJsx8uMY9qAOd0mS8SKRorRZwxyXLAHNXNKtruK+mmmhWKOQfdBGM5pY7W/sGZbTy5YGOQj8EVesxd7XN2ULE/Kq9hQBaooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooqC4nS2iMj544AHJJ9B70BvoihrN5LDAlrZ8390THD3C/3nPso5/Id6saZp8Ol2ENnBnZEuMnqx7k+5PNR2Nm6zyXtzg3Uo246iNOyj+Z9TWlS8y5StHkX9f8ADBRRRTICiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCOSRY1yep6AdSahSAvIJp8F1+4vUJ/8AX96mWIBy3JY9z2FSUDuFFFFAgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==</Stream>
+							</StreamList>
+						</BinaryData>
+					</Graphic>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="73" absolute="83" Options="0">
+				<FieldReference id="0" name="">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+				<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(80%,80%,80%,1);
+}
+]]></LocalCSS>
+			</Definition>
+			<ObjectList membercount="21">
+				<LayoutObject id="2" type="Text" name="" kind="2">
+					<Bounds top="84" left="1" bottom="98" right="18"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[#]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="3" type="Text" name="" kind="2">
+					<Bounds top="85" left="92" bottom="99" right="120"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[title]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="4" type="Text" name="" kind="2">
+					<Bounds top="104" left="166" bottom="118" right="221"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[Items]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="5" type="Text" name="" kind="2">
+					<Bounds top="87" left="468" bottom="101" right="518"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[director]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="6" type="Text" name="" kind="2">
+					<Bounds top="103" left="380" bottom="117" right="418"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[donor]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="7" type="Text" name="" kind="2">
+					<Bounds top="87" left="627" bottom="101" right="656"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[cast]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(40%,40%,40%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="8" type="Edit Box" name="" kind="1">
+					<Bounds top="84" left="11" bottom="100" right="90"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="29" name="inventory_no" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32868</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="9" type="Edit Box" name="" kind="1">
+					<Bounds top="84" left="119" bottom="100" right="459"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="21" name="title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="10" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="203" bottom="119" right="228"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="81" name="item holdings" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="11" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="246" bottom="119" right="271"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="22" name="total_reels" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="12" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="285" bottom="119" right="339"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="50" name="format_size" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="13" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="342" bottom="119" right="376"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="53" name="format_type_abbr" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="14" type="Edit Box" name="" kind="1">
+					<Bounds top="86" left="520" bottom="102" right="622"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="66" name="director" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="15" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="420" bottom="119" right="468"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="11" name="donor_code" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="16" type="Edit Box" name="" kind="1">
+					<Bounds top="83" left="656" bottom="119" right="860"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="114" name="cast" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32800</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-style: inset;
+	border-right-style: inset;
+	border-bottom-style: inset;
+	border-left-style: inset;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	direction: ;
+	-fm-fill-effect: 2;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="19" type="Text" name="" kind="2">
+					<Bounds top="103" left="230" bottom="117" right="245"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[of]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(46.6667%,46.6667%,46.6667%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="29" type="Grouped Button" name="" kind="8">
+					<Bounds top="103" left="14" bottom="117" right="134"></Bounds>
+					<Options>805371904</Options>
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<Options>8</Options>
+								<ParameterValues membercount="2">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5">
+											<LayoutReference id="41" name="General Entry Form"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+									<Parameter type="Animation">
+										<Animation name="None" value="0"></Animation>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+						<ObjectList membercount="1">
+							<LayoutObject id="20" type="Text" name="" kind="2">
+								<Bounds top="0" left="0" bottom="14" right="120"></Bounds>
+								<Options>822083584</Options>
+								<Text>
+									<Options>4</Options>
+									<StyledText>
+										<Data><![CDATA[GO TO FULL RECORD]]></Data>
+									</StyledText>
+								</Text>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(75.2941%,75.2941%,75.2941%,1);
+	border-top-color: rgba(0%,0%,0%,1);
+	border-right-color: rgba(0%,0%,0%,1);
+	border-bottom-color: rgba(0%,0%,0%,1);
+	border-left-color: rgba(0%,0%,0%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(46.6667%,46.6667%,46.6667%,1);
+	direction: ;
+	text-align: center;
+	-fm-fill-effect: 1;
+	-fm-text-vertical-align: center;
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-right-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-bottom-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-left-color: rgba(85.1765%,85.1765%,85.1765%,1);
+	border-top-style: outset;
+	border-right-style: outset;
+	border-bottom-style: outset;
+	border-left-style: outset;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+}
+]]></LocalCSS>
+							</LayoutObject>
+						</ObjectList>
+					</GroupedButton>
+				</LayoutObject>
+				<LayoutObject id="35" type="Line" name="" kind="4">
+					<Bounds top="142" left="1" bottom="142" right="896"></Bounds>
+					<Options>805318656</Options>
+					<Line></Line>
+				</LayoutObject>
+				<LayoutObject id="41" type="Group" name="" kind="8">
+					<Bounds top="121" left="744" bottom="137" right="859"></Bounds>
+					<Options>805306368</Options>
+					<GroupedButton>
+						<action>
+							<Step id="0" name="&lt;unknown&gt; [0]" enable="True">
+							</Step>
+						</action>
+						<ObjectList membercount="2">
+							<LayoutObject id="39" type="Group" name="" kind="8">
+								<Bounds top="0" left="1" bottom="16" right="115"></Bounds>
+								<Options>805306368</Options>
+								<GroupedButton>
+									<action>
+										<Step id="0" name="&lt;unknown&gt; [0]" enable="True">
+										</Step>
+									</action>
+									<ObjectList membercount="2">
+										<LayoutObject id="38" type="Line" name="" kind="4">
+											<Bounds top="0" left="0" bottom="8" right="0"></Bounds>
+											<Options>805310464</Options>
+											<Line></Line>
+											<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+}
+]]></LocalCSS>
+										</LayoutObject>
+										<LayoutObject id="23" type="Edit Box" name="" kind="1">
+											<Bounds top="0" left="0" bottom="16" right="114"></Bounds>
+											<Options>805306368</Options>
+											<Field>
+												<FieldReference id="8" name="barcode_location" repetition="1">
+													<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+												</FieldReference>
+												<Options>32800</Options>
+												<Display Style="0" show="1"></Display>
+												<Usage inputMode="0" type="0"></Usage>
+											</Field>
+											<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(50.1961%,50.1961%,50.1961%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	font-family: -fm-font-family(Arial,ArialMT);
+	font-weight: bold;
+	font-size: 11pt;
+	direction: ;
+	text-align: center;
+}
+]]></LocalCSS>
+											<ExtendedAttributes>
+												<Formatting>
+													<Graphic>
+														<Options>5</Options>
+													</Graphic>
+													<Time>
+														<Options>143</Options>
+													</Time>
+													<Numeric>
+														<Options>2049</Options>
+													</Numeric>
+												</Formatting>
+											</ExtendedAttributes>
+										</LayoutObject>
+									</ObjectList>
+								</GroupedButton>
+							</LayoutObject>
+							<LayoutObject id="40" type="Line" name="" kind="4">
+								<Bounds top="0" left="0" bottom="8" right="0"></Bounds>
+								<Options>805318656</Options>
+								<Line></Line>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+}
+]]></LocalCSS>
+							</LayoutObject>
+						</ObjectList>
+					</GroupedButton>
+				</LayoutObject>
+				<LayoutObject id="24" type="Text" name="" kind="2">
+					<Bounds top="122" left="637" bottom="136" right="740"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>4</Options>
+						<StyledText>
+							<Data><![CDATA[VAULT LOCATION]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 10pt;
+	color: rgba(46.6667%,46.6667%,46.6667%,1);
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="25" type="Text" name="" kind="2">
+					<Bounds top="120" left="1" bottom="144" right="38"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>12</Options>
+						<StyledText>
+							<Data><![CDATA[{{RecordNumber}}]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 18pt;
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList></FieldList>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Footer" kind="7">
+			<Definition type="Footer" kind="7" size="27" absolute="156" Options="0">
+				<FieldReference id="0" name="">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+				<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(40%,40%,40%,1);
+}
+]]></LocalCSS>
+			</Definition>
+			<ObjectList membercount="1">
+				<LayoutObject id="17" type="Text" name="" kind="2">
+					<Bounds top="158" left="507" bottom="177" right="587"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>12</Options>
+						<StyledText>
+							<Data><![CDATA[{{PageNumber}}]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(20%,60%,60%,1);
+	border-right-color: rgba(20%,60%,60%,1);
+	border-bottom-color: rgba(20%,60%,60%,1);
+	border-left-color: rgba(20%,60%,60%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	font-size: 14pt;
+	color: rgba(80%,80%,80%,1);
+	direction: ;
+	text-align: right;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList></FieldList>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:06">CB590727-5B4B-9547-B3F1-7689B5D8565B</UUID>
+	<ClientType>0</ClientType>
+	<Options hidden="True">7539242</Options>
+</Layout>

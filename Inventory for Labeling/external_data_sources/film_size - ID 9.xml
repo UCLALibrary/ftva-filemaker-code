@@ -1,0 +1,6 @@
+<ExternalDataSource name="film_size" type="FileMaker" id="9">
+	<File>
+		<UniversalPathList>file:film_size</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">6B6B7EF1-568D-9041-8882-55E9D4819017</UUID>
+</ExternalDataSource>

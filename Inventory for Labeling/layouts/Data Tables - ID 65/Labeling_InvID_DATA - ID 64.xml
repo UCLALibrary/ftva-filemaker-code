@@ -1,0 +1,18 @@
+<Layout id="64" name="Labeling_InvID_DATA" width="1024">
+	<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="3">
+		<Part type="Header" kind="1">
+			<Definition type="Header" kind="1" size="19" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="535" absolute="19" Options="0"></Definition>
+		</Part>
+		<Part type="Footer" kind="7">
+			<Definition type="Footer" kind="7" size="18" absolute="554" Options="0"></Definition>
+		</Part>
+	</PartsList>
+	<UUID modifications="8" userName="uae" accountName="uae" timestamp="2026-03-30T07:52:11">4D2B9CD3-22D4-5F4C-B5EA-1EDD96B09A08</UUID>
+	<ClientType>0</ClientType>
+	<Options hidden="False">15944199</Options>
+</Layout>

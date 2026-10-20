@@ -1,0 +1,254 @@
+<Script>
+	<ScriptReference id="145" name="BatchExportMetadata"></ScriptReference>
+	<ObjectList membercount="22">
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="exports Metadata from MetadataExport Layout in batches"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="23" name="Show All Records" enable="True">
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get(FoundCount)]]></Text>
+								<ChunkList hash="CDF80D0904AC8D95CB1746824CBF5CC1">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef">(</Chunk>
+									<Chunk type="FunctionRef">FoundCount</Chunk>
+									<Chunk type="NoRef">)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$totalRecords"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[50000]]></Text>
+								<ChunkList hash="8B2FD48CD4A540926812F3D30A440C7D">
+									<Chunk type="NoRef">50000</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$batchSize"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+								<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+									<Chunk type="NoRef">1</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$start"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+								<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+									<Chunk type="NoRef">1</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$iteration"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="71" name="Loop" enable="True">
+		</Step>
+		<Step id="72" name="Exit Loop If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[$start > $totalRecords]]></Text>
+							<ChunkList hash="CEC0ABCA31135B2CDFF51B6649AA14D3">
+								<Chunk type="VariableReference">$start</Chunk>
+								<Chunk type="NoRef"> &gt; </Chunk>
+								<Chunk type="VariableReference">$totalRecords</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="create found set for the current batch"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="16" name="Go to Record/Request/Page" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Records">
+					<List name="First" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="26" name="Omit Multiple Records" enable="True">
+			<Options>16512</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[$start - 1]]></Text>
+							<ChunkList hash="1E24EFD49EC2428D307023CA48AD96C7">
+								<Chunk type="VariableReference">$start</Chunk>
+								<Chunk type="NoRef"> - 1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="27" name="Show Omitted Only" enable="True">
+		</Step>
+		<Step id="26" name="Omit Multiple Records" enable="True">
+			<Options>16512</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Get(FoundCount) - $batchSize]]></Text>
+							<ChunkList hash="4D4CF462BB818E7FD2A60A558A625E44">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="FunctionRef">FoundCount</Chunk>
+								<Chunk type="NoRef">) - </Chunk>
+								<Chunk type="VariableReference">$batchSize</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="62" name="Pause/Resume Script" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Options">
+					<Options type="Indefinitely"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="export found manually"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="update variables"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$start + $batchSize]]></Text>
+								<ChunkList hash="5D450B4045D594400526B24EDCA7C91F">
+									<Chunk type="VariableReference">$start</Chunk>
+									<Chunk type="NoRef"> + </Chunk>
+									<Chunk type="VariableReference">$batchSize</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$start"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$iteration + 1]]></Text>
+								<ChunkList hash="DB350597B008195D06C321D685403940">
+									<Chunk type="VariableReference">$iteration</Chunk>
+									<Chunk type="NoRef"> + 1</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$iteration"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="23" name="Show All Records" enable="True">
+		</Step>
+		<Step id="73" name="End Loop" enable="True">
+		</Step>
+	</ObjectList>
+</Script>

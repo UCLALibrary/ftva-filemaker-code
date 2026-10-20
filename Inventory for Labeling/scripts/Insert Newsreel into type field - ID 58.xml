@@ -1,0 +1,49 @@
+<Script>
+	<ScriptReference id="58" name="Insert Newsreel into type field"></ScriptReference>
+	<ObjectList membercount="5">
+		<Step id="6" name="Go to Layout" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="18" name="Newsreel Layout"></LayoutReference>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="71" name="Loop" enable="True">
+		</Step>
+		<Step id="61" name="Insert Text" enable="True">
+			<Options>4101</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Target">
+					<FieldReference id="23" name="type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Text">
+					<Text value="Newsreel"></Text>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="16" name="Go to Record/Request/Page" enable="True">
+			<Options>8194</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Records">
+					<List name="Next" value="4">
+						<Boolean type="Exit after last" position="184" value="True"></Boolean>
+					</List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="73" name="End Loop" enable="True">
+		</Step>
+	</ObjectList>
+</Script>

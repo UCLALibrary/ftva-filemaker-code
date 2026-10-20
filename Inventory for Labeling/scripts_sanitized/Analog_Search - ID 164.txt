@@ -1,0 +1,11 @@
+Enter Find Mode [ Pause: ON ]
+Set Error Capture [ ON ]
+
+Perform Find
+If [ Get ( LastError ) = 0 ]
+	Enter Find Mode [ Pause: OFF ]
+	Set Field [ Inventory for Labeling::digital_record ; 0 ]
+	Constrain Found Set
+End If
+Set Error Capture [ OFF ]
+

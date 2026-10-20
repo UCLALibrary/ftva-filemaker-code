@@ -1,0 +1,13 @@
+<PrivilegeSet id="4" name="Privilege Set">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">F2ADEB19-2161-3D42-B2BE-EC30FCF9120E</UUID>
+	<Description></Description>
+	<access>
+		<Records Create="True" Edit="True" Delete="False"></Records>
+		<Layouts viewState="ReadOnly"></Layouts>
+		<ValueLists viewState="ReadOnly"></ValueLists>
+		<Scripts viewState="ReadOnly"></Scripts>
+		<Other value="9984" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="True" disconnectIdle="True" commands="All">
+			<Password prohibitModification="True"></Password>
+		</Other>
+	</access>
+</PrivilegeSet>

@@ -1,0 +1,7 @@
+<ValueList id="45" name="element_info_full">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[1-L - One Lite (same as Lo-Con)A/B Roll - A and B RollAD - Audio DiscATR - Audio Tape ReelCDN - Composite Dupe NegativeCIP - Composite Interpositive (Color only)CMP - Composite Masterpositive (B/W only same as Fine Grain)CRI - Color Reversal Internegative (Color only)DA8 - Digital Audio 8DETN - Double Edge Track NegativeDPN - Dupe Picture NegativeDTN - Dupe Track NegativeDUB - DubEMST - Edited MasterIN - Internegative (Color only)IP - Interpositive (Color only)KIN - KinescopeMAG - Magnetic TrackMAGP - Magnetic PictureMST - MasterOPN - Original Picture NegativeOTN - Original Track NegativePIC POS - Picture Positive (when actual element is unknown)PMST - Protection MasterPMP - Picture Masterpositive (B/W same as Fine Grain)PN - Picture NegativePREPRINT - Preprint (when actual element is unknown)PRINT - PrintRD - Radio DiscSEN - Successive Exposure Negative (3 of same image, animation)TN - Track NegativeTMP - Track MasterpositiveTRK POS - Track PositiveU+D TN - Up and Down Track NegativeVIT-D - Vitaphone DiscXMST - Transfer MasterWP - Work Print]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">62123D67-2AD1-0F4A-AC39-27DE20981D26</UUID>
+</ValueList>

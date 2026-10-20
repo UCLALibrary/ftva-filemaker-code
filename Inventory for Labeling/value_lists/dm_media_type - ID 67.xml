@@ -1,0 +1,7 @@
+<ValueList id="67" name="dm_media_type">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[VideoAudioImage]]></Text>
+	</CustomValues>
+	<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-30T05:20:47">45CA0005-8C24-5943-A72B-35A2BA1FE262</UUID>
+</ValueList>

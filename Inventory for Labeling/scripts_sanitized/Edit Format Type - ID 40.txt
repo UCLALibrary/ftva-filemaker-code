@@ -1,0 +1,3 @@
+Perform Script [ "" ; Specified: From list ; File: "format_type" ; Parameter: ]
+Select Window [ Name: "format_type" ]
+

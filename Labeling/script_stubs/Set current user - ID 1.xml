@@ -1,0 +1,4 @@
+<Script id="1" name="Set current user">
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">F999349F-D9E5-7B46-97FF-1AA9E8F46020</UUID>
+	<Options hidden="False" access="ReadWrite" SiriShortcutVisible="False" runwithfullaccess="False" compatibility="0">0</Options>
+</Script>

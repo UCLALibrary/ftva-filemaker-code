@@ -1,0 +1,27 @@
+Set Variable [ $InventoryID ; Inventory for Labeling::inventory_id ]
+Set Variable [ $LabelType ; Inventory for Labeling::label_type ]
+Set Variable [ $TotalReels ; Inventory for Labeling::total_reels ]
+Set Variable [ $CurrentReelCount ; 0 ]
+If [ not IsEmpty ($TotalReels) and GetAsNumber($TotalReels)>0 ]
+	If [ Count ( Labeling Database_InvID::inventory_id ) > 0 ]
+		Show Custom Dialog [ Title: "Message" ; Message: "Label records have already been created for this item." ; Default Button: "OK" ]
+	Else
+		Freeze Window
+		Go to Layout [ Layout: "Labeling_InvID_DATA" ; Animation: None ]
+		Loop
+			Set Variable [ $CurrentReelCount ; $CurrentReelCount+1 ]
+			New Record/Request
+			Set Field [ Labeling Database_InvID::inventory_id ; $InventoryID ]
+			Set Field [ Labeling Database_InvID::end_reel_range ; $TotalReels ]
+			Set Field [ Labeling Database_InvID::reel_no ; $CurrentReelCount ]
+			Set Field [ Labeling Database_InvID::reel_text ; $CurrentReelCount ]
+			Set Field [ Labeling Database_InvID::notes ; $LabelType ]
+			Commit Records/Requests [ With dialog: OFF ]
+			Exit Loop If [ $CurrentReelCount ≥ $TotalReels ]
+		End Loop
+		Go to Layout [ Layout: <original layout> ; Animation: None ]
+	End If
+Else
+	Show Custom Dialog [ Title: "Message" ; Message: "You must specify the total number or reels before you can use this feature." ; Default Button: "Doh!" ]
+End If
+

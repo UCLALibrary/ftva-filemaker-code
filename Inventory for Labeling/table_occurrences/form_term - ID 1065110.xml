@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Full" height="80" id="1065110" name="form_term" type="External">
+	<UUID modifications="5" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">4BEB9FB0-C972-1D4E-A8B7-E2B108D36DB1</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="22" name="form_term"></DataSourceReference>
+		<BaseTableReference id="129" name="form_term"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="203" left="1715" bottom="314" right="1846"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

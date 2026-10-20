@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Related" height="26" id="1065103" name="Film Inspection History" type="External">
+	<UUID modifications="5" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">E21B5FC0-1E05-1B44-B8D3-95398C7A9A22</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="31" name="Film Inspection History"></DataSourceReference>
+		<BaseTableReference id="129" name="Film Inspection History"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="121" left="1097" bottom="159" right="1247"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

@@ -1,0 +1,4 @@
+Go to Related Record [ Table: Labeling Database_InvID ; Layout: <original layout> ; Show related ]
+Perform Script [ "Position and Resize Window" ; Specified: From list ; File: "Labeling Database" ; Parameter: ]
+Select Window [ Name: "Labeling Database" ]
+

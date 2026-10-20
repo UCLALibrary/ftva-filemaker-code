@@ -1,0 +1,16 @@
+<Script>
+	<ScriptReference id="116" name="For preservation department use only."></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="61" name="Insert Text" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Text">
+					<Text value="For preservation department use only."></Text>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

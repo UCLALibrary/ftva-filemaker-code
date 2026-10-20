@@ -1,0 +1,21 @@
+Freeze Window
+
+Go to Related Record [ Table: Digital Media_carrier ; Layout: "Digital Media_Carrier" ; New window ; Style: Document ; Show related ]
+
+If [ Get ( LastError )  ≠ 0  or Get ( FoundCount ) = 0 ]
+	Show Custom Dialog [ Title: "Nothing to delete" ; Message: "There are no related records to delete." ; Default Button: "OK" ; Button 2: "Cancel" ]
+	Exit Script []
+End If
+
+View As [ View as Table ]
+Adjust Window [ Maximize ]
+
+Show Custom Dialog [ Title: "Confirm delete" ; Message: "This will permanently delete " & Get ( FoundCount ) & " related Digital Media record(s)." ; Default Button: "Delete" ; Button 2: "Cancel" ]
+
+If [ Get ( LastMessageChoice ) = 1 ]
+	Delete All Records [ With dialog: OFF ]
+End If
+
+Close Window
+Refresh Window
+

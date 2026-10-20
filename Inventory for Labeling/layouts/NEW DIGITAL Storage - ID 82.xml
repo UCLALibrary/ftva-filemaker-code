@@ -1,0 +1,1789 @@
+<Layout id="82" name="NEW DIGITAL Storage" width="1916">
+	<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="2">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="44" absolute="0" Options="0">
+				<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(24.7059%,34.1176%,41.9608%,1);
+	border-image-source: none;
+}
+]]></LocalCSS>
+			</Definition>
+			<ObjectList membercount="1">
+				<LayoutObject id="1" type="Text" name="" kind="2">
+					<Bounds top="6" left="0" bottom="38" right="1664"></Bounds>
+					<Text>
+						<Options>6</Options>
+						<StyledText>
+							<Data><![CDATA[GENERAL ENTRY FORM - Storage Format]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(Verdana-Bold,Verdana-Bold);
+	font-weight: bold;
+	font-size: 24pt;
+	color: rgba(100%,100%,100%,1);
+	text-align: center;
+}
+]]></LocalCSS>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="1025" absolute="44" Options="0"></Definition>
+			<ObjectList membercount="25">
+				<LayoutObject id="2" type="Text" name="" kind="2">
+					<Bounds top="1047" left="7" bottom="1063" right="790"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>8</Options>
+						<StyledText>
+							<Data><![CDATA[Record created on <<CreationTimestamp>> by <<CreatedBy>>.  Modified by <<ModifiedBy>> on <<ModificationTimestamp>>.]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-size: 10pt;
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList>
+						<FieldReference id="4" name="ModificationTimestamp" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="5" name="ModifiedBy" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="3" name="CreatedBy" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<FieldReference id="2" name="CreationTimestamp" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+					</FieldList>
+				</LayoutObject>
+				<LayoutObject id="3" type="Button" name="" kind="10">
+					<Bounds top="96" left="1597" bottom="130" right="1696"></Bounds>
+					<Options>805306376</Options>
+					<Button>
+						<Label>
+							<Text>
+								<Options>2</Options>
+								<StyledText>
+									<Data><![CDATA[Browse]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="0" size="12"></IconData>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="157" name="ScanFolder"></ScriptReference>
+						</action>
+					</Button>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(55.6863%,68.6275%,76.8627%,1)), to(rgba(46.2745%,57.2549%,64.3137%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	-fm-fill-effect: 0;
+}
+self:hover .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(46.2745%,57.2549%,64.3137%,1)), to(rgba(35.6863%,48.6275%,56.4706%,1)));
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+}
+self:pressed .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(35.6863%,48.6275%,56.4706%,1)), to(rgba(29.0196%,40%,46.6667%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0.3em;
+	padding-right: 0.2em;
+	padding-bottom: 0.1em;
+	padding-left: 0.2em;
+}
+self:normal .icon
+{
+	-fm-icon-color: rgba(100%,100%,100%,1);
+	-fm-icon-padding: 0.33em;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="4" type="Edit Box" name="" kind="1">
+					<Bounds top="63" left="154" bottom="85" right="407"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="1" name="Inventory_number" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>5</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="5" type="Text" name="" kind="2">
+					<Bounds top="67" left="42" bottom="84" right="143"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Inventory_number]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+	-fm-text-vertical-align: center;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="6" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="154" bottom="125" right="407"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="8" name="Barcode" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>7</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="7" type="Text" name="" kind="2">
+					<Bounds top="107" left="94" bottom="124" right="143"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Barcode]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+	-fm-text-vertical-align: center;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="8" type="Edit Box" name="" kind="1">
+					<Bounds top="103" left="512" bottom="125" right="765"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="9" name="Location" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>9</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="9" type="Text" name="" kind="2">
+					<Bounds top="107" left="444" bottom="126" right="501"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[*Location]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(Arial,Arial-BoldMT);
+	font-weight: bold;
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+	-fm-text-vertical-align: center;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="10" type="Edit Box" name="" kind="1">
+					<Bounds top="101" left="901" bottom="123" right="1154"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="11" name="Home Location" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>11</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="11" type="Text" name="" kind="2">
+					<Bounds top="105" left="803" bottom="122" right="890"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Home Location]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+	-fm-text-vertical-align: center;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="12" type="Portal" name="pDMUnit" kind="9">
+					<Bounds top="178" left="49" bottom="996" right="1856"></Bounds>
+					<Options>805306368</Options>
+					<Portal>
+						<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+						<Options show="12">5</Options>
+						<ObjectList membercount="7">
+							<LayoutObject id="13" type="Edit Box" name="" kind="1">
+								<Bounds top="-1" left="323" bottom="68" right="1157"></Bounds>
+								<Options>805306368</Options>
+								<Field>
+									<FieldReference id="6" name="file_path" repetition="1">
+										<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+									</FieldReference>
+									<Options>32</Options>
+									<Display Style="0" show="1"></Display>
+									<Usage inputMode="0" type="1"></Usage>
+								</Field>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:hover .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+}
+self:focus .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+								<ExtendedAttributes>
+									<Formatting>
+										<Graphic>
+											<Options>5</Options>
+										</Graphic>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+								<Accessibility>
+									<Label>21</Label>
+								</Accessibility>
+							</LayoutObject>
+							<LayoutObject id="14" type="Drop-down List" name="" kind="1">
+								<Bounds top="1" left="1282" bottom="66" right="1443"></Bounds>
+								<Options>805306368</Options>
+								<Field>
+									<FieldReference id="8" name="No Ingest Reason" repetition="1">
+										<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+									</FieldReference>
+									<Options>32</Options>
+									<Display Style="1" show="1">
+										<ValueListReference id="82" name="dm_no_ingest_reason"></ValueListReference>
+									</Display>
+									<Usage inputMode="0" type="1"></Usage>
+								</Field>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	-fm-text-vertical-align: center;
+}
+self:hover .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+}
+self:focus .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+self:normal .icon
+{
+	background-position: center center;
+}
+]]></LocalCSS>
+								<ExtendedAttributes>
+									<Formatting>
+										<Graphic>
+											<Options>5</Options>
+										</Graphic>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+								<Accessibility>
+									<Label>22</Label>
+								</Accessibility>
+							</LayoutObject>
+							<LayoutObject id="15" type="Edit Box" name="" kind="1">
+								<Bounds top="-1" left="1157" bottom="66" right="1282"></Bounds>
+								<Options>805306368</Options>
+								<Field>
+									<FieldReference id="12" name="file_size" repetition="1">
+										<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+									</FieldReference>
+									<Options>32</Options>
+									<Display Style="0" show="1"></Display>
+									<Usage inputMode="0" type="1"></Usage>
+								</Field>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	-fm-text-vertical-align: center;
+}
+self:hover .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+}
+self:focus .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+self:normal .icon
+{
+	background-position: center center;
+}
+]]></LocalCSS>
+								<ExtendedAttributes>
+									<Formatting>
+										<Graphic>
+											<Options>5</Options>
+										</Graphic>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+								<Accessibility>
+									<Label>26</Label>
+								</Accessibility>
+							</LayoutObject>
+							<LayoutObject id="16" type="Text" name="" kind="2">
+								<Bounds top="1" left="3" bottom="74" right="49"></Bounds>
+								<Options>805306368</Options>
+								<Text>
+									<Options>10</Options>
+									<StyledText>
+										<Data><![CDATA[{{RecordNumber}}]]></Data>
+									</StyledText>
+								</Text>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	-fm-text-vertical-align: center;
+}
+self:normal .icon
+{
+	background-position: center center;
+}
+]]></LocalCSS>
+								<ExtendedAttributes>
+									<Formatting>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+								<FieldList></FieldList>
+							</LayoutObject>
+							<LayoutObject id="17" type="Edit Box" name="" kind="1">
+								<Bounds top="1" left="1443" bottom="68" right="1723"></Bounds>
+								<Options>805306368</Options>
+								<Field>
+									<FieldReference id="9" name="No Ingest Reason Notes" repetition="1">
+										<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+									</FieldReference>
+									<Options>32</Options>
+									<Display Style="0" show="1"></Display>
+									<Usage inputMode="0" type="1"></Usage>
+								</Field>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:hover .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+}
+self:focus .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+								<ExtendedAttributes>
+									<Formatting>
+										<Graphic>
+											<Options>5</Options>
+										</Graphic>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+								<Accessibility>
+									<Label>23</Label>
+								</Accessibility>
+							</LayoutObject>
+							<LayoutObject id="18" type="Button" name="" kind="10">
+								<Bounds top="22" left="1729" bottom="44" right="1784"></Bounds>
+								<Options>805371912</Options>
+								<Button>
+									<Label>
+										<Text>
+											<Options>2</Options>
+											<StyledText>
+												<Data><![CDATA[Delete]]></Data>
+											</StyledText>
+										</Text>
+									</Label>
+									<IconData type="0" size="12"></IconData>
+									<action>
+										<Step id="104" name="Delete Portal Row" enable="True">
+											<ParameterValues membercount="1">
+												<Parameter type="Boolean">
+													<Boolean type="With dialog" id="128" value="True"></Boolean>
+												</Parameter>
+											</ParameterValues>
+										</Step>
+									</action>
+								</Button>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(55.6863%,68.6275%,76.8627%,1)), to(rgba(46.2745%,57.2549%,64.3137%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(100%,100%,100%,1);
+	-fm-fill-effect: 0;
+}
+self:hover .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(46.2745%,57.2549%,64.3137%,1)), to(rgba(35.6863%,48.6275%,56.4706%,1)));
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+}
+self:pressed .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(35.6863%,48.6275%,56.4706%,1)), to(rgba(29.0196%,40%,46.6667%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0.3em;
+	padding-right: 0.2em;
+	padding-bottom: 0.1em;
+	padding-left: 0.2em;
+}
+self:normal .icon
+{
+	-fm-icon-color: rgba(100%,100%,100%,1);
+	-fm-icon-padding: 0.33em;
+}
+]]></LocalCSS>
+							</LayoutObject>
+							<LayoutObject id="19" type="Edit Box" name="" kind="1">
+								<Bounds top="1" left="49" bottom="66" right="323"></Bounds>
+								<Options>805306368</Options>
+								<Field>
+									<FieldReference id="36" name="Display_UUID" repetition="1">
+										<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+									</FieldReference>
+									<Options>1048608</Options>
+									<Display Style="0" show="1"></Display>
+									<Usage inputMode="0" type="1"></Usage>
+								</Field>
+								<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(25.098%,36.4706%,43.5294%,1);
+}
+self:hover .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+}
+self:focus .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,0);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,0);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+								<ExtendedAttributes>
+									<Formatting>
+										<Graphic>
+											<Options>5</Options>
+										</Graphic>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+							</LayoutObject>
+						</ObjectList>
+					</Portal>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	color: rgba(0%,16.0784%,22.3529%,1);
+	-fm-use-default-appearance: false;
+	-fm-portal-alt-background: true;
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+}
+self:normal .contents
+{
+	right: 17pt;
+}
+self:normal .row
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-left-width: 1pt;
+}
+self:normal .row_alt
+{
+	background-image: none;
+	background-color: rgba(85.098%,88.6274%,91.3726%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-left-width: 1pt;
+}
+self:normal .scrollbar_track
+{
+	width: 17pt;
+}
+self:normal .row_active
+{
+	background-color: rgba(72.549%,86.6667%,94.902%,1);
+	border-top-color: rgba(47.8431%,69.4118%,85.098%,1);
+	border-bottom-color: rgba(47.8431%,69.4118%,85.098%,1);
+	border-top-width: 1pt;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="20" type="Text" name="" kind="2">
+					<Bounds top="160" left="171" bottom="177" right="204"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[UUID]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="21" type="Text" name="" kind="2">
+					<Bounds top="160" left="444" bottom="178" right="495"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[FIle Path]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="22" type="Text" name="" kind="2">
+					<Bounds top="160" left="1353" bottom="177" right="1456"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[No Ingest Reason]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="23" type="Text" name="" kind="2">
+					<Bounds top="160" left="1597" bottom="177" right="1736"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[No Ingest Reason Notes]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="24" type="Drop-down List" name="" kind="1">
+					<Bounds top="101" left="1271" bottom="123" right="1524"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="14" name="storage_format" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="1" show="1">
+							<ValueListReference id="72" name="dm_storage_format"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:droptarget .self
+{
+	border-top-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-right-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-bottom-color: rgba(72.1569%,77.6471%,80.7843%,1);
+	border-left-color: rgba(72.1569%,77.6471%,80.7843%,1);
+}
+self:placeholder .self
+{
+	color: rgba(48.6275%,60.7843%,69.0196%,1);
+}
+self:normal .inner_border
+{
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0pt;
+	padding-right: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+}
+self:droptarget .inner_border
+{
+	box-shadow: inset 0pt 0pt 6pt 0pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .text
+{
+	margin-top: 0.3em;
+	margin-right: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 0.2em;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>25</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="25" type="Text" name="" kind="2">
+					<Bounds top="105" left="1172" bottom="124" right="1260"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Storage Format]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+	-fm-text-vertical-align: center;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="26" type="Text" name="" kind="2">
+					<Bounds top="160" left="1241" bottom="178" right="1290"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[File Size]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="27" type="Line" name="" kind="4">
+					<Bounds top="180" left="99" bottom="996" right="99"></Bounds>
+					<Options>805310464</Options>
+					<Line></Line>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,100%,1);
+	border-right-color: rgba(80%,80%,100%,1);
+	border-bottom-color: rgba(80%,80%,100%,1);
+	border-left-color: rgba(80%,80%,100%,1);
+	border-top-width: 3pt;
+	border-right-width: 3pt;
+	border-bottom-width: 3pt;
+	border-left-width: 3pt;
+	-fm-override-with-classic: true;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="28" type="Line" name="" kind="4">
+					<Bounds top="180" left="373" bottom="996" right="373"></Bounds>
+					<Options>805310464</Options>
+					<Line></Line>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,100%,1);
+	border-right-color: rgba(80%,80%,100%,1);
+	border-bottom-color: rgba(80%,80%,100%,1);
+	border-left-color: rgba(80%,80%,100%,1);
+	border-top-width: 3pt;
+	border-right-width: 3pt;
+	border-bottom-width: 3pt;
+	border-left-width: 3pt;
+	-fm-override-with-classic: true;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="29" type="Line" name="" kind="4">
+					<Bounds top="180" left="1207" bottom="996" right="1207"></Bounds>
+					<Options>805310464</Options>
+					<Line></Line>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,100%,1);
+	border-right-color: rgba(80%,80%,100%,1);
+	border-bottom-color: rgba(80%,80%,100%,1);
+	border-left-color: rgba(80%,80%,100%,1);
+	border-top-width: 3pt;
+	border-right-width: 3pt;
+	border-bottom-width: 3pt;
+	border-left-width: 3pt;
+	-fm-override-with-classic: true;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="30" type="Line" name="" kind="4">
+					<Bounds top="178" left="1332" bottom="994" right="1332"></Bounds>
+					<Options>805310464</Options>
+					<Line></Line>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,100%,1);
+	border-right-color: rgba(80%,80%,100%,1);
+	border-bottom-color: rgba(80%,80%,100%,1);
+	border-left-color: rgba(80%,80%,100%,1);
+	border-top-width: 3pt;
+	border-right-width: 3pt;
+	border-bottom-width: 3pt;
+	border-left-width: 3pt;
+	-fm-override-with-classic: true;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="31" type="Line" name="" kind="4">
+					<Bounds top="178" left="1493" bottom="994" right="1493"></Bounds>
+					<Options>805310464</Options>
+					<Line></Line>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(80%,80%,100%,1);
+	border-right-color: rgba(80%,80%,100%,1);
+	border-bottom-color: rgba(80%,80%,100%,1);
+	border-left-color: rgba(80%,80%,100%,1);
+	border-top-width: 3pt;
+	border-right-width: 3pt;
+	border-bottom-width: 3pt;
+	border-left-width: 3pt;
+	-fm-override-with-classic: true;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="32" type="Button" name="" kind="10">
+					<Bounds top="96" left="1711" bottom="130" right="1810"></Bounds>
+					<Options>805306376</Options>
+					<Button>
+						<Label>
+							<Text>
+								<Options>2</Options>
+								<StyledText>
+									<Data><![CDATA[Delete ALL]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="0" size="12"></IconData>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="158" name="DeleteALL_files"></ScriptReference>
+						</action>
+					</Button>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(55.6863%,68.6275%,76.8627%,1)), to(rgba(46.2745%,57.2549%,64.3137%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-right-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-left-color: rgba(38.4314%,48.2353%,54.1176%,1);
+	border-top-right-radius: 3pt 3pt;
+	border-bottom-right-radius: 3pt 3pt;
+	border-bottom-left-radius: 3pt 3pt;
+	border-top-left-radius: 3pt 3pt;
+	border-image-source: none;
+	font-family: -fm-font-family(helvetica,sans-serif,helvetica;sans-serif);
+	color: rgba(0%,16.0784%,22.3529%,1);
+	-fm-fill-effect: 0;
+}
+self:hover .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(46.2745%,57.2549%,64.3137%,1)), to(rgba(35.6863%,48.6275%,56.4706%,1)));
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+}
+self:pressed .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(35.6863%,48.6275%,56.4706%,1)), to(rgba(29.0196%,40%,46.6667%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+}
+self:focus .self
+{
+	border-top-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-right-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-bottom-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	border-left-color: rgba(5.09804%,14.5098%,20.3922%,1);
+	box-shadow: 0pt 0pt 2pt 1pt rgba(31.7647%,69.0196%,92.9412%,1);
+}
+self:normal .inner_border
+{
+	border-top-color: rgba(0%,0%,0%,0);
+	border-right-color: rgba(0%,0%,0%,0);
+	border-bottom-color: rgba(0%,0%,0%,0);
+	border-left-color: rgba(0%,0%,0%,0);
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 0pt;
+	border-right-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 0pt;
+	border-top-right-radius: 2pt 2pt;
+	border-bottom-right-radius: 2pt 2pt;
+	border-bottom-left-radius: 2pt 2pt;
+	border-top-left-radius: 2pt 2pt;
+	padding-top: 0.3em;
+	padding-right: 0.2em;
+	padding-bottom: 0.1em;
+	padding-left: 0.2em;
+}
+self:normal .icon
+{
+	-fm-icon-color: rgba(100%,100%,100%,1);
+	-fm-icon-padding: 0.33em;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="33" type="Button" name="" kind="10">
+					<Bounds top="53" left="1649" bottom="87" right="1748"></Bounds>
+					<Options>805306376</Options>
+					<Button>
+						<Label>
+							<Text>
+								<Options>2</Options>
+								<StyledText>
+									<Data><![CDATA[Print Labels]]></Data>
+								</StyledText>
+							</Text>
+						</Label>
+						<IconData type="0" size="12"></IconData>
+						<action>
+							<Options>4</Options>
+							<ScriptReference id="169" name="printStorageLabels"></ScriptReference>
+						</action>
+					</Button>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: -webkit-gradient(linear,25% 0%,25% 100%, from(rgba(55.6863%,68.6275%,76.4706%,1)), to(rgba(45.8824%,57.2549%,63.9216%,1)));
+	background-color: rgba(0%,0%,0%,0);
+	border-top-color: rgba(38.4314%,48.2353%,53.7255%,1);
+	border-right-color: rgba(38.4314%,48.2353%,53.7255%,1);
+	border-bottom-color: rgba(38.4314%,48.2353%,53.7255%,1);
+	border-left-color: rgba(38.4314%,48.2353%,53.7255%,1);
+	border-image-source: none;
+	-fm-fill-effect: 0;
+}
+self:normal .inner_border
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+]]></LocalCSS>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<UUID modifications="14" userName="hrosen" accountName="hrosen" timestamp="2026-09-01T15:51:34">101D5967-4824-FD4B-86BD-5B991732B389</UUID>
+	<ClientType>3</ClientType>
+	<Options hidden="False">15927309</Options>
+</Layout>

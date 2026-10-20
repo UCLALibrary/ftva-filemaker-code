@@ -1,0 +1,70 @@
+<Script>
+	<ScriptReference id="68" name="Print PRE-PRINTCard  "></ScriptReference>
+	<ObjectList membercount="5">
+		<Step id="6" name="Go to Layout" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="36" name="PRINT-PrePrint Inventory Card"></LayoutReference>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="43" name="Print" enable="True">
+			<ParameterValues membercount="4">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Restore">
+					<Restore value="False"></Restore>
+				</Parameter>
+				<Parameter type="Print"></Parameter>
+				<Parameter type="PageSetup"></Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="42" name="Print Setup" enable="True">
+			<Options>33587328</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Restore">
+					<Restore value="True"></Restore>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="PageSetup">
+					<PageSetup>
+						<Orientation name="Portrait" value="0"></Orientation>
+						<size height="1100" width="850"></size>
+						<scale value="100"></scale>
+					</PageSetup>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="6" name="Go to Layout" enable="True">
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="1">
+						<Label>original layout</Label>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="80" name="Refresh Window" enable="True">
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Flush cached external data" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

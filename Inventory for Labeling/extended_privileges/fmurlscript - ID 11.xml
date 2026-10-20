@@ -1,0 +1,4 @@
+<ExtendedPrivilege id="11" name="fmurlscript">
+	<Description>Allow URLs to run FileMaker scripts</Description>
+	<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2025-02-19T10:06:09">324D2B6B-ADA1-864F-A393-8F9AB4713D79</UUID>
+</ExtendedPrivilege>

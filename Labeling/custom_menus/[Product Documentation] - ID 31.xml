@@ -1,0 +1,15 @@
+<CustomMenu name="[Product Documentation]" id="31">
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">8A0ED8BD-4E84-AC4E-A7D3-ACEE7047F15C</UUID>
+	<MenuItemList membercount="0"></MenuItemList>
+	<Conditions>
+		<Install>
+			<Calculation><![CDATA[1]]></Calculation>
+			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+				<Chunk type="NoRef">1</Chunk>
+			</ChunkList>
+		</Install>
+	</Conditions>
+	<Comment></Comment>
+	<Base name="Product Documentation" value="198"></Base>
+	<Options browseMode="True" findMode="True" previewMode="True"></Options>
+</CustomMenu>

@@ -1,0 +1,5 @@
+View As [ View as Form ]
+Adjust Window [ Restore ]
+Show/Hide Text Ruler [ Hide ]
+Show/Hide Toolbars [ Lock: ON ; Include Edit Record Toolbar: OFF ; Hide ]
+

@@ -1,0 +1,14 @@
+<Account id="5" kind="1" type="External" enable="True">
+	<UUID modifications="13" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">5A1A99BC-A9D9-7F4F-B68D-E07691D3154D</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMReadWrite</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>1KzwduHsy0JXvg==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="2" name="[Data Entry Only]"></PrivilegeSetReference>
+</Account>

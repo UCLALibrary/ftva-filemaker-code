@@ -1,0 +1,6 @@
+Set Field [ Inventory for Labeling::inventory_no_search ; "" ]
+Set Field [ Inventory for Labeling::hearst_prefix_search ; "" ]
+Set Field [ Inventory for Labeling::hearst_can_vol_search ; "" ]
+Set Field [ Inventory for Labeling::hearst_roll_issue_search ; "" ]
+Set Field [ Inventory for Labeling::hearst_positive_negative_search ; "" ]
+

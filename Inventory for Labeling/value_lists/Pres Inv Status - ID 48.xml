@@ -1,0 +1,7 @@
+<ValueList id="48" name="Pres Inv Status">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[Ready for Cataloging - PreprintReady for Cataloging - PrintReady for Cataloging - VideoReady for Cataloging - SoundEntered in Voyager]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">A0271C04-D80C-D246-97EA-E7EC1CA84596</UUID>
+</ValueList>

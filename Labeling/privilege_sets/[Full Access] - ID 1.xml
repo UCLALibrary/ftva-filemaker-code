@@ -1,0 +1,5 @@
+<PrivilegeSet id="1" name="[Full Access]">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">DAE00DF4-AF0B-FD40-AAB8-12FE28486D1C</UUID>
+	<Description>access to everything</Description>
+	<access default="True"></access>
+</PrivilegeSet>

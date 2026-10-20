@@ -1,0 +1,14 @@
+<Account id="5" kind="1" type="External" enable="True">
+	<UUID modifications="31" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="bbelak" timestamp="2025-06-26T16:08:33">991792FB-815D-7745-BB4D-824AD4BB8058</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMReadWrite</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>Jz+7ogaj08sgvw==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="5" name="Data Entry wUser Override"></PrivilegeSetReference>
+</Account>

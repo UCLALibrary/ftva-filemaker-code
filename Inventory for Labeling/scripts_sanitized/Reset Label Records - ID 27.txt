@@ -1,0 +1,4 @@
+Set Error Capture [ ON ]
+Perform Script [ "Remove Label Records" ; Specified: From list ; Parameter: ]
+Perform Script [ "Create Records for Labels (Complete Reel Set)" ; Specified: From list ; Parameter: ]
+

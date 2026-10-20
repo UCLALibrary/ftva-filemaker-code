@@ -1,0 +1,23 @@
+# exports Metadata from MetadataExport Layout in batches
+Show All Records
+Set Variable [ $totalRecords ; Get(FoundCount) ]
+Set Variable [ $batchSize ; 50000 ]
+Set Variable [ $start ; 1 ]
+Set Variable [ $iteration ; 1 ]
+
+Loop
+	Exit Loop If [ $start > $totalRecords ]
+	# create found set for the current batch
+	Go to Record/Request/Page [ First ]
+	Omit Multiple Records [ With dialog: OFF ; $start - 1 ]
+	Show Omitted Only
+	Omit Multiple Records [ With dialog: OFF ; Get(FoundCount) - $batchSize ]
+	Pause/Resume Script [ Indefinitely ]
+	# export found manually
+	
+	# update variables
+	Set Variable [ $start ; $start + $batchSize ]
+	Set Variable [ $iteration ; $iteration + 1 ]
+	Show All Records
+End Loop
+

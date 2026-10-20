@@ -1,0 +1,60 @@
+<CustomMenu name="FileMaker Pro Copy" id="1">
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">F3EA5C6D-A366-8D46-B967-E26BAA0D164E</UUID>
+	<MenuItemList membercount="2">
+		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+			<Conditions>
+				<Install>
+					<Calculation><![CDATA[If( Abs(Get( SystemPlatform )) <> 2; 1; 0 )]]></Calculation>
+					<ChunkList hash="01C6781B42D4754C2062258B9306BDF5">
+						<Chunk type="FunctionRef">If</Chunk>
+						<Chunk type="NoRef">( </Chunk>
+						<Chunk type="FunctionRef">Abs</Chunk>
+						<Chunk type="NoRef">(</Chunk>
+						<Chunk type="FunctionRef">Get</Chunk>
+						<Chunk type="NoRef">( </Chunk>
+						<Chunk type="FunctionRef">SystemPlatform</Chunk>
+						<Chunk type="NoRef"> )) &lt;&gt; 2; 1; 0 )</Chunk>
+					</ChunkList>
+				</Install>
+			</Conditions>
+			<Command name="About FileMaker Pro..." id="57664"></Command>
+			<Override name="False" action="False" Shortcut="False"></Override>
+		</CustomMenuItem>
+		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="True">
+			<Conditions>
+				<Install>
+					<Calculation><![CDATA[If( Abs(Get( SystemPlatform )) <> 2; 1; 0 )]]></Calculation>
+					<ChunkList hash="01C6781B42D4754C2062258B9306BDF5">
+						<Chunk type="FunctionRef">If</Chunk>
+						<Chunk type="NoRef">( </Chunk>
+						<Chunk type="FunctionRef">Abs</Chunk>
+						<Chunk type="NoRef">(</Chunk>
+						<Chunk type="FunctionRef">Get</Chunk>
+						<Chunk type="NoRef">( </Chunk>
+						<Chunk type="FunctionRef">SystemPlatform</Chunk>
+						<Chunk type="NoRef"> )) &lt;&gt; 2; 1; 0 )</Chunk>
+					</ChunkList>
+				</Install>
+			</Conditions>
+			<Override name="False" action="False" Shortcut="False"></Override>
+		</CustomMenuItem>
+	</MenuItemList>
+	<Conditions>
+		<Install>
+			<Calculation><![CDATA[If( Abs(Get( SystemPlatform )) <> 2; 1; 0 )]]></Calculation>
+			<ChunkList hash="01C6781B42D4754C2062258B9306BDF5">
+				<Chunk type="FunctionRef">If</Chunk>
+				<Chunk type="NoRef">( </Chunk>
+				<Chunk type="FunctionRef">Abs</Chunk>
+				<Chunk type="NoRef">(</Chunk>
+				<Chunk type="FunctionRef">Get</Chunk>
+				<Chunk type="NoRef">( </Chunk>
+				<Chunk type="FunctionRef">SystemPlatform</Chunk>
+				<Chunk type="NoRef"> )) &lt;&gt; 2; 1; 0 )</Chunk>
+			</ChunkList>
+		</Install>
+	</Conditions>
+	<Comment></Comment>
+	<Base name="FileMaker Pro" value="1"></Base>
+	<Options browseMode="True" findMode="True" previewMode="True"></Options>
+</CustomMenu>

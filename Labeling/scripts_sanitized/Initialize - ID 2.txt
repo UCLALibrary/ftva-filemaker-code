@@ -1,0 +1,11 @@
+Allow Formatting Bar [ OFF ]
+Show/Hide Toolbars [ Lock: OFF ; Include Edit Record Toolbar: OFF ; Hide ]
+Show/Hide Text Ruler [ Hide ]
+Adjust Window [ Resize to Fit ]
+Open File [ Open hidden: ON ; "Inventory for Labeling" ]
+Open File [ Open hidden: ON ; "Labeling Database" ]
+// Open File [ Open hidden: ON ; "Boolean" ]
+Perform Script [ "Hide Window" ; Specified: From list ; File: "Inventory for Labeling" ; Parameter: ]
+Perform Script [ "Hide Window" ; Specified: From list ; File: "Labeling Database" ; Parameter: ]
+Select Window [ Name: "Labeling" ]
+

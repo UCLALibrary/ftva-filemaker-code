@@ -1,0 +1,44 @@
+<FieldCatalog>
+	<UUID modifications="5" userName="uae" accountName="uae" timestamp="2026-03-30T04:24:47">99D6D693-8FD9-4B48-9B85-52CC524A9D2E</UUID>
+	<BaseTableReference id="132" name="Languages"></BaseTableReference>
+	<ObjectList membercount="3">
+		<Field DefaultStyle="" id="1" name="PrimaryKey" fieldtype="Normal" datatype="Text" comment="Unique identifier of each record in this table">
+			<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-25T13:53:49">7994050B-B706-2146-A131-AFCA2CB707B6</UUID>
+			<AutoEnter type="Calculated" prohibitModification="True" overwriteExisting="True" alwaysEvaluate="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065115" name="Languages"></TableOccurrenceReference>
+						<Text><![CDATA[Get( UUID )]]></Text>
+						<ChunkList hash="F8FC751FEE733A347BA2266C54DEC7A0">
+							<Chunk type="FunctionRef">Get</Chunk>
+							<Chunk type="NoRef">( </Chunk>
+							<Chunk type="FunctionRef">UUID</Chunk>
+							<Chunk type="NoRef"> )</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="True" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Unicode" id="2"></LanguageReference>
+			</Storage>
+			<TagList primary="True">#^FMI* #_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="6" name="language_code" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T04:12:14">BE789EAE-3115-F748-9963-D455709B9D30</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="7" name="language_Display" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T04:23:43">A68A68AD-DD75-AD47-9A05-60147078BDFB</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

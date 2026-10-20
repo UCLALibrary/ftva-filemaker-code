@@ -1,0 +1,3 @@
+Perform Script [ "" ; Specified: From list ; File: "availability" ; Parameter: ]
+Select Window [ Name: "availability" ]
+

@@ -1,0 +1,8 @@
+Set Error Capture [ ON ]
+Enter Find Mode [ Pause: OFF ]
+Set Field [ Inventory for Labeling::digital_record ; Abs ( 1 ) ]
+Perform Find
+If [ Get ( FoundCount ) = 0 ]
+	Show Custom Dialog [ Title: "No records" ; Message: "There are no digital records" ; Default Button: "OK" ; Button 2: "Cancel" ]
+End If
+

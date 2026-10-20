@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Full" height="80" id="1065112" name="InventoryItem" type="External">
+	<UUID modifications="7" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">F37E40D5-7DB9-4F4D-AF8E-F7DD0E31B99D</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="51" name="ImageDB_Test"></DataSourceReference>
+		<BaseTableReference id="131" name="InventoryItem"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="198" left="862" bottom="324" right="993"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

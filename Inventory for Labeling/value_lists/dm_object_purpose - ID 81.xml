@@ -1,0 +1,7 @@
+<ValueList id="81" name="dm_object_purpose">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[Preservation (Full)Access (Core)Conservation (Minimal)]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:28:51">5C13E93A-A88A-8444-A446-C785F35C9DF8</UUID>
+</ValueList>

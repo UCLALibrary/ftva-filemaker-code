@@ -1,0 +1,6 @@
+If [ Inventory for Labeling::type="Newsreel" ]
+	Perform Script [ "Layout: Newsreels" ; Specified: From list ; Parameter: ]
+Else
+	Perform Script [ "Layout: General" ; Specified: From list ; Parameter: ]
+End If
+

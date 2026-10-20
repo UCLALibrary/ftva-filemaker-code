@@ -1,0 +1,4 @@
+Copy [ Select: ON ; Inventory for Labeling::inventory_no ]
+Perform Script [ "" ; Specified: From list ; File: "Traffic Record 2" ; Parameter: ]
+Select Window [ Name: "Traffic Record" ]
+

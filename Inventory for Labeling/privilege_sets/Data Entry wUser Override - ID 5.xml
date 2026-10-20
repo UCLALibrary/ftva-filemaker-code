@@ -1,0 +1,13 @@
+<PrivilegeSet id="5" name="Data Entry wUser Override">
+	<UUID modifications="4" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2026-05-21T03:56:08">2992C6F9-0DC7-2949-80C3-F144D031D095</UUID>
+	<Description></Description>
+	<access>
+		<Records Create="True" Edit="True" Delete="True"></Records>
+		<Layouts viewState="ReadOnly"></Layouts>
+		<ValueLists viewState="ReadOnly"></ValueLists>
+		<Scripts viewState="ReadOnly"></Scripts>
+		<Other value="26372" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="True" disconnectIdle="True" commands="All">
+			<Password prohibitModification="False"></Password>
+		</Other>
+	</access>
+</PrivilegeSet>

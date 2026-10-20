@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Full" height="262" id="1065099" name="Labeling Database_InvNo" type="External">
+	<UUID modifications="12" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">DD7CA21E-91B0-8C4C-A9CA-3854516F6B0A</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="1" name="Labeling Database"></DataSourceReference>
+		<BaseTableReference id="129" name="Labeling Database"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="167" left="1279" bottom="475" right="1429"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

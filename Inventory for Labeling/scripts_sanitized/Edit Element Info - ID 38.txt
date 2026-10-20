@@ -1,0 +1,3 @@
+Perform Script [ "Edit" ; Specified: From list ; File: "element_info" ; Parameter: ]
+Select Window [ Name: "element_info" ]
+

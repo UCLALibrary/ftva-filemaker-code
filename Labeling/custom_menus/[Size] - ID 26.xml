@@ -1,0 +1,15 @@
+<CustomMenu name="[Size]" id="26">
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">C4F4768A-0471-EE42-BA7A-216D8F6FDF8F</UUID>
+	<MenuItemList membercount="0"></MenuItemList>
+	<Conditions>
+		<Install>
+			<Calculation><![CDATA[1]]></Calculation>
+			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+				<Chunk type="NoRef">1</Chunk>
+			</ChunkList>
+		</Install>
+	</Conditions>
+	<Comment></Comment>
+	<Base name="Size" value="20"></Base>
+	<Options browseMode="True" findMode="True" previewMode="True"></Options>
+</CustomMenu>

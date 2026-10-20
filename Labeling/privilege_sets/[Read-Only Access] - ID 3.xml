@@ -1,0 +1,5 @@
+<PrivilegeSet id="3" name="[Read-Only Access]">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">7D1871F5-4A53-814F-9231-82F2FE2C6AA7</UUID>
+	<Description>read access to all records, no design access, write access to all global fields</Description>
+	<access default="True"></access>
+</PrivilegeSet>

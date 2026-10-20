@@ -1,0 +1,14 @@
+<Account id="6" kind="1" type="External" enable="True">
+	<UUID modifications="3" userName="" accountName="ssultan" timestamp="2025-03-05T10:55:38">BEFE027C-AF00-634F-805E-A4AE2DA9F0A2</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMReadOnly</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>Ek1sUPOoJZRuLw==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="3" name="[Read-Only Access]"></PrivilegeSetReference>
+</Account>

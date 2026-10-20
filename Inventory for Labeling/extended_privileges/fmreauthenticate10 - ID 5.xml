@@ -1,0 +1,7 @@
+<ExtendedPrivilege id="5" name="fmreauthenticate10">
+	<Description>Require re-authentication after the specified minutes in sleep/background.  Go only.</Description>
+	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2025-08-05T20:59:09">6542971E-8823-1C44-B8E3-1145090BF609</UUID>
+	<ObjectList membercount="1">
+		<PrivilegeSetReference id="6" name="FMAPI-ReadWrite-SystemsTeam"></PrivilegeSetReference>
+	</ObjectList>
+</ExtendedPrivilege>

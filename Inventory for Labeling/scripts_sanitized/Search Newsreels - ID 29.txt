@@ -1,0 +1,37 @@
+Set Error Capture [ ON ]
+Show All Records
+Perform Script [ "Layout: Search Newsreels" ; Specified: From list ; Parameter: ]
+Set Field [ Inventory for Labeling::found ; -1 ]
+Set Field [ Inventory for Labeling::search_error ; "" ]
+Set Field [ Inventory for Labeling::search_results ; "" ]
+Enter Find Mode [ Pause: OFF ]
+Set Field [ Inventory for Labeling::hearst_prefix ; Inventory for Labeling::hearst_prefix_search ]
+Set Field [ Inventory for Labeling::can ; Inventory for Labeling::hearst_can_vol_search ]
+Set Field [ Inventory for Labeling::roll ; Inventory for Labeling::hearst_roll_issue_search ]
+Set Field [ Inventory for Labeling::format Newsreels ; Inventory for Labeling::hearst_positive_negative_search ]
+New Record/Request
+Set Field [ Inventory for Labeling::hearst_prefix ; Inventory for Labeling::hearst_prefix_search ]
+Set Field [ Inventory for Labeling::volume ; Inventory for Labeling::hearst_can_vol_search ]
+Set Field [ Inventory for Labeling::issue ; Inventory for Labeling::hearst_roll_issue_search ]
+Set Field [ Inventory for Labeling::format Newsreels ; Inventory for Labeling::hearst_positive_negative_search ]
+Perform Find
+If [ Get(LastError)=401 or Get(LastError)=502 ]
+	Set Field [ Inventory for Labeling::found ; 0 ]
+	Set Field [ Inventory for Labeling::search_results ; "" ]
+	Set Field [ Inventory for Labeling::search_error ; "Item not found. Please try different search" ]
+	Go to Layout [ Layout: "Search Inventory (Newsreels)" ; Animation: None ]
+Else
+	Set Field [ Inventory for Labeling::found ; 1 ]
+	Set Field [ Inventory for Labeling::search_results ; If(GetAsNumber(Inventory for Labeling::found)=1; "Inventory Number: " & Inventory for Labeling::inventory_no & "¶¶" & "Title: " & Inventory for Labeling::title & "¶¶" & "Total Reels: "& GetAsNumber(Inventory for Labeling::total_reels) & "¶¶" & "Type: "& Inventory for Labeling::type; "") ]
+	If [ Inventory for Labeling::hearst_prefix="HNR" ]
+		Go to Layout [ Layout: "Search Inventory Results (Vol/Issue)" ; Animation: None ]
+		Refresh Window
+	Else
+		Go to Layout [ Layout: "Search Inventory Results (Can/Roll)" ; Animation: None ]
+		Refresh Window
+	End If
+	Sort Records [ With dialog: OFF ; Restore ; Sort order: Inventory for Labeling::hearst_prefix (Ascending), Inventory for Labeling::can (Ascending), Inventory for Labeling::roll (Ascending), Inventory for Labeling::neg_no (Ascending) ; Keep records in sorted order ]
+	Go to Record/Request/Page [ First ]
+	View As [ View as List ]
+End If
+

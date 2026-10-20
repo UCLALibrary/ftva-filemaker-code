@@ -1,0 +1,29 @@
+<Script>
+	<ScriptReference id="78" name="open url"></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="111" name="Open URL" enable="True">
+			<Options>16512</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="URL">
+					<URL autoEncode="True">
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA[Inventory for Labeling::orion]]></Text>
+								<ChunkList hash="89FB4A905E980838B1E5A636E721EC6E">
+									<Chunk type="FieldRef">
+										<FieldReference id="96" name="orion" repetition="1">
+											<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+										</FieldReference>
+									</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</URL>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

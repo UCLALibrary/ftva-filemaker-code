@@ -1,0 +1,7 @@
+Set Variable [ $Text ; Get (ActiveFieldContents) ]
+Set Variable [ $Text ; Substitute ( Trim ( $Text ) ; ["  " ; " " ]; ["  ";" "]; ["  "; " "]) ]
+If [ not PatternCount ( "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+-={}|[]\:;'<>?,./"; Right ($Text;1)) ]
+	Set Variable [ $Text ; Left ($Text; Length ($Text)-1) ]
+End If
+Set Field [  ; $Text ]
+

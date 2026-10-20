@@ -1,0 +1,7 @@
+<ValueList id="70" name="dm_project_type">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[RestorationDigitizationCuratorial Research]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:26:47">B052249E-96EE-3A43-B616-8E2B46CD308C</UUID>
+</ValueList>

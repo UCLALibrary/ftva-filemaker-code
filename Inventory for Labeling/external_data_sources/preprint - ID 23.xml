@@ -1,0 +1,6 @@
+<ExternalDataSource name="preprint" type="FileMaker" id="23">
+	<File>
+		<UniversalPathList>file:preprint</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">85D1F698-5B4B-8F42-8576-274037E75944</UUID>
+</ExternalDataSource>

@@ -1,0 +1,7 @@
+<ValueList id="83" name="dm_source_format">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[35mm16mmS16mm8mmS8mm19mm28mm9.5mmAudio Cassette TapeAudio ReelBetacamBetacam SPBetamaxBlu-RayCDCD-ROMD1D1D2D3D5DATDA-88DA-98DA-120Digital BetacamDigital 8DLTDTRSDTSDV CAMDVCProDVDFloppy DiscHard Disc CartridgeHard DriveHD CAMHD CAM SRHI-8Laaser OpticalLTOLTO-4LTO-5LTO-6LTO-7LTO-8MiniDVMagnetic Optical DiscS-VHSTranscription DiscV-32VC 60 VideocassetteVHSVHS CVIDEO-8U-matic1� Videoreel2� VideoreelVideotapeVitaphone DiscXDCAM HD]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:29:16">7C9F702A-09B0-C24F-B66A-FD0D36B95512</UUID>
+</ValueList>
