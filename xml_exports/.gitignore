@@ -1,0 +1,2 @@
+# Ignore XML files, but only in the current directory.
+*.xml
