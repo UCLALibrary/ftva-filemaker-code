@@ -9,7 +9,8 @@ Code (mostly scripts) extracted from FTVA Filemaker systems, and related documen
     2. Inventory for Labeling (after switching to the general entry layout). Note that several database files are reported as not found. These are OK: apparently they are references to former databases, but are no longer used.
 3. Save the production XML exports in this repository's `xml_exports/prod_adam/` directory. 
     1. Exports from the test system should go in `xml_exports/test_eve/`.  These should be used only for comparison, being sure not to overwrite any production files here or in later steps.
-    2. XML files in `xml_exports/` are not tracked in this repository.
+    2. Export files from the test system may be parsed for comparison with production, but must not be commited to the `main` branch.  Use these only in working branches and be careful not to replace production files with test files.
+    3. XML files in `xml_exports/` are not tracked in this repository.
 4. Use [FileMaker XML Export Exploder](https://github.com/bc-m/fm-xml-export-exploder) to parse the exported XML into separate files.  These are mainly in two formats:
     1. XML: Individual files for each component (scripts, schemas, and more).
     2. TXT: Individual files for each script, in readable format parsed from the native Filemaker XML.
