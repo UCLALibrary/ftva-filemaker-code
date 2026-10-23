@@ -1,0 +1,6 @@
+Go to Layout [ Layout: "ALL FIELDS" ; Animation: None ]
+Enter Find Mode [ Pause: OFF ]
+Show All Records
+Go to Layout [ Layout: "Dan's Starting Page" ; Animation: None ]
+Show/Hide Toolbars [ Lock: OFF ; Include Edit Record Toolbar: OFF ; Show ]
+

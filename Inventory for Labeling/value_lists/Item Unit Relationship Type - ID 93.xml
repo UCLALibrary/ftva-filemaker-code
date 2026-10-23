@@ -1,0 +1,17 @@
+<ValueList id="93" name="Item Unit Relationship Type">
+	<Source value="FromField"></Source>
+	<Field>
+		<PrimaryField show="False" sort="False">
+			<FieldReference id="1" name="PrimaryKey">
+				<TableOccurrenceReference id="1065121" name="ItemUnitRelationshipType"></TableOccurrenceReference>
+			</FieldReference>
+		</PrimaryField>
+		<SecondaryField show="True" sort="True">
+			<FieldReference id="6" name="type">
+				<TableOccurrenceReference id="1065121" name="ItemUnitRelationshipType"></TableOccurrenceReference>
+			</FieldReference>
+		</SecondaryField>
+		<ShowRelated value="False"></ShowRelated>
+	</Field>
+	<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T11:19:29">0E677256-A6CA-734D-BF4B-007DBCB6BDE9</UUID>
+</ValueList>

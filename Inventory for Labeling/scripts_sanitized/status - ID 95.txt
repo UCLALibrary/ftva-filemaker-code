@@ -1,0 +1,4 @@
+Perform Script [ "" ; Specified: From list ; File: "Traffic Record" ; Parameter: ]
+Select Window
+Insert Calculated Result [ Select: ON ; Target: <Table Missing>::🚨🚨🚨 <BROKEN REFERENCE> 🚨🚨🚨 ]
+

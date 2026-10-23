@@ -1,0 +1,6 @@
+<ExternalDataSource name="availability" type="FileMaker" id="20">
+	<File>
+		<UniversalPathList>file:availability</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">DF81A730-05EB-C641-B118-AE28AAAE97E2</UUID>
+</ExternalDataSource>

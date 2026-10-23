@@ -1,0 +1,15 @@
+<CustomMenu name="[Import Records]" id="13">
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">FC50004E-56F0-2B4A-BE6E-F7FAE98CB7D0</UUID>
+	<MenuItemList membercount="0"></MenuItemList>
+	<Conditions>
+		<Install>
+			<Calculation><![CDATA[1]]></Calculation>
+			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+				<Chunk type="NoRef">1</Chunk>
+			</ChunkList>
+		</Install>
+	</Conditions>
+	<Comment></Comment>
+	<Base name="Import Records" value="155"></Base>
+	<Options browseMode="True" findMode="True" previewMode="True"></Options>
+</CustomMenu>

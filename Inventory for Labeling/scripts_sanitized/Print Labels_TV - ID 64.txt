@@ -1,0 +1,4 @@
+Go to Related Record [ Table: Labeling Database_InvID ; Layout: <original layout> ; Show related ]
+Perform Script [ "Print Television Label" ; Specified: From list ; File: "Labeling Database 2" ; Parameter: ]
+// Select Window [ Name: "Labeling Database" ]
+

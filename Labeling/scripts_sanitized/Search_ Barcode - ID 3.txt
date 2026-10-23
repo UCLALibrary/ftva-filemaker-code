@@ -1,0 +1,4 @@
+Perform Script [ "Intialize search string" ; Specified: From list ; File: "Labeling Database 2" ; Parameter: ]
+Perform Script [ "Layout: Search" ; Specified: From list ; File: "Labeling Database" ; Parameter: ]
+Select Window [ Name: "Labeling Database" ]
+

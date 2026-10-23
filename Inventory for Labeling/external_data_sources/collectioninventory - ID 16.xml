@@ -1,0 +1,6 @@
+<ExternalDataSource name="collectioninventory" type="FileMaker" id="16">
+	<File>
+		<UniversalPathList>file:collectioninventory</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">DECED134-DBFD-3647-AC76-50C8F0D6666C</UUID>
+</ExternalDataSource>

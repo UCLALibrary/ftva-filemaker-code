@@ -1,0 +1,7 @@
+<ValueList id="66" name="DetStage">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[Stage 1Stage 2Stage 3Stage 4]]></Text>
+	</CustomValues>
+	<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-30T05:20:18">7D729E38-4AF3-2C4B-807E-F0562A53A299</UUID>
+</ValueList>

@@ -1,0 +1,3 @@
+Perform Script [ "Open Finding Aids" ; Specified: From list ; File: "Inventory for Labeling" ; Parameter: ]
+Select Window [ Name: "Inventory for Labeling" ]
+

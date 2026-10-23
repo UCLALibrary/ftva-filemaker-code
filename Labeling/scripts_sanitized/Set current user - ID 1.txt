@@ -1,0 +1,2 @@
+Set Field [ Labeling::current_user ; Get(UserName) ]
+

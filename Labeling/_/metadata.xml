@@ -1,0 +1,25 @@
+<Metadata membercount="1">
+	<AddAction membercount="7">
+		<Encryption type="0"></Encryption>
+		<Minimum version="12.0" value="1208"></Minimum>
+		<Login type="1">
+			<UserName>
+				<INSECURE_TEXT></INSECURE_TEXT>
+			</UserName>
+			<INSECURE_PASSWORD>
+				<INSECURE_TEXT></INSECURE_TEXT>
+			</INSECURE_PASSWORD>
+		</Login>
+		<SavePassword keychain="True" requireMobile="False"></SavePassword>
+		<ShowSignInFields enable="False"></ShowSignInFields>
+		<Text>
+			<Handle smartQuotes="True" asian="True" roman="True" overwriteAsian="False"></Handle>
+			<DataEntry name="Ask" type="512"></DataEntry>
+		</Text>
+		<ScriptTriggers membercount="1">
+			<ScriptTrigger id="201" action="OnFirstWindowOpen" browseMode="True">
+				<ScriptReference id="2" name="Initialize"></ScriptReference>
+			</ScriptTrigger>
+		</ScriptTriggers>
+	</AddAction>
+</Metadata>

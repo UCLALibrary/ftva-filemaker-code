@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="80" id="1065115" name="Languages" type="Local">
+	<UUID modifications="3" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">88CDFC93-A20A-334B-96F5-BE85A2366425</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="132" name="Languages"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="610" left="1685" bottom="721" right="1816"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

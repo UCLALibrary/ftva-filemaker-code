@@ -1,0 +1,13 @@
+Set Variable [ $Path ;  ]
+Set Variable [ $sysPath ;  ]
+Insert File [ Dialog title: "Choose File" ; Storage: Reference ; Display:  ; Compress: Never compress ; Target: $FMFilePath ]
+Set Variable [ $Path ; GetAsText ( $FMFilePath ) ]
+Set Variable [ $OSPath ; GetValue ( $Path ; ValueCount ( $Path ) ) ]
+If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
+	Set Variable [ $sysPath ; Substitute ( $OSPath ; "filewin:/" ; "" ) ]
+	Set Variable [ $sysPath ; Substitute ( $sysPath ; "/" ; "\\" ) ]
+Else If [ PatternCount ( $FMFilePath ; "filemac:" ) ]
+	Show Custom Dialog [ Title: "Not Supported" ; Message: "This has to be done on a Windows computer. Mac OS not supported yet." ; Default Button: "OK" ; Button 2: "Cancel" ]
+End If
+Set Field [ Inventory for Labeling::🚨🚨🚨 <BROKEN REFERENCE> 🚨🚨🚨 ; $sysPath ]
+

@@ -1,0 +1,30 @@
+<FieldCatalog>
+	<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+	<ObjectList membercount="1">
+		<Field>
+			<FieldReference id="235" name="digital_record_calc" repetition="1">
+				<Calculation>
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					<Text><![CDATA[Case ( digital_record = 0 ; "Analog Record";digital_record = 1 ; "Digital Record";"Not defined")]]></Text>
+					<ChunkList hash="11B60B6E83B046D06B0EFBF20B1C4819">
+						<Chunk type="FunctionRef">Case</Chunk>
+						<Chunk type="NoRef"> ( &#13;</Chunk>
+						<Chunk type="FieldRef">
+							<FieldReference id="198" name="digital_record" repetition="1">
+								<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+							</FieldReference>
+						</Chunk>
+						<Chunk type="NoRef"> = 0 ; &quot;Analog Record&quot;;&#13;</Chunk>
+						<Chunk type="FieldRef">
+							<FieldReference id="198" name="digital_record" repetition="1">
+								<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+							</FieldReference>
+						</Chunk>
+						<Chunk type="NoRef"> = 1 ; &quot;Digital Record&quot;;&#13;&quot;Not defined&quot;&#13;)</Chunk>
+					</ChunkList>
+				</Calculation>
+				<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+			</FieldReference>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

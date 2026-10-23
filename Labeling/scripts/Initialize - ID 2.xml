@@ -1,0 +1,125 @@
+<Script>
+	<ScriptReference id="2" name="Initialize"></ScriptReference>
+	<ObjectList membercount="10">
+		<Step id="115" name="Allow Formatting Bar" enable="True">
+			<Options>65536</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="29" name="Show/Hide Toolbars" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Lock" id="524288" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Include Edit Record Toolbar" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="List">
+					<List name="Hide" value="2"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="92" name="Show/Hide Text Ruler" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Hide" value="2"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="31" name="Adjust Window" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Resize to Fit" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="33" name="Open File" enable="True">
+			<Options>272</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Open hidden" id="256" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="1" name="Inventory for Labeling"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="33" name="Open File" enable="True">
+			<Options>272</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Open hidden" id="256" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="2" name="Labeling Database"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="33" name="Open File" enable="False">
+			<Options>272</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Open hidden" id="256" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="5" name="Boolean"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="1" name="Inventory for Labeling"></DataSourceReference>
+						<ScriptReference id="25" name="Hide Window"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="2" name="Labeling Database"></DataSourceReference>
+						<ScriptReference id="26" name="Hide Window"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="1" type="Calculated">
+							<Name current="False">
+								<Calculation datatype="1" position="0">
+									<Calculation>
+										<Text><![CDATA["Labeling"]]></Text>
+										<ChunkList hash="98E383E8004A38B016337EC6D8716F8C">
+											<Chunk type="NoRef">&quot;Labeling&quot;</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</Name>
+						</Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

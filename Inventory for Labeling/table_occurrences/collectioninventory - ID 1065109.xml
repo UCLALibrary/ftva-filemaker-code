@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Full" height="80" id="1065109" name="collectioninventory" type="External">
+	<UUID modifications="5" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">02619110-D8C7-7E48-852F-9FFF681C7A17</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="16" name="collectioninventory"></DataSourceReference>
+		<BaseTableReference id="129" name="collectioninventory"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="184" left="1455" bottom="295" right="1586"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

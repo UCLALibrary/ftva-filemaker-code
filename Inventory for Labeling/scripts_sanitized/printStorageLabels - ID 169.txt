@@ -1,0 +1,19 @@
+Allow User Abort [ OFF ]
+Set Error Capture [ ON ]
+Freeze Window
+Set Variable [ $recID ; StorageFormat::Inventory_number ]
+New Window [ Style: Dialog ; Name: "Print Storage Label" ; Layout: "StorageFormat_labels" ; Minimize: OFF ; Maximize: OFF ; Menu: OFF ; Toolbar: OFF ]
+
+Enter Find Mode [ Pause: OFF ]
+Set Field [ StorageFormat::Inventory_number ; $recID ]
+Perform Find
+If [ Get ( LastError ) = 0 and Get ( FoundCount ) =1 ]
+	Go to Record/Request/Page [ First ]
+	Print Setup [ Restore ; With dialog: ON ; Orientation: Portrait ; Paper size: 2.36" x 0.5" ]
+	Print [ With dialog: ON ; Restore ; Records being browsed ; All pages ; Orientation: Portrait ; Paper size: 2.36" x 0.5" ]
+Else
+	Show Custom Dialog [ Title: "Print Label" ; Message: "Could not find the current record on the label layout." ; Default Button: "OK" ]
+End If
+
+Close Window
+

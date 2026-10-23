@@ -1,0 +1,6 @@
+<ExternalDataSource name="Inventory for Labeling 2" type="FileMaker" id="4">
+	<File>
+		<UniversalPathList>file:Inventory for Labeling</UniversalPathList>
+	</File>
+	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">7003FA18-DBF8-9D48-A8E0-AF884D303308</UUID>
+</ExternalDataSource>

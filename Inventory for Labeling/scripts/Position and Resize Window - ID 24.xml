@@ -1,0 +1,43 @@
+<Script>
+	<ScriptReference id="24" name="Position and Resize Window"></ScriptReference>
+	<ObjectList membercount="4">
+		<Step id="30" name="View As" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="View as Form" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="31" name="Adjust Window" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Restore" value="4"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="92" name="Show/Hide Text Ruler" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Hide" value="2"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="29" name="Show/Hide Toolbars" enable="True">
+			<Options>524290</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Lock" id="524288" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Include Edit Record Toolbar" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="List">
+					<List name="Hide" value="2"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

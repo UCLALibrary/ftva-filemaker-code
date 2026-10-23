@@ -1,0 +1,8 @@
+Go to Layout [ Layout: "Newsreel Layout" ; Animation: None ]
+Loop
+	Go to Field [ Select/perform ; Labeling Database_InvID::barcode_item ]
+	Copy [ Select: ON ; Labeling Database_InvID::barcode_item ]
+	Paste [ Select: ON ; No style: OFF ; Inventory for Labeling::type ]
+	Go to Record/Request/Page [ Next ; Exit after last: ON ]
+End Loop
+

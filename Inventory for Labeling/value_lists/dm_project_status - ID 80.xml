@@ -1,0 +1,7 @@
+<ValueList id="80" name="dm_project_status">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[In ProgressCompleted]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:28:38">7BD89E74-CE8A-7E47-AD42-6A50E470A563</UUID>
+</ValueList>

@@ -1,0 +1,25 @@
+<Relationship id="13">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T06:22:38">C230ABE5-A6E2-6B43-BBC6-BFB948D15EB3</UUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</LeftTable>
+	<RightTable cascadeCreate="True" cascadeDelete="True" type="Local">
+		<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="1" name="Inventory_number">
+					<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="14" name="Carrier_id_FK">
+					<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

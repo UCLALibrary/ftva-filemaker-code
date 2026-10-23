@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="84" id="1065089" name="Labeling" type="Local">
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">BD380BB2-0D06-4844-9DCC-FEDE289B0A2E</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="129" name="Labeling"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="20" left="20" bottom="21" right="170"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

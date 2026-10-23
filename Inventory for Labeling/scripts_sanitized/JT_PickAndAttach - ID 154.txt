@@ -1,0 +1,5 @@
+Set Variable [ $$INV_ID ; Inventory for Labeling::inventory_id ]
+New Window [ Style: Card ; Name: "Pick Carrier" ; Layout: "SF_Picker_List" ; Height: 500 ; Minimize: OFF ; Maximize: OFF ; Resize: OFF ; Menu: OFF ; Toolbar: OFF ]
+Refresh Window
+Set Field [ SearchGlobals::gSF_Query ; "" ]
+

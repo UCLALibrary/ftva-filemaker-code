@@ -1,0 +1,131 @@
+<FieldCatalog>
+	<UUID modifications="11" userName="uae" accountName="uae" timestamp="2026-05-12T14:38:12">C284942F-F291-D544-A2BD-2938C1C30C98</UUID>
+	<BaseTableReference id="133" name="StorageFormat"></BaseTableReference>
+	<ObjectList membercount="12">
+		<Field DefaultStyle="" id="1" name="Inventory_number" fieldtype="Normal" datatype="Text" comment="Unique identifier of each record in this table">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-30T04:16:33">C5B916CB-3EA4-8B40-85EA-0E92D42CC1C7</UUID>
+			<AutoEnter type="Calculated" prohibitModification="True" overwriteExisting="True" alwaysEvaluate="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						<Text><![CDATA["SF" & Right ( "00000" & serial_id ; 5 )]]></Text>
+						<ChunkList hash="354F879500DAEBE964A323A1800558F0">
+							<Chunk type="NoRef">&quot;SF&quot; &amp; </Chunk>
+							<Chunk type="FunctionRef">Right</Chunk>
+							<Chunk type="NoRef"> ( &quot;00000&quot; &amp; </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="6" name="serial_id" repetition="1">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> ; 5 )</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+			</AutoEnter>
+			<Validation type="Always" allowOverride="False" notEmpty="True" unique="True" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="Unicode" id="2"></LanguageReference>
+			</Storage>
+			<TagList primary="True">#^FMI* #_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="2" name="CreationTimestamp" fieldtype="Normal" datatype="Timestamp" comment="Date and time each record was created">
+			<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-25T13:53:58">09319E75-7DB1-DB49-89B9-588724F53E9D</UUID>
+			<AutoEnter type="CreationTimestamp" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="3" name="CreatedBy" fieldtype="Normal" datatype="Text" comment="Account name of the user who created each record">
+			<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-25T13:53:58">9F6E7987-2269-024D-B0C4-52FCC5614CC4</UUID>
+			<AutoEnter type="CreationAccountName" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="4" name="ModificationTimestamp" fieldtype="Normal" datatype="Timestamp" comment="Date and time each record was last modified">
+			<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-25T13:53:58">98BC08A2-A371-D74C-A4F7-AE6773193FF5</UUID>
+			<AutoEnter type="ModificationTimestamp" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="5" name="ModifiedBy" fieldtype="Normal" datatype="Text" comment="Account name of the user who last modified each record">
+			<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-25T13:53:58">5FB098DE-79DA-1842-9F0F-4D4BF2440E90</UUID>
+			<AutoEnter type="ModificationAccountName" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="6" name="serial_id" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T04:18:49">1D0E0EAE-BF90-A446-8617-7328E7A010F6</UUID>
+			<AutoEnter type="SerialNumber" prohibitModification="False">
+				<SerialNumber increment="1" generate="OnCreation"></SerialNumber>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="8" name="Barcode" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T04:18:49">A03D7D25-7212-0F45-8132-01C324A8948D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="9" name="Location" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-30T04:18:49">F22706BD-E32D-944B-92D4-28858E13E693</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="Always" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="11" name="Home Location" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T04:18:49">F5B1C098-BB02-5449-A737-78405B2717FF</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="12" name="Inventory_id_fk" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T04:24:05">7ACE5AF2-6B7D-FB4D-A260-59E20EAD55F1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="13" name="Inventory_no_fk" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T04:24:10">E7384164-21DE-2F4A-9CC5-632A9773584E</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="14" name="storage_format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T04:18:49">8CD30D87-97F0-0E41-834F-486970FCCBC1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

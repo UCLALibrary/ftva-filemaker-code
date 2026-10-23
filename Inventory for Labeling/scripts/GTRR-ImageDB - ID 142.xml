@@ -1,0 +1,187 @@
+<Script>
+	<ScriptReference id="142" name="GTRR-ImageDB"></ScriptReference>
+	<ObjectList membercount="10">
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get( UserName)]]></Text>
+								<ChunkList hash="AADB87CFC9E6933F1963C013839F3350">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef">( </Chunk>
+									<Chunk type="FunctionRef">UserName</Chunk>
+									<Chunk type="NoRef">)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$CurrentUser"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( InventoryItem::InventoryID_FK )]]></Text>
+							<ChunkList hash="34A1BB8C28A3BBD7399A78C82E6EE4FE">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="1" name="InventoryID_FK" repetition="1">
+										<TableOccurrenceReference id="1065112" name="InventoryItem"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[$$CurrentUser = "Ssultan"  or $$CurrentUser = "lfuguet" or $$CurrentUser = "Shogsett"]]></Text>
+							<ChunkList hash="B7612822C235133C2FDCFD1326CB2384">
+								<Chunk type="VariableReference">$$CurrentUser</Chunk>
+								<Chunk type="NoRef"> = &quot;Ssultan&quot;  </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">$$CurrentUser</Chunk>
+								<Chunk type="NoRef"> = &quot;lfuguet&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">$$CurrentUser</Chunk>
+								<Chunk type="NoRef"> = &quot;Shogsett&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="1" name="InventoryID_FK">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065112" name="InventoryItem"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Inventory for Labeling::inventory_id]]></Text>
+							<ChunkList hash="F9E9D4914FBB816A2AABEBBF4025B686">
+								<Chunk type="FieldRef">
+									<FieldReference id="20" name="inventory_id" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="75" name="Commit Records/Requests" enable="True">
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Skip data entry validation" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Force Commit" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="69" name="Else" enable="True">
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16389</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Oops!"]]></Text>
+							<ChunkList hash="F06C758FA872C1AB26E30AE4271143E6">
+								<Chunk type="NoRef">&quot;Oops!&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["sorry no images yet"]]></Text>
+							<ChunkList hash="8EF1A8296BC85EABEBBEC2AFF1922FDE">
+								<Chunk type="NoRef">&quot;sorry no images yet&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="74" name="Go to Related Record" enable="True">
+			<Options>33685768</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Related">
+					<TableOccurrenceReference id="1065112" name="InventoryItem"></TableOccurrenceReference>
+					<LayoutReferenceContainer External="True" value="5">
+						<DataSourceReference id="51" name="ImageDB_Test"></DataSourceReference>
+						<LayoutReference id="11" name="AddImages Copy"></LayoutReference>
+					</LayoutReferenceContainer>
+					<WindowReference>
+						<Style name="Document" value="2148467202"></Style>
+						<Name></Name>
+						<LayoutReferenceContainer value="5">
+							<DataSourceReference id="51" name="ImageDB_Test"></DataSourceReference>
+							<LayoutReference id="11" name="AddImages Copy"></LayoutReference>
+						</LayoutReferenceContainer>
+						<Bounds>
+							<height></height>
+							<width></width>
+							<top></top>
+							<left></left>
+						</Bounds>
+						<Options value="2148467202">
+							<Close>True</Close>
+							<Minimize>True</Minimize>
+							<Maximize>True</Maximize>
+							<Resize>True</Resize>
+							<MenuBar>False</MenuBar>
+							<Toolbar>False</Toolbar>
+							<DimParentWindow>False</DimParentWindow>
+						</Options>
+					</WindowReference>
+					<Options ShowRelated="True"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

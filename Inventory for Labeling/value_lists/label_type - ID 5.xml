@@ -1,0 +1,7 @@
+<ValueList id="5" name="label_type">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[NumberedA/B]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">E65A2F35-A3AD-5648-A602-0CE30C23A28E</UUID>
+</ValueList>

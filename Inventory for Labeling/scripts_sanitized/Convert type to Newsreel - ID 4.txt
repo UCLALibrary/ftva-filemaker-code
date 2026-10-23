@@ -1,0 +1,10 @@
+Show Custom Dialog [ Title: "Message" ; Message: "Are you sure you want change this item to be a Newsreel item? This will clear any data entered as a General Collection item." ; Default Button: "Change" ; Button 2: "Leave" ]
+If [ Get(LastMessageChoice)=1 ]
+	Set Field [ Inventory for Labeling::type ; "Newsreel" ]
+	Set Field [ Inventory for Labeling::episode_title ; "" ]
+	Set Field [ Inventory for Labeling::element_info ; "" ]
+	Set Field [ Inventory for Labeling::donor_code ; "" ]
+	Go to Layout [ Layout: "🚨🚨🚨 <BROKEN REFERENCE> 🚨🚨🚨" ; Animation: None ]
+	Adjust Window [ Resize to Fit ]
+End If
+

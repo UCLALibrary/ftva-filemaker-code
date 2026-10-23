@@ -1,0 +1,105 @@
+<Layout id="95" name="StorageFormat_labels" width="152">
+	<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="1">
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="36" absolute="0" Options="1024"></Definition>
+			<ObjectList membercount="2">
+				<LayoutObject id="1" type="Text" name="" kind="2">
+					<Bounds top="4" left="7" bottom="34" right="717"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<Options>10</Options>
+						<StyledText>
+							<Data><![CDATA[*<<Inventory_number>>*]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-family: -fm-font-family(Free 3 of 9 Extended,Free 3 of 9 Extended);
+	font-size: 36pt;
+	color: rgba(15.6863%,15.6863%,15.6863%,1);
+}
+self:normal .icon
+{
+	background-position: center top;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList>
+						<FieldReference id="1" name="Inventory_number" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+					</FieldList>
+				</LayoutObject>
+				<LayoutObject id="2" type="Text" name="" kind="2">
+					<Bounds top="19" left="12" bottom="36" right="148"></Bounds>
+					<Options>2952790016</Options>
+					<Text>
+						<Options>10</Options>
+						<StyledText>
+							<Data><![CDATA[<<Inventory_number>>]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-image: none;
+	background-color: rgba(100%,100%,100%,1);
+	border-top-right-radius: 1pt 1pt;
+	border-bottom-right-radius: 1pt 1pt;
+	border-bottom-left-radius: 1pt 1pt;
+	border-top-left-radius: 1pt 1pt;
+	border-image-source: none;
+	font-family: -fm-font-family(Arial,Arial-BoldMT);
+	font-weight: bold;
+	color: rgba(15.6863%,15.6863%,15.6863%,1);
+}
+self:normal .icon
+{
+	background-position: center top;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<FieldList>
+						<FieldReference id="1" name="Inventory_number" repetition="1">
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</FieldReference>
+					</FieldList>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<UUID modifications="16" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2026-07-09T16:35:37">B244D2CA-0C28-2A4B-AD65-837699525B69</UUID>
+	<ClientType>3</ClientType>
+	<Options hidden="False">15927819</Options>
+</Layout>

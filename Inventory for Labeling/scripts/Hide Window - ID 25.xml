@@ -1,0 +1,13 @@
+<Script>
+	<ScriptReference id="25" name="Hide Window"></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="31" name="Adjust Window" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Hide" value="5"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

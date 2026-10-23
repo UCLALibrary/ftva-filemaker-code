@@ -1,0 +1,6 @@
+<ExternalDataSource name="protection" type="FileMaker" id="32">
+	<File>
+		<UniversalPathList>file:protection&#13;file:/P:/UCLA FM Databases/protection</UniversalPathList>
+	</File>
+	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">20633902-04AB-134C-A556-E2511F174654</UUID>
+</ExternalDataSource>

@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="80" id="1065089" name="Inventory for Labeling" type="Local">
+	<UUID modifications="35" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">E94A756A-E8E5-F942-8A2B-75CF905C3DDC</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="32" left="660" bottom="184" right="810"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

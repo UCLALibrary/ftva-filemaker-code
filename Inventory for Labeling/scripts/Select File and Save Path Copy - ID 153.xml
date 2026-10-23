@@ -1,0 +1,4176 @@
+<Script>
+	<ScriptReference id="153" name="Select File and Save Path Copy"></ScriptReference>
+	<ObjectList membercount="206">
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+								<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+									<Chunk type="NoRef">1</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="86" name="Set Error Capture" enable="True">
+			<Options>196608</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="85" name="Allow User Abort" enable="True">
+			<Options>65536</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::inventory_id )]]></Text>
+							<ChunkList hash="C5E79DD22AB8CB42E50877FEE0222775">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="20" name="inventory_id" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["No Record"]]></Text>
+							<ChunkList hash="A4D58D4C44B0D33001E6BF2F5DD9DAAC">
+								<Chunk type="NoRef">&quot;No Record&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["Create or select an Inventory Record first."]]></Text>
+							<ChunkList hash="DEF5E28D862F2A6E2207392252650DE7">
+								<Chunk type="NoRef">&quot;Create or select an Inventory Record first.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value></value>
+					<Name value="$Path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value></value>
+					<Name value="$sysPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="145" name="Go to Object" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Object">
+					<Name>
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA["Portal_DM_Items"]]></Text>
+								<ChunkList hash="4FD9D43C24D2C99D075B6A4C117E4FBD">
+									<Chunk type="NoRef">&quot;Portal_DM_Items&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="131" name="Insert File" enable="True">
+			<Options>51717</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Options">
+					<Options type="Title">
+						<Title>
+							<Calculation datatype="1" position="0">
+								<Calculation>
+									<Text><![CDATA["Choose File"]]></Text>
+									<ChunkList hash="F0BAA3FF78F622F3F52E838BFB4E7572">
+										<Chunk type="NoRef">&quot;Choose File&quot;</Chunk>
+									</ChunkList>
+								</Calculation>
+							</Calculation>
+						</Title>
+					</Options>
+					<Options type="Filters">
+						<Filters size="1">
+							<Filter extension="*.3g2; *.3gp; *.aac; *.aiff; *.amv; *.asf; *.avi; *.dpx; *.f4v; *.flac; *.flv; *.gifv; *.m2ts; *.m4a; *.m4v; *.mkv; *.mng; *.mov; *.mp3; *.mp4; *.mpg; *.mpeg; *.mts; *.mxf; *.nsv; *.ogg; *.rm; *.rmvb; *.roq; *.svi; *.ts; *.viv; *.vob; *.vtt; *.wav; *.webm; *.wma; *.wmv; *.yuv">
+								<Calculation>
+									<Text><![CDATA["Digital Media"]]></Text>
+									<ChunkList hash="2C74BE43075ABBA60ADCE825EF27FF33">
+										<Chunk type="NoRef">&quot;Digital Media&quot;</Chunk>
+									</ChunkList>
+								</Calculation>
+							</Filter>
+						</Filters>
+					</Options>
+					<Options type="Storage">
+						<Storage name="Reference" value="1"></Storage>
+					</Options>
+					<Options type="Display">
+						<Display name="" value="0"></Display>
+					</Options>
+					<Options type="Compress">
+						<Compress name="Never compress" value="1"></Compress>
+					</Options>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$FMFilePath">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[GetAsText ( $FMFilePath )]]></Text>
+								<ChunkList hash="AF16899C2FD64B45CEA76E22E622A805">
+									<Chunk type="FunctionRef">GetAsText</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$FMFilePath</Chunk>
+									<Chunk type="NoRef"> )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$Path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[GetValue ( $Path ; ValueCount ( $Path ) )]]></Text>
+								<ChunkList hash="A4C378D8FF325D414D48D5AB37A95574">
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$Path</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="FunctionRef">ValueCount</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$Path</Chunk>
+									<Chunk type="NoRef"> ) )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$OSPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[PatternCount ( $FMFilePath ; "filewin:" )]]></Text>
+							<ChunkList hash="527FC0FA6FB7E88FD06BD06FAC9FBAD7">
+								<Chunk type="FunctionRef">PatternCount</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$FMFilePath</Chunk>
+								<Chunk type="NoRef"> ; &quot;filewin:&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( $OSPath ; "filewin:/" ; "" )]]></Text>
+								<ChunkList hash="8CC7E375654263AEAA3BA4ED8BDC53F7">
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$OSPath</Chunk>
+									<Chunk type="NoRef"> ; &quot;filewin:/&quot; ; &quot;&quot; )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$sysPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( $sysPath ; "/" ; "\\" )]]></Text>
+								<ChunkList hash="5CFC55486081B740A8EE7C02AF43A723">
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$sysPath</Chunk>
+									<Chunk type="NoRef"> ; &quot;/&quot; ; &quot;\\&quot; )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$sysPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[GetAsText ( $sysPath )]]></Text>
+								<ChunkList hash="FA2411C54C5B932B4CC4EC716AA1CC38">
+									<Chunk type="FunctionRef">GetAsText</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$sysPath</Chunk>
+									<Chunk type="NoRef"> )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$uri"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( $uri )]]></Text>
+							<ChunkList hash="C8DF80BC298DEFEB67C3AEC1CEBEF8F4">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$uri</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Nothing Selected"]]></Text>
+							<ChunkList hash="74A0982E502CB69C002C2005CA0C0AB7">
+								<Chunk type="NoRef">&quot;Nothing Selected&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( Substitute ( $uri ; "filewin:"; ""); "/" ; "\\" )]]></Text>
+								<ChunkList hash="D6BEF4798CFD7BBD3AE0D4E3215E8F78">
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$uri</Chunk>
+									<Chunk type="NoRef"> ; &quot;filewin:&quot;; &quot;&quot;); &quot;/&quot; ; &quot;\\&quot; )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$path_text"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[GetValue ( Substitute ( $path_text ; "\\" ; "¶"); ValueCount ( Substitute ( $path_text; "\\" ; "¶") ))]]></Text>
+								<ChunkList hash="86C3EA79D3C06B7EFD4C5C5D1531B600">
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$path_text</Chunk>
+									<Chunk type="NoRef"> ; &quot;\\&quot; ; &quot;¶&quot;); </Chunk>
+									<Chunk type="FunctionRef">ValueCount</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$path_text</Chunk>
+									<Chunk type="NoRef">; &quot;\\&quot; ; &quot;¶&quot;) ))</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$lastSeg"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Left ( $path_text ;           Position ( $path_text ; "\\" ; 1 ;             ValueCount ( Substitute ( $path_text ; "\\" ; "¶" ) ) - 1           )         )]]></Text>
+								<ChunkList hash="E03C5E1A25594ACBB20D644558A0C525">
+									<Chunk type="FunctionRef">Left</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$path_text</Chunk>
+									<Chunk type="NoRef"> ;&#13;           </Chunk>
+									<Chunk type="FunctionRef">Position</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$path_text</Chunk>
+									<Chunk type="NoRef"> ; &quot;\\&quot; ; 1 ;&#13;             </Chunk>
+									<Chunk type="FunctionRef">ValueCount</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$path_text</Chunk>
+									<Chunk type="NoRef"> ; &quot;\\&quot; ; &quot;¶&quot; ) ) - 1&#13;           )&#13;         )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$parent"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$parent & "sidecars\\" & $lastSeg & ".mediainfo.json"]]></Text>
+								<ChunkList hash="7DBED707E56D5DB84E0EA99386AECE3B">
+									<Chunk type="VariableReference">$parent</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;sidecars\\&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$lastSeg</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;.mediainfo.json&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$sidecar_path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( "filewin:/" & $sidecar_path ; "\\" ; "/")]]></Text>
+								<ChunkList hash="67582EC5D949C2C2B58F8659A0981B42">
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( &quot;filewin:/&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$sidecar_path</Chunk>
+									<Chunk type="NoRef"> ; &quot;\\&quot; ; &quot;/&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$filewin_sidecar_path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="if path is too long, subst/mount"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( TemporaryPath )]]></Text>
+								<ChunkList hash="8D5543797EC10098A149ADE703688D10">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">TemporaryPath</Chunk>
+									<Chunk type="NoRef"> )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$tempDir"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["$LongPath=" & "\"" & $parent & "\""  & Char ( 13 ) & Char ( 10 ) &"if (-not (Get-PSDrive -Name 'Q' -ErrorAction SilentlyContinue)) {" & Char ( 13 ) & Char ( 10 ) &"$DriveLetter = 'Q:'" & Char ( 13 ) & Char ( 10 ) &"}" & Char ( 13 ) & Char ( 10 ) &"cmd /c \"subst $DriveLetter `\"$LongPath`\"\"" & Char ( 13 ) & Char ( 10 ) &"pause" & Char ( 13 ) & Char ( 10 )]]></Text>
+								<ChunkList hash="C2DF844BC2FE6DE9DC5FB3C58A81CEA9">
+									<Chunk type="NoRef">&quot;$LongPath=&quot; &amp; &quot;\&quot;&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$parent</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;\&quot;&quot;  &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 ) &amp;&#13;&#13;&quot;if (-not (Get-PSDrive -Name &apos;Q&apos; -ErrorAction SilentlyContinue)) {&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 ) &amp;&#13;&quot;$DriveLetter = &apos;Q:&apos;&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 ) &amp;&#13;&quot;}&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 ) &amp;&#13;&#13;&quot;cmd /c \&quot;subst $DriveLetter `\&quot;$LongPath`\&quot;\&quot;&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 ) &amp;&#13;&quot;pause&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$ps"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( TemporaryPath ) & "substlongpath.ps1"]]></Text>
+								<ChunkList hash="3AFA7E7B32B404FBB4AC4879588A8983">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">TemporaryPath</Chunk>
+									<Chunk type="NoRef"> ) &amp; &quot;substlongpath.ps1&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psscript"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( TemporaryPath ) & "substlongpath.bat"]]></Text>
+								<ChunkList hash="E9C6E7A9E6075F65F14B1706F6DA2CCE">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">TemporaryPath</Chunk>
+									<Chunk type="NoRef"> ) &amp; &quot;substlongpath.bat&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psscriptbat"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Right ( $psscript ; Length ( $psscript ) - 1 )]]></Text>
+								<ChunkList hash="8B70ADC7ECC988144DE4BDC1A593C5AC">
+									<Chunk type="FunctionRef">Right</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$psscript</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="FunctionRef">Length</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$psscript</Chunk>
+									<Chunk type="NoRef"> ) - 1 )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psscriptpath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10)]]></Text>
+								<ChunkList hash="8316446B9FF0042B3BF1696A6111E665">
+									<Chunk type="NoRef">&quot;@echo off&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(13) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(10) &amp; &quot;SET PowerShellScriptPath=&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$psscriptpath</Chunk>
+									<Chunk type="NoRef"> &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(13) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(10) &amp; &quot;powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(13) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(10)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psbat"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="190" name="Create Data File" enable="True">
+			<Options>32</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscript]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="190" name="Create Data File" enable="True">
+			<Options>32</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscriptbat]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="191" name="Open Data File" enable="True">
+			<Options>37</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscript]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$psscriptID">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="192" name="Write to Data File" enable="True">
+			<Options>16391</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptID]]></Text>
+							<ChunkList hash="0D1450A31D91FAC56E80E3BF720E7EAC">
+								<Chunk type="VariableReference">$psscriptID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$ps">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+				<Encoding type="2" name="UTF-8"></Encoding>
+				<Parameter type="Boolean">
+					<Boolean type="Append line feed" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="196" name="Close Data File" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptID]]></Text>
+							<ChunkList hash="0D1450A31D91FAC56E80E3BF720E7EAC">
+								<Chunk type="VariableReference">$psscriptID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="191" name="Open Data File" enable="True">
+			<Options>37</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscriptbat]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$psscriptIDbat">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="192" name="Write to Data File" enable="True">
+			<Options>16391</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptIDbat]]></Text>
+							<ChunkList hash="9BD2CA72B3973A6EBD3AC3F49E2ABF99">
+								<Chunk type="VariableReference">$psscriptIDbat</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$psbat">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+				<Encoding type="2" name="UTF-8"></Encoding>
+				<Parameter type="Boolean">
+					<Boolean type="Append line feed" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="196" name="Close Data File" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptIDbat]]></Text>
+							<ChunkList hash="9BD2CA72B3973A6EBD3AC3F49E2ABF99">
+								<Chunk type="VariableReference">$psscriptIDbat</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="57" name="Send Event" enable="True">
+			<Options>16420</Options>
+			<ParameterValues membercount="1">
+				<Parameter>
+					<Target value=""></Target>
+					<Send name="open document/application" classString="aevt" idString="odoc" class="1634039412" id="1868853091"></Send>
+					<Source type="Document">
+						<Document>
+							<UniversalPathList membercount="1">
+								<ObjectList>
+									<Location><![CDATA[$psscriptbat]]></Location>
+								</ObjectList>
+							</UniversalPathList>
+						</Document>
+					</Source>
+					<Options Foreground="True" Wait="False" Copy="False"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="62" name="Pause/Resume Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Options">
+					<Options type="Duration (seconds): ">
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA[2]]></Text>
+								<ChunkList hash="34108238C823509F293F7FC877DB5DF6">
+									<Chunk type="NoRef">2</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Let ([    parts = Substitute ( $sidecar_path ; Char ( 92 ) ; ¶ )] ;    GetValue ( parts ; ValueCount ( parts ) ))]]></Text>
+								<ChunkList hash="91A2DDCAEF5FBD6D6E35480E9F9EF31F">
+									<Chunk type="FunctionRef">Let</Chunk>
+									<Chunk type="NoRef"> (&#13;[&#13;    </Chunk>
+									<Chunk type="VariableReference">parts</Chunk>
+									<Chunk type="NoRef"> = </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$sidecar_path</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 92 ) ; ¶ )&#13;] ;&#13;    </Chunk>
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">parts</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="FunctionRef">ValueCount</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">parts</Chunk>
+									<Chunk type="NoRef"> ) )&#13;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$sidecarfilename"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>1064964</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["filewin:/Q:/sidecars/" & $sidecarfilename]]></Text>
+								<ChunkList hash="0AB6AFAFC5082D3AD5EB3CD5963AFD57">
+									<Chunk type="NoRef">&quot;filewin:/Q:/sidecars/&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$sidecarfilename</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$substfilewin_sidecar_path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="open from subst/mount"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="62" name="Pause/Resume Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Options">
+					<Options type="Duration (seconds): ">
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA[4]]></Text>
+								<ChunkList hash="11B79509A4E4D58927D80FB02E41EA64">
+									<Chunk type="NoRef">4</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="191" name="Open Data File" enable="True">
+			<Options>37</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$substfilewin_sidecar_path]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$sidecar_pathID">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastError )  ≠ 0]]></Text>
+							<ChunkList hash="A5CECBF4258B195180031532F618B2BE">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastError</Chunk>
+								<Chunk type="NoRef"> )  ≠ 0</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Media Info Sidecar missing"]]></Text>
+							<ChunkList hash="18BBCC126F0079CB1C363888C8DD7A10">
+								<Chunk type="NoRef">&quot;Media Info Sidecar missing&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["Sidecar file not found at location " & $sidecar_path &" Please run the MediInfo Sidecar Generator application first and run again."]]></Text>
+							<ChunkList hash="CD9741D0E213A679EE2CD247AF0666F9">
+								<Chunk type="NoRef">&quot;Sidecar file not found at location &quot; &amp; </Chunk>
+								<Chunk type="VariableReference">$sidecar_path</Chunk>
+								<Chunk type="NoRef"> &amp;&#13;&quot; Please run the MediInfo Sidecar Generator application first and run again.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="193" name="Read from Data File" enable="True">
+			<Options>16391</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$sidecar_pathID]]></Text>
+							<ChunkList hash="8A65A78BD423BF51021B61DC9C7FEDD6">
+								<Chunk type="VariableReference">$sidecar_pathID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$json">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+				<Encoding type="2" name="UTF-8"></Encoding>
+			</ParameterValues>
+		</Step>
+		<Step id="196" name="Close Data File" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$sidecar_pathID]]></Text>
+							<ChunkList hash="8A65A78BD423BF51021B61DC9C7FEDD6">
+								<Chunk type="VariableReference">$sidecar_pathID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastError ) ≠ 0 or IsEmpty ( $json )]]></Text>
+							<ChunkList hash="EDBBB80DEE3437CC623D92D28F1868A2">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastError</Chunk>
+								<Chunk type="NoRef"> ) ≠ 0 </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Sidecar read error"]]></Text>
+							<ChunkList hash="38C485668686BA3561046AD7CD14D7B5">
+								<Chunk type="NoRef">&quot;Sidecar read error&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["The Sidecar exists but could not be read."]]></Text>
+							<ChunkList hash="013DA93553954D0DD7CA9DFA61EDEFA0">
+								<Chunk type="NoRef">&quot;The Sidecar exists but could not be read.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="Item_unit_number-auto enter"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Let (        [            maxNo = Max ( Digital Media_Item Unit::Item_unit_number )        ] ;        If ( IsEmpty ( maxNo ) ; 1 ; maxNo + 1 )    )]]></Text>
+								<ChunkList hash="CC6A40356B8D5BA0BB0FD38C1F09431E">
+									<Chunk type="FunctionRef">Let</Chunk>
+									<Chunk type="NoRef"> (&#13;        [&#13;            </Chunk>
+									<Chunk type="VariableReference">maxNo</Chunk>
+									<Chunk type="NoRef"> = </Chunk>
+									<Chunk type="FunctionRef">Max</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FieldRef">
+										<FieldReference id="41" name="Item_unit_number" repetition="1">
+											<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+										</FieldReference>
+									</Chunk>
+									<Chunk type="NoRef"> )&#13;        ] ;&#13;        </Chunk>
+									<Chunk type="FunctionRef">If</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">IsEmpty</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">maxNo</Chunk>
+									<Chunk type="NoRef"> ) ; 1 ; </Chunk>
+									<Chunk type="VariableReference">maxNo</Chunk>
+									<Chunk type="NoRef"> + 1 )&#13;    )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$nextRow"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="Item_unit_number-auto enter"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["media.track"]]></Text>
+								<ChunkList hash="DFCA3E22D3247FB4C6D748FC982B3E9F">
+									<Chunk type="NoRef">&quot;media.track&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$tracks"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[ValueCount ( JSONListKeys ( $json ; $tracks ) )]]></Text>
+								<ChunkList hash="55ED3B1DBD13FB992DB756412855F0E4">
+									<Chunk type="FunctionRef">ValueCount</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">JSONListKeys</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="VariableReference">$tracks</Chunk>
+									<Chunk type="NoRef"> ) )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$count"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$g"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$v"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$a"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[0]]></Text>
+								<ChunkList hash="9BF55A5D51230A8EA20D4BAA0F468EEC">
+									<Chunk type="NoRef">0</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$i"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="71" name="Loop" enable="True">
+		</Step>
+		<Step id="72" name="Exit Loop If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[$i  ≥ $count  or ( not IsEmpty ( $g ) and not IsEmpty ( $v ) and not IsEmpty ( $a ))]]></Text>
+							<ChunkList hash="C1D072E7A8E111019C13AA1C54D9E007">
+								<Chunk type="VariableReference">$i</Chunk>
+								<Chunk type="NoRef">  ≥ </Chunk>
+								<Chunk type="VariableReference">$count</Chunk>
+								<Chunk type="NoRef">  </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> ) </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> ) </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$a</Chunk>
+								<Chunk type="NoRef"> ))</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$tracks & "[" & $i & "]"]]></Text>
+								<ChunkList hash="84FB1300916395F604288C03BFC4C23A">
+									<Chunk type="VariableReference">$tracks</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;[&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$i</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;]&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$json_elementpath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[JSONGetElement ( $json ; $json_elementpath & ".@type" )]]></Text>
+								<ChunkList hash="6A6B8EA977011FE230A423155321B39F">
+									<Chunk type="FunctionRef">JSONGetElement</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="VariableReference">$json_elementpath</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;.@type&quot; )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$type"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( $g ) and $type = "General"]]></Text>
+							<ChunkList hash="75398C254CB6466ACE7B7FCF93B33DCA">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> ) </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">$type</Chunk>
+								<Chunk type="NoRef"> = &quot;General&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$json_elementpath]]></Text>
+								<ChunkList hash="BCC94033019CC5D6CD7E6C2BCFD7EBC7">
+									<Chunk type="VariableReference">$json_elementpath</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$g"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="125" name="Else If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( $v ) and $type = "Video"]]></Text>
+							<ChunkList hash="29C2416F9C5EBF136997E191C532DD6E">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> ) </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">$type</Chunk>
+								<Chunk type="NoRef"> = &quot;Video&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$json_elementpath]]></Text>
+								<ChunkList hash="BCC94033019CC5D6CD7E6C2BCFD7EBC7">
+									<Chunk type="VariableReference">$json_elementpath</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$v"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="125" name="Else If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( $a ) and $type = "Audio"]]></Text>
+							<ChunkList hash="E07353B11D2B055324E2ABBE73337D03">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$a</Chunk>
+								<Chunk type="NoRef"> ) </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">$type</Chunk>
+								<Chunk type="NoRef"> = &quot;Audio&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$json_elementpath]]></Text>
+								<ChunkList hash="BCC94033019CC5D6CD7E6C2BCFD7EBC7">
+									<Chunk type="VariableReference">$json_elementpath</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$a"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$i + 1]]></Text>
+								<ChunkList hash="B2141966289358E5CCACD29467F24DBD">
+									<Chunk type="VariableReference">$i</Chunk>
+									<Chunk type="NoRef"> + 1</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$i"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="73" name="End Loop" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="145" name="Go to Object" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Object">
+					<Name>
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA["Portal_DM_Items"]]></Text>
+								<ChunkList hash="4FD9D43C24D2C99D075B6A4C117E4FBD">
+									<Chunk type="NoRef">&quot;Portal_DM_Items&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="99" name="Go to Portal Row" enable="True">
+			<Options>4098</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Portal">
+					<List name="Last" value="2"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="99" name="Go to Portal Row" enable="True">
+			<Options>4098</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Portal">
+					<List name="Next" value="4">
+						<Boolean type="Exit after last" position="184" value="False"></Boolean>
+					</List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[not IsEmpty ( $g )]]></Text>
+							<ChunkList hash="2AA5612188751BC2C394A65CBC30411E">
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="41" name="Item_unit_number">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[$nextRow]]></Text>
+							<ChunkList hash="B1D7223CB7AD73EAB21D2B2CC793F013">
+								<Chunk type="VariableReference">$nextRow</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="6" name="file_path">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[$sysPath]]></Text>
+							<ChunkList hash="8FE3D5973602B27BC1591B3EBF234F29">
+								<Chunk type="VariableReference">$sysPath</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="20" name="specific_carrier_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $g & ".FileExtension" )]]></Text>
+							<ChunkList hash="BA39DA8FBC7FE89B7F5B84DAD8FFBC6B">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.FileExtension&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="210" name="specific_carrier_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::specific_carrier_type]]></Text>
+							<ChunkList hash="0DA0F5FC45F67CCBA413979EFF19C981">
+								<Chunk type="FieldRef">
+									<FieldReference id="20" name="specific_carrier_type" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="12" name="file_size">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[GetAsNumber ( JSONGetElement ( $json ; $g & ".FileSize" ) )]]></Text>
+							<ChunkList hash="4A5F1A4E0BFE87805C36CC91FEF66610">
+								<Chunk type="FunctionRef">GetAsNumber</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.FileSize&quot; ) )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="40" name="file_size_display">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Let ( [ b = GetAsNumber ( Digital Media_Item Unit::file_size ) ; k = 1024 ; m = k^2 ; g = k^3 ; t = k^4 ] ; Case ( b≥t ; Round(b/t;2)&" TB" ; b≥g ; Round(b/g;2)&" GB" ; b≥m ; Round(b/m;2)&" MB" ; b≥k ; Round(b/k;2)&" KB" ; b & " bytes" ) )]]></Text>
+							<ChunkList hash="36985486E63038A9BC3BCBB4F192CBAB">
+								<Chunk type="FunctionRef">Let</Chunk>
+								<Chunk type="NoRef"> ( [ </Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">GetAsNumber</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="12" name="file_size" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> ) ; </Chunk>
+								<Chunk type="VariableReference">k</Chunk>
+								<Chunk type="NoRef"> = 1024 ; </Chunk>
+								<Chunk type="VariableReference">m</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="VariableReference">k</Chunk>
+								<Chunk type="NoRef">^2 ; </Chunk>
+								<Chunk type="VariableReference">g</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="VariableReference">k</Chunk>
+								<Chunk type="NoRef">^3 ; </Chunk>
+								<Chunk type="VariableReference">t</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="VariableReference">k</Chunk>
+								<Chunk type="NoRef">^4 ] ; </Chunk>
+								<Chunk type="FunctionRef">Case</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">≥</Chunk>
+								<Chunk type="VariableReference">t</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="FunctionRef">Round</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">/</Chunk>
+								<Chunk type="VariableReference">t</Chunk>
+								<Chunk type="NoRef">;2)&amp;&quot; TB&quot; ; </Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">≥</Chunk>
+								<Chunk type="VariableReference">g</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="FunctionRef">Round</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">/</Chunk>
+								<Chunk type="VariableReference">g</Chunk>
+								<Chunk type="NoRef">;2)&amp;&quot; GB&quot; ; </Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">≥</Chunk>
+								<Chunk type="VariableReference">m</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="FunctionRef">Round</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">/</Chunk>
+								<Chunk type="VariableReference">m</Chunk>
+								<Chunk type="NoRef">;2)&amp;&quot; MB&quot; ; </Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">≥</Chunk>
+								<Chunk type="VariableReference">k</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="FunctionRef">Round</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef">/</Chunk>
+								<Chunk type="VariableReference">k</Chunk>
+								<Chunk type="NoRef">;2)&amp;&quot; KB&quot; ; </Chunk>
+								<Chunk type="VariableReference">b</Chunk>
+								<Chunk type="NoRef"> &amp; &quot; bytes&quot; ) )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="15" name="running_time">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[GetAsNumber ( JSONGetElement ( $json ; $g & ".Duration" ) )]]></Text>
+							<ChunkList hash="4302D0CA5FDCD8088768E05003D435E7">
+								<Chunk type="FunctionRef">GetAsNumber</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Duration&quot; ) )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="21" name="playing_speed">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $g & ".FrameRate" )]]></Text>
+							<ChunkList hash="229E61860DC16BD168FA4BA947933FF1">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.FrameRate&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="105" name="playing_speed">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::playing_speed]]></Text>
+							<ChunkList hash="2D1EE1367F8E299B439305E167D57E5C">
+								<Chunk type="FieldRef">
+									<FieldReference id="21" name="playing_speed" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="22" name="wrapper_format">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Let (   wrapformat = JSONGetElement ( $json ; $g & ".Format_Profile" );   If ( IsEmpty ( Digital Media_Item Unit::wrapper_format ) and not IsEmpty ( wrapformat ) ; wrapformat ; "Not Applicable"   ))]]></Text>
+							<ChunkList hash="C9EDDC7EC0823318581D8D8473EA8EEA">
+								<Chunk type="FunctionRef">Let</Chunk>
+								<Chunk type="NoRef"> (&#13;   </Chunk>
+								<Chunk type="VariableReference">wrapformat</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Format_Profile&quot; );&#13;   </Chunk>
+								<Chunk type="FunctionRef">If</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="22" name="wrapper_format" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> ) </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">wrapformat</Chunk>
+								<Chunk type="NoRef"> ) ; </Chunk>
+								<Chunk type="VariableReference">wrapformat</Chunk>
+								<Chunk type="NoRef"> ; &quot;Not Applicable&quot;&#13;   )&#13;)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="211" name="wrapper_format">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::wrapper_format]]></Text>
+							<ChunkList hash="C496458D8FD0CDCE71B41129BA086E5A">
+								<Chunk type="FieldRef">
+									<FieldReference id="22" name="wrapper_format" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[JSONGetElement ( $json ; $g & ".Encoded_Date")]]></Text>
+								<ChunkList hash="0779B95EE5B88D00136B5DF5AEBE7355">
+									<Chunk type="FunctionRef">JSONGetElement</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="VariableReference">$g</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;.Encoded_Date&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$json_creation_date"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( $json_creation_date )]]></Text>
+							<ChunkList hash="C09EADEAB43D01BD3D6229A8A8F7FC77">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json_creation_date</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[JSONGetElement ( $json ; $g & ".File_Created_Date")]]></Text>
+								<ChunkList hash="B4F55750B3111471DD4784B5D56607E0">
+									<Chunk type="FunctionRef">JSONGetElement</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="VariableReference">$g</Chunk>
+									<Chunk type="NoRef"> &amp; &quot;.File_Created_Date&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$json_creation_date"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( $json_creation_date )]]></Text>
+							<ChunkList hash="C09EADEAB43D01BD3D6229A8A8F7FC77">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json_creation_date</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Missing Date"]]></Text>
+							<ChunkList hash="2186C86354A07147907BE23E38F9DB42">
+								<Chunk type="NoRef">&quot;Missing Date&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["The json file is missing a valid \"Encoded_date\" or \"File_Created_date\" value. ¶A default date of 1900/1/1 has been entered instead. Please update manualy with correct creation date. ¶" & "Encoded_Date:" & JSONGetElement ( $json ; $g & ".Encoded_Date") &"¶File_Created_Date:" & JSONGetElement ( $json ; $g & ".File_Created_Date")]]></Text>
+							<ChunkList hash="DA58AFFAB845F99F5D54A07E1A10B6B9">
+								<Chunk type="NoRef">&quot;The json file is missing a valid \&quot;Encoded_date\&quot; or \&quot;File_Created_date\&quot; value. ¶A default date of 1900/1/1 has been entered instead. Please update manualy with correct creation date. ¶&quot; &amp; &quot;Encoded_Date:&quot; &amp; </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Encoded_Date&quot;) &amp;&#13;&quot;¶File_Created_Date:&quot; &amp; </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$g</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.File_Created_Date&quot;)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["1900-01-01 00:00:00.000 UTC"]]></Text>
+								<ChunkList hash="4710F80D784E74C5A51E54E452716E98">
+									<Chunk type="NoRef">&quot;1900-01-01 00:00:00.000 UTC&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$json_creation_date"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[EvaluationError ( Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) ) )  ≠ 0]]></Text>
+							<ChunkList hash="8237B1BC40EBE7D0A6E176B86066EAA8">
+								<Chunk type="FunctionRef">EvaluationError</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">Date</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">GetValue</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">Substitute</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LeftWords</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json_creation_date</Chunk>
+								<Chunk type="NoRef"> ; 1 ) ; &quot;-&quot; ; ¶ ) ; 2 ) ; </Chunk>
+								<Chunk type="FunctionRef">GetValue</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">Substitute</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LeftWords</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json_creation_date</Chunk>
+								<Chunk type="NoRef">; 1 ) ; &quot;-&quot; ; ¶ ) ; 3 ) ; </Chunk>
+								<Chunk type="FunctionRef">GetValue</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">Substitute</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LeftWords</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json_creation_date</Chunk>
+								<Chunk type="NoRef"> ; 1 ) ; &quot;-&quot; ; ¶ ) ; 1 ) ) )  ≠ 0</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Invalid Date"]]></Text>
+							<ChunkList hash="30581AD434BDC12458FBD0EB76D23967">
+								<Chunk type="NoRef">&quot;Invalid Date&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["The date creation value from json is invalid: " & $json_creation_date]]></Text>
+							<ChunkList hash="76912EB4AF73DE9C513725D843065630">
+								<Chunk type="NoRef">&quot;The date creation value from json is invalid: &quot; &amp; </Chunk>
+								<Chunk type="VariableReference">$json_creation_date</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["1900-01-01 00:00:00.000 UTC"]]></Text>
+								<ChunkList hash="4710F80D784E74C5A51E54E452716E98">
+									<Chunk type="NoRef">&quot;1900-01-01 00:00:00.000 UTC&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$json_creation_date"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[$json_creation_date]]></Text>
+								<ChunkList hash="A29A7531ECE0638713BCE0EB94BF9364">
+									<Chunk type="VariableReference">$json_creation_date</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$formattedDate"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="69" name="Else" enable="True">
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) )]]></Text>
+								<ChunkList hash="6C17974D065BF3A4A30EC2536A178046">
+									<Chunk type="FunctionRef">Date</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">LeftWords</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json_creation_date</Chunk>
+									<Chunk type="NoRef"> ; 1 ) ; &quot;-&quot; ; ¶ ) ; 2 ) ; </Chunk>
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">LeftWords</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json_creation_date</Chunk>
+									<Chunk type="NoRef">; 1 ) ; &quot;-&quot; ; ¶ ) ; 3 ) ; </Chunk>
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">LeftWords</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$json_creation_date</Chunk>
+									<Chunk type="NoRef"> ; 1 ) ; &quot;-&quot; ; ¶ ) ; 1 ) )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$formattedDate"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="16" name="Creation_date">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[( $formattedDate)]]></Text>
+							<ChunkList hash="D97DADD2521125C618E0E84F286566BA">
+								<Chunk type="NoRef">( </Chunk>
+								<Chunk type="VariableReference">$formattedDate</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[not IsEmpty ( $v )]]></Text>
+							<ChunkList hash="598E25241AB56D71BA3734CEBD02B437">
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="23" name="video_codec">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".Format" )]]></Text>
+							<ChunkList hash="A63204DDE629C6CAC65AD863DD00F403">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Format&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="212" name="video_codec">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::video_codec]]></Text>
+							<ChunkList hash="3CA46C920F4E4072518C9C87284563AB">
+								<Chunk type="FieldRef">
+									<FieldReference id="23" name="video_codec" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="37" name="video_codec_profile">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".Format_Profile" )]]></Text>
+							<ChunkList hash="A0337FDC487810E5070A685F262F52D2">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Format_Profile&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="26" name="display_width">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".Width" )]]></Text>
+							<ChunkList hash="FA1ACF270E506B3ED64D6D8B8141BCCF">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Width&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="27" name="display_height">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".Height" )]]></Text>
+							<ChunkList hash="9C17E8FF0340B0DFC4411227C366D41A">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Height&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="25" name="display_resolution">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::display_width & "X" & Digital Media_Item Unit::display_height]]></Text>
+							<ChunkList hash="FB65C35B64851BF5E92309B9ECC58ADE">
+								<Chunk type="FieldRef">
+									<FieldReference id="26" name="display_width" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;X&quot; &amp; </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="27" name="display_height" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="215" name="display_resolution">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::display_resolution]]></Text>
+							<ChunkList hash="96E02CA66DD4E54509513FED1E5C53B8">
+								<Chunk type="FieldRef">
+									<FieldReference id="25" name="display_resolution" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="28" name="aperture">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".DisplayAspectRatio" )]]></Text>
+							<ChunkList hash="0512CC6EEFEA6101B80F5715C511A2E0">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.DisplayAspectRatio&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="55" name="aperture">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::aperture]]></Text>
+							<ChunkList hash="5AE9632A7A328A3228BBA06B9F95A474">
+								<Chunk type="FieldRef">
+									<FieldReference id="28" name="aperture" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="38" name="media_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".@type" )]]></Text>
+							<ChunkList hash="3A1C14B0E6BC4B46FE0915A5C43804B1">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.@type&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="199" name="media_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::media_type]]></Text>
+							<ChunkList hash="72262623E54EF7DA4A50AA4F1CEB9DF6">
+								<Chunk type="FieldRef">
+									<FieldReference id="38" name="media_type" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="30" name="scan_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $v & ".ScanType" )]]></Text>
+							<ChunkList hash="C67C3105BFF580F89D58F8F1E66C2C31">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.ScanType&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="230" name="scan_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::scan_type]]></Text>
+							<ChunkList hash="44C9AA4EA4507C80CBE8699B6AB00AF3">
+								<Chunk type="FieldRef">
+									<FieldReference id="30" name="scan_type" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="82" name="Language">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Let ([    rawLang = TrimAll ( JSONGetElement ( $json ; $v & ".Language" ) ; 1 ; 1 );lang = Lower ( rawLang ) ;    mappedLang = Case (        lang = "am" or lang = "amh" ; "Amharic (am)" ;        lang = "ar" or lang = "ara" ; "Arabic (ar)" ;        lang = "zh" or lang = "zho" or lang = "chi" ; "Chinese (zh)" ;        lang = "cs" or lang = "ces" or lang = "cze" ; "Czech (cs)" ;        lang = "da" or lang = "dan" ; "Danish (da)" ;        lang = "nl" or lang = "nld" or lang = "dut" ; "Dutch (nl)" ;        lang = "en" or lang = "eng" ; "English (en)" ;        lang = "gez" ; "Ethiopic (gez)" ;        lang = "fr" or lang = "fra" or lang = "fre" ; "French (fr)" ;        lang = "de" or lang = "deu" or lang = "ger" ; "German (de)" ;        lang = "he" or lang = "heb" ; "Hebrew (he)" ;        lang = "hi" or lang = "hin" ; "Hindi (hi)" ;        lang = "hu" or lang = "hun" ; "Hungarian (hu)" ;        lang = "id" or lang = "ind" ; "Indonesian (id)" ;        lang = "it" or lang = "ita" ; "Italian (it)" ;        lang = "ja" or lang = "jpn" ; "Japanese (ja)" ;        lang = "ko" or lang = "kor" ; "Korean (ko)" ;        lang = "nv" or lang = "nav" ; "Navajo (nv)" ;        lang = "zxx" ; "No linguistic content (zxx)" ;        lang = "no" or lang = "nor" ; "Norwegian (no)" ;        lang = "fa" or lang = "fas" or lang = "per" ; "Persian (fa)" ;        lang = "pl" or lang = "pol" ; "Polish (pl)" ;        lang = "pt" or lang = "por" ; "Portuguese (pt)" ;        lang = "ru" or lang = "rus" ; "Russian (ru)" ;        lang = "es" or lang = "spa" ; "Spanish (es)" ;        lang = "sv" or lang = "swe" ; "Swedish (sv)" ;        lang = "th" or lang = "tha" ; "Thai (th)" ;        lang = "uk" or lang = "ukr" ; "Ukrainian (uk)" ;        lang = "und" ; "Undetermined (und)" ;        lang = "vi" or lang = "vie" ; "Vietnamese (vi)" ;        lang = "ypk" ; "Yupik languages (ypk)" ;        rawLang    )] ;If (    IsEmpty ( Inventory for Labeling::Language )    and not IsEmpty ( rawLang ) ;    mappedLang ;    Inventory for Labeling::Language))]]></Text>
+							<ChunkList hash="AB1AAD03408114EC63ECBB255EF772EA">
+								<Chunk type="FunctionRef">Let</Chunk>
+								<Chunk type="NoRef"> (&#13;[&#13;    </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">TrimAll</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$v</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Language&quot; ) ; 1 ; 1 );&#13;</Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">Lower</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef"> ) ;&#13;&#13;    </Chunk>
+								<Chunk type="VariableReference">mappedLang</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">Case</Chunk>
+								<Chunk type="NoRef"> (&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;am&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;amh&quot; ; &quot;Amharic (am)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ar&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ara&quot; ; &quot;Arabic (ar)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;zh&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;zho&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;chi&quot; ; &quot;Chinese (zh)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;cs&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ces&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;cze&quot; ; &quot;Czech (cs)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;da&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;dan&quot; ; &quot;Danish (da)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nl&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nld&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;dut&quot; ; &quot;Dutch (nl)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;en&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;eng&quot; ; &quot;English (en)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;gez&quot; ; &quot;Ethiopic (gez)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fr&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fra&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fre&quot; ; &quot;French (fr)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;de&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;deu&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ger&quot; ; &quot;German (de)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;he&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;heb&quot; ; &quot;Hebrew (he)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hi&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hin&quot; ; &quot;Hindi (hi)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hu&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hun&quot; ; &quot;Hungarian (hu)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;id&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ind&quot; ; &quot;Indonesian (id)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;it&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ita&quot; ; &quot;Italian (it)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ja&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;jpn&quot; ; &quot;Japanese (ja)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ko&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;kor&quot; ; &quot;Korean (ko)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nv&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nav&quot; ; &quot;Navajo (nv)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;zxx&quot; ; &quot;No linguistic content (zxx)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;no&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nor&quot; ; &quot;Norwegian (no)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fa&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fas&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;per&quot; ; &quot;Persian (fa)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;pl&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;pol&quot; ; &quot;Polish (pl)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;pt&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;por&quot; ; &quot;Portuguese (pt)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ru&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;rus&quot; ; &quot;Russian (ru)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;es&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;spa&quot; ; &quot;Spanish (es)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;sv&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;swe&quot; ; &quot;Swedish (sv)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;th&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;tha&quot; ; &quot;Thai (th)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;uk&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ukr&quot; ; &quot;Ukrainian (uk)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;und&quot; ; &quot;Undetermined (und)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;vi&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;vie&quot; ; &quot;Vietnamese (vi)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ypk&quot; ; &quot;Yupik languages (ypk)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef">&#13;    )&#13;] ;&#13;&#13;</Chunk>
+								<Chunk type="FunctionRef">If</Chunk>
+								<Chunk type="NoRef"> (&#13;    </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )&#13;    </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef"> ) ;&#13;    </Chunk>
+								<Chunk type="VariableReference">mappedLang</Chunk>
+								<Chunk type="NoRef"> ;&#13;    </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">&#13;)&#13;)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="39" name="language">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Inventory for Labeling::Language]]></Text>
+							<ChunkList hash="E4D373F8A743C5A139A3F1E4D46FD27E">
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[not IsEmpty ( $a )]]></Text>
+							<ChunkList hash="9C6A0FF38C6412E9A38EFC384B4F4461">
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$a</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty (Inventory for Labeling::media_type )]]></Text>
+							<ChunkList hash="C6D83994063E069C0961C3B66ADCDD09">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> (</Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="199" name="media_type" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="38" name="media_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $a & ".@type" )]]></Text>
+							<ChunkList hash="E94DDD4952FA94B182AAB302697A9923">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$a</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.@type&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="199" name="media_type">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::media_type]]></Text>
+							<ChunkList hash="72262623E54EF7DA4A50AA4F1CEB9DF6">
+								<Chunk type="FieldRef">
+									<FieldReference id="38" name="media_type" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="32" name="audio_codec">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[JSONGetElement ( $json ; $a & ".Format" )]]></Text>
+							<ChunkList hash="7248164FBB25008DD633D30B683C0FDC">
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$a</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Format&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="213" name="audio_codec">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Digital Media_Item Unit::audio_codec]]></Text>
+							<ChunkList hash="7A0089A6BD682577B8632867C51AD654">
+								<Chunk type="FieldRef">
+									<FieldReference id="32" name="audio_codec" repetition="1">
+										<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="82" name="Language">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Let ([   rawLang = TrimAll ( JSONGetElement ( $json ; $a & ".Language" ) ; 1 ; 1 ) ;lang = Lower (rawLang) ;    mappedLang = Case (        lang = "am" or lang = "amh" ; "Amharic (am)" ;        lang = "ar" or lang = "ara" ; "Arabic (ar)" ;        lang = "zh" or lang = "zho" or lang = "chi" ; "Chinese (zh)" ;        lang = "cs" or lang = "ces" or lang = "cze" ; "Czech (cs)" ;        lang = "da" or lang = "dan" ; "Danish (da)" ;        lang = "nl" or lang = "nld" or lang = "dut" ; "Dutch (nl)" ;        lang = "en" or lang = "eng" ; "English (en)" ;        lang = "gez" ; "Ethiopic (gez)" ;        lang = "fr" or lang = "fra" or lang = "fre" ; "French (fr)" ;        lang = "de" or lang = "deu" or lang = "ger" ; "German (de)" ;        lang = "he" or lang = "heb" ; "Hebrew (he)" ;        lang = "hi" or lang = "hin" ; "Hindi (hi)" ;        lang = "hu" or lang = "hun" ; "Hungarian (hu)" ;        lang = "id" or lang = "ind" ; "Indonesian (id)" ;        lang = "it" or lang = "ita" ; "Italian (it)" ;        lang = "ja" or lang = "jpn" ; "Japanese (ja)" ;        lang = "ko" or lang = "kor" ; "Korean (ko)" ;        lang = "nv" or lang = "nav" ; "Navajo (nv)" ;        lang = "zxx" ; "No linguistic content (zxx)" ;        lang = "no" or lang = "nor" ; "Norwegian (no)" ;        lang = "fa" or lang = "fas" or lang = "per" ; "Persian (fa)" ;        lang = "pl" or lang = "pol" ; "Polish (pl)" ;        lang = "pt" or lang = "por" ; "Portuguese (pt)" ;        lang = "ru" or lang = "rus" ; "Russian (ru)" ;        lang = "es" or lang = "spa" ; "Spanish (es)" ;        lang = "sv" or lang = "swe" ; "Swedish (sv)" ;        lang = "th" or lang = "tha" ; "Thai (th)" ;        lang = "uk" or lang = "ukr" ; "Ukrainian (uk)" ;        lang = "und" ; "Undetermined (und)" ;        lang = "vi" or lang = "vie" ; "Vietnamese (vi)" ;        lang = "ypk" ; "Yupik languages (ypk)" ;        rawLang    )] ;If (    IsEmpty (Inventory for Labeling::Language )    and not IsEmpty ( rawLang ) ;    mappedLang ;    Inventory for Labeling::Language))]]></Text>
+							<ChunkList hash="B59CB9AF0A685BFAA2FC4078E4DE10CE">
+								<Chunk type="FunctionRef">Let</Chunk>
+								<Chunk type="NoRef"> (&#13;[&#13;   </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">TrimAll</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">JSONGetElement</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$json</Chunk>
+								<Chunk type="NoRef"> ; </Chunk>
+								<Chunk type="VariableReference">$a</Chunk>
+								<Chunk type="NoRef"> &amp; &quot;.Language&quot; ) ; 1 ; 1 ) ;&#13;</Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">Lower</Chunk>
+								<Chunk type="NoRef"> (</Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef">) ;&#13;&#13;    </Chunk>
+								<Chunk type="VariableReference">mappedLang</Chunk>
+								<Chunk type="NoRef"> = </Chunk>
+								<Chunk type="FunctionRef">Case</Chunk>
+								<Chunk type="NoRef"> (&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;am&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;amh&quot; ; &quot;Amharic (am)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ar&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ara&quot; ; &quot;Arabic (ar)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;zh&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;zho&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;chi&quot; ; &quot;Chinese (zh)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;cs&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ces&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;cze&quot; ; &quot;Czech (cs)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;da&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;dan&quot; ; &quot;Danish (da)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nl&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nld&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;dut&quot; ; &quot;Dutch (nl)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;en&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;eng&quot; ; &quot;English (en)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;gez&quot; ; &quot;Ethiopic (gez)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fr&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fra&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fre&quot; ; &quot;French (fr)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;de&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;deu&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ger&quot; ; &quot;German (de)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;he&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;heb&quot; ; &quot;Hebrew (he)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hi&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hin&quot; ; &quot;Hindi (hi)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hu&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;hun&quot; ; &quot;Hungarian (hu)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;id&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ind&quot; ; &quot;Indonesian (id)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;it&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ita&quot; ; &quot;Italian (it)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ja&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;jpn&quot; ; &quot;Japanese (ja)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ko&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;kor&quot; ; &quot;Korean (ko)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nv&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nav&quot; ; &quot;Navajo (nv)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;zxx&quot; ; &quot;No linguistic content (zxx)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;no&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;nor&quot; ; &quot;Norwegian (no)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fa&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;fas&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;per&quot; ; &quot;Persian (fa)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;pl&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;pol&quot; ; &quot;Polish (pl)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;pt&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;por&quot; ; &quot;Portuguese (pt)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ru&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;rus&quot; ; &quot;Russian (ru)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;es&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;spa&quot; ; &quot;Spanish (es)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;sv&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;swe&quot; ; &quot;Swedish (sv)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;th&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;tha&quot; ; &quot;Thai (th)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;uk&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ukr&quot; ; &quot;Ukrainian (uk)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;und&quot; ; &quot;Undetermined (und)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;vi&quot; </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;vie&quot; ; &quot;Vietnamese (vi)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">lang</Chunk>
+								<Chunk type="NoRef"> = &quot;ypk&quot; ; &quot;Yupik languages (ypk)&quot; ;&#13;        </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef">&#13;    )&#13;] ;&#13;&#13;</Chunk>
+								<Chunk type="FunctionRef">If</Chunk>
+								<Chunk type="NoRef"> (&#13;    </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> (</Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )&#13;    </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">not</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">rawLang</Chunk>
+								<Chunk type="NoRef"> ) ;&#13;    </Chunk>
+								<Chunk type="VariableReference">mappedLang</Chunk>
+								<Chunk type="NoRef"> ;&#13;    </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">&#13;)&#13;)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="39" name="language">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[Inventory for Labeling::Language]]></Text>
+							<ChunkList hash="E4D373F8A743C5A139A3F1E4D46FD27E">
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="remove the mounted Q"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["cmd /c \"subst Q: /d\"" & Char ( 13 ) & Char ( 10 )]]></Text>
+								<ChunkList hash="D7338E6D5A39DBF1938F9D80302E126E">
+									<Chunk type="NoRef">&quot;cmd /c \&quot;subst Q: /d\&quot;&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 13 ) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef"> ( 10 )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$ps"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( TemporaryPath ) & "desubstlongpath.ps1"]]></Text>
+								<ChunkList hash="1544079532FF09893631545249E58914">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">TemporaryPath</Chunk>
+									<Chunk type="NoRef"> ) &amp; &quot;desubstlongpath.ps1&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psscript"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Get ( TemporaryPath ) & "desubstlongpath.bat"]]></Text>
+								<ChunkList hash="291CD0A1FF07250F309821D9F1F1126A">
+									<Chunk type="FunctionRef">Get</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="FunctionRef">TemporaryPath</Chunk>
+									<Chunk type="NoRef"> ) &amp; &quot;desubstlongpath.bat&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psscriptbat"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Right ( $psscript ; Length ( $psscript ) - 1 )]]></Text>
+								<ChunkList hash="8B70ADC7ECC988144DE4BDC1A593C5AC">
+									<Chunk type="FunctionRef">Right</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$psscript</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="FunctionRef">Length</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$psscript</Chunk>
+									<Chunk type="NoRef"> ) - 1 )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psscriptpath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA["@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10)]]></Text>
+								<ChunkList hash="8316446B9FF0042B3BF1696A6111E665">
+									<Chunk type="NoRef">&quot;@echo off&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(13) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(10) &amp; &quot;SET PowerShellScriptPath=&quot; &amp; </Chunk>
+									<Chunk type="VariableReference">$psscriptpath</Chunk>
+									<Chunk type="NoRef"> &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(13) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(10) &amp; &quot;powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%&quot; &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(13) &amp; </Chunk>
+									<Chunk type="FunctionRef">Char</Chunk>
+									<Chunk type="NoRef">(10)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$psbat"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="190" name="Create Data File" enable="True">
+			<Options>32</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscript]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="190" name="Create Data File" enable="True">
+			<Options>32</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscriptbat]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="191" name="Open Data File" enable="True">
+			<Options>37</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscript]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$psscriptID">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="192" name="Write to Data File" enable="True">
+			<Options>16391</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptID]]></Text>
+							<ChunkList hash="0D1450A31D91FAC56E80E3BF720E7EAC">
+								<Chunk type="VariableReference">$psscriptID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$ps">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+				<Encoding type="2" name="UTF-8"></Encoding>
+				<Parameter type="Boolean">
+					<Boolean type="Append line feed" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="196" name="Close Data File" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptID]]></Text>
+							<ChunkList hash="0D1450A31D91FAC56E80E3BF720E7EAC">
+								<Chunk type="VariableReference">$psscriptID</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="191" name="Open Data File" enable="True">
+			<Options>37</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="UniversalPathList">
+					<UniversalPathList membercount="1">
+						<ObjectList>
+							<Location><![CDATA[$psscriptbat]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$psscriptIDbat">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="192" name="Write to Data File" enable="True">
+			<Options>16391</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptIDbat]]></Text>
+							<ChunkList hash="9BD2CA72B3973A6EBD3AC3F49E2ABF99">
+								<Chunk type="VariableReference">$psscriptIDbat</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$psbat">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+				<Encoding type="2" name="UTF-8"></Encoding>
+				<Parameter type="Boolean">
+					<Boolean type="Append line feed" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="196" name="Close Data File" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="id">
+					<Calculation datatype="2" position="0">
+						<Calculation>
+							<Text><![CDATA[$psscriptIDbat]]></Text>
+							<ChunkList hash="9BD2CA72B3973A6EBD3AC3F49E2ABF99">
+								<Chunk type="VariableReference">$psscriptIDbat</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="57" name="Send Event" enable="True">
+			<Options>16420</Options>
+			<ParameterValues membercount="1">
+				<Parameter>
+					<Target value=""></Target>
+					<Send name="open document/application" classString="aevt" idString="odoc" class="1634039412" id="1868853091"></Send>
+					<Source type="Document">
+						<Document>
+							<UniversalPathList membercount="1">
+								<ObjectList>
+									<Location><![CDATA[$psscriptbat]]></Location>
+								</ObjectList>
+							</UniversalPathList>
+						</Document>
+					</Source>
+					<Options Foreground="True" Wait="False" Copy="False"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="62" name="Pause/Resume Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Options">
+					<Options type="Duration (seconds): ">
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA[1.5]]></Text>
+								<ChunkList hash="AFA52C1B1801922CD5E9938952906913">
+									<Chunk type="NoRef">1.5</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<Options>4</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment value="remove mounted Q"></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>64</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<ScriptReference id="159" name="New Digital - required fields check"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( ScriptResult ) = False]]></Text>
+							<ChunkList hash="234A8B1937D3C64B55AA9F5840285F20">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">ScriptResult</Chunk>
+								<Chunk type="NoRef"> ) = </Chunk>
+								<Chunk type="FunctionRef">False</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[False]]></Text>
+							<ChunkList hash="01ABFC750A0C942167651C40D088531D">
+								<Chunk type="FunctionRef">False</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="75" name="Commit Records/Requests" enable="True">
+			<Options>128</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Skip data entry validation" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Force Commit" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="180" name="Refresh Portal" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Object">
+					<Name>
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA["Portal_DM_Items"]]></Text>
+								<ChunkList hash="4FD9D43C24D2C99D075B6A4C117E4FBD">
+									<Chunk type="NoRef">&quot;Portal_DM_Items&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Name>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="125" name="Else If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[PatternCount ( $FMFilePath ; "filemac:" )]]></Text>
+							<ChunkList hash="8F6CABDADD2922E3176935DEFD4B9FA6">
+								<Chunk type="FunctionRef">PatternCount</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$FMFilePath</Chunk>
+								<Chunk type="NoRef"> ; &quot;filemac:&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$DISABLE_VALIDATION"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Not Supported"]]></Text>
+							<ChunkList hash="DF05630F81E1BB717013F78767B2E3D8">
+								<Chunk type="NoRef">&quot;Not Supported&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["This has to be done on a Windows computer. Mac OS not supported yet."]]></Text>
+							<ChunkList hash="D0855DCF9A8441309B2836F5FE3C0ECB">
+								<Chunk type="NoRef">&quot;This has to be done on a Windows computer. Mac OS not supported yet.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

@@ -1,0 +1,3 @@
+Go to Layout [ Layout: "FIELDS nm" ; Animation: None ]
+Enter Find Mode [ Pause: ON ; Restore ; Find requests: Find (Inventory for Labeling::inventory_no: "M3768") ]
+

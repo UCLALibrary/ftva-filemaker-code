@@ -1,0 +1,15 @@
+Set Variable [ $inventoryNo ; Trim ( Inventory for Labeling::inventory_no ) ]
+Set Variable [ $id ; Inventory for Labeling::inventory_id ]
+
+If [ IsEmpty ( $inventoryNo ) ]
+	Exit Script [ True ]
+End If
+Set Variable [ $count ; ExecuteSQL ( "SELECT COUNT(*) FROM \"Inventory for Labeling\" WHERE inventory_no = ?"
+				; "" ; "" ; $inventoryNo) ]
+If [ GetAsNumber ( $count ) > 1 ]
+	Show Custom Dialog [ Title: "Duplicate Inventory Number" ; Message: "This Inventory Number already exists. Please enter a unique value." ; Default Button: "OK" ]
+	Set Field [ Inventory for Labeling::inventory_no ; "" ]
+	Exit Script [ False ]
+End If
+Exit Script [ True ]
+

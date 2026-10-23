@@ -1,0 +1,2016 @@
+<FieldCatalog>
+	<UUID modifications="138" userName="uae" accountName="uae" timestamp="2026-05-19T09:32:47">C6DE81A6-B9B7-F64C-BCA9-5212EBB31A73</UUID>
+	<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+	<ObjectList membercount="207">
+		<Field DefaultStyle="" id="7" name="old_location" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">44824916-424C-DA4F-B3F8-29A6DF8203CF</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="8" name="collection" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">216BC77A-CC82-8245-9656-1D89107E773C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="9" name="episode_title" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">EF2026F6-944E-574B-95D5-CAD38741FB2B</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="10" name="element_info" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8C9C8AE7-0183-B64A-85B9-32458C943FC1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="11" name="donor_code" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">3131EB43-F364-2444-AA06-1DF1AA0DAE2C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False">
+				<Strict>Numeric</Strict>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="12" name="hearst_prefix" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D607729F-4C60-1746-916B-1EA42C779B64</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="13" name="volume" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">B81E597B-4DEB-FD4C-97D0-BB4ABC869E41</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="14" name="issue" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A27F6F4C-E9B3-BC4F-8CBE-B9260874A7FE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="15" name="can" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">E00A4F16-ED72-154A-B913-A4DF4D6DC035</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="16" name="roll" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">1863DC38-D22B-814A-AC75-F86E5035A22F</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="17" name="neg_no_prefix" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">CBE8D3F7-5BDC-7241-AC28-EA2445CFBA06</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="18" name="neg_no" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8841E804-40E9-014B-9AA7-3B760B0FBDDA</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="19" name="length" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">29382C90-076D-BA4F-8E36-FC6E61291A90</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="20" name="inventory_id" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">9D06B02A-EAAB-3C4D-A166-FA2724461886</UUID>
+			<AutoEnter type="SerialNumber" prohibitModification="False">
+				<SerialNumber increment="1" generate="OnCreation"></SerialNumber>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="True" unique="True" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="21" name="title" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A5F767B6-3B60-BE46-AA0B-5CDB1E9CA3E9</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="22" name="total_reels" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">6E53BA00-59BD-D14D-B44B-D1E4A424B21C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="23" name="type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">BF30432F-2132-234D-BC7A-2037856555A0</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>General Collection</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="24" name="user_last_modified" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="8" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">245ABC3C-9E32-2241-91BF-D5C458E0F767</UUID>
+			<AutoEnter type="ModificationAccountName" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="25" name="date_modified" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">7A7515C6-80BD-F846-8DA6-B6DEF8B7943A</UUID>
+			<AutoEnter type="ModificationDate" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="26" name="date_created" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="5" userName="uae" accountName="uae" timestamp="2026-05-13T08:53:39">C9F594DD-38FD-B844-AC4B-2F78A4C410C9</UUID>
+			<AutoEnter type="CreationDate" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="27" name="notes" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">9446B4AD-DFC0-1446-AD45-B34629CDF8F2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="28" name="flag" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">FFA42D2B-C94E-4C4A-B116-92FDE10FE728</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="29" name="inventory_no" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="12" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2025-04-10T10:05:48">0D2DD6CA-CB3F-7B49-BB46-2479D447DEA3</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="True" unique="True" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="30" name="search_results" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">B09603CB-07C6-B949-94C7-C3B87A9A6103</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="31" name="found" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">AA7F517F-4498-2D40-9E38-EF4D07A60E79</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="32" name="search_error" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8E1D9B5E-62FC-DA42-82DF-8480E150FBA0</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="33" name="inventory_no_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">9C1999D4-9C0B-D348-88B1-3C28115A7DF6</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="34" name="hearst_prefix_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">94429C0B-B45B-DC41-B513-BCD7F3348ABC</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="35" name="hearst_can_vol_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">4316F671-FE40-A143-B069-2D1E8614D049</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="36" name="hearst_roll_issue_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8CE4D4A5-4F79-3B48-A326-EABC95201282</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="37" name="deterioration" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D643C6B0-935D-4849-A1A2-3317F4452FBB</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="38" name="unidentified" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">DE293942-AC47-164D-931F-8D63604FBFBA</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="39" name="missing" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">BA1CCDDC-F92B-0D44-B97B-270EA56CA4EA</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="40" name="format Newsreels" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D3CEA300-C643-F445-9AE4-E0C30E204647</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="41" name="date_released" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">002513DC-C51C-594C-8AB9-DC6244331F44</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="42" name="safety" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">26D8DFA3-854C-3941-815B-462AB2750B77</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="43" name="hearst_positive_negative_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">36203212-C727-7840-A93D-F805CC9CE5EF</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="44" name="story_1" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">00037FD1-7DCA-C14D-9BF8-5B9C752B2026</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="45" name="label_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">DD77D319-F189-AD4C-8265-C7A862E92C1A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="46" name="format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">E05382EC-235A-9245-86A3-944D41DC5D9C</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>35N</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="47" name="title_episode_no_dash" fieldtype="Calculated" datatype="Number" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">766FAA98-5C0B-A540-83B9-D20EC9B80ECC</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[If(episode_title=""; ""; "-")]]></Text>
+				<ChunkList hash="D68986E5B6B52D0437C8BA57A8D95BFD">
+					<Chunk type="FunctionRef">If</Chunk>
+					<Chunk type="NoRef">(</Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="9" name="episode_title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef">=&quot;&quot;; &quot;&quot;; &quot;-&quot;)</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="48" name="title_label" fieldtype="Calculated" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">78CDF986-8D2F-214A-B070-6A03AFCE6C98</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[Left( title; 50)]]></Text>
+				<ChunkList hash="7D788859455A6AFD2AE61D97DCEBE50B">
+					<Chunk type="FunctionRef">Left</Chunk>
+					<Chunk type="NoRef">( </Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="21" name="title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef">; 50)</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="49" name="epi_no_label" fieldtype="Calculated" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">6C3B9504-1D35-E846-AFB4-C10EAA2A567D</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[Left( episode_title; 50)]]></Text>
+				<ChunkList hash="F739095406BF65A4FDB19A9887995DB0">
+					<Chunk type="FunctionRef">Left</Chunk>
+					<Chunk type="NoRef">( </Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="9" name="episode_title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef">; 50)</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="50" name="format_size" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">41820DD2-36B5-AB4B-8902-333B61A76277</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="51" name="format_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">82F91D95-FDCD-7A4E-AB5E-DE6EF20B0F85</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="53" name="format_type_abbr" fieldtype="Calculated" datatype="Number" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">ADC770B7-BDF2-DC47-89CE-1316D0E3A3BE</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[Left( format_type; 1)]]></Text>
+				<ChunkList hash="985B9DB6876D65D05D534FBB7D6C478C">
+					<Chunk type="FunctionRef">Left</Chunk>
+					<Chunk type="NoRef">( </Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="51" name="format_type" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef">; 1)</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="54" name="sound_format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">156A92B4-7E2D-EB40-A639-8035D2E32727</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="5">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="55" name="aperture" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">F7760BF5-16BB-1147-8E8D-01A0A5471CB1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="56" name="color_format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">5D50E05F-9670-FC4F-B3EC-F1E6210889E2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="57" name="study_copy_no" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">63F80B07-7AE0-0248-9F40-F8800E55708C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="58" name="availability" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D66F19CC-ABDE-5D45-BB44-CDDFBD077484</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="59" name="date_copied" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">DC2A4F68-5A08-BC49-A01D-F3E8E18B3420</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="61" name="collection_title" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A4648BCB-365B-FD48-AE54-955972B56594</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="62" name="release_broadcast_year" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">0728105A-BF56-6643-B11F-374186C72FEE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="63" name="running_time" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">985F0BDE-72DC-AB43-9DD6-3368064CF22F</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="64" name="version" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">81607BA6-FE18-6C47-B0A2-DCDEC5A630ED</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="65" name="record_date" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">C17E6C8C-40BE-8641-BB58-F8F41CA37ECE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="66" name="director" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">F525431B-40C9-7547-84BB-197913047BEA</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="67" name="production_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">25EFA66C-D3C3-BF4D-8151-77506284345E</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="68" name="additional_physical_description" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A1B10805-1050-1D44-8E19-12DD9C19E999</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="69" name="notes_content" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">236D8045-9ADB-2440-B584-6B773845DC45</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="70" name="notes_reproduction" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">24AB6208-736F-C24D-90DE-5949887197D9</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="71" name="Vault" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">1CD58B12-511A-3642-85A5-CE0862BA9E92</UUID>
+			<AutoEnter type="LastVisited" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="72" name="Shelf" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">510BE7B3-0A15-BB4F-B1DC-932CDEC6989F</UUID>
+			<AutoEnter type="LastVisited" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="73" name="form_term" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">7A948B5D-9EBE-4845-A6FD-A4C84F0ED03D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="74" name="reproduction_source_notes" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">147465B9-FD83-E742-8018-BD7E60FC36C2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="75" name="preprint" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">66E532A7-9C00-424A-B35A-4219CDA309DB</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="76" name="inputter_initials" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">AC9868E2-3D4B-6046-9AB7-11D5B5997527</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="77" name="inputter_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">C4752CD6-7649-1344-89F6-870F1393F9B0</UUID>
+			<AutoEnter type="CreationDate" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="78" name="spac" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="3" userName="ssultan" accountName="ssultan" timestamp="2024-01-18T07:27:04">394978AA-0915-824B-A247-B9A83ADE0298</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="63" name="SPAC"></ValueListReference>
+				<Message>SPAC value must be choosen from the list of available options in the drop-down menu. </Message>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="79" name="episode no." fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">4E5EE4F3-2F2F-214A-AE5D-44E50C4E0F28</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="80" name="Acquisition type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2024-04-12T15:29:57">FFFAF745-2FE0-FF4F-9EA1-BCB186A31EAC</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="Always" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="17" name="Acquisition type"></ValueListReference>
+				<Message>Acquisition Type can only have a value from the drop down list. </Message>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="81" name="item holdings" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">7A968F9F-92CA-004E-B349-B68A14384905</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="82" name="Language" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">1EEFFE7A-E422-C44A-BD8F-6ACCB8FCC8CB</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="83" name="Country" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">39DD222F-B9D0-1A47-9611-361EE8C713B9</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="84" name="Status" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D303E33D-FACD-EA4D-8581-0BAF30F4C1B0</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>Available</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="86" name="broadcast title" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">0E17F880-C236-F84B-AB61-291742EFEA07</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="87" name="Subtitle" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">027DE59A-4A00-9B4A-95B9-54EB87C1F1FE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="88" name="condition" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">F4A4BAA7-DDD5-C043-B7DA-FC66851BCC92</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="89" name="Reproduction for" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">313A8F82-C004-BB4A-8A68-5DD4E76346E2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="90" name="lab" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">F1537B2C-9A2F-3144-A289-F73597E870E2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="91" name="reproduction_reason" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">CBED5D14-B564-FB47-A4A7-0BECF6EB098F</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="92" name="date_received" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A67B3C84-C37B-A843-B276-9CEBEE2A7C9A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="93" name="Preserved by" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">706C9119-A50B-4045-89C0-1C0E2638A74C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="94" name="preservation date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">21A4F14D-B925-A643-A3BC-75875FB69A48</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="95" name="FTA" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8EBF55E7-5316-EC42-92A0-031B67668F4A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="96" name="orion" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">EEAD4547-26C3-6C41-B579-29932A042A95</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="97" name="reproduction_location" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">0558BB05-04E8-4D47-83CA-E10B1B3D6B14</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="98" name="reels_affected" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">953AFBEA-8957-074B-8A0F-21E4CF5F36D2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="99" name="reels_discarded" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D5BEFBE4-26A8-AC46-A22B-9F3EB7262C75</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="100" name="other_det_info" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">F3516591-8E21-EF47-BBF1-6F1BC73D63E8</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="101" name="track" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">7829050F-25CB-A94E-B86A-B2DF3B35FD86</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="102" name="separations" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">2EE61819-58E8-714F-9BF3-32B1DD6E19CB</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="103" name="unknown_track" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">9AB607B3-6B3D-C046-BC14-1533CAF5AF78</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="104" name="additional_pre_print_info" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">483F2479-24EC-2A4A-A267-E9A59A8C9081</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="105" name="playing_speed" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">788DC515-DDDB-894D-A57B-3FC06BEE8527</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="106" name="groove_characteristics" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">96EA7AAE-05CB-A142-8C1C-5DF17E459E34</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="107" name="sync_track_info" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">9E04604E-BD87-314E-807C-BA5925C8FC9D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="108" name="sound_channels" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A73E447A-FA25-7D4D-8270-01FB25B60FCD</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="109" name="type_of_recording" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">E3A0608C-491B-6843-A887-D575878D3FCD</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="110" name="Alma" fieldtype="Normal" datatype="Text" comment="Field used to be called Voyager">
+			<UUID modifications="3" userName="ssultan" accountName="ssultan" timestamp="2024-04-04T10:18:20">634F8CB4-AB95-A74C-A2CB-F04C108376CC</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False">
+				<ConstantData>N</ConstantData>
+			</AutoEnter>
+			<Validation type="Always" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<ValueListReference id="30" name="Voyager"></ValueListReference>
+				<Message>ALMA value must be selected from the available options</Message>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="111" name="track configurations" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">2E8B9CCB-7665-1547-B7FF-B16564B2B356</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="112" name="sync_track_other" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">4641C9CD-F4A1-3844-8274-2DB6B643E957</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="113" name="reproduction_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8B510AF0-C7BB-7E41-A784-A11E95C8EDD5</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="114" name="cast" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">ABFEA90D-2698-E140-A241-F60DA45758B8</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="115" name="UPC code" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">5576CB80-4229-0442-9D6B-239E5A9FC40D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="125" name="timeCode" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">4ECDE248-999E-6843-9F50-2BEEA7F98774</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="126" name="incomplete" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">61DD7437-F76C-354D-BD7A-BE148076317C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="128" name="film base" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8C53A1D7-F5D8-9843-8937-A76A30238223</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="129" name="Network" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">AA080930-6433-A241-BA29-6EB6C5689457</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="130" name="Imported database info" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">E44FC4CE-AA45-3544-8F30-49856D3BDA0D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="131" name="Slot" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">A31D356A-982E-9E4B-AB5F-71BFA893FBA8</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="133" name="Condition_Damage" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">4F05CCA5-6B3A-7F4F-97DA-FBDEF2AFE111</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="134" name="element_info_full" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">3B059F10-2BD3-D844-8246-C802433875DA</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="135" name="collection intake notes" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">FFE50403-B963-084E-8531-728451C097DE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="136" name="film_stock" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">B8F001B7-0D50-B146-AF33-FFA16FB9880A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="137" name="old_barcode" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">54D89B5D-B902-934A-8744-6C15268287A5</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="138" name="Aperture detail" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">AB56DFB7-383B-BB44-817C-94454AC64BB6</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="141" name="Add&apos;l phys cond" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">99D65469-7208-A64C-9ABB-C58582D2CF52</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="142" name="Avail detail PP" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">5D780A55-3852-9243-ACBE-1B82C817564A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="143" name="from element inv #" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">726A80B2-CA9E-EE47-AE74-CE38FB8924A7</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="144" name="Lab 2" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">3F575077-4BB8-D44C-8AA8-5E50EF3D1DB9</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="145" name="from element type 2" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">770A73E1-DD6D-C64C-B950-AC0B555A4638</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="146" name="from element inv # 2" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">998CF105-D0C7-8540-9B9C-9A51119D5833</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="147" name="lab date 2" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">6B5CED93-A08A-8243-8B69-174627693642</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="148" name="Preservation Inventory Status" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">99E06559-6510-F549-B2E1-8CF15650A23D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="149" name="reels" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">EE9433C2-5D64-1140-A3A8-3D02F5691015</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="150" name="Incomplete - Print" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">4D5F6FDC-FA77-0149-963D-CEA3CFFF8B6E</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="151" name="Incomplete - PP" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">744355CB-7A72-6346-8717-3B9FDA5901D4</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="152" name="user_created" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-05-13T08:54:12">22FBD3D1-3611-0B42-85A8-56C58EDDCCD4</UUID>
+			<AutoEnter type="CreationName" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="153" name="Audio Format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">96A45C15-C823-2341-AE91-314AF0652E0A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="154" name="DVDR AB" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8C63AA59-0FB7-E749-AEF9-F65F43913AC0</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="155" name="disc of" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">52AE507F-70CA-A84E-80D7-57467B7474AE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="156" name="disc total" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">3E8C074E-A392-9C43-9CBB-31EEC9FD040A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="157" name="cassette of" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">883F6032-7F64-9A4E-ABDA-4B8C5DFEAD92</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="158" name="cassette total" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">CD3CBDCF-68C6-AD4A-AEE6-CB56D5D2AE39</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="159" name="reel total" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">FE8060C7-A196-3343-B580-33D5FFDF5F4A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="160" name="Type of sound" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">CA982A31-45BA-8342-B2A4-82E90EE61A24</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="161" name="Audio sample rate" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">35443484-D4E3-CE40-B1A3-745326D6A8EF</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="162" name="Audio bit rate" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">55229865-040C-3340-8475-1CFCB99FDE24</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="163" name="Audio frame rate" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">D570EA8D-204B-034E-936F-F9FF60336A96</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="164" name="Script Date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">0868F3AB-5481-7942-9ADB-47828F9C8D0D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="166" name="Record Date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">CE6C3792-BEB6-D246-B17D-114A8E225D79</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="167" name="Announcer open" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">5B3A59BA-0C9B-2B44-BA58-B6D01990CBA1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="168" name="Announcer Close" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">7972334A-09E7-E94D-89A3-12B03F4E7650</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="169" name="Data notes" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">CAE781E2-5F01-934F-8404-CBA939200C0B</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="170" name="GRAMMY PROJECT" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">F8BF0B94-7138-B541-B206-DF367D80707D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="171" name="DE" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">8638D9BB-B30F-924F-BF4F-D3AB64EBE8C1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="172" name="MQ" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">67DEAF68-11E7-2F42-86A3-40121EC55B54</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="173" name="Sent to John Polito for Digitzation" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">BB0528D6-8B66-0A4F-9748-9F6695EEBC10</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="174" name="Catalog Record Added To Voyager" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">B4EEBEA8-8A57-9D44-8D27-FB6DC47AE06B</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="175" name="total_reels Total" fieldtype="Summary" datatype="Number" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">AF180D28-A9BE-224F-ADF1-011DEFF8061E</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<SummaryInfo restartEachGroup="False" summarizeRepetition="Together" operation="Total">
+				<SummaryField>
+					<FieldReference id="22" name="total_reels">
+						<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+					</FieldReference>
+				</SummaryField>
+			</SummaryInfo>
+		</Field>
+		<Field DefaultStyle="" id="176" name="item holdings Count" fieldtype="Summary" datatype="Number" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">B5B920BF-2116-254E-9ED6-01726B341670</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<SummaryInfo restartEachGroup="False" summarizeRepetition="Together" operation="Count">
+				<SummaryField>
+					<FieldReference id="81" name="item holdings">
+						<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+					</FieldReference>
+				</SummaryField>
+			</SummaryInfo>
+		</Field>
+		<Field DefaultStyle="" id="177" name="total_reels Count" fieldtype="Summary" datatype="Number" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">204496B7-D601-0F41-A04A-9885CCD5DA44</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<SummaryInfo restartEachGroup="False" summarizeRepetition="Together" operation="Count">
+				<SummaryField>
+					<FieldReference id="22" name="total_reels">
+						<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+					</FieldReference>
+				</SummaryField>
+			</SummaryInfo>
+		</Field>
+		<Field DefaultStyle="" id="179" name="ALIAS" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">11BCEDE8-B0FB-D84E-ABB0-E1CC0CD25AC4</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="180" name="GATOR" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">968AC756-7D10-F840-8BFA-F8C003BF7306</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="184" name="incomplete_holding" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:25">C7417E98-89AC-1747-9AC1-5F0379936C21</UUID>
+			<AutoEnter type="ConstantData" prohibitModification="False" overwriteExisting="True" alwaysEvaluate="True">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[GetAsBoolean ( Self )]]></Text>
+						<ChunkList hash="04E03FAEE1622ED32100F3D9DF1F2768">
+							<Chunk type="FunctionRef">GetAsBoolean</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FunctionRef">Self</Chunk>
+							<Chunk type="NoRef"> )</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+				<ConstantData>0</ConstantData>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="185" name="inventory_id_search" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">F9C1E738-C1B3-4C41-9FC4-C26964F6E82F</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="186" name="title_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">7299BFF1-8F6F-9844-BC7A-333F74E7908C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="187" name="director_search" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">B2240095-6915-EC49-A302-1EC39D3174C1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="188" name="Area_of_Description" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">A68485F9-82D8-DA45-A219-B4F40FD5E466</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="189" name="Sub_area" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">7E57FE0E-A398-D048-9DC3-7AC79D0DCA79</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="190" name="Type_of_Deterioration" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">34B2E9F1-2B86-B341-A94C-02CC35BFC4B1</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="191" name="Stage" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">03F59C6A-9C9B-B24B-A605-B65BF52EE5DE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="192" name="Deteriorated_reels" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">36A286E5-D93A-8448-8143-88564F062D27</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="193" name="Deterioration_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">F80BBDAC-F39F-D545-9184-F83BFEE922BE</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="194" name="Deterioration_initials" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">04663FBB-3E4C-854E-89BA-58A5853E86D9</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="195" name="New_Condition_damage" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">DF094C57-11DE-B846-88DE-B63FEA70017C</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="196" name="New_Condition_damage_JSON" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">7640DA3B-00AF-A841-871A-1061D61A2C58</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="197" name="UUID" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">517EB276-87E9-1E4E-A9D7-2BC487B46B33</UUID>
+			<AutoEnter type="Calculated" prohibitModification="False" overwriteExisting="False" alwaysEvaluate="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[Get ( UUID )]]></Text>
+						<ChunkList hash="9BEC4C5D2CF1659E640FE3DBFE5C12E3">
+							<Chunk type="FunctionRef">Get</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FunctionRef">UUID</Chunk>
+							<Chunk type="NoRef"> )</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+			</AutoEnter>
+			<Validation type="Always" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="198" name="digital_record" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-30T05:31:02">122691F1-1FD8-0C4B-A8C3-9C517F2A561B</UUID>
+			<AutoEnter type="Calculated" prohibitModification="False" overwriteExisting="False" alwaysEvaluate="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[If ( Get ( LayoutName ) = "NEW DIGITAL" ; 1 ; 0 )]]></Text>
+						<ChunkList hash="CF373C1B6FD4B990C4E61D39F4EE28BC">
+							<Chunk type="FunctionRef">If</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FunctionRef">Get</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FunctionRef">LayoutName</Chunk>
+							<Chunk type="NoRef"> ) = &quot;NEW DIGITAL&quot; ; 1 ; 0 )</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="199" name="media_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-30T05:43:09">13211031-8A3C-AB43-82B4-B95453B76BF8</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[Case (  digital_record = 1 ; not IsEmpty ( media_type ) ;  1)]]></Text>
+						<ChunkList hash="0C26B47330DC9FCC9A259415DFD07BAA">
+							<Chunk type="FunctionRef">Case</Chunk>
+							<Chunk type="NoRef"> (&#13;  </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="198" name="digital_record" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> = 1 ; </Chunk>
+							<Chunk type="FunctionRef">not</Chunk>
+							<Chunk type="NoRef"> </Chunk>
+							<Chunk type="FunctionRef">IsEmpty</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="199" name="media_type" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> ) ;&#13;  1&#13;)</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+				<ValueListReference id="67" name="dm_media_type"></ValueListReference>
+				<Message>Media_Type is required.</Message>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="200" name="asset_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">A4E413F6-7D86-CF42-AC38-874A8557D867</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[Case (  digital_record = 1 ; not IsEmpty ( asset_type ) ;  1)]]></Text>
+						<ChunkList hash="CF10F7F25F29BB7DF4C97B844B4B7120">
+							<Chunk type="FunctionRef">Case</Chunk>
+							<Chunk type="NoRef"> (&#13;  </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="198" name="digital_record" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> = 1 ; </Chunk>
+							<Chunk type="FunctionRef">not</Chunk>
+							<Chunk type="NoRef"> </Chunk>
+							<Chunk type="FunctionRef">IsEmpty</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="200" name="asset_type" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> ) ;&#13;  1&#13;)</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+				<ValueListReference id="68" name="dm_asset_type"></ValueListReference>
+				<Message>Asset_Type is a required field.</Message>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="201" name="type_of_editing" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:55:38">C9D6CECC-D380-C944-99EC-9520E87FE610</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="69" name="dm_type_of_editing"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="202" name="project_name" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">6B415740-691E-7543-A2F7-419DEEED0D55</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="203" name="project_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:56:05">CC88D55B-C749-1C4E-B8B8-BB157A5BA56E</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="70" name="dm_project_type"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="204" name="project_start_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:56:34">349C8A4A-58D6-344B-9EAA-7F9DED02C5F4</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="205" name="project_end_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:56:39">2A278A64-AE96-9B4C-BC3C-A03107439786</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="206" name="project_owner" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:57:01">39E0908B-214A-6543-AA4D-1CCEAB6FB741</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="71" name="dm_project_owner"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="207" name="project_description" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">21C98A45-16CB-F947-B618-F037FF5182FC</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="208" name="project_stakeholders" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">09291DEF-BAD1-2B48-9A25-F2722432FDA2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="209" name="storage_format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:57:23">0ABC49A5-19A0-3F4A-92F2-F15359E02315</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="72" name="dm_storage_format"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="210" name="specific_carrier_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:58:34">D33CC1CE-E6DC-4B48-B21B-2DD93DB9214D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[Case (  digital_record = 1 ; not IsEmpty ( specific_carrier_type ) ;  1)]]></Text>
+						<ChunkList hash="235AAF55566A8C8AE7F9B7DE46B66D2A">
+							<Chunk type="FunctionRef">Case</Chunk>
+							<Chunk type="NoRef"> (&#13;  </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="198" name="digital_record" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> = 1 ; </Chunk>
+							<Chunk type="FunctionRef">not</Chunk>
+							<Chunk type="NoRef"> </Chunk>
+							<Chunk type="FunctionRef">IsEmpty</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="210" name="specific_carrier_type" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> ) ;&#13;  1&#13;)</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+				<ValueListReference id="73" name="dm_specific_carrier_type"></ValueListReference>
+				<Message>Specific Carrier Type is a required field. </Message>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="211" name="wrapper_format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:59:17">4D374530-D5DE-464C-9B8F-8CEADD3F91AD</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[Case (  digital_record = 1 ; not IsEmpty ( wrapper_format ) ;  1)]]></Text>
+						<ChunkList hash="956E8673FF2B70C04D54F9195B7FCF90">
+							<Chunk type="FunctionRef">Case</Chunk>
+							<Chunk type="NoRef"> (&#13;  </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="198" name="digital_record" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> = 1 ; </Chunk>
+							<Chunk type="FunctionRef">not</Chunk>
+							<Chunk type="NoRef"> </Chunk>
+							<Chunk type="FunctionRef">IsEmpty</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="211" name="wrapper_format" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> ) ;&#13;  1&#13;)</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+				<ValueListReference id="74" name="dm_wrapper_format"></ValueListReference>
+			</Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="212" name="video_codec" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T05:59:51">063A187E-EA58-B349-8422-4AA2FFE4CDC2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="75" name="dm_video_codec"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="213" name="audio_codec" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:00:06">FEFF718B-9BB9-C34E-BBB3-2B4491A92851</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="76" name="dm_audio_codec"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="214" name="resolution_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:00:23">B98D130E-D13B-2E42-A769-DF674794F79F</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="77" name="dm_resolution_type"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="215" name="display_resolution" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:00:33">BFD07484-AF21-9C43-A79C-31F74E231E4A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="78" name="dm_display_resolution"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="216" name="Carrier_A_location" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:01:02">70A08402-4F74-904C-8CDD-01C8496D30FF</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="86" name="dm_carrier_location"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="217" name="Carrier_B_location" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">07267715-CAE5-FD4B-ADC4-A56EBB0331C3</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="218" name="retention_status" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:01:12">C81B05BD-5B15-2642-8349-3ABC4DCA5755</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="79" name="dm_retention_status"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="219" name="retention_start_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">C506C706-06FB-B546-9DB2-5E5348AC5E2F</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="220" name="project_status" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:01:36">6DF84E90-3791-1C40-A029-CDFF0C92D0F2</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="80" name="dm_project_status"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="221" name="object_purpose" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-30T06:02:16">D27ABB54-56F3-B843-8044-9179395E0D22</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation alwaysValidate="False" type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<Text><![CDATA[Case (  digital_record = 1 ; not IsEmpty ( object_purpose ) ;  1)]]></Text>
+						<ChunkList hash="EC258F085738967644CC555939C4D1B6">
+							<Chunk type="FunctionRef">Case</Chunk>
+							<Chunk type="NoRef"> (&#13;  </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="198" name="digital_record" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> = 1 ; </Chunk>
+							<Chunk type="FunctionRef">not</Chunk>
+							<Chunk type="NoRef"> </Chunk>
+							<Chunk type="FunctionRef">IsEmpty</Chunk>
+							<Chunk type="NoRef"> ( </Chunk>
+							<Chunk type="FieldRef">
+								<FieldReference id="221" name="object_purpose" repetition="1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Chunk>
+							<Chunk type="NoRef"> ) ;&#13;  1&#13;)</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+				<ValueListReference id="81" name="dm_object_purpose"></ValueListReference>
+				<Message>Object_purpose is a required field. </Message>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="222" name="ingest_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">C42C3D8D-CC9C-1246-993E-EFA924FAFE04</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="223" name="no_ingest_reason" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:02:33">FBDEF0D7-73AE-1A4E-8A76-B7979712CBA0</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="82" name="dm_no_ingest_reason"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="224" name="no_ingest_reason_notes" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">24EEB41F-D153-154E-AC26-0DB58FBFA8CC</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="225" name="source_format" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:02:50">6BAE6688-A220-1F4E-BF00-28083759C4DD</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="83" name="dm_source_format"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="226" name="source_condition" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:03:00">F20F7338-D813-E24B-B01E-C32A0D1B675E</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="84" name="dm_source_condition"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="227" name="source_identifier" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">35EB0F21-9F79-C045-8C0E-362498D8460D</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="228" name="creator_source" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:03:20">DCE52035-EC57-E542-9334-EC96B3206C4B</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="False" unique="False" existing="False">
+				<ValueListReference id="85" name="dm_creator_source"></ValueListReference>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="229" name="retention_end_date" fieldtype="Normal" datatype="Date" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">30C87400-80D6-E047-AE37-A82D63FEA3BF</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="230" name="scan_type" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">E67A8B4D-48E7-9840-8ED3-94857D0FB2C5</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="231" name="Display_UUID" fieldtype="Calculated" datatype="Number" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:56">5311CE40-57BF-F947-B318-EF96ED04E6DD</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[UUID]]></Text>
+				<ChunkList hash="8576D38E363B60A136029EFCFAD9C0EB">
+					<Chunk type="FieldRef">
+						<FieldReference id="197" name="UUID" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="233" name="item_unit_holdings" fieldtype="Calculated" datatype="Number" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-30T06:12:30">7946C859-CDBF-BE43-A32F-DCA76A5FA062</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="False" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[Count ( Digital Media_Item Unit::UUID )]]></Text>
+				<ChunkList hash="5022F5CBCA08DD2232E1689E81F149B2">
+					<Chunk type="FunctionRef">Count</Chunk>
+					<Chunk type="NoRef"> ( </Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="1" name="UUID" repetition="1">
+							<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef"> )</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="234" name="total_item_units" fieldtype="Normal" datatype="Number" comment="">
+			<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:54:57">79CFC4EA-11F4-D947-ABDE-C21585D14DCC</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="235" name="digital_record_calc" fieldtype="Calculated" datatype="Text" comment="">
+			<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-05-07T05:53:38">AD329268-7288-B345-81FC-C3FA680B4B65</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<Text><![CDATA[Case ( digital_record = 0 ; "Analog Record";digital_record = 1 ; "Digital Record";"Not defined")]]></Text>
+				<ChunkList hash="11B60B6E83B046D06B0EFBF20B1C4819">
+					<Chunk type="FunctionRef">Case</Chunk>
+					<Chunk type="NoRef"> ( &#13;</Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="198" name="digital_record" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef"> = 0 ; &quot;Analog Record&quot;;&#13;</Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="198" name="digital_record" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef"> = 1 ; &quot;Digital Record&quot;;&#13;&quot;Not defined&quot;&#13;)</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

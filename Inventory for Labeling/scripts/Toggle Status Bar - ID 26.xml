@@ -1,0 +1,19 @@
+<Script>
+	<ScriptReference id="26" name="Toggle Status Bar"></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="29" name="Show/Hide Toolbars" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="Lock" id="524288" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Include Edit Record Toolbar" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="List">
+					<List name="Toggle" value="3"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

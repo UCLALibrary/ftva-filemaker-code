@@ -1,0 +1,73 @@
+<Script>
+	<ScriptReference id="141" name="incomplete search"></ScriptReference>
+	<ObjectList membercount="10">
+		<Step id="6" name="Go to Layout" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="41" name="General Entry Form"></LayoutReference>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="23" name="Show All Records" enable="True">
+		</Step>
+		<Step id="16" name="Go to Record/Request/Page" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Records">
+					<List name="First" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="71" name="Loop" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Inventory for Labeling::item holdings < Inventory for Labeling::total_reels]]></Text>
+							<ChunkList hash="50AC6782C59DA9973018A7A0C923D57D">
+								<Chunk type="FieldRef">
+									<FieldReference id="81" name="item holdings" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> &lt; </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="22" name="total_reels" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="16" name="Go to Record/Request/Page" enable="True">
+			<Options>8194</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Records">
+					<List name="Next" value="4">
+						<Boolean type="Exit after last" position="184" value="True"></Boolean>
+					</List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="69" name="Else" enable="True">
+		</Step>
+		<Step id="25" name="Omit Record" enable="True">
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="73" name="End Loop" enable="True">
+		</Step>
+	</ObjectList>
+</Script>

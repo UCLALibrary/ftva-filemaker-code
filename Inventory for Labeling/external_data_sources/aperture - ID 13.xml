@@ -1,0 +1,6 @@
+<ExternalDataSource name="aperture" type="FileMaker" id="13">
+	<File>
+		<UniversalPathList>file:aperture</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">1449C82F-8A85-5C44-8974-CB730C1809A6</UUID>
+</ExternalDataSource>

@@ -1,0 +1,21 @@
+<FieldCatalog>
+	<BaseTableReference id="131" name="Digital Media_Item Unit"></BaseTableReference>
+	<ObjectList membercount="1">
+		<Field>
+			<FieldReference id="36" name="Display_UUID" repetition="1">
+				<Calculation>
+					<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+					<Text><![CDATA[UUID]]></Text>
+					<ChunkList hash="7C0D3E5A58C5A8CF7D36EE7D63B242D6">
+						<Chunk type="FieldRef">
+							<FieldReference id="1" name="UUID" repetition="1">
+								<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+							</FieldReference>
+						</Chunk>
+					</ChunkList>
+				</Calculation>
+				<BaseTableReference id="131" name="Digital Media_Item Unit"></BaseTableReference>
+			</FieldReference>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

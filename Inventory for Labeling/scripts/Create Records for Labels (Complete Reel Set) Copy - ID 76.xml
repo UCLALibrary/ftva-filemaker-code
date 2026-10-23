@@ -1,0 +1,151 @@
+<Script>
+	<ScriptReference id="76" name="Create Records for Labels (Complete Reel Set) Copy"></ScriptReference>
+	<ObjectList membercount="9">
+		<Step id="47" name="Copy" enable="True">
+			<Options>4097</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="FieldReference">
+					<FieldReference id="20" name="inventory_id">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[GetAsNumber(Inventory for Labeling::total_reels) ≠ "" and GetAsNumber(Inventory for Labeling::total_reels)>0]]></Text>
+							<ChunkList hash="ADE4F943EEF922C3F674E847C38569F1">
+								<Chunk type="FunctionRef">GetAsNumber</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="22" name="total_reels" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">) ≠ &quot;&quot; </Chunk>
+								<Chunk type="FunctionRef">and</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">GetAsNumber</Chunk>
+								<Chunk type="NoRef">(</Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="22" name="total_reels" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)&gt;0</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="47" name="Copy" enable="True">
+			<Options>4097</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="FieldReference">
+					<FieldReference id="20" name="inventory_id">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="74" name="Go to Related Record" enable="True">
+			<Options>33554696</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Related">
+					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+					<LayoutReferenceContainer External="True" value="1">
+						<Label>original layout</Label>
+					</LayoutReferenceContainer>
+					<Animation name="None" value="0"></Animation>
+					<Options ShowRelated="True"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="25" name="Labeling Database 2"></DataSourceReference>
+						<ScriptReference id="33" name="Create Label Rows for Item Copy"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="1" type="Calculated">
+							<Name current="False">
+								<Calculation datatype="1" position="0">
+									<Calculation>
+										<Text><![CDATA["Labeling Database"]]></Text>
+										<ChunkList hash="542D40BC1C14473BC2FEE7845DC5A4F5">
+											<Chunk type="NoRef">&quot;Labeling Database&quot;</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</Name>
+						</Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="69" name="Else" enable="True">
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Message"]]></Text>
+							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
+								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["You must specify the total number or reels before you can use this feature."]]></Text>
+							<ChunkList hash="A558589FBCF999F5C3B164F1FD8F6952">
+								<Chunk type="NoRef">&quot;You must specify the total number or reels before you can use this feature.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="Doh!">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+	</ObjectList>
+</Script>

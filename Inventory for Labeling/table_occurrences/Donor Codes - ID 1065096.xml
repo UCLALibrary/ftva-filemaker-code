@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Related" height="26" id="1065096" name="Donor Codes" type="External">
+	<UUID modifications="6" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">5FD7B74F-4089-4B4E-84B1-55877E3E618F</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="26" name="Donor Codes"></DataSourceReference>
+		<BaseTableReference id="129" name="Donor Codes"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="31" left="1097" bottom="69" right="1247"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

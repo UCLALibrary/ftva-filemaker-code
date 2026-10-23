@@ -1,0 +1,2 @@
+Replace Field Contents [ With dialog: ON ; Inventory for Labeling::Acquisition type ; Replace with calculation: Trim ( "UNKNOWN" ) ]
+

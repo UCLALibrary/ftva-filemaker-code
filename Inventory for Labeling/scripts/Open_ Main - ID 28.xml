@@ -1,0 +1,24 @@
+<Script>
+	<ScriptReference id="28" name="Open: Main"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step id="31" name="Adjust Window" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Hide" value="5"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="33" name="Open File" enable="True">
+			<Options>16</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Open hidden" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="5" name="Labeling"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

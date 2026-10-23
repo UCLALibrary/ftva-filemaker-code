@@ -1,0 +1,7 @@
+<ValueList id="69" name="dm_type_of_editing">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[GradedFixed ColorFixed AudioFixed Audio Sync]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:26:37">E801B766-FA00-4B42-B682-28740EEE5F62</UUID>
+</ValueList>

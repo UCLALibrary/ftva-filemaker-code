@@ -1,0 +1,6 @@
+<ExternalDataSource name="Donor Codes" type="FileMaker" id="26">
+	<File>
+		<UniversalPathList>file:Donor Codes&#13;file:/P:/DonorDepositor/Donor Codes</UniversalPathList>
+	</File>
+	<UUID modifications="5" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">3DB2B641-C016-3E44-92A7-B6B9655EBFCF</UUID>
+</ExternalDataSource>

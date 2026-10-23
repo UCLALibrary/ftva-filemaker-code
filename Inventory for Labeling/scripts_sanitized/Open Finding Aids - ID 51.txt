@@ -1,0 +1,7 @@
+Go to Layout [ Layout: "ALL FIELDS" ; Animation: None ]
+Enter Find Mode [ Pause: OFF ]
+Set Field [ Inventory for Labeling::type ; "Finding Aids" ]
+Perform Find
+Go to Layout [ Layout: "Form - Finding Aids" ; Animation: None ]
+Show/Hide Toolbars [ Lock: OFF ; Include Edit Record Toolbar: OFF ; Show ]
+

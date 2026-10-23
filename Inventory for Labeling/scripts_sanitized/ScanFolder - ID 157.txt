@@ -1,0 +1,108 @@
+If [ IsEmpty ( StorageFormat::Inventory_number ) ]
+	Show Custom Dialog [ Title: "No Inventory Number" ; Message: "Create an Inventory number for the record first." ; Default Button: "OK" ; Button 2: "Cancel" ]
+	Exit Script []
+End If
+
+Freeze Window
+Set Error Capture [ ON ]
+
+Set Variable [ $platform ; Get ( SystemPlatform ) ]
+Set Variable [ $tempDir ; Get ( TemporaryPath ) ]
+Set Variable [ $outCSV ; $tempDir & "fm_scan.csv" ]
+Set Variable [ $outCSVPath ; $outCSV ]
+Get Folder Path [ Allow Folder Creation: OFF ; Target: $FOLDER ; Title: "Select the Folder-Hard Drive location" ; Default location: Get ( DocumentsPath ) ]
+Set Variable [ $folderPath ; $FOLDER ]
+
+
+Go to Object [ "pDMUnit" ]
+
+If [ IsEmpty ( $folderPath ) ]
+	Exit Script []
+End If
+If [ $platform = -2 ]
+	Set Variable [ $temp ; Right ( $folderPath ; Length ( $folderPath ) - 1 ) ]
+	Set Variable [ $outCSV ; Right ( $outCSV ; Length ( $outCSV ) - 1 ) ]
+	
+	Set Variable [ $folderWin ; Substitute ( $temp ; "/" ; "\\" ) ]
+	
+	Set Variable [ $quoted ; "\"" & $folderWin & "\"" ]
+	Set Variable [ $ps ; "$DefaultMasks = @('*.3g2','*.3gp','*.aac','*.aif','*.aiff','*.amv','*.asf','*.avi','*.f4v','*.flac','*.flv','*.gifv','*.m2ts','*.m4a','*.m4v','*.mkv','*.mng','*.mov','*.mp3','*.mp4','*.mpg','*.mpeg','*.mts','*.mxf','*.nsv','*.ogg','*.rm','*.rmvb','*.roq','*.svi','*.ts','*.viv','*.vob','*.vtt','*.wav','*.webm','*.wma','*.wmv','*.yuv') " & Char ( 13 ) & Char ( 10 ) &
+					
+					"$AllowedExtensions = $DefaultMasks | ForEach-Object { $_ -replace '^\*\.', '' }" & Char ( 13 ) & Char ( 10 ) &
+					
+					"Get-ChildItem -LiteralPath " & $quoted & " -Recurse -File | " &
+					"Where-Object { $AllowedExtensions -contains $_.Extension.TrimStart('.') } |" &
+					"Select-Object FullName,Length | " &
+					"ForEach-Object { $_.FullName + ',' + $_.Length } | " &
+					"Out-File -Encoding utf8 " & Quote ( $outCSV ) ]
+	Set Variable [ $psscript ; Get ( TemporaryPath ) & "list.ps1" ]
+	Set Variable [ $psscriptbat ; Get ( TemporaryPath ) & "list.bat" ]
+	Set Variable [ $psscriptpath ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
+	
+	Set Variable [ $psbat ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) & "pause" ]
+	
+	Create Data File [ "$psscript" ; Create folders: OFF ]
+	Create Data File [ "$psscriptbat" ; Create folders: OFF ]
+	Open Data File [ "$psscript" ; Target: $psscriptID ]
+	Write to Data File [ File ID: $psscriptID ; Target: $ps ; Append line feed: OFF ]
+	Close Data File [ File ID: $psscriptID ]
+	Open Data File [ "$psscriptbat" ; Target: $psscriptIDbat ]
+	Write to Data File [ File ID: $psscriptIDbat ; Target: $psbat ; Append line feed: OFF ]
+	Close Data File [ File ID: $psscriptIDbat ]
+	
+	Send Event [ Event: open document/application ; Document: "$psscriptbat" ; Bring target application to foreground: ON ; Wait for event completion: OFF ; Copy event result: OFF ]
+	Pause/Resume Script [ Duration (seconds): 3.5 ]
+	
+	
+	Open Data File [ "$outCSVPath" ; Target: $outCSVID ]
+	Read from Data File [ File ID: $outCSVID ; Target: $csvRAW ]
+	Close Data File [ File ID: $outCSVID ]
+	
+	Set Variable [ $csvParsed ; Substitute ( $csvRAW; Char ( 13 ); "") ]
+	Set Variable [ $count ; ValueCount ( Substitute ( $csvParsed ; Char ( 10 ); "¶") ) ]
+	Set Variable [ $csvParsed ; Substitute ( $csvParsed ; Char ( 10 ); "¶" ) ]
+	
+	
+	Set Variable [ $i ; 1 ]
+	Loop
+		Exit Loop If [ $i > $count ]
+		Set Variable [ $line ; GetValue ( $csvParsed; $i ) ]
+		If [ not IsEmpty ( $line ) ]
+			Set Variable [ $fullPath ; GetValue ( Substitute ( $line; "," ; "¶" ) ; 1) ]
+			If [ Code ( Left ( $fullPath;1 ) ) = 65279 ]
+				Set Variable [ $fullPath ; Middle ( $fullPath ; 2 ; Length ( $fullPath) -1 ) ]
+			End If
+			
+			Set Variable [ $fileSize ; GetValue ( Substitute ( $line; "," ; "¶" ) ; 2) ]
+			If [ Code ( Left ( $filesize;1 ) ) = 65279 ]
+				Set Variable [ $fileSize ; Middle ( $fileSize ; 2 ; Length ( $fileSize) -1 ) ]
+			End If
+			
+			Set Variable [ $parts ; Substitute ( $fullPath ; "\ "; "¶") ]
+			Set Variable [ $fileName ; GetValue ( $parts; ValueCount ( $parts )) ]
+			Set Variable [ $folderPath ; Left ( $fullPath ; Length ( $fullPath ) - Length ( $fileName ) ) ]
+			Set Variable [ $jsonName ; $fileName & ".mediainfo.json" ]
+			Set Variable [ $jsonPath ; $fullPath & "sidecars\\" & $jsonName ]
+			Set Variable [ $jsonFMPath ; "filewin:/" & Substitute ( $jsonPath ; "\\" ; "/" ) ]
+			
+			Go to Object [ "pDMUnit" ]
+			
+			Go to Portal Row [ Select: ON ; Last ]
+			Go to Portal Row [ Exit after last: OFF ; Next ]
+			Set Field [ Digital Media_carrier::file_path ; $fullPath ]
+			Set Field [ Digital Media_carrier::file_size ; $fileSize ]
+			Set Field [ Digital Media_carrier::Item_unit_number ; $i ]
+			Commit Records/Requests [ With dialog: OFF ]
+			
+			
+			
+			Set Variable [ $i ; $i + 1 ]
+		End If
+	End Loop
+	
+Else If [ $platform = 1 ]
+	Show Custom Dialog [ Title: "Mac Not supported" ; Message: "Mac OS is currently not supported." ; Default Button: "OK" ; Button 2: "Cancel" ]
+End If
+Refresh Portal
+Refresh Window
+

@@ -1,0 +1,4 @@
+Go to Related Record [ Table: Donor Codes ; Layout: <original layout> ; Show related ]
+Perform Script [ "details layout" ; Specified: From list ; File: "Donor Codes" ; Parameter: ]
+Select Window [ Name: "Donor Codes" ]
+

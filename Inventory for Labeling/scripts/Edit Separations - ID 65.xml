@@ -1,0 +1,39 @@
+<Script>
+	<ScriptReference id="65" name="Edit Separations"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="13" name="aperture"></DataSourceReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="1" type="Calculated">
+							<Name current="False">
+								<Calculation datatype="1" position="0">
+									<Calculation>
+										<Text><![CDATA["aperture"]]></Text>
+										<ChunkList hash="EDCAF7C683ABF23B00C7E1B0509B9466">
+											<Chunk type="NoRef">&quot;aperture&quot;</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</Name>
+						</Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

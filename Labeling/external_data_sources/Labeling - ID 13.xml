@@ -1,0 +1,6 @@
+<ExternalDataSource name="Labeling" type="FileMaker" id="13">
+	<File>
+		<UniversalPathList>file:Labeling</UniversalPathList>
+	</File>
+	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">BCDBCB98-B5EF-1142-9CC6-32242F4CC089</UUID>
+</ExternalDataSource>

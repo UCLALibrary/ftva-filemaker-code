@@ -1,0 +1,10 @@
+Perform Find [ Restore ; Find requests: Find ]
+If [ Inventory for Labeling::<Field Missing> >= "pull" ]
+	Go to Layout [ Layout: "Layout #35" ; Animation: None ]
+	Sort Records [ With dialog: OFF ; Restore ]
+	Go to Record/Request/Page [ First ]
+	Enter Preview Mode [ Pause: ON ]
+	Enter Browse Mode [ Pause: OFF ]
+	Go to Layout [ Layout: <original layout> ; Animation: None ]
+End If
+

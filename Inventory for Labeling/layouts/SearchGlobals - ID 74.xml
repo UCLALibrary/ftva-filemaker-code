@@ -1,0 +1,15 @@
+<Layout id="74" name="SearchGlobals" width="1024">
+	<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
+	<LayoutThemeReference id="3" name="com.filemaker.theme.apex_blue" Base="com.filemaker.theme.minimalist_touch"></LayoutThemeReference>
+	<PartsList membercount="2">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="110" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="658" absolute="110" Options="0"></Definition>
+		</Part>
+	</PartsList>
+	<UUID modifications="0" userName="uae" accountName="uae" timestamp="2026-03-25T13:58:45">E4BAB3A7-7F11-5749-95FE-19A82580926A</UUID>
+	<ClientType>0</ClientType>
+	<Options hidden="False">15927297</Options>
+</Layout>

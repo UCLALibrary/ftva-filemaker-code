@@ -1,0 +1,3 @@
+Perform Script [ "" ; Specified: From list ; File: "aperture" ; Parameter: ]
+Select Window [ Name: "aperture" ]
+

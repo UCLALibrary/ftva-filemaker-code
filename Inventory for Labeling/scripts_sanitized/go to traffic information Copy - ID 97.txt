@@ -1,0 +1,4 @@
+Go to Related Record [ Table: Traffic Records ; Layout: <original layout> ; Show related ]
+Perform Script [ "" ; Specified: From list ; File: "Traffic Record" ; Parameter: ]
+Select Window [ Name: "Traffic Record" ]
+

@@ -1,0 +1,35 @@
+<Relationship id="4">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">EBEBF705-E15A-7744-A228-71207774520A</UUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</LeftTable>
+	<RightTable cascadeCreate="True" cascadeDelete="False" type="External">
+		<TableOccurrenceReference id="1065103" name="Film Inspection History"></TableOccurrenceReference>
+		<SortSpecification value="True" maintain="True">
+			<SortList membercount="1">
+				<Sort type="Descending">
+					<PrimaryField>
+						<FieldReference id="3" name="Date">
+							<TableOccurrenceReference id="1065103" name="Film Inspection History"></TableOccurrenceReference>
+						</FieldReference>
+					</PrimaryField>
+				</Sort>
+			</SortList>
+		</SortSpecification>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="29" name="inventory_no">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="1" name="Inventory number">
+					<TableOccurrenceReference id="1065103" name="Film Inspection History"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

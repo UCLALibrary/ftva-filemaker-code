@@ -1,0 +1,16 @@
+<Script>
+	<ScriptReference id="115" name="donimport"></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="35" name="Import Records" enable="True">
+			<Options>32768</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

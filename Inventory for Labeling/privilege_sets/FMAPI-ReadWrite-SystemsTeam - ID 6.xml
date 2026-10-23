@@ -1,0 +1,13 @@
+<PrivilegeSet id="6" name="FMAPI-ReadWrite-SystemsTeam">
+	<UUID modifications="14" userName="uae" accountName="uae" timestamp="2026-05-15T11:49:13">3FEFEBFE-B817-F147-ADBE-6C35AF8821E5</UUID>
+	<Description>Read-Write only api access for Systems Team</Description>
+	<access>
+		<Records Create="True" Edit="True" Delete="False"></Records>
+		<Layouts Create="True" Edit="True" Delete="True"></Layouts>
+		<ValueLists Create="True" Edit="True" Delete="True"></ValueLists>
+		<Scripts viewState="ReadOnly"></Scripts>
+		<Other value="29185" Print="False" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" disconnectIdle="True" commands="All">
+			<Password prohibitModification="True"></Password>
+		</Other>
+	</access>
+</PrivilegeSet>

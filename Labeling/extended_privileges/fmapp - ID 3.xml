@@ -1,0 +1,10 @@
+<ExtendedPrivilege id="3" name="fmapp">
+	<Description>Access via FileMaker Network</Description>
+	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">D261F7F2-6DD7-3B4E-BF87-C6B9AF0C3D46</UUID>
+	<ObjectList membercount="4">
+		<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+		<PrivilegeSetReference id="2" name="[Data Entry Only]"></PrivilegeSetReference>
+		<PrivilegeSetReference id="3" name="[Read-Only Access]"></PrivilegeSetReference>
+		<PrivilegeSetReference id="4" name="Privilege Set"></PrivilegeSetReference>
+	</ObjectList>
+</ExtendedPrivilege>

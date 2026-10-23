@@ -1,0 +1,7 @@
+<ValueList id="82" name="dm_no_ingest_reason">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[Unnecessary Deliverable ExportDeposit/No DocsGift/No DocsOther Permission/No DocsDocs OK - Superseded by another versionDocs OK/Other - See Notes]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:29:04">CBF9702D-AA9C-B746-A5E0-6579DC213998</UUID>
+</ValueList>

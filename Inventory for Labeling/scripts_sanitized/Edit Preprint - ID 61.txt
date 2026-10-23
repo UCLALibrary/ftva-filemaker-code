@@ -1,0 +1,3 @@
+Perform Script [ "Edit" ; Specified: From list ; File: "preprint" ; Parameter: ]
+Select Window [ Name: "preprint" ]
+

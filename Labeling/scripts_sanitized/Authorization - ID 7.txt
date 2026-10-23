@@ -1,0 +1,6 @@
+If [ Get(CurrentPrivilegeSetName) ="admin" ]
+	Show Custom Dialog [ Title: "Message" ; Message: "yay¶" ; Default Button: "OK" ; Button 2: "Cancel" ]
+Else
+	Show Custom Dialog [ Title: "Message" ; Message: "nay" ; Default Button: "OK" ; Button 2: "Cancel" ]
+End If
+

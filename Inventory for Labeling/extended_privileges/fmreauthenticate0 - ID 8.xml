@@ -1,0 +1,10 @@
+<ExtendedPrivilege id="8" name="fmreauthenticate0">
+	<Description>Require re-authentication after the specified minutes in sleep/background.  Go only.</Description>
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2025-08-05T20:49:31">C8C298F4-8A87-014C-B8B1-61522AE9739E</UUID>
+	<ObjectList membercount="4">
+		<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+		<PrivilegeSetReference id="2" name="[Data Entry Only]"></PrivilegeSetReference>
+		<PrivilegeSetReference id="4" name="Entry"></PrivilegeSetReference>
+		<PrivilegeSetReference id="5" name="Data Entry wUser Override"></PrivilegeSetReference>
+	</ObjectList>
+</ExtendedPrivilege>

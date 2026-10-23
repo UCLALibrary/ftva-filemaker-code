@@ -1,0 +1,6 @@
+<ExternalDataSource name="Traffic Records 2" type="FileMaker" id="33">
+	<File>
+		<UniversalPathList>file:Traffic Records</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">4EA8F335-A611-FF4B-8667-6F3E676110EB</UUID>
+</ExternalDataSource>

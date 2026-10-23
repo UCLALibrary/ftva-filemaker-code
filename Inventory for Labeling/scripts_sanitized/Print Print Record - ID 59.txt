@@ -1,0 +1,5 @@
+Go to Layout [ Layout: "Inventory Record" ; Animation: None ]
+Print Setup [ Restore ; With dialog: ON ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Print [ With dialog: ON ; Restore ; Current record ; All pages ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Go to Layout [ Layout: <original layout> ; Animation: None ]
+

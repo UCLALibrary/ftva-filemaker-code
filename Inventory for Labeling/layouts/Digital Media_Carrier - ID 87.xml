@@ -1,0 +1,24 @@
+<Layout id="87" name="Digital Media_Carrier" width="1024">
+	<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="5">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="19" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Header" kind="1">
+			<Definition type="Header" kind="1" size="19" absolute="19" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="693" absolute="38" Options="0"></Definition>
+		</Part>
+		<Part type="Footer" kind="7">
+			<Definition type="Footer" kind="7" size="18" absolute="731" Options="0"></Definition>
+		</Part>
+		<Part type="Bottom Navigation" kind="13">
+			<Definition type="Bottom Navigation" kind="13" size="19" absolute="749" Options="0"></Definition>
+		</Part>
+	</PartsList>
+	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-30T07:57:44">D0FAD46B-4B2D-4641-A5FF-8864C3217B79</UUID>
+	<ClientType>3</ClientType>
+	<Options hidden="True">15944199</Options>
+</Layout>

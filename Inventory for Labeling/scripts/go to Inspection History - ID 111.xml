@@ -1,0 +1,39 @@
+<Script>
+	<ScriptReference id="111" name="go to Inspection History"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step id="74" name="Go to Related Record" enable="True">
+			<Options>33554696</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Related">
+					<TableOccurrenceReference id="1065103" name="Film Inspection History"></TableOccurrenceReference>
+					<LayoutReferenceContainer External="True" value="1">
+						<Label>original layout</Label>
+					</LayoutReferenceContainer>
+					<Animation name="None" value="0"></Animation>
+					<Options ShowRelated="True"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="1" type="Calculated">
+							<Name current="False">
+								<Calculation datatype="1" position="0">
+									<Calculation>
+										<Text><![CDATA["Film Inspection History"]]></Text>
+										<ChunkList hash="FDB6162277EA2CAA1F6C4440F2DEB12C">
+											<Chunk type="NoRef">&quot;Film Inspection History&quot;</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</Name>
+						</Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

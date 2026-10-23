@@ -1,0 +1,36 @@
+Set Error Capture [ ON ]
+Show All Records
+Perform Script [ "Layout: Search Inventory" ; Specified: From list ; Parameter: ]
+Set Field [ Inventory for Labeling::found ; -1 ]
+Set Field [ Inventory for Labeling::search_error ; "" ]
+Set Field [ Inventory for Labeling::search_results ; "" ]
+Enter Find Mode [ Pause: OFF ]
+Set Field [ Inventory for Labeling::inventory_no ; "=="&Trim(Inventory for Labeling::inventory_no_search) ]
+Perform Find
+If [ Get(LastError)=401  or  Inventory for Labeling::inventory_no_search="" or Get(LastError)=502 or  
+				((not PatternCount(Inventory for Labeling::inventory_no_search; "0")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "1")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "2")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "3")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "4")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "5")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "6")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "7")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "8")) and
+				(not PatternCount(Inventory for Labeling::inventory_no_search; "9"))) ]
+	Set Field [ Inventory for Labeling::found ; 0 ]
+	Set Field [ Inventory for Labeling::search_results ; "" ]
+	Set Field [ Inventory for Labeling::search_error ; "Item not found. Please try different search" ]
+	Go to Layout [ Layout: "Search Inventory" ; Animation: None ]
+Else
+	Set Field [ Inventory for Labeling::found ; 1 ]
+	Set Field [ Inventory for Labeling::search_results ; If(GetAsNumber(Inventory for Labeling::found)=1; "Inventory Number: " & Inventory for Labeling::inventory_no & "¶¶" & "Title: " & Inventory for Labeling::title & "¶¶" & "Total Reels: "& GetAsNumber(Inventory for Labeling::total_reels) & "¶¶" & "Type: "& Inventory for Labeling::type; "") ]
+	If [ Inventory for Labeling::type="General Collection" ]
+		Go to Layout [ Layout: "🚨🚨🚨 <BROKEN REFERENCE> 🚨🚨🚨" ; Animation: None ]
+		Refresh Window
+	Else
+		Go to Layout [ Layout: "Form - Newsreels" ; Animation: None ]
+		Refresh Window
+	End If
+End If
+

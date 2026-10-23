@@ -1,0 +1,7 @@
+<ValueList id="89" name="dm_audio_class">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[Audio DescriptionCommentaryDe-emphasisDialogueDialogue & FXDolby-EEffectsFull MixGuideInitial ImportMix Minus NarrationMono MixMusicMusic & Effects (M&E)NarrationNonePre-emphasisSound on Tape (SOT)SplitSyncSync & EffectsUnknownVoiceover]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:32:24">5859AD76-F460-DC45-9D79-35C1FA92E111</UUID>
+</ValueList>

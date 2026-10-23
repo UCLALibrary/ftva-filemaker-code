@@ -1,0 +1,11 @@
+If [ not IsEmpty ($TotalReels) and GetAsNumber($TotalReels)>0 ]
+	Set Variable [ $InventoryID ; Inventory for Labeling::inventory_id ]
+	Set Variable [ $TotalReels ; Inventory for Labeling::total_reels ]
+	Copy [ Select: ON ; Inventory for Labeling::inventory_id ]
+	Go to Related Record [ Table: Labeling Database_InvID ; Layout: <original layout> ; Show related ]
+	Select Window [ Name: "Labeling Database" ]
+	Perform Script [ "Create Label Rows for Item - DON'T NEED (handled in Inventory database)" ; Specified: From list ; File: "Labeling Database" ; Parameter: ]
+Else
+	Show Custom Dialog [ Title: "Message" ; Message: "You must specify the total number or reels before you can use this feature." ; Default Button: "Doh!" ]
+End If
+

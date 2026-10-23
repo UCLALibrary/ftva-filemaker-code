@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="171" id="1065122" name="Digital Media_Item Unit_Target" type="Local">
+	<UUID modifications="7" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:54:02">9E7CC492-D74B-D84D-8011-8574BAB8F984</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="131" name="Digital Media_Item Unit"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="42" left="19" bottom="259" right="206"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

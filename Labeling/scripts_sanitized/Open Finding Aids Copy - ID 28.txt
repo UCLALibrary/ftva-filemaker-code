@@ -1,0 +1,3 @@
+Perform Script [ "Open Dan" ; Specified: From list ; File: "Inventory for Labeling 4" ; Parameter: ]
+Select Window [ Name: "Inventory for Labeling" ]
+

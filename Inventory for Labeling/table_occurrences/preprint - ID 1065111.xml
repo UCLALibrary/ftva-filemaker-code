@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Full" height="80" id="1065111" name="preprint" type="External">
+	<UUID modifications="5" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">A3599CCD-8F1E-3B40-8C7B-72730CD022D9</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="23" name="preprint"></DataSourceReference>
+		<BaseTableReference id="129" name="preprint"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="350" left="1702" bottom="461" right="1833"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>
