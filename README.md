@@ -4,7 +4,7 @@ Code (mostly scripts) extracted from FTVA Filemaker systems, and related documen
 ## Generating the files
 
 1. Connect the Filemaker client to the **production system** (Adam).
-2. For each relevant database, use Filemaker's "Tools -> Save a Copy as XML"
+2. For each relevant database, use Filemaker's "Tools -> Save a Copy as XML". (If necessary, enable via Edit -> Preferences -> General tab -> check "Use advanced tools").
     1. Labeling
     2. Inventory for Labeling (after switching to the general entry layout). Note that several database files are reported as not found. These are OK: apparently they are references to former databases, but are no longer used.
 3. Save the production XML exports in this repository's `xml_exports/prod_adam/` directory. 
