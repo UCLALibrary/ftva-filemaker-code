@@ -23,6 +23,8 @@ Code (mostly scripts) extracted from FTVA Filemaker systems, and related documen
 $ fm-xml-export-exploder --obfuscate-passwords xml_exports/prod_adam/ .
 ```
 
+**Note**: XML exported with a version 21 (2024) client will have additional `hash` attributes which XML exported with a version 20 (2023) client does not; see [this article](https://www.soliantconsulting.com/blog/filemaker-21-save-as-xml-enhancements/) for more information.  For now, @akohler will handle the exports using version 20 (2023) client.  Once our test server is updated to match production, both at version 21 (2024), we'll update everything to match and remove this note.
+
 ### General notes
 
 The exported XML files [contain information](https://help.claris.com/en/pro-help/content/documenting-schemas.html) about each database's schemas, layouts, and scripts. Although readable (well, XML...), the information uses the vendor's own terminology and most files include opaque ids. These files cannot be edited safely by hand.
