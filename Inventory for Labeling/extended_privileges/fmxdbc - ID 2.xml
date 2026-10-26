@@ -1,0 +1,4 @@
+<ExtendedPrivilege id="2" name="fmxdbc">
+	<Description>Access via ODBC/JDBC</Description>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:07">7C109207-7F3C-6C4D-95F9-A7AB77269278</UUID>
+</ExtendedPrivilege>

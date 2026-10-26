@@ -1,0 +1,7 @@
+Go to Layout [ Layout: "Donor List" ; Animation: None ]
+Print Setup [ Restore ; With dialog: OFF ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Sort Records [ With dialog: OFF ; Restore ; Sort order: Inventory for Labeling::element_info (Ascending), Inventory for Labeling::title (Ascending), Inventory for Labeling::episode no. (Ascending), Inventory for Labeling::episode_title (Ascending) ; Keep records in sorted order ]
+Go to Record/Request/Page [ First ]
+Print [ With dialog: ON ; Restore ; Records being browsed ; All pages ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Go to Layout [ Layout: <original layout> ; Animation: None ]
+

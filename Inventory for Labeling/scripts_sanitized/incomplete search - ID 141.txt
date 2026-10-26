@@ -1,0 +1,11 @@
+Go to Layout [ Layout: "General Entry Form" ; Animation: None ]
+Show All Records
+Go to Record/Request/Page [ First ]
+Loop
+	If [ Inventory for Labeling::item holdings < Inventory for Labeling::total_reels ]
+		Go to Record/Request/Page [ Next ; Exit after last: ON ]
+	Else
+		Omit Record
+	End If
+End Loop
+

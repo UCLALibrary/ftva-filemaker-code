@@ -1,0 +1,6 @@
+<ExternalDataSource name="element_info" type="FileMaker" id="8">
+	<File>
+		<UniversalPathList>file:element_info</UniversalPathList>
+	</File>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:06:24">12A31BDD-85B7-B44C-BF94-CF907A2FF928</UUID>
+</ExternalDataSource>

@@ -1,0 +1,6 @@
+// Close File [ "Boolean" ]
+Close File [ "Inventory for Labeling" ]
+Close File [ "Labeling" ]
+Close File [ "Labeling Database" ]
+Close File [ "Film Inspection History" ]
+

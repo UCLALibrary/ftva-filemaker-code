@@ -1,0 +1,25 @@
+<Relationship id="10">
+	<UUID modifications="3" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2026-05-20T12:44:07">0BF695B1-64A6-5442-BB52-8E41FA0B6868</UUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</LeftTable>
+	<RightTable cascadeCreate="True" cascadeDelete="True" type="Local">
+		<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="20" name="inventory_id">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="13" name="inventory_id_fk">
+					<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

@@ -1,0 +1,7 @@
+Go to Layout [ Layout: "Layout #37" ; Animation: None ]
+Sort Records [ With dialog: OFF ; Restore ; Sort order: Labeling Database_InvID::barcode_location (Ascending) ; Keep records in sorted order ]
+Go to Record/Request/Page [ First ]
+Enter Preview Mode [ Pause: ON ]
+Enter Browse Mode [ Pause: OFF ]
+Go to Layout [ Layout: <original layout> ; Animation: None ]
+

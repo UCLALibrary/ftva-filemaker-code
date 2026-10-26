@@ -1,0 +1,3 @@
+Perform Script [ "" ; Specified: From list ; File: "film_size" ; Parameter: ]
+Select Window [ Name: "film_size" ]
+

@@ -1,0 +1,14 @@
+<FieldCatalog>
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">C705188B-0DBB-CA43-B170-4D746B5CF2EA</UUID>
+	<BaseTableReference id="129" name="Labeling"></BaseTableReference>
+	<ObjectList membercount="1">
+		<Field DefaultStyle="" id="1" name="current_user" fieldtype="Normal" datatype="Text" comment="">
+			<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">2DDE2FA0-6352-FD4A-AE8F-308871706937</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage global="True" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

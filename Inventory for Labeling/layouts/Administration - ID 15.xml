@@ -1,0 +1,1700 @@
+<Layout id="15" name="Administration" width="391">
+	<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="3">
+		<Part type="Header" kind="1">
+			<Definition type="Header" kind="1" size="19" absolute="0" Options="0">
+				<FieldReference id="0" name="">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="602" absolute="19" Options="0">
+				<FieldReference id="0" name="">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</Definition>
+			<ObjectList membercount="50">
+				<LayoutObject id="1" type="Edit Box" name="" kind="1">
+					<Bounds top="24" left="138" bottom="41" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="15" name="can" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="2" type="Text" name="" kind="2">
+					<Bounds top="25" left="104" bottom="42" right="130"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[can]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="3" type="Edit Box" name="" kind="1">
+					<Bounds top="42" left="138" bottom="59" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="8" name="collection" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="4" type="Text" name="" kind="2">
+					<Bounds top="43" left="70" bottom="60" right="136"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[collection]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="5" type="Edit Box" name="" kind="1">
+					<Bounds top="78" left="138" bottom="95" right="259"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="25" name="date_modified" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="6" type="Text" name="" kind="2">
+					<Bounds top="79" left="41" bottom="96" right="139"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[date_modified]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="7" type="Edit Box" name="" kind="1">
+					<Bounds top="96" left="138" bottom="113" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="11" name="donor_code" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="8" type="Text" name="" kind="2">
+					<Bounds top="97" left="57" bottom="114" right="138"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[donor_code]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="9" type="Edit Box" name="" kind="1">
+					<Bounds top="114" left="138" bottom="131" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="10" name="element_info" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="10" type="Text" name="" kind="2">
+					<Bounds top="115" left="48" bottom="132" right="138"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[element_info]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="11" type="Edit Box" name="" kind="1">
+					<Bounds top="132" left="138" bottom="149" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="9" name="episode_title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="12" type="Text" name="" kind="2">
+					<Bounds top="133" left="59" bottom="150" right="148"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[episode_title]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="13" type="Checkbox Set" name="" kind="1">
+					<Bounds top="150" left="138" bottom="167" right="157"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="28" name="flag" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="3" show="1">
+							<ValueListReference id="2" name="Checkbox"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="14" type="Text" name="" kind="2">
+					<Bounds top="151" left="102" bottom="168" right="130"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[flag]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="15" type="Edit Box" name="" kind="1">
+					<Bounds top="168" left="138" bottom="185" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="12" name="hearst_prefix" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="16" type="Text" name="" kind="2">
+					<Bounds top="169" left="46" bottom="186" right="139"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[hearst_prefix]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="17" type="Edit Box" name="" kind="1">
+					<Bounds top="186" left="138" bottom="203" right="211"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="20" name="inventory_id" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="18" type="Text" name="" kind="2">
+					<Bounds top="187" left="52" bottom="204" right="139"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[inventory_id]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="19" type="Edit Box" name="" kind="1">
+					<Bounds top="204" left="138" bottom="221" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="14" name="issue" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="20" type="Text" name="" kind="2">
+					<Bounds top="205" left="95" bottom="222" right="132"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[issue]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="21" type="Edit Box" name="" kind="1">
+					<Bounds top="222" left="138" bottom="239" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="19" name="length" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="22" type="Text" name="" kind="2">
+					<Bounds top="223" left="88" bottom="240" right="132"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[length]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="23" type="Edit Box" name="" kind="1">
+					<Bounds top="240" left="138" bottom="257" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="18" name="neg_no" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="24" type="Text" name="" kind="2">
+					<Bounds top="241" left="82" bottom="258" right="134"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[neg_no]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="25" type="Edit Box" name="" kind="1">
+					<Bounds top="258" left="138" bottom="275" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="17" name="neg_no_prefix" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="26" type="Text" name="" kind="2">
+					<Bounds top="259" left="41" bottom="276" right="141"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[neg_no_prefix]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="27" type="Edit Box" name="" kind="1">
+					<Bounds top="276" left="138" bottom="293" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="27" name="notes" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="28" type="Text" name="" kind="2">
+					<Bounds top="277" left="92" bottom="294" right="131"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[notes]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="29" type="Edit Box" name="" kind="1">
+					<Bounds top="294" left="138" bottom="311" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="7" name="old_location" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="30" type="Text" name="" kind="2">
+					<Bounds top="295" left="55" bottom="312" right="139"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[old_location]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="31" type="Edit Box" name="" kind="1">
+					<Bounds top="312" left="138" bottom="329" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="16" name="roll" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="32" type="Text" name="" kind="2">
+					<Bounds top="313" left="106" bottom="330" right="131"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[roll]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="33" type="Edit Box" name="" kind="1">
+					<Bounds top="330" left="138" bottom="347" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="21" name="title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="34" type="Text" name="" kind="2">
+					<Bounds top="331" left="101" bottom="348" right="130"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[title]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="35" type="Edit Box" name="" kind="1">
+					<Bounds top="348" left="138" bottom="365" right="211"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="22" name="total_reels" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="36" type="Text" name="" kind="2">
+					<Bounds top="349" left="62" bottom="366" right="137"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[total_reels]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="37" type="Edit Box" name="" kind="1">
+					<Bounds top="366" left="138" bottom="383" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="23" name="type" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="38" type="Text" name="" kind="2">
+					<Bounds top="367" left="98" bottom="384" right="130"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[type]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="39" type="Edit Box" name="" kind="1">
+					<Bounds top="384" left="138" bottom="401" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="24" name="user_last_modified" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="40" type="Text" name="" kind="2">
+					<Bounds top="385" left="16" bottom="402" right="147"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[user_last_modified]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="41" type="Edit Box" name="" kind="1">
+					<Bounds top="402" left="138" bottom="419" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="13" name="volume" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="42" type="Text" name="" kind="2">
+					<Bounds top="403" left="82" bottom="420" right="133"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[volume]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="43" type="Edit Box" name="" kind="1">
+					<Bounds top="420" left="138" bottom="437" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="29" name="inventory_no" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>96</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<ScriptTriggers membercount="1">
+						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
+							<ScriptReference id="129" name="Trim Field">
+								<Calculation></Calculation>
+							</ScriptReference>
+						</ScriptTrigger>
+					</ScriptTriggers>
+				</LayoutObject>
+				<LayoutObject id="44" type="Text" name="" kind="2">
+					<Bounds top="421" left="48" bottom="438" right="139"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[inventory_no]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="45" type="Checkbox Set" name="" kind="1">
+					<Bounds top="438" left="138" bottom="454" right="157"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="37" name="deterioration" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="3" show="1">
+							<ValueListReference id="2" name="Checkbox"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="46" type="Text" name="" kind="2">
+					<Bounds top="439" left="49" bottom="456" right="138"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[deterioration]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="47" type="Checkbox Set" name="" kind="1">
+					<Bounds top="456" left="138" bottom="473" right="157"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="38" name="unidentified" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="3" show="1">
+							<ValueListReference id="2" name="Checkbox"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="48" type="Text" name="" kind="2">
+					<Bounds top="457" left="56" bottom="474" right="137"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[unidentified]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="49" type="Checkbox Set" name="" kind="1">
+					<Bounds top="474" left="138" bottom="491" right="157"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="39" name="missing" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="3" show="1">
+							<ValueListReference id="2" name="Checkbox"></ValueListReference>
+						</Display>
+						<Usage inputMode="0" type="0"></Usage>
+					</Field>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	background-color: rgba(100%,100%,100%,1);
+	border-top-color: rgba(80%,80%,80%,1);
+	border-right-color: rgba(80%,80%,80%,1);
+	border-bottom-color: rgba(80%,80%,80%,1);
+	border-left-color: rgba(80%,80%,80%,1);
+	border-top-width: 0.25pt;
+	border-right-width: 0.25pt;
+	border-bottom-width: 0.25pt;
+	border-left-width: 0.25pt;
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="50" type="Text" name="" kind="2">
+					<Bounds top="475" left="81" bottom="492" right="134"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[missing]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	border-top-color: rgba(100%,100%,100%,1);
+	border-right-color: rgba(100%,100%,100%,1);
+	border-bottom-color: rgba(100%,100%,100%,1);
+	border-left-color: rgba(100%,100%,100%,1);
+	font-family: -fm-font-family(Verdana,Verdana);
+	font-weight: bold;
+	direction: ;
+}
+]]></LocalCSS>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+		<Part type="Footer" kind="7">
+			<Definition type="Footer" kind="7" size="18" absolute="621" Options="0">
+				<FieldReference id="0" name="">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</Definition>
+		</Part>
+	</PartsList>
+	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">75206EC9-E3F7-F346-AC38-2BED9BB196BF</UUID>
+	<ClientType>0</ClientType>
+	<Options hidden="True">74645536</Options>
+</Layout>

@@ -1,0 +1,98 @@
+<Script>
+	<ScriptReference id="36" name="Newsreel Layout"></ScriptReference>
+	<ObjectList membercount="4">
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>66</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<ScriptReference id="26" name="Toggle Status Bar"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="6" name="Go to Layout" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="18" name="Newsreel Layout"></LayoutReference>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="39" name="Sort Records" enable="True">
+			<Options>33587328</Options>
+			<ParameterValues membercount="3">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Restore">
+					<Restore value="True"></Restore>
+				</Parameter>
+				<Parameter type="SortSpecification">
+					<SortSpecification value="True" maintain="True">
+						<SortList membercount="6">
+							<Sort type="Ascending">
+								<PrimaryField>
+									<FieldReference id="15" name="can">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+							<Sort type="Ascending">
+								<PrimaryField>
+									<FieldReference id="16" name="roll">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+							<Sort type="Descending">
+								<PrimaryField>
+									<FieldReference id="28" name="flag">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+							<Sort type="Descending">
+								<PrimaryField>
+									<FieldReference id="37" name="deterioration">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+							<Sort type="Descending">
+								<PrimaryField>
+									<FieldReference id="38" name="unidentified">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+							<Sort type="Descending">
+								<PrimaryField>
+									<FieldReference id="39" name="missing">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</PrimaryField>
+							</Sort>
+						</SortList>
+					</SortSpecification>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="16" name="Go to Record/Request/Page" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Records">
+					<List name="First" value="1"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

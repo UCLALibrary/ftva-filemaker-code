@@ -1,0 +1,15 @@
+<CustomMenu name="[Font]" id="19">
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:07">022C8D9E-722A-DB4F-9A34-7871E1E21605</UUID>
+	<MenuItemList membercount="0"></MenuItemList>
+	<Conditions>
+		<Install>
+			<Calculation><![CDATA[1]]></Calculation>
+			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+				<Chunk type="NoRef">1</Chunk>
+			</ChunkList>
+		</Install>
+	</Conditions>
+	<Comment></Comment>
+	<Base name="Font" value="18"></Base>
+	<Options browseMode="True" findMode="True" previewMode="True"></Options>
+</CustomMenu>

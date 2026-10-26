@@ -1,0 +1,11 @@
+Set Variable [ $$CurrentUser ; Get( UserName) ]
+If [ IsEmpty ( InventoryItem::InventoryID_FK ) ]
+	If [ $$CurrentUser = "Ssultan"  or $$CurrentUser = "lfuguet" or $$CurrentUser = "Shogsett" ]
+		Set Field [ InventoryItem::InventoryID_FK ; Inventory for Labeling::inventory_id ]
+		Commit Records/Requests [ With dialog: ON ]
+	Else
+		Show Custom Dialog [ Title: "Oops!" ; Message: "sorry no images yet" ; Default Button: "OK" ; Button 2: "Cancel" ]
+	End If
+End If
+Go to Related Record [ Table: InventoryItem ; Layout: "AddImages Copy" ; New window ; Style: Document ; Menu: OFF ; Toolbar: OFF ; Show related ]
+

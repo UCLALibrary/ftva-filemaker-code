@@ -1,0 +1,25 @@
+<Relationship id="14">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T06:24:07">52F77509-0752-2749-813C-4449991EBF57</UUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="True" type="Local">
+		<TableOccurrenceReference id="1065117" name="Inventory_StorageFormat_JT"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</LeftTable>
+	<RightTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065119" name="StorageFormat 2"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="7" name="StorageFormat_id_fk">
+					<TableOccurrenceReference id="1065117" name="Inventory_StorageFormat_JT"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="1" name="Inventory_number">
+					<TableOccurrenceReference id="1065119" name="StorageFormat 2"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

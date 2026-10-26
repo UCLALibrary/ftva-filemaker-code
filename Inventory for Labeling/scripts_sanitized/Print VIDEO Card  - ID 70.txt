@@ -1,0 +1,6 @@
+Go to Layout [ Layout: "PRINT-Video Inventory Card" ; Animation: None ]
+Print Setup [ Restore ; With dialog: OFF ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Print [ With dialog: ON ; Restore ; Current record ; Pages: 1 to 1 ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Go to Layout [ Layout: <original layout> ; Animation: None ]
+Refresh Window
+

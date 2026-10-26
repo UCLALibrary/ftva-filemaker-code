@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="93" id="1065117" name="Inventory_StorageFormat_JT" type="Local">
+	<UUID modifications="12" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">1CD343AA-3477-CD4A-B414-3F55A21B49F7</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="134" name="Inventory_StorageFormat_JT"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="572" left="859" bottom="724" right="1099"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

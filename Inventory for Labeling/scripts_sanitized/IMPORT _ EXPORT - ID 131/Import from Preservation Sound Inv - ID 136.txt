@@ -1,0 +1,2 @@
+Import Records [ Verify SSL Certificates: OFF ; With dialog: ON ; Table: Inventory for Labeling ; Add ; Perform auto-enter options ; Windows ANSI ]
+

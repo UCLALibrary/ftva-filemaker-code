@@ -1,0 +1,106 @@
+<Script>
+	<ScriptReference id="154" name="JT_PickAndAttach"></ScriptReference>
+	<ObjectList membercount="4">
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Inventory for Labeling::inventory_id]]></Text>
+								<ChunkList hash="F9E9D4914FBB816A2AABEBBF4025B686">
+									<Chunk type="FieldRef">
+										<FieldReference id="20" name="inventory_id" repetition="1">
+											<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+										</FieldReference>
+									</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$$INV_ID"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="122" name="New Window" enable="True">
+			<Options>16394</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Style name="Card" value="3222339600"></Style>
+						<Name>
+							<Calculation datatype="1" position="0">
+								<Calculation>
+									<Text><![CDATA["Pick Carrier"]]></Text>
+									<ChunkList hash="2ACBB2BB79B09BDEEDA4A9748312AC50">
+										<Chunk type="NoRef">&quot;Pick Carrier&quot;</Chunk>
+									</ChunkList>
+								</Calculation>
+							</Calculation>
+						</Name>
+						<LayoutReferenceContainer value="5">
+							<LayoutReference id="91" name="SF_Picker_List"></LayoutReference>
+						</LayoutReferenceContainer>
+						<Bounds>
+							<height>
+								<Calculation datatype="1" position="1">
+									<Calculation>
+										<Text><![CDATA[500]]></Text>
+										<ChunkList hash="DE31D0DD746953C1568B6BEB661A72C2">
+											<Chunk type="NoRef">500</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</height>
+							<width></width>
+							<top></top>
+							<left></left>
+						</Bounds>
+						<Options value="3222339600">
+							<Close>True</Close>
+							<Minimize>False</Minimize>
+							<Maximize>False</Maximize>
+							<Resize>False</Resize>
+							<MenuBar>False</MenuBar>
+							<Toolbar>False</Toolbar>
+							<DimParentWindow>True</DimParentWindow>
+						</Options>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="80" name="Refresh Window" enable="True">
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Flush cached external data" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="10" name="gSF_Query">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[""]]></Text>
+							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+								<Chunk type="NoRef">&quot;&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

@@ -1,0 +1,14 @@
+<Account id="3" kind="0" type="FileMaker" enable="True">
+	<UUID modifications="4" userName="" accountName="ssultan" timestamp="2025-03-05T10:55:31">72753DE3-5355-8C4A-B54E-2D8C3A28065D</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>Admin</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>BYbw3XwWXBD8uw==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+</Account>

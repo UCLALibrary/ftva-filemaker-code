@@ -1,0 +1,12 @@
+<ValueList id="15" name="preprint">
+	<Source value="FromField"></Source>
+	<Field>
+		<PrimaryField show="True" sort="True">
+			<FieldReference id="1" name="abbreviation">
+				<TableOccurrenceReference id="1065111" name="preprint"></TableOccurrenceReference>
+			</FieldReference>
+		</PrimaryField>
+		<ShowRelated value="False"></ShowRelated>
+	</Field>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">8AD4A8CF-E0E9-C54B-A882-17A09F0B9D4D</UUID>
+</ValueList>

@@ -1,0 +1,3 @@
+Perform Script [ "Initialize" ; Specified: From list ; File: "collectioninventory" ; Parameter: ]
+Select Window [ Name: "collectioninventory" ]
+

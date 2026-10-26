@@ -1,0 +1,775 @@
+<Script>
+	<ScriptReference id="159" name="New Digital - required fields check"></ScriptReference>
+	<ObjectList membercount="53">
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[$$DISABLE_VALIDATION =1]]></Text>
+							<ChunkList hash="F4BD4CE2DB21A53BF5336EA1E1832002">
+								<Chunk type="VariableReference">$$DISABLE_VALIDATION</Chunk>
+								<Chunk type="NoRef"> =1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[True]]></Text>
+							<ChunkList hash="B15835F133FF2E27C7CB28117BFAE8F4">
+								<Chunk type="FunctionRef">True</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="86" name="Set Error Capture" enable="True">
+			<Options>196608</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="True"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="85" name="Allow User Abort" enable="True">
+			<Options>65536</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean id="131072" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Inventory for Labeling::digital_record = 1]]></Text>
+							<ChunkList hash="B7064D6883D23EBA3F0D03DDAD40A283">
+								<Chunk type="FieldRef">
+									<FieldReference id="198" name="digital_record" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> = 1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[""]]></Text>
+								<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
+									<Chunk type="NoRef">&quot;&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Trim ( Inventory for Labeling::inventory_no) )]]></Text>
+							<ChunkList hash="499BC6214715D273618E14BA98B76478">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">Trim</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="29" name="inventory_no" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">) )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Inventory No")]]></Text>
+								<ChunkList hash="BBC48D01F185E91D2AF4C64F66368B3C">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Inventory No&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::media_type )]]></Text>
+							<ChunkList hash="5CBCBBF5BF751C98F15D6C274F1C81A2">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="199" name="media_type" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Media Type")]]></Text>
+								<ChunkList hash="070A70F206C3D06C9DB8FD556E8C81F0">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Media Type&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::asset_type)]]></Text>
+							<ChunkList hash="B859F49B1688669F9BAD169005025524">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="200" name="asset_type" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Asset Type")]]></Text>
+								<ChunkList hash="D7C26C394553018336D61F5192483328">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Asset Type&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::object_purpose)]]></Text>
+							<ChunkList hash="44C6729B264462BA65CE67D897706975">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="221" name="object_purpose" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Object Purpose")]]></Text>
+								<ChunkList hash="D27765BBCD2EEA9EC5C00A3A7E9FFB13">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Object Purpose&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty (Inventory for Labeling::wrapper_format)]]></Text>
+							<ChunkList hash="572551426294AC0C456892247B3BA0DA">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> (</Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="211" name="wrapper_format" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Wrapper Format")]]></Text>
+								<ChunkList hash="B0440C39686259078583C8A5E25A67F6">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Wrapper Format&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty (Inventory for Labeling::specific_carrier_type)]]></Text>
+							<ChunkList hash="C3FDF411FCEE20D1C6D263C61D2D75F0">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> (</Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="210" name="specific_carrier_type" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "File Type")]]></Text>
+								<ChunkList hash="9F0ABF09F58C2D284635B71C8679609D">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;File Type&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::director )]]></Text>
+							<ChunkList hash="DA1520559F0E4A8722FA89043196BDBE">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="66" name="director" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Director")]]></Text>
+								<ChunkList hash="9AF88A5502315B5A8A7F0C62DCEDE2F2">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Director&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::date_received )]]></Text>
+							<ChunkList hash="ACF347ED01E5970464650D67C27096BF">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="92" name="date_received" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Date Received")]]></Text>
+								<ChunkList hash="C8DEE95C11C966C629337CD79EA12F11">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Date Received&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::total_item_units )]]></Text>
+							<ChunkList hash="AB64ADFCA7539A6D921E6007C5B2C312">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="234" name="total_item_units" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Total Item Units")]]></Text>
+								<ChunkList hash="69B153E1986E744DC38E83ADFB85A7B9">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Total Item Units&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::Language)]]></Text>
+							<ChunkList hash="23663F98FBF190862ABA1277E687F2C9">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="82" name="Language" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Language")]]></Text>
+								<ChunkList hash="642394AA5F5F9D0D70E9AEAFC5691BF7">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Language&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::retention_status )]]></Text>
+							<ChunkList hash="5FFCE4B48F7E5C9E21A744B27A2DBC96">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="218" name="retention_status" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef"> )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Retention Status")]]></Text>
+								<ChunkList hash="7CC209D91D11E83A4CD4DC083819447B">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Retention Status&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[IsEmpty ( Inventory for Labeling::release_broadcast_year)]]></Text>
+							<ChunkList hash="41945A4E26DDB76EE221139971086FC6">
+								<Chunk type="FunctionRef">IsEmpty</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FieldRef">
+									<FieldReference id="62" name="release_broadcast_year" repetition="1">
+										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+									</FieldReference>
+								</Chunk>
+								<Chunk type="NoRef">)</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[List ( $missing ; "Release/Broadcast Year")]]></Text>
+								<ChunkList hash="98E45D0CAD2794C963A1459F0B982363">
+									<Chunk type="FunctionRef">List</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$missing</Chunk>
+									<Chunk type="NoRef"> ; &quot;Release/Broadcast Year&quot;)</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$missing"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Length ( $missing ) > 0]]></Text>
+							<ChunkList hash="A5308F3A7BDFE3342E0EB1FF4BA9F1CF">
+								<Chunk type="FunctionRef">Length</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$missing</Chunk>
+								<Chunk type="NoRef"> ) &gt; 0</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Missing information"]]></Text>
+							<ChunkList hash="6598766682ABE03C68598BDB7B67464F">
+								<Chunk type="NoRef">&quot;Missing information&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["Please fill in required fields:" & ¶ & "• " &Substitute ( $missing ; "¶" ; ¶ & "• " )]]></Text>
+							<ChunkList hash="15802737F7C5038A0593FC150A4A9DF9">
+								<Chunk type="NoRef">&quot;Please fill in required fields:&quot; &amp; ¶ &amp; &#13;&quot;• &quot; &amp;</Chunk>
+								<Chunk type="FunctionRef">Substitute</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$missing</Chunk>
+								<Chunk type="NoRef"> ; &quot;¶&quot; ; ¶ &amp; &quot;• &quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[False]]></Text>
+							<ChunkList hash="01ABFC750A0C942167651C40D088531D">
+								<Chunk type="FunctionRef">False</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="180" name="Refresh Portal" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Object">
+					<Name>
+						<Calculation datatype="1" position="0">
+							<Calculation>
+								<Text><![CDATA["Portal_DM_Items"]]></Text>
+								<ChunkList hash="4FD9D43C24D2C99D075B6A4C117E4FBD">
+									<Chunk type="NoRef">&quot;Portal_DM_Items&quot;</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</Name>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[True]]></Text>
+							<ChunkList hash="B15835F133FF2E27C7CB28117BFAE8F4">
+								<Chunk type="FunctionRef">True</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

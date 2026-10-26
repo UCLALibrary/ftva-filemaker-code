@@ -1,0 +1,40 @@
+<Script>
+	<ScriptReference id="8" name="Print Newsreels Labels"></ScriptReference>
+	<ObjectList membercount="3">
+		<Step id="74" name="Go to Related Record" enable="True">
+			<Options>33554696</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Related">
+					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+					<LayoutReferenceContainer External="True" value="1">
+						<Label>original layout</Label>
+					</LayoutReferenceContainer>
+					<Animation name="None" value="0"></Animation>
+					<Options ShowRelated="True"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="0" type="current"></Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>66</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<ScriptReference id="8" name="Print Newsreels Labels"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

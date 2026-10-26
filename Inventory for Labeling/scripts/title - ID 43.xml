@@ -1,0 +1,37 @@
+<Script>
+	<ScriptReference id="43" name="title"></ScriptReference>
+	<ObjectList membercount="2">
+		<Step id="6" name="Go to Layout" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="21" name="FIELDS nm"></LayoutReference>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="22" name="Enter Find Mode" enable="True">
+			<Options>50364416</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Pause" id="16777216" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="FindRequest">
+					<FindRequestSet membercount="1">
+						<FindRequest membercount="1" action="find">
+							<find criteria="M3768">
+								<FieldReference id="29" name="inventory_no">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</find>
+						</FindRequest>
+					</FindRequestSet>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

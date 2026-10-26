@@ -1,0 +1,16 @@
+<CustomMenuSet name="Custom Menu Set 1" id="2" comment="">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">AF4B1784-D989-9741-8A29-3C573CAE2411</UUID>
+	<CustomMenuList membercount="11">
+		<CustomMenuReference name="FileMaker Pro Copy" id="1"></CustomMenuReference>
+		<CustomMenuReference name="File Copy" id="2"></CustomMenuReference>
+		<CustomMenuReference name="Edit Copy" id="3"></CustomMenuReference>
+		<CustomMenuReference name="View Copy" id="4"></CustomMenuReference>
+		<CustomMenuReference name="Insert Copy" id="5"></CustomMenuReference>
+		<CustomMenuReference name="[Format]" id="6"></CustomMenuReference>
+		<CustomMenuReference name="Requests Copy" id="7"></CustomMenuReference>
+		<CustomMenuReference name="Records Copy" id="8"></CustomMenuReference>
+		<CustomMenuReference name="[Scripts]" id="9"></CustomMenuReference>
+		<CustomMenuReference name="[Window]" id="10"></CustomMenuReference>
+		<CustomMenuReference name="Help Copy" id="11"></CustomMenuReference>
+	</CustomMenuList>
+</CustomMenuSet>

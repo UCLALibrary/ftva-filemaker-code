@@ -1,0 +1,41 @@
+<Script>
+	<ScriptReference id="95" name="status"></ScriptReference>
+	<ObjectList membercount="3">
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="28" name="Traffic Record"></DataSourceReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="0" type="current"></Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="77" name="Insert Calculated Result" enable="True">
+			<Options>4097</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Target">
+					<FieldReference id="48" name="">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

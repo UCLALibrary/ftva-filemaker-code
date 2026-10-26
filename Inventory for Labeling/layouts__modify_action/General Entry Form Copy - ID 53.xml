@@ -1,0 +1,40 @@
+<Layout>
+	<LayoutReference id="53" name="General Entry Form Copy"></LayoutReference>
+	<PartsList>
+		<Part>
+			<ObjectList membercount="2">
+				<LayoutObjectReference id="196" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="46" name="General Search"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="153" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="74" name="Go to Related Record" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="TableOccurrenceReference">
+										<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
+									</Parameter>
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="1" type="current"></LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+			</ObjectList>
+		</Part>
+	</PartsList>
+</Layout>

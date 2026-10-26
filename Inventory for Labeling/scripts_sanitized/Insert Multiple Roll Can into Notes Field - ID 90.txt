@@ -1,0 +1,6 @@
+Go to Layout [ Layout: "Newsreel Layout" ; Animation: None ]
+Loop
+	Insert Text [ Select ; Target: Inventory for Labeling::notes ; "Multiple roll" ]
+	Go to Record/Request/Page [ Next ; Exit after last: ON ]
+End Loop
+

@@ -1,0 +1,6 @@
+Go to Layout [ Layout: "PRINT-PrePrint Inventory Card" ; Animation: None ]
+Print [ With dialog: ON ]
+Print Setup [ Restore ; With dialog: OFF ; Orientation: Portrait ; Paper size: 8.5" x 11" ]
+Go to Layout [ Layout: <original layout> ; Animation: None ]
+Refresh Window
+

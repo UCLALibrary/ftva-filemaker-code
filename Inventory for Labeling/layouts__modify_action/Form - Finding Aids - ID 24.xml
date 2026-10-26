@@ -1,0 +1,24 @@
+<Layout>
+	<LayoutReference id="24" name="Form - Finding Aids"></LayoutReference>
+	<PartsList>
+		<Part>
+			<ObjectList membercount="1">
+				<LayoutObjectReference id="141" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="25" name="Table - Finding Aids"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+			</ObjectList>
+		</Part>
+	</PartsList>
+</Layout>

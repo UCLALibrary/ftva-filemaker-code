@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Full" height="41" id="1065106" name="Traffic Records" type="External">
+	<UUID modifications="8" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:28:46">2D11E708-D06F-6740-AF0D-781602A9D5A5</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="33" name="Traffic Records 2"></DataSourceReference>
+		<BaseTableReference id="129" name="Traffic Records"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="211" left="1097" bottom="298" right="1247"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

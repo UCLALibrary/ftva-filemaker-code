@@ -1,0 +1,6 @@
+Set Error Capture [ ON ]
+Allow User Abort [ OFF ]
+Enter Find Mode [ Pause: OFF ]
+Set Field [ Inventory for Labeling::type ; "Newsreels" ]
+Perform Find [ Restore ; Find requests: Find ]
+

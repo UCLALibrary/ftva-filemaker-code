@@ -1,0 +1,45 @@
+<Script>
+	<ScriptReference id="12" name="close labeling"></ScriptReference>
+	<ObjectList membercount="5">
+		<Step id="34" name="Close File" enable="False">
+			<Options>16</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="5" name="Boolean"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="34" name="Close File" enable="True">
+			<Options>16</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="1" name="Inventory for Labeling"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="34" name="Close File" enable="True">
+			<Options>16</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="13" name="Labeling"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="34" name="Close File" enable="True">
+			<Options>16</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="2" name="Labeling Database"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="34" name="Close File" enable="True">
+			<Options>16</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="DataSourceReference">
+					<DataSourceReference id="28" name="Film Inspection History"></DataSourceReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

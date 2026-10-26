@@ -1,0 +1,328 @@
+Set Variable [ $$DISABLE_VALIDATION ; 1 ]
+
+Set Error Capture [ ON ]
+Allow User Abort [ OFF ]
+If [ IsEmpty ( Inventory for Labeling::inventory_id ) ]
+	Set Variable [ $$DISABLE_VALIDATION ; "" ]
+	Show Custom Dialog [ Title: "No Record" ; Message: "Create or select an Inventory Record first." ; Default Button: "OK" ; Button 2: "Cancel" ]
+	Exit Script []
+End If
+
+Set Variable [ $Path ;  ]
+Set Variable [ $sysPath ;  ]
+
+Go to Object [ "Portal_DM_Items" ]
+
+Insert File [ Dialog title: "Choose File" ; Filters: "Digital Media" (*.3g2; *.3gp; *.aac; *.aiff; *.amv; *.asf; *.avi; *.dpx; *.f4v; *.flac; *.flv; *.gifv; *.m2ts; *.m4a; *.m4v; *.mkv; *.mng; *.mov; *.mp3; *.mp4; *.mpg; *.mpeg; *.mts; *.mxf; *.nsv; *.ogg; *.rm; *.rmvb; *.roq; *.svi; *.ts; *.viv; *.vob; *.vtt; *.wav; *.webm; *.wma; *.wmv; *.yuv) ; Storage: Reference ; Display:  ; Compress: Never compress ; Target: $FMFilePath ]
+Set Variable [ $Path ; GetAsText ( $FMFilePath ) ]
+Set Variable [ $OSPath ; GetValue ( $Path ; ValueCount ( $Path ) ) ]
+
+If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
+	Set Variable [ $sysPath ; Substitute ( $OSPath ; "filewin:/" ; "" ) ]
+	Set Variable [ $sysPath ; Substitute ( $sysPath ; "/" ; "\\" ) ]
+	Set Variable [ $uri ; GetAsText ( $sysPath ) ]
+	If [ IsEmpty ( $uri ) ]
+		Set Variable [ $$DISABLE_VALIDATION ; "" ]
+		Exit Script [ "Nothing Selected" ]
+	End If
+	
+	Set Variable [ $path_text ; Substitute ( Substitute ( $uri ; "filewin:"; ""); "/" ; "\\" ) ]
+	Set Variable [ $lastSeg ; GetValue ( Substitute ( $path_text ; "\\" ; "¶"); ValueCount ( Substitute ( $path_text; "\\" ; "¶") )) ]
+	Set Variable [ $parent ; Left ( $path_text ;
+					           Position ( $path_text ; "\\" ; 1 ;
+					             ValueCount ( Substitute ( $path_text ; "\\" ; "¶" ) ) - 1
+					           )
+					         ) ]
+	
+	Set Variable [ $sidecar_path ; $parent & "sidecars\\" & $lastSeg & ".mediainfo.json" ]
+	Set Variable [ $filewin_sidecar_path ; Substitute ( "filewin:/" & $sidecar_path ; "\\" ; "/") ]
+	
+	
+	# if path is too long, subst/mount
+	Set Variable [ $tempDir ; Get ( TemporaryPath ) ]
+	Set Variable [ $ps ; "$LongPath=" & "\"" & $parent & "\""  & Char ( 13 ) & Char ( 10 ) &
+					
+					"if (-not (Get-PSDrive -Name 'Q' -ErrorAction SilentlyContinue)) {" & Char ( 13 ) & Char ( 10 ) &
+					"$DriveLetter = 'Q:'" & Char ( 13 ) & Char ( 10 ) &
+					"}" & Char ( 13 ) & Char ( 10 ) &
+					
+					"cmd /c \"subst $DriveLetter `\"$LongPath`\"\"" & Char ( 13 ) & Char ( 10 ) &
+					"pause" & Char ( 13 ) & Char ( 10 ) ]
+	Set Variable [ $psscript ; Get ( TemporaryPath ) & "substlongpath.ps1" ]
+	Set Variable [ $psscriptbat ; Get ( TemporaryPath ) & "substlongpath.bat" ]
+	Set Variable [ $psscriptpath ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
+	Set Variable [ $psbat ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) ]
+	
+	Create Data File [ "$psscript" ; Create folders: OFF ]
+	Create Data File [ "$psscriptbat" ; Create folders: OFF ]
+	Open Data File [ "$psscript" ; Target: $psscriptID ]
+	Write to Data File [ File ID: $psscriptID ; Target: $ps ; Append line feed: OFF ]
+	Close Data File [ File ID: $psscriptID ]
+	Open Data File [ "$psscriptbat" ; Target: $psscriptIDbat ]
+	Write to Data File [ File ID: $psscriptIDbat ; Target: $psbat ; Append line feed: OFF ]
+	Close Data File [ File ID: $psscriptIDbat ]
+	
+	Send Event [ Event: open document/application ; Document: "$psscriptbat" ; Bring target application to foreground: ON ; Wait for event completion: OFF ; Copy event result: OFF ]
+	Pause/Resume Script [ Duration (seconds): 2 ]
+	
+	Set Variable [ $sidecarfilename ; Let (
+					[
+					    parts = Substitute ( $sidecar_path ; Char ( 92 ) ; ¶ )
+					] ;
+					    GetValue ( parts ; ValueCount ( parts ) )
+					) ]
+	Set Variable [ $substfilewin_sidecar_path ; "filewin:/Q:/sidecars/" & $sidecarfilename ]
+	# open from subst/mount
+	
+	Pause/Resume Script [ Duration (seconds): 4 ]
+	Open Data File [ "$substfilewin_sidecar_path" ; Target: $sidecar_pathID ]
+	If [ Get ( LastError )  ≠ 0 ]
+		Show Custom Dialog [ Title: "Media Info Sidecar missing" ; Message: "Sidecar file not found at location " & $sidecar_path &
+						" Please run the MediInfo Sidecar Generator application first and run again." ; Default Button: "OK" ; Button 2: "Cancel" ]
+		Set Variable [ $$DISABLE_VALIDATION ; "" ]
+		Exit Script []
+	End If
+	
+	Read from Data File [ File ID: $sidecar_pathID ; Target: $json ]
+	Close Data File [ File ID: $sidecar_pathID ]
+	If [ Get ( LastError ) ≠ 0 or IsEmpty ( $json ) ]
+		Show Custom Dialog [ Title: "Sidecar read error" ; Message: "The Sidecar exists but could not be read." ; Default Button: "OK" ; Button 2: "Cancel" ]
+		Set Variable [ $$DISABLE_VALIDATION ; "" ]
+		Exit Script []
+	End If
+	# Item_unit_number-auto enter
+	Set Variable [ $nextRow ; Let (
+					        [
+					            maxNo = Max ( Digital Media_Item Unit::Item_unit_number )
+					        ] ;
+					        If ( IsEmpty ( maxNo ) ; 1 ; maxNo + 1 )
+					    ) ]
+	
+	
+	# Item_unit_number-auto enter
+	Set Variable [ $tracks ; "media.track" ]
+	Set Variable [ $count ; ValueCount ( JSONListKeys ( $json ; $tracks ) ) ]
+	
+	Set Variable [ $g ; "" ]
+	Set Variable [ $v ; "" ]
+	Set Variable [ $a ; "" ]
+	
+	Set Variable [ $i ; 0 ]
+	
+	Loop
+		Exit Loop If [ $i  ≥ $count  or ( not IsEmpty ( $g ) and not IsEmpty ( $v ) and not IsEmpty ( $a )) ]
+		Set Variable [ $json_elementpath ; $tracks & "[" & $i & "]" ]
+		Set Variable [ $type ; JSONGetElement ( $json ; $json_elementpath & ".@type" ) ]
+		
+		
+		If [ IsEmpty ( $g ) and $type = "General" ]
+			Set Variable [ $g ; $json_elementpath ]
+		Else If [ IsEmpty ( $v ) and $type = "Video" ]
+			Set Variable [ $v ; $json_elementpath ]
+		Else If [ IsEmpty ( $a ) and $type = "Audio" ]
+			Set Variable [ $a ; $json_elementpath ]
+		End If
+		Set Variable [ $i ; $i + 1 ]
+	End Loop
+	
+	Go to Object [ "Portal_DM_Items" ]
+	Go to Portal Row [ Select: ON ; Last ]
+	Go to Portal Row [ Exit after last: OFF ; Next ]
+	
+	If [ not IsEmpty ( $g ) ]
+		Set Field [ Digital Media_Item Unit::Item_unit_number ; $nextRow ]
+		Set Field [ Digital Media_Item Unit::file_path ; $sysPath ]
+		Set Field [ Digital Media_Item Unit::specific_carrier_type ; JSONGetElement ( $json ; $g & ".FileExtension" ) ]
+		Set Field [ Inventory for Labeling::specific_carrier_type ; Digital Media_Item Unit::specific_carrier_type ]
+		Set Field [ Digital Media_Item Unit::file_size ; GetAsNumber ( JSONGetElement ( $json ; $g & ".FileSize" ) ) ]
+		Set Field [ Digital Media_Item Unit::file_size_display ; Let ( [ b = GetAsNumber ( Digital Media_Item Unit::file_size ) ; k = 1024 ; m = k^2 ; g = k^3 ; t = k^4 ] ; Case ( b≥t ; Round(b/t;2)&" TB" ; b≥g ; Round(b/g;2)&" GB" ; b≥m ; Round(b/m;2)&" MB" ; b≥k ; Round(b/k;2)&" KB" ; b & " bytes" ) ) ]
+		Set Field [ Digital Media_Item Unit::running_time ; GetAsNumber ( JSONGetElement ( $json ; $g & ".Duration" ) ) ]
+		Set Field [ Digital Media_Item Unit::playing_speed ; JSONGetElement ( $json ; $g & ".FrameRate" ) ]
+		Set Field [ Inventory for Labeling::playing_speed ; Digital Media_Item Unit::playing_speed ]
+		Set Field [ Digital Media_Item Unit::wrapper_format ; Let (
+						   wrapformat = JSONGetElement ( $json ; $g & ".Format_Profile" );
+						   If ( IsEmpty ( Digital Media_Item Unit::wrapper_format ) and not IsEmpty ( wrapformat ) ; wrapformat ; "Not Applicable"
+						   )
+						) ]
+		Set Field [ Inventory for Labeling::wrapper_format ; Digital Media_Item Unit::wrapper_format ]
+		Set Variable [ $json_creation_date ; JSONGetElement ( $json ; $g & ".Encoded_Date") ]
+		
+		
+		If [ IsEmpty ( $json_creation_date ) ]
+			Set Variable [ $json_creation_date ; JSONGetElement ( $json ; $g & ".File_Created_Date") ]
+		End If
+		If [ IsEmpty ( $json_creation_date ) ]
+			Show Custom Dialog [ Title: "Missing Date" ; Message: "The json file is missing a valid \"Encoded_date\" or \"File_Created_date\" value. ¶A default date of 1900/1/1 has been entered instead. Please update manualy with correct creation date. ¶" & "Encoded_Date:" & JSONGetElement ( $json ; $g & ".Encoded_Date") &
+							"¶File_Created_Date:" & JSONGetElement ( $json ; $g & ".File_Created_Date") ; Default Button: "OK" ]
+			Set Variable [ $json_creation_date ; "1900-01-01 00:00:00.000 UTC" ]
+		End If
+		If [ EvaluationError ( Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) ) )  ≠ 0 ]
+			Show Custom Dialog [ Title: "Invalid Date" ; Message: "The date creation value from json is invalid: " & $json_creation_date ; Default Button: "OK" ]
+			Set Variable [ $json_creation_date ; "1900-01-01 00:00:00.000 UTC" ]
+			Set Variable [ $formattedDate ; $json_creation_date ]
+		Else
+			Set Variable [ $formattedDate ; Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) ) ]
+		End If
+		Set Field [ Digital Media_Item Unit::Creation_date ; ( $formattedDate) ]
+	End If
+	
+	If [ not IsEmpty ( $v ) ]
+		Set Field [ Digital Media_Item Unit::video_codec ; JSONGetElement ( $json ; $v & ".Format" ) ]
+		Set Field [ Inventory for Labeling::video_codec ; Digital Media_Item Unit::video_codec ]
+		Set Field [ Digital Media_Item Unit::video_codec_profile ; JSONGetElement ( $json ; $v & ".Format_Profile" ) ]
+		Set Field [ Digital Media_Item Unit::display_width ; JSONGetElement ( $json ; $v & ".Width" ) ]
+		Set Field [ Digital Media_Item Unit::display_height ; JSONGetElement ( $json ; $v & ".Height" ) ]
+		Set Field [ Digital Media_Item Unit::display_resolution ; Digital Media_Item Unit::display_width & "X" & Digital Media_Item Unit::display_height ]
+		Set Field [ Inventory for Labeling::display_resolution ; Digital Media_Item Unit::display_resolution ]
+		Set Field [ Digital Media_Item Unit::aperture ; JSONGetElement ( $json ; $v & ".DisplayAspectRatio" ) ]
+		Set Field [ Inventory for Labeling::aperture ; Digital Media_Item Unit::aperture ]
+		Set Field [ Digital Media_Item Unit::media_type ; JSONGetElement ( $json ; $v & ".@type" ) ]
+		Set Field [ Inventory for Labeling::media_type ; Digital Media_Item Unit::media_type ]
+		Set Field [ Digital Media_Item Unit::scan_type ; JSONGetElement ( $json ; $v & ".ScanType" ) ]
+		Set Field [ Inventory for Labeling::scan_type ; Digital Media_Item Unit::scan_type ]
+		Set Field [ Inventory for Labeling::Language ; Let (
+						[
+						    rawLang = TrimAll ( JSONGetElement ( $json ; $v & ".Language" ) ; 1 ; 1 );
+						lang = Lower ( rawLang ) ;
+						
+						    mappedLang = Case (
+						        lang = "am" or lang = "amh" ; "Amharic (am)" ;
+						        lang = "ar" or lang = "ara" ; "Arabic (ar)" ;
+						        lang = "zh" or lang = "zho" or lang = "chi" ; "Chinese (zh)" ;
+						        lang = "cs" or lang = "ces" or lang = "cze" ; "Czech (cs)" ;
+						        lang = "da" or lang = "dan" ; "Danish (da)" ;
+						        lang = "nl" or lang = "nld" or lang = "dut" ; "Dutch (nl)" ;
+						        lang = "en" or lang = "eng" ; "English (en)" ;
+						        lang = "gez" ; "Ethiopic (gez)" ;
+						        lang = "fr" or lang = "fra" or lang = "fre" ; "French (fr)" ;
+						        lang = "de" or lang = "deu" or lang = "ger" ; "German (de)" ;
+						        lang = "he" or lang = "heb" ; "Hebrew (he)" ;
+						        lang = "hi" or lang = "hin" ; "Hindi (hi)" ;
+						        lang = "hu" or lang = "hun" ; "Hungarian (hu)" ;
+						        lang = "id" or lang = "ind" ; "Indonesian (id)" ;
+						        lang = "it" or lang = "ita" ; "Italian (it)" ;
+						        lang = "ja" or lang = "jpn" ; "Japanese (ja)" ;
+						        lang = "ko" or lang = "kor" ; "Korean (ko)" ;
+						        lang = "nv" or lang = "nav" ; "Navajo (nv)" ;
+						        lang = "zxx" ; "No linguistic content (zxx)" ;
+						        lang = "no" or lang = "nor" ; "Norwegian (no)" ;
+						        lang = "fa" or lang = "fas" or lang = "per" ; "Persian (fa)" ;
+						        lang = "pl" or lang = "pol" ; "Polish (pl)" ;
+						        lang = "pt" or lang = "por" ; "Portuguese (pt)" ;
+						        lang = "ru" or lang = "rus" ; "Russian (ru)" ;
+						        lang = "es" or lang = "spa" ; "Spanish (es)" ;
+						        lang = "sv" or lang = "swe" ; "Swedish (sv)" ;
+						        lang = "th" or lang = "tha" ; "Thai (th)" ;
+						        lang = "uk" or lang = "ukr" ; "Ukrainian (uk)" ;
+						        lang = "und" ; "Undetermined (und)" ;
+						        lang = "vi" or lang = "vie" ; "Vietnamese (vi)" ;
+						        lang = "ypk" ; "Yupik languages (ypk)" ;
+						        rawLang
+						    )
+						] ;
+						
+						If (
+						    IsEmpty ( Inventory for Labeling::Language )
+						    and not IsEmpty ( rawLang ) ;
+						    mappedLang ;
+						    Inventory for Labeling::Language
+						)
+						) ]
+		Set Field [ Digital Media_Item Unit::language ; Inventory for Labeling::Language ]
+	End If
+	
+	If [ not IsEmpty ( $a ) ]
+		If [ IsEmpty (Inventory for Labeling::media_type ) ]
+			Set Field [ Digital Media_Item Unit::media_type ; JSONGetElement ( $json ; $a & ".@type" ) ]
+			Set Field [ Inventory for Labeling::media_type ; Digital Media_Item Unit::media_type ]
+		End If
+		Set Field [ Digital Media_Item Unit::audio_codec ; JSONGetElement ( $json ; $a & ".Format" ) ]
+		Set Field [ Inventory for Labeling::audio_codec ; Digital Media_Item Unit::audio_codec ]
+		
+		Set Field [ Inventory for Labeling::Language ; Let (
+						[
+						   rawLang = TrimAll ( JSONGetElement ( $json ; $a & ".Language" ) ; 1 ; 1 ) ;
+						lang = Lower (rawLang) ;
+						
+						    mappedLang = Case (
+						        lang = "am" or lang = "amh" ; "Amharic (am)" ;
+						        lang = "ar" or lang = "ara" ; "Arabic (ar)" ;
+						        lang = "zh" or lang = "zho" or lang = "chi" ; "Chinese (zh)" ;
+						        lang = "cs" or lang = "ces" or lang = "cze" ; "Czech (cs)" ;
+						        lang = "da" or lang = "dan" ; "Danish (da)" ;
+						        lang = "nl" or lang = "nld" or lang = "dut" ; "Dutch (nl)" ;
+						        lang = "en" or lang = "eng" ; "English (en)" ;
+						        lang = "gez" ; "Ethiopic (gez)" ;
+						        lang = "fr" or lang = "fra" or lang = "fre" ; "French (fr)" ;
+						        lang = "de" or lang = "deu" or lang = "ger" ; "German (de)" ;
+						        lang = "he" or lang = "heb" ; "Hebrew (he)" ;
+						        lang = "hi" or lang = "hin" ; "Hindi (hi)" ;
+						        lang = "hu" or lang = "hun" ; "Hungarian (hu)" ;
+						        lang = "id" or lang = "ind" ; "Indonesian (id)" ;
+						        lang = "it" or lang = "ita" ; "Italian (it)" ;
+						        lang = "ja" or lang = "jpn" ; "Japanese (ja)" ;
+						        lang = "ko" or lang = "kor" ; "Korean (ko)" ;
+						        lang = "nv" or lang = "nav" ; "Navajo (nv)" ;
+						        lang = "zxx" ; "No linguistic content (zxx)" ;
+						        lang = "no" or lang = "nor" ; "Norwegian (no)" ;
+						        lang = "fa" or lang = "fas" or lang = "per" ; "Persian (fa)" ;
+						        lang = "pl" or lang = "pol" ; "Polish (pl)" ;
+						        lang = "pt" or lang = "por" ; "Portuguese (pt)" ;
+						        lang = "ru" or lang = "rus" ; "Russian (ru)" ;
+						        lang = "es" or lang = "spa" ; "Spanish (es)" ;
+						        lang = "sv" or lang = "swe" ; "Swedish (sv)" ;
+						        lang = "th" or lang = "tha" ; "Thai (th)" ;
+						        lang = "uk" or lang = "ukr" ; "Ukrainian (uk)" ;
+						        lang = "und" ; "Undetermined (und)" ;
+						        lang = "vi" or lang = "vie" ; "Vietnamese (vi)" ;
+						        lang = "ypk" ; "Yupik languages (ypk)" ;
+						        rawLang
+						    )
+						] ;
+						
+						If (
+						    IsEmpty (Inventory for Labeling::Language )
+						    and not IsEmpty ( rawLang ) ;
+						    mappedLang ;
+						    Inventory for Labeling::Language
+						)
+						) ]
+		Set Field [ Digital Media_Item Unit::language ; Inventory for Labeling::Language ]
+	End If
+	
+	# remove the mounted Q
+	
+	
+	Set Variable [ $ps ; "cmd /c \"subst Q: /d\"" & Char ( 13 ) & Char ( 10 ) ]
+	Set Variable [ $psscript ; Get ( TemporaryPath ) & "desubstlongpath.ps1" ]
+	Set Variable [ $psscriptbat ; Get ( TemporaryPath ) & "desubstlongpath.bat" ]
+	Set Variable [ $psscriptpath ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
+	Set Variable [ $psbat ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) ]
+	
+	Create Data File [ "$psscript" ; Create folders: OFF ]
+	Create Data File [ "$psscriptbat" ; Create folders: OFF ]
+	Open Data File [ "$psscript" ; Target: $psscriptID ]
+	Write to Data File [ File ID: $psscriptID ; Target: $ps ; Append line feed: OFF ]
+	Close Data File [ File ID: $psscriptID ]
+	Open Data File [ "$psscriptbat" ; Target: $psscriptIDbat ]
+	Write to Data File [ File ID: $psscriptIDbat ; Target: $psbat ; Append line feed: OFF ]
+	Close Data File [ File ID: $psscriptIDbat ]
+	
+	Send Event [ Event: open document/application ; Document: "$psscriptbat" ; Bring target application to foreground: ON ; Wait for event completion: OFF ; Copy event result: OFF ]
+	Pause/Resume Script [ Duration (seconds): 1.5 ]
+	# remove mounted Q
+	
+	Set Variable [ $$DISABLE_VALIDATION ; "" ]
+	Perform Script [ "New Digital - required fields check" ; Specified: From list ; Parameter: ]
+	If [ Get ( ScriptResult ) = False ]
+		Exit Script [ False ]
+	End If
+	Commit Records/Requests [ With dialog: OFF ]
+	Refresh Portal [ Object Name: "Portal_DM_Items" ]
+	
+Else If [ PatternCount ( $FMFilePath ; "filemac:" ) ]
+	Set Variable [ $$DISABLE_VALIDATION ; "" ]
+	Show Custom Dialog [ Title: "Not Supported" ; Message: "This has to be done on a Windows computer. Mac OS not supported yet." ; Default Button: "OK" ; Button 2: "Cancel" ]
+End If
+
+

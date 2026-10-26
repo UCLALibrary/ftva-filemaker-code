@@ -1,0 +1,116 @@
+<FieldCatalog>
+	<UUID modifications="6" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:33:16">27FC2483-6303-8540-9B03-66C39CBCEF3C</UUID>
+	<BaseTableReference id="137" name="ItemUnitRelationship"></BaseTableReference>
+	<ObjectList membercount="9">
+		<Field DefaultStyle="" id="1" name="PrimaryKey" fieldtype="Normal" datatype="Text" comment="Unique identifier of each record in this table">
+			<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:09:37">1B393E0B-3F92-9949-83D9-E76A8F11356B</UUID>
+			<AutoEnter type="Calculated" prohibitModification="True" overwriteExisting="True" alwaysEvaluate="False">
+				<Calculated>
+					<Calculation>
+						<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+						<Text><![CDATA[Get( UUID )]]></Text>
+						<ChunkList hash="F8FC751FEE733A347BA2266C54DEC7A0">
+							<Chunk type="FunctionRef">Get</Chunk>
+							<Chunk type="NoRef">( </Chunk>
+							<Chunk type="FunctionRef">UUID</Chunk>
+							<Chunk type="NoRef"> )</Chunk>
+						</ChunkList>
+					</Calculation>
+				</Calculated>
+			</AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="True" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="Unicode" id="2"></LanguageReference>
+			</Storage>
+			<TagList primary="True">#^FMI* #_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="2" name="CreationTimestamp" fieldtype="Normal" datatype="Timestamp" comment="Date and time each record was created">
+			<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:09:37">72A464D3-C7FA-BE4C-B087-571BDA562D59</UUID>
+			<AutoEnter type="CreationTimestamp" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="3" name="CreatedBy" fieldtype="Normal" datatype="Text" comment="Account name of the user who created each record">
+			<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:09:37">42078A65-42B1-C44C-ADBD-0A88D0D29519</UUID>
+			<AutoEnter type="CreationAccountName" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="4" name="ModificationTimestamp" fieldtype="Normal" datatype="Timestamp" comment="Date and time each record was last modified">
+			<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:09:37">36CE3770-E146-1945-BEB4-D560566DB7B3</UUID>
+			<AutoEnter type="ModificationTimestamp" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False">
+				<Strict>FourDigitYear</Strict>
+			</Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="5" name="ModifiedBy" fieldtype="Normal" datatype="Text" comment="Account name of the user who last modified each record">
+			<UUID modifications="0" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:09:37">C4082709-29EF-2941-B73A-1ADBA2AC671B</UUID>
+			<AutoEnter type="ModificationAccountName" prohibitModification="True"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="False" notEmpty="True" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<TagList>#_FMI_0 </TagList>
+		</Field>
+		<Field DefaultStyle="" id="6" name="source_uuid" fieldtype="Normal" datatype="Text" comment="UUID of source item unit in relationship">
+			<UUID modifications="1" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:13:20">322DE743-B53A-684C-9835-F16E50658F94</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="7" name="target_uuid" fieldtype="Normal" datatype="Text" comment="UUID of target item unit in relationship">
+			<UUID modifications="1" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:33:15">0377A214-DCD0-2D48-A29A-F5940ED6BE1A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+		<Field DefaultStyle="" id="8" name="participant_uuids" fieldtype="Calculated" datatype="Number" comment="UUIDs of source and target item units in relationship, delimited by new line">
+			<UUID modifications="1" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:33:15">BD3AE65C-3B96-5D4D-95FF-92E03A5A0AEF</UUID>
+			<AutoEnter alwaysEvaluate="False"></AutoEnter>
+			<Storage storeCalculationResults="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+			<Calculation>
+				<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+				<Text><![CDATA[source_uuid & ¶ & target_uuid]]></Text>
+				<ChunkList hash="ED6A4F56495F5DFA38D07C85722989CC">
+					<Chunk type="FieldRef">
+						<FieldReference id="6" name="source_uuid" repetition="1">
+							<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+					<Chunk type="NoRef"> &amp; ¶ &amp; </Chunk>
+					<Chunk type="FieldRef">
+						<FieldReference id="7" name="target_uuid" repetition="1">
+							<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+						</FieldReference>
+					</Chunk>
+				</ChunkList>
+			</Calculation>
+		</Field>
+		<Field DefaultStyle="" id="9" name="relationship_type_id" fieldtype="Normal" datatype="Text" comment="Foreign key to relationship type">
+			<UUID modifications="1" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:33:16">0AAA50A0-C86D-8C4D-AB65-807F2BB2813A</UUID>
+			<AutoEnter type="" prohibitModification="False"></AutoEnter>
+			<Validation type="OnlyDuringDataEntry" allowOverride="True" notEmpty="False" unique="False" existing="False"></Validation>
+			<Storage autoIndex="True" global="False" maxRepetitions="1">
+				<LanguageReference name="English" id="21"></LanguageReference>
+			</Storage>
+		</Field>
+	</ObjectList>
+</FieldCatalog>

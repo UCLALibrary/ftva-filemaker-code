@@ -1,0 +1,4 @@
+Go to Related Record [ Table: Labeling Database_InvID ; Layout: <original layout> ; Show related ]
+Select Window
+Perform Script [ "Print Newsreels Labels" ; Specified: From list ; Parameter: ]
+

@@ -1,0 +1,1092 @@
+<Script>
+	<ScriptReference id="136" name="Import from Preservation Sound Inv"></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="35" name="Import Records" enable="True">
+			<Options>33587232</Options>
+			<ParameterValues membercount="4">
+				<Parameter type="Boolean">
+					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="DataSourceReference">
+					<DataSourceReference fileType="FMPR" isPredefined="False" delimiter="1" value="1">
+						<UniversalPathList fileType="FMPR" membercount="1">
+							<ObjectList>
+								<Location><![CDATA[filewin:/I:/Export Preservation Sound to Labeling.fmp12]]></Location>
+							</ObjectList>
+						</UniversalPathList>
+					</DataSourceReference>
+				</Parameter>
+				<Parameter type="ImportField">
+					<ImportField addasnew="False" isPredefined="False" delimiter="0" fieldNameRow="0">
+						<Options copyContainersAsIs="False" matchFieldNames="True" doAutoEntry="True" splitRepetitions="False"></Options>
+						<Target>
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</Target>
+						<Field membercount="211">
+							<Map New="False" name="Source field 1 import to " id="86" kind="0" Options="0">
+								<FieldReference id="86" name="broadcast title">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 2 import to " id="21" kind="0" Options="0">
+								<FieldReference id="21" name="title">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 3 import to " id="9" kind="0" Options="0">
+								<FieldReference id="9" name="episode_title">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 4 import to " id="62" kind="0" Options="0">
+								<FieldReference id="62" name="release_broadcast_year">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 5 import to " id="29" kind="0" Options="0">
+								<FieldReference id="29" name="inventory_no">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 6 import to " id="83" kind="0" Options="0">
+								<FieldReference id="83" name="Country">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 7 import to " id="80" kind="0" Options="0">
+								<FieldReference id="80" name="Acquisition type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 8 import to " id="92" kind="0" Options="0">
+								<FieldReference id="92" name="date_received">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 9 import to " id="11" kind="0" Options="0">
+								<FieldReference id="11" name="donor_code">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 10 import to " id="64" kind="0" Options="0">
+								<FieldReference id="64" name="version">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 11 import to " id="63" kind="0" Options="0">
+								<FieldReference id="63" name="running_time">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 12 import to " id="76" kind="0" Options="0">
+								<FieldReference id="76" name="inputter_initials">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 13 import to " id="66" kind="0" Options="0">
+								<FieldReference id="66" name="director">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 14 import to " id="82" kind="0" Options="0">
+								<FieldReference id="82" name="Language">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 15 import to " id="78" kind="0" Options="0">
+								<FieldReference id="78" name="spac">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 16 import to " id="27" kind="0" Options="0">
+								<FieldReference id="27" name="notes">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 17 import to " id="93" kind="0" Options="0">
+								<FieldReference id="93" name="Preserved by">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 18 import to " id="97" kind="0" Options="0">
+								<FieldReference id="97" name="reproduction_location">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 19 import to " id="74" kind="0" Options="0">
+								<FieldReference id="74" name="reproduction_source_notes">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 20 import to " id="113" kind="0" Options="0">
+								<FieldReference id="113" name="reproduction_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 21 import to " id="91" kind="0" Options="0">
+								<FieldReference id="91" name="reproduction_reason">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 22 import to " id="70" kind="0" Options="0">
+								<FieldReference id="70" name="notes_reproduction">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 23 import to " id="143" kind="0" Options="0">
+								<FieldReference id="143" name="from element inv #">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 24 import to " id="89" kind="0" Options="0">
+								<FieldReference id="89" name="Reproduction for">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 25 import to " id="87" kind="0" Options="0">
+								<FieldReference id="87" name="Subtitle">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 26 import to " id="144" kind="0" Options="0">
+								<FieldReference id="144" name="Lab 2">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 27 import to " id="146" kind="0" Options="0">
+								<FieldReference id="146" name="from element inv # 2">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 28 import to " id="145" kind="0" Options="0">
+								<FieldReference id="145" name="from element type 2">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 29 import to " id="147" kind="0" Options="0">
+								<FieldReference id="147" name="lab date 2">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 30 import to " id="77" kind="0" Options="2">
+								<FieldReference id="77" name="inputter_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 31 import to " id="95" kind="0" Options="0">
+								<FieldReference id="95" name="FTA">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 32 import to " id="10" kind="0" Options="0">
+								<FieldReference id="10" name="element_info">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 33 import to " id="155" kind="0" Options="0">
+								<FieldReference id="155" name="disc of">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 34 import to " id="156" kind="0" Options="0">
+								<FieldReference id="156" name="disc total">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 35 import to " id="157" kind="0" Options="0">
+								<FieldReference id="157" name="cassette of">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 36 import to " id="158" kind="0" Options="0">
+								<FieldReference id="158" name="cassette total">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 37 not import to " id="90" kind="1" Options="0">
+								<FieldReference id="90" name="lab">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 38 import to " id="153" kind="0" Options="0">
+								<FieldReference id="153" name="Audio Format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 39 import to " id="154" kind="0" Options="0">
+								<FieldReference id="154" name="DVDR AB">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 40 import to " id="161" kind="0" Options="0">
+								<FieldReference id="161" name="Audio sample rate">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 41 import to " id="162" kind="0" Options="0">
+								<FieldReference id="162" name="Audio bit rate">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 42 import to " id="163" kind="0" Options="0">
+								<FieldReference id="163" name="Audio frame rate">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 43 import to " id="108" kind="0" Options="0">
+								<FieldReference id="108" name="sound_channels">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 44 not import to " id="22" kind="1" Options="0">
+								<FieldReference id="22" name="total_reels">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 45 not import to " id="14" kind="1" Options="0">
+								<FieldReference id="14" name="issue">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 46 not import to " id="13" kind="1" Options="0">
+								<FieldReference id="13" name="volume">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 47 not import to " id="16" kind="1" Options="0">
+								<FieldReference id="16" name="roll">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 48 not import to " id="17" kind="1" Options="0">
+								<FieldReference id="17" name="neg_no_prefix">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 49 not import to " id="151" kind="1" Options="0">
+								<FieldReference id="151" name="Incomplete - PP">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 50 not import to " id="20" kind="1" Options="2">
+								<FieldReference id="20" name="inventory_id">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 51 not import to " id="105" kind="1" Options="0">
+								<FieldReference id="105" name="playing_speed">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 52 not import to " id="7" kind="1" Options="0">
+								<FieldReference id="7" name="old_location">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 53 not import to " id="25" kind="1" Options="2">
+								<FieldReference id="25" name="date_modified">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 54 not import to " id="26" kind="1" Options="2">
+								<FieldReference id="26" name="date_created">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 55 not import to " id="28" kind="1" Options="2">
+								<FieldReference id="28" name="flag">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 56 not import to " id="30" kind="1" Options="0">
+								<FieldReference id="30" name="search_results">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 57 not import to " id="31" kind="1" Options="0">
+								<FieldReference id="31" name="found">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 58 not import to " id="32" kind="1" Options="0">
+								<FieldReference id="32" name="search_error">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 59 not import to " id="33" kind="1" Options="0">
+								<FieldReference id="33" name="inventory_no_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 60 not import to " id="15" kind="1" Options="0">
+								<FieldReference id="15" name="can">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 61 not import to " id="35" kind="1" Options="0">
+								<FieldReference id="35" name="hearst_can_vol_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 62 not import to " id="36" kind="1" Options="0">
+								<FieldReference id="36" name="hearst_roll_issue_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 63 not import to " id="18" kind="1" Options="0">
+								<FieldReference id="18" name="neg_no">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 64 not import to " id="39" kind="1" Options="2">
+								<FieldReference id="39" name="missing">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 65 not import to " id="40" kind="1" Options="0">
+								<FieldReference id="40" name="format Newsreels">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 66 not import to " id="24" kind="1" Options="2">
+								<FieldReference id="24" name="user_last_modified">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 67 not import to " id="42" kind="1" Options="2">
+								<FieldReference id="42" name="safety">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 68 not import to " id="43" kind="1" Options="0">
+								<FieldReference id="43" name="hearst_positive_negative_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 69 not import to " id="44" kind="1" Options="0">
+								<FieldReference id="44" name="story_1">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 70 not import to " id="45" kind="1" Options="0">
+								<FieldReference id="45" name="label_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 71 not import to " id="46" kind="1" Options="2">
+								<FieldReference id="46" name="format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 72 not import to " id="47" kind="1" Options="0">
+								<FieldReference id="47" name="title_episode_no_dash">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 73 not import to " id="48" kind="1" Options="0">
+								<FieldReference id="48" name="title_label">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 74 not import to " id="34" kind="1" Options="0">
+								<FieldReference id="34" name="hearst_prefix_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 75 not import to " id="53" kind="1" Options="0">
+								<FieldReference id="53" name="format_type_abbr">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 76 not import to " id="49" kind="1" Options="0">
+								<FieldReference id="49" name="epi_no_label">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 77 not import to " id="38" kind="1" Options="2">
+								<FieldReference id="38" name="unidentified">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 78 not import to " id="57" kind="1" Options="0">
+								<FieldReference id="57" name="study_copy_no">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 79 not import to " id="59" kind="1" Options="0">
+								<FieldReference id="59" name="date_copied">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 80 not import to " id="41" kind="1" Options="0">
+								<FieldReference id="41" name="date_released">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 81 not import to " id="61" kind="1" Options="0">
+								<FieldReference id="61" name="collection_title">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 82 not import to " id="54" kind="1" Options="0">
+								<FieldReference id="54" name="sound_format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 83 not import to " id="65" kind="1" Options="0">
+								<FieldReference id="65" name="record_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 84 not import to " id="23" kind="1" Options="2">
+								<FieldReference id="23" name="type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 85 not import to " id="68" kind="1" Options="0">
+								<FieldReference id="68" name="additional_physical_description">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 86 not import to " id="69" kind="1" Options="0">
+								<FieldReference id="69" name="notes_content">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 87 not import to " id="71" kind="1" Options="2">
+								<FieldReference id="71" name="Vault">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 88 not import to " id="72" kind="1" Options="2">
+								<FieldReference id="72" name="Shelf">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 89 not import to " id="73" kind="1" Options="0">
+								<FieldReference id="73" name="form_term">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 90 not import to " id="75" kind="1" Options="0">
+								<FieldReference id="75" name="preprint">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 91 not import to " id="79" kind="1" Options="0">
+								<FieldReference id="79" name="episode no.">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 92 not import to " id="0" kind="1" Options="0">
+								<FieldReference id="0" name="">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 93 not import to " id="58" kind="1" Options="0">
+								<FieldReference id="58" name="availability">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 94 not import to " id="150" kind="1" Options="0">
+								<FieldReference id="150" name="Incomplete - Print">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 95 not import to " id="84" kind="1" Options="2">
+								<FieldReference id="84" name="Status">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 96 not import to " id="12" kind="1" Options="0">
+								<FieldReference id="12" name="hearst_prefix">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 97 not import to " id="160" kind="1" Options="0">
+								<FieldReference id="160" name="Type of sound">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 98 not import to " id="88" kind="1" Options="0">
+								<FieldReference id="88" name="condition">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 99 not import to " id="107" kind="1" Options="0">
+								<FieldReference id="107" name="sync_track_info">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 100 not import to " id="99" kind="1" Options="0">
+								<FieldReference id="99" name="reels_discarded">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 101 not import to " id="96" kind="1" Options="0">
+								<FieldReference id="96" name="orion">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 102 not import to " id="101" kind="1" Options="0">
+								<FieldReference id="101" name="track">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 103 not import to " id="102" kind="1" Options="0">
+								<FieldReference id="102" name="separations">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 104 not import to " id="103" kind="1" Options="0">
+								<FieldReference id="103" name="unknown_track">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 105 not import to " id="104" kind="1" Options="0">
+								<FieldReference id="104" name="additional_pre_print_info">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 106 not import to " id="100" kind="1" Options="0">
+								<FieldReference id="100" name="other_det_info">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 107 not import to " id="106" kind="1" Options="0">
+								<FieldReference id="106" name="groove_characteristics">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 108 not import to " id="55" kind="1" Options="0">
+								<FieldReference id="55" name="aperture">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 109 not import to " id="109" kind="1" Options="0">
+								<FieldReference id="109" name="type_of_recording">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 110 not import to " id="110" kind="1" Options="2">
+								<FieldReference id="110" name="Alma">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 111 not import to " id="111" kind="1" Options="0">
+								<FieldReference id="111" name="track configurations">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 112 not import to " id="112" kind="1" Options="0">
+								<FieldReference id="112" name="sync_track_other">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 113 not import to " id="50" kind="1" Options="0">
+								<FieldReference id="50" name="format_size">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 114 not import to " id="114" kind="1" Options="0">
+								<FieldReference id="114" name="cast">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 115 not import to " id="115" kind="1" Options="0">
+								<FieldReference id="115" name="UPC code">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 116 not import to " id="125" kind="1" Options="0">
+								<FieldReference id="125" name="timeCode">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 117 not import to " id="126" kind="1" Options="0">
+								<FieldReference id="126" name="incomplete">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 118 not import to " id="128" kind="1" Options="0">
+								<FieldReference id="128" name="film base">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 119 not import to " id="129" kind="1" Options="0">
+								<FieldReference id="129" name="Network">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 120 not import to " id="130" kind="1" Options="0">
+								<FieldReference id="130" name="Imported database info">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 121 not import to " id="131" kind="1" Options="0">
+								<FieldReference id="131" name="Slot">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 122 not import to " id="0" kind="1" Options="0">
+								<FieldReference id="0" name="">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 123 not import to " id="133" kind="1" Options="0">
+								<FieldReference id="133" name="Condition_Damage">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 124 not import to " id="134" kind="1" Options="0">
+								<FieldReference id="134" name="element_info_full">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 125 not import to " id="135" kind="1" Options="0">
+								<FieldReference id="135" name="collection intake notes">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 126 not import to " id="136" kind="1" Options="0">
+								<FieldReference id="136" name="film_stock">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 127 not import to " id="137" kind="1" Options="0">
+								<FieldReference id="137" name="old_barcode">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 128 not import to " id="138" kind="1" Options="0">
+								<FieldReference id="138" name="Aperture detail">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 129 not import to " id="0" kind="1" Options="0">
+								<FieldReference id="0" name="">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 130 not import to " id="0" kind="1" Options="0">
+								<FieldReference id="0" name="">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 131 not import to " id="141" kind="1" Options="0">
+								<FieldReference id="141" name="Add&apos;l phys cond">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 132 not import to " id="142" kind="1" Options="0">
+								<FieldReference id="142" name="Avail detail PP">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 133 not import to " id="94" kind="1" Options="0">
+								<FieldReference id="94" name="preservation date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 134 not import to " id="152" kind="1" Options="2">
+								<FieldReference id="152" name="user_created">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 135 not import to " id="8" kind="1" Options="0">
+								<FieldReference id="8" name="collection">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 136 not import to " id="51" kind="1" Options="0">
+								<FieldReference id="51" name="format_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 137 not import to " id="56" kind="1" Options="0">
+								<FieldReference id="56" name="color_format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 138 not import to " id="98" kind="1" Options="0">
+								<FieldReference id="98" name="reels_affected">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 139 not import to " id="37" kind="1" Options="2">
+								<FieldReference id="37" name="deterioration">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 140 not import to " id="81" kind="1" Options="0">
+								<FieldReference id="81" name="item holdings">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 141 not import to " id="159" kind="1" Options="0">
+								<FieldReference id="159" name="reel total">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 142 not import to " id="149" kind="1" Options="0">
+								<FieldReference id="149" name="reels">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 143 not import to " id="148" kind="1" Options="0">
+								<FieldReference id="148" name="Preservation Inventory Status">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 144 not import to " id="67" kind="1" Options="0">
+								<FieldReference id="67" name="production_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 145 not import to " id="19" kind="1" Options="0">
+								<FieldReference id="19" name="length">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 146 not import to " id="164" kind="1" Options="0">
+								<FieldReference id="164" name="Script Date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 147 not import to " id="166" kind="1" Options="0">
+								<FieldReference id="166" name="Record Date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 148 not import to " id="167" kind="1" Options="0">
+								<FieldReference id="167" name="Announcer open">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 149 not import to " id="168" kind="1" Options="0">
+								<FieldReference id="168" name="Announcer Close">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 150 not import to " id="169" kind="1" Options="0">
+								<FieldReference id="169" name="Data notes">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 151 not import to " id="170" kind="1" Options="0">
+								<FieldReference id="170" name="GRAMMY PROJECT">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 152 not import to " id="171" kind="1" Options="0">
+								<FieldReference id="171" name="DE">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 153 not import to " id="172" kind="1" Options="0">
+								<FieldReference id="172" name="MQ">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 154 not import to " id="173" kind="1" Options="0">
+								<FieldReference id="173" name="Sent to John Polito for Digitzation">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 155 not import to " id="174" kind="1" Options="0">
+								<FieldReference id="174" name="Catalog Record Added To Voyager">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 156 not import to " id="175" kind="1" Options="0">
+								<FieldReference id="175" name="total_reels Total">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 157 not import to " id="176" kind="1" Options="0">
+								<FieldReference id="176" name="item holdings Count">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 158 not import to " id="177" kind="1" Options="0">
+								<FieldReference id="177" name="total_reels Count">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 159 not import to " id="179" kind="1" Options="0">
+								<FieldReference id="179" name="ALIAS">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 160 not import to " id="180" kind="1" Options="0">
+								<FieldReference id="180" name="GATOR">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 161 not import to " id="184" kind="1" Options="2">
+								<FieldReference id="184" name="incomplete_holding">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 162 not import to " id="185" kind="1" Options="0">
+								<FieldReference id="185" name="inventory_id_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 163 not import to " id="186" kind="1" Options="0">
+								<FieldReference id="186" name="title_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 164 not import to " id="187" kind="1" Options="0">
+								<FieldReference id="187" name="director_search">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 165 not import to " id="188" kind="1" Options="0">
+								<FieldReference id="188" name="Area_of_Description">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 166 not import to " id="189" kind="1" Options="0">
+								<FieldReference id="189" name="Sub_area">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 167 not import to " id="190" kind="1" Options="0">
+								<FieldReference id="190" name="Type_of_Deterioration">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 168 not import to " id="191" kind="1" Options="0">
+								<FieldReference id="191" name="Stage">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 169 not import to " id="192" kind="1" Options="0">
+								<FieldReference id="192" name="Deteriorated_reels">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 170 not import to " id="193" kind="1" Options="0">
+								<FieldReference id="193" name="Deterioration_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 171 not import to " id="194" kind="1" Options="0">
+								<FieldReference id="194" name="Deterioration_initials">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 172 not import to " id="195" kind="1" Options="0">
+								<FieldReference id="195" name="New_Condition_damage">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 173 not import to " id="196" kind="1" Options="0">
+								<FieldReference id="196" name="New_Condition_damage_JSON">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 174 not import to " id="197" kind="1" Options="2">
+								<FieldReference id="197" name="UUID">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 175 not import to " id="198" kind="1" Options="2">
+								<FieldReference id="198" name="digital_record">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 176 not import to " id="199" kind="1" Options="0">
+								<FieldReference id="199" name="media_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 177 not import to " id="200" kind="1" Options="0">
+								<FieldReference id="200" name="asset_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 178 not import to " id="201" kind="1" Options="0">
+								<FieldReference id="201" name="type_of_editing">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 179 not import to " id="202" kind="1" Options="0">
+								<FieldReference id="202" name="project_name">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 180 not import to " id="203" kind="1" Options="0">
+								<FieldReference id="203" name="project_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 181 not import to " id="204" kind="1" Options="0">
+								<FieldReference id="204" name="project_start_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 182 not import to " id="205" kind="1" Options="0">
+								<FieldReference id="205" name="project_end_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 183 not import to " id="206" kind="1" Options="0">
+								<FieldReference id="206" name="project_owner">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 184 not import to " id="207" kind="1" Options="0">
+								<FieldReference id="207" name="project_description">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 185 not import to " id="208" kind="1" Options="0">
+								<FieldReference id="208" name="project_stakeholders">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 186 not import to " id="209" kind="1" Options="0">
+								<FieldReference id="209" name="storage_format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 187 not import to " id="210" kind="1" Options="0">
+								<FieldReference id="210" name="specific_carrier_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 188 not import to " id="211" kind="1" Options="0">
+								<FieldReference id="211" name="wrapper_format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 189 not import to " id="212" kind="1" Options="0">
+								<FieldReference id="212" name="video_codec">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 190 not import to " id="213" kind="1" Options="0">
+								<FieldReference id="213" name="audio_codec">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 191 not import to " id="214" kind="1" Options="0">
+								<FieldReference id="214" name="resolution_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 192 not import to " id="215" kind="1" Options="0">
+								<FieldReference id="215" name="display_resolution">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 193 not import to " id="216" kind="1" Options="0">
+								<FieldReference id="216" name="Carrier_A_location">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 194 not import to " id="217" kind="1" Options="0">
+								<FieldReference id="217" name="Carrier_B_location">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 195 not import to " id="218" kind="1" Options="0">
+								<FieldReference id="218" name="retention_status">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 196 not import to " id="219" kind="1" Options="0">
+								<FieldReference id="219" name="retention_start_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 197 not import to " id="220" kind="1" Options="0">
+								<FieldReference id="220" name="project_status">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 198 not import to " id="221" kind="1" Options="0">
+								<FieldReference id="221" name="object_purpose">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 199 not import to " id="222" kind="1" Options="0">
+								<FieldReference id="222" name="ingest_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 200 not import to " id="223" kind="1" Options="0">
+								<FieldReference id="223" name="no_ingest_reason">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 201 not import to " id="224" kind="1" Options="0">
+								<FieldReference id="224" name="no_ingest_reason_notes">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 202 not import to " id="225" kind="1" Options="0">
+								<FieldReference id="225" name="source_format">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 203 not import to " id="226" kind="1" Options="0">
+								<FieldReference id="226" name="source_condition">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 204 not import to " id="227" kind="1" Options="0">
+								<FieldReference id="227" name="source_identifier">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 205 not import to " id="228" kind="1" Options="0">
+								<FieldReference id="228" name="creator_source">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 206 not import to " id="229" kind="1" Options="0">
+								<FieldReference id="229" name="retention_end_date">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 207 not import to " id="230" kind="1" Options="0">
+								<FieldReference id="230" name="scan_type">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 208 not import to " id="231" kind="1" Options="0">
+								<FieldReference id="231" name="Display_UUID">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 209 not import to " id="233" kind="1" Options="0">
+								<FieldReference id="233" name="item_unit_holdings">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 210 not import to " id="234" kind="1" Options="0">
+								<FieldReference id="234" name="total_item_units">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 211 not import to " id="235" kind="1" Options="0">
+								<FieldReference id="235" name="digital_record_calc">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+						</Field>
+						<CharacterSet name="Windows ANSI" value="0"></CharacterSet>
+						<action name="Add" value="0"></action>
+					</ImportField>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

@@ -1,0 +1,53 @@
+<Script>
+	<ScriptReference id="104" name="create traffic record"></ScriptReference>
+	<ObjectList membercount="3">
+		<Step id="47" name="Copy" enable="True">
+			<Options>4097</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Select" id="4096" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="FieldReference">
+					<FieldReference id="29" name="inventory_no">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="30" name="Traffic Record 2"></DataSourceReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="1" type="Calculated">
+							<Name current="False">
+								<Calculation datatype="1" position="0">
+									<Calculation>
+										<Text><![CDATA["Traffic Record"]]></Text>
+										<ChunkList hash="F55801C1B463C080D43313B98E1BBD5E">
+											<Chunk type="NoRef">&quot;Traffic Record&quot;</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</Name>
+						</Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

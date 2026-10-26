@@ -1,0 +1,7 @@
+<ValueList id="75" name="dm_video_codec">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[ProResH.264H.265JPEG 2000MPEG-1MPEG-2DiracXvidTheora VP8VP9]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:27:44">B1C7969B-E9A4-FF49-A401-F04842A63820</UUID>
+</ValueList>

@@ -1,0 +1,7 @@
+<ValueList id="88" name="dm_scan_type">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[ProgressiveInterlaced]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:32:12">A6465CC3-09DE-BB43-AFD5-5CF0E92EEE53</UUID>
+</ValueList>

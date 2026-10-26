@@ -1,0 +1,771 @@
+<Layout id="71" name="MetadataExportOnly" width="1024">
+	<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+	<LayoutThemeReference></LayoutThemeReference>
+	<PartsList membercount="2">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="19" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="749" absolute="19" Options="0"></Definition>
+			<ObjectList membercount="30">
+				<LayoutObject id="2" type="Edit Box" name="" kind="1">
+					<Bounds top="46" left="178" bottom="63" right="303"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="20" name="inventory_id" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>3</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="3" type="Text" name="" kind="2">
+					<Bounds top="45" left="18" bottom="63" right="92"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[inventory_id]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="4" type="Edit Box" name="" kind="1">
+					<Bounds top="72" left="179" bottom="89" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="29" name="inventory_no" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>31</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="6" type="Edit Box" name="" kind="1">
+					<Bounds top="99" left="179" bottom="116" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="21" name="title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>32</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="8" type="Edit Box" name="" kind="1">
+					<Bounds top="127" left="179" bottom="144" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="82" name="Language" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>33</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="10" type="Edit Box" name="" kind="1">
+					<Bounds top="153" left="179" bottom="170" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="62" name="release_broadcast_year" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>34</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="12" type="Edit Box" name="" kind="1">
+					<Bounds top="180" left="179" bottom="197" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="65" name="record_date" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>35</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="14" type="Edit Box" name="" kind="1">
+					<Bounds top="209" left="179" bottom="226" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="41" name="date_released" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>36</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="16" type="Edit Box" name="" kind="1">
+					<Bounds top="239" left="178" bottom="256" right="303"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="64" name="version" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>37</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="18" type="Edit Box" name="" kind="1">
+					<Bounds top="265" left="179" bottom="282" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="66" name="director" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>38</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="20" type="Edit Box" name="" kind="1">
+					<Bounds top="292" left="179" bottom="309" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="79" name="episode no." repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>39</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="22" type="Edit Box" name="" kind="1">
+					<Bounds top="320" left="179" bottom="337" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="9" name="episode_title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>40</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="24" type="Edit Box" name="" kind="1">
+					<Bounds top="346" left="179" bottom="363" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="61" name="collection_title" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>41</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="26" type="Edit Box" name="" kind="1">
+					<Bounds top="373" left="179" bottom="390" right="304"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="8" name="collection" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>42</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="31" type="Text" name="" kind="2">
+					<Bounds top="71" left="15" bottom="89" right="93"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[inventory_no]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="32" type="Text" name="" kind="2">
+					<Bounds top="98" left="65" bottom="116" right="93"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[title]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="33" type="Text" name="" kind="2">
+					<Bounds top="126" left="28" bottom="144" right="93"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Language]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="34" type="Text" name="" kind="2">
+					<Bounds top="152" left="0" bottom="170" right="143"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[release_broadcast_year]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="35" type="Text" name="" kind="2">
+					<Bounds top="179" left="93" bottom="197" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[record_date]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="36" type="Text" name="" kind="2">
+					<Bounds top="208" left="79" bottom="226" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[date_released]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="37" type="Text" name="" kind="2">
+					<Bounds top="238" left="118" bottom="256" right="167"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[version]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="38" type="Text" name="" kind="2">
+					<Bounds top="264" left="118" bottom="282" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[director]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="39" type="Text" name="" kind="2">
+					<Bounds top="291" left="94" bottom="309" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[episode no.]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="40" type="Text" name="" kind="2">
+					<Bounds top="319" left="88" bottom="337" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[episode_title]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="41" type="Text" name="" kind="2">
+					<Bounds top="345" left="81" bottom="363" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[collection_title]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="42" type="Text" name="" kind="2">
+					<Bounds top="372" left="107" bottom="390" right="168"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[collection]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="44" type="Portal" name="" kind="9">
+					<Bounds top="101" left="394" bottom="353" right="871"></Bounds>
+					<Options>805306368</Options>
+					<Portal>
+						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+						<Options show="10">1</Options>
+						<ObjectList membercount="1">
+							<LayoutObject id="45" type="Edit Box" name="" kind="1">
+								<Bounds top="4" left="4" bottom="20" right="253"></Bounds>
+								<Options>805306368</Options>
+								<Field>
+									<FieldReference id="4" name="barcode_item" repetition="1">
+										<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+									</FieldReference>
+									<Options>32</Options>
+									<Display Style="0" show="1"></Display>
+									<Usage inputMode="0" type="1"></Usage>
+								</Field>
+								<ExtendedAttributes>
+									<Formatting>
+										<Graphic>
+											<Options>5</Options>
+										</Graphic>
+										<Time>
+											<Options>143</Options>
+										</Time>
+										<Numeric>
+											<Options>2304</Options>
+											<Style>
+												<Negative>
+													<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+												</Negative>
+											</Style>
+											<DecimalDigits>2</DecimalDigits>
+										</Numeric>
+									</Formatting>
+								</ExtendedAttributes>
+							</LayoutObject>
+						</ObjectList>
+					</Portal>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	-fm-portal-alt-background: true;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="46" type="Edit Box" name="" kind="1">
+					<Bounds top="401" left="178" bottom="418" right="303"></Bounds>
+					<Options>805306376</Options>
+					<Field>
+						<FieldReference id="110" name="Alma" repetition="1">
+							<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>48</Label>
+					</Accessibility>
+				</LayoutObject>
+				<LayoutObject id="48" type="Text" name="" kind="2">
+					<Bounds top="400" left="130" bottom="418" right="167"></Bounds>
+					<Options>805306376</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[Alma]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	font-size: 10pt;
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="49" type="Button" name="" kind="10">
+					<Bounds top="449" left="550" bottom="504" right="749"></Bounds>
+					<Options>805306376</Options>
+					<Button>
+						<Label></Label>
+						<IconData type="1" size="12">
+							<BinaryData>
+								<LibraryReference id="19" key="B4968989086EAEDAEEA766D20262704D"></LibraryReference>
+								<StreamList>
+									<Stream name="MAIN" type="id" size="4">SVG </Stream>
+									<Stream name="SVG " type="Base64" size="339">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0Ij4NCjxnIGNsYXNzPSJmbV9maWxsIj4NCjxwb2x5Z29uIHBvaW50cz0iMTAuMDk0LDguMzYzIDAsOC4zNjMgMCwxNS4zMTYgMTAuMDk0LDE1LjMxNiAxMC4wOTQsMjIuOTUxIDI0LDExLjk3NSAxMC4wOTQsMSAiLz4NCjwvZz4NCjwvc3ZnPg0K</Stream>
+									<Stream name="GLPH" type="Hex" size="1">01</Stream>
+									<Stream name="FNAM" type="Hex" size="30">000000010533373B3D3F00123B69630528333D322E1B2828352D74292C3D</Stream>
+								</StreamList>
+							</BinaryData>
+						</IconData>
+						<action>
+							<Options>3</Options>
+							<ScriptReference id="145" name="BatchExportMetadata"></ScriptReference>
+						</action>
+					</Button>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<UUID modifications="7" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2025-01-10T12:36:57">B289B788-8EE6-3745-949D-457E211A233F</UUID>
+	<ClientType>3</ClientType>
+	<Options hidden="False">15944197</Options>
+</Layout>

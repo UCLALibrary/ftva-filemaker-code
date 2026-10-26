@@ -1,0 +1,14 @@
+<Account id="4" kind="1" type="External" enable="True">
+	<UUID modifications="3" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2025-03-26T17:47:45">C535FBCC-7CBB-9E41-9C53-8D717A6B4E39</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMFullAccess</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>mcqPMxgxE/sFVw==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+</Account>

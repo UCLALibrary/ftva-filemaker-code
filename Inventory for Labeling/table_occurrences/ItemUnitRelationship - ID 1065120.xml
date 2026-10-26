@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="158" id="1065120" name="ItemUnitRelationship" type="Local">
+	<UUID modifications="12" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:53:53">A453A82B-7ABC-D04C-9439-A4293B76E5A2</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="137" name="ItemUnitRelationship"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="135" left="246" bottom="365" right="377"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

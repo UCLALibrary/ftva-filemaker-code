@@ -1,0 +1,171 @@
+<Script>
+	<ScriptReference id="166" name="Import-NDM_Locations"></ScriptReference>
+	<ObjectList membercount="7">
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16389</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Import NDM Label Scans"]]></Text>
+							<ChunkList hash="F8A33DF630BB9028173BB7399387D8B0">
+								<Chunk type="NoRef">&quot;Import NDM Label Scans&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["Do you want to import NDM label scans?"]]></Text>
+							<ChunkList hash="E94180DA8A703770E8366794BABA958B">
+								<Chunk type="NoRef">&quot;Do you want to import NDM label scans?&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
+							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
+								<Chunk type="NoRef"> ) = 1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="55" name="Enter Browse Mode" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean type="Pause" id="16777216" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="6" name="Go to Layout" enable="True">
+			<Options>8</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="LayoutReferenceContainer">
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="90" name="StorageFormat-ALLFields"></LayoutReference>
+					</LayoutReferenceContainer>
+				</Parameter>
+				<Parameter type="Animation">
+					<Animation name="None" value="0"></Animation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="23" name="Show All Records" enable="True">
+		</Step>
+		<Step id="35" name="Import Records" enable="True">
+			<Options>33587232</Options>
+			<ParameterValues membercount="4">
+				<Parameter type="Boolean">
+					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="DataSourceReference">
+					<DataSourceReference fileType="    " isPredefined="True" delimiter="," value="1">
+						<UniversalPathList fileType="    " membercount="0">
+							<ObjectList></ObjectList>
+						</UniversalPathList>
+					</DataSourceReference>
+				</Parameter>
+				<Parameter type="ImportField">
+					<ImportField addasnew="False" isPredefined="True" delimiter="," fieldNameRow="-1">
+						<Options copyContainersAsIs="False" matchFieldNames="False" doAutoEntry="True" splitRepetitions="False"></Options>
+						<Target>
+							<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						</Target>
+						<Field membercount="12">
+							<Map New="False" name="Source field 1 not import to " id="1" kind="1" Options="2">
+								<FieldReference id="1" name="Inventory_number">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 2 not import to " id="2" kind="1" Options="2">
+								<FieldReference id="2" name="CreationTimestamp">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 3 not import to " id="3" kind="1" Options="2">
+								<FieldReference id="3" name="CreatedBy">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 4 not import to " id="4" kind="1" Options="2">
+								<FieldReference id="4" name="ModificationTimestamp">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 5 not import to " id="5" kind="1" Options="2">
+								<FieldReference id="5" name="ModifiedBy">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 6 not import to " id="6" kind="1" Options="2">
+								<FieldReference id="6" name="serial_id">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 7 match with " id="8" kind="2" Options="0">
+								<FieldReference id="8" name="Barcode">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 8 import to " id="9" kind="0" Options="0">
+								<FieldReference id="9" name="Location">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 9 not import to " id="11" kind="1" Options="0">
+								<FieldReference id="11" name="Home Location">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 10 not import to " id="12" kind="1" Options="0">
+								<FieldReference id="12" name="Inventory_id_fk">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 11 not import to " id="13" kind="1" Options="0">
+								<FieldReference id="13" name="Inventory_no_fk">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+							<Map New="False" name="Source field 12 not import to " id="14" kind="1" Options="0">
+								<FieldReference id="14" name="storage_format">
+									<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+								</FieldReference>
+							</Map>
+						</Field>
+						<CharacterSet name="Windows ANSI" value="0"></CharacterSet>
+						<action name="Update" value="2"></action>
+					</ImportField>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+	</ObjectList>
+</Script>

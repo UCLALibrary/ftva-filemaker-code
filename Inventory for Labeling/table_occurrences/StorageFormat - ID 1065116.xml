@@ -1,0 +1,8 @@
+<TableOccurrence viewState="Full" height="145" id="1065116" name="StorageFormat" type="Local">
+	<UUID modifications="10" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">D1D7498B-A163-244D-8429-DDAEA10BAA55</UUID>
+	<BaseTableSourceReference type="BaseTableReference">
+		<BaseTableReference id="133" name="StorageFormat"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="349" left="868" bottom="553" right="999"></CoordRect>
+	<Color red="120" green="120" blue="120" alpha="1.00"></Color>
+</TableOccurrence>

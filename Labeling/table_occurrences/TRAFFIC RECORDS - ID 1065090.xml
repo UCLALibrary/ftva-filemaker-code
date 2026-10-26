@@ -1,0 +1,9 @@
+<TableOccurrence viewState="Related" height="84" id="1065090" name="TRAFFIC RECORDS" type="External">
+	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">40D4B71F-C850-3B47-8F5D-F9A9BCBE6273</UUID>
+	<BaseTableSourceReference type="ExternalDataSourceReference">
+		<DataSourceReference id="27" name="TRAFFIC RECORDS"></DataSourceReference>
+		<BaseTableReference id="129" name="Traffic Records"></BaseTableReference>
+	</BaseTableSourceReference>
+	<CoordRect top="20" left="237" bottom="21" right="387"></CoordRect>
+	<Color red="119" green="119" blue="119" alpha="1.00"></Color>
+</TableOccurrence>

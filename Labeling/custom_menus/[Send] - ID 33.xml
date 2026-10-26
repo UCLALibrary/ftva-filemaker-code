@@ -1,0 +1,15 @@
+<CustomMenu name="[Send]" id="33">
+	<UUID modifications="2" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">BDC2A075-E054-144E-BD18-05A838EEB7CE</UUID>
+	<MenuItemList membercount="0"></MenuItemList>
+	<Conditions>
+		<Install>
+			<Calculation><![CDATA[1]]></Calculation>
+			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
+				<Chunk type="NoRef">1</Chunk>
+			</ChunkList>
+		</Install>
+	</Conditions>
+	<Comment></Comment>
+	<Base name="Send" value="200"></Base>
+	<Options browseMode="True" findMode="True" previewMode="True"></Options>
+</CustomMenu>

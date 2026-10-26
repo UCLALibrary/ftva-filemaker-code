@@ -1,0 +1,79 @@
+<Layout id="97" name="ItemUnitRelationshipType" width="1024">
+	<TableOccurrenceReference id="1065121" name="ItemUnitRelationshipType"></TableOccurrenceReference>
+	<LayoutThemeReference id="3" name="com.filemaker.theme.apex_blue" Base="com.filemaker.theme.minimalist_touch"></LayoutThemeReference>
+	<PartsList membercount="2">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="110" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="658" absolute="110" Options="0"></Definition>
+			<ObjectList membercount="2">
+				<LayoutObject id="12" type="Edit Box" name="" kind="1">
+					<Bounds top="112" left="4" bottom="144" right="257"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="6" name="type" repetition="1">
+							<TableOccurrenceReference id="1065121" name="ItemUnitRelationshipType"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+				<LayoutObject id="14" type="Edit Box" name="" kind="1">
+					<Bounds top="112" left="257" bottom="144" right="510"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="8" name="inverse_type" repetition="1">
+							<TableOccurrenceReference id="1065121" name="ItemUnitRelationshipType"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>1048608</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<UUID modifications="7" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T11:12:40">F564C05B-5557-D44F-BBD7-8DC71747A357</UUID>
+	<ClientType>0</ClientType>
+	<Options hidden="True">83053063</Options>
+</Layout>

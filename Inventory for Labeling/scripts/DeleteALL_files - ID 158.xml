@@ -1,0 +1,247 @@
+<Script>
+	<ScriptReference id="158" name="DeleteALL_files"></ScriptReference>
+	<ObjectList membercount="20">
+		<Step id="79" name="Freeze Window" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="74" name="Go to Related Record" enable="True">
+			<Options>33685514</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Related">
+					<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
+					<LayoutReferenceContainer value="5">
+						<LayoutReference id="87" name="Digital Media_Carrier"></LayoutReference>
+					</LayoutReferenceContainer>
+					<WindowReference>
+						<Style name="Document" value="1076299266"></Style>
+						<Name></Name>
+						<LayoutReferenceContainer value="5">
+							<LayoutReference id="87" name="Digital Media_Carrier"></LayoutReference>
+						</LayoutReferenceContainer>
+						<Bounds>
+							<height></height>
+							<width></width>
+							<top></top>
+							<left></left>
+						</Bounds>
+						<Options value="1076299266">
+							<Close>True</Close>
+							<Minimize>True</Minimize>
+							<Maximize>True</Maximize>
+							<Resize>True</Resize>
+							<MenuBar>True</MenuBar>
+							<Toolbar>True</Toolbar>
+							<DimParentWindow>False</DimParentWindow>
+						</Options>
+					</WindowReference>
+					<Options ShowRelated="True"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastError )  ≠ 0  or Get ( FoundCount ) = 0]]></Text>
+							<ChunkList hash="89780BBBB23A870738C05E00AE5EDDBF">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastError</Chunk>
+								<Chunk type="NoRef"> )  ≠ 0  </Chunk>
+								<Chunk type="FunctionRef">or</Chunk>
+								<Chunk type="NoRef"> </Chunk>
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">FoundCount</Chunk>
+								<Chunk type="NoRef"> ) = 0</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Nothing to delete"]]></Text>
+							<ChunkList hash="866B21519470B84853578D973C68E2AD">
+								<Chunk type="NoRef">&quot;Nothing to delete&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["There are no related records to delete."]]></Text>
+							<ChunkList hash="61953CA2DA5E6FED59E00CD7F545DBEB">
+								<Chunk type="NoRef">&quot;There are no related records to delete.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="103" name="Exit Script" enable="True">
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="30" name="View As" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="View as Table" value="3"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="31" name="Adjust Window" enable="True">
+			<Options>2</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Maximize" value="2"></List>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Confirm delete"]]></Text>
+							<ChunkList hash="3FDC6962E2F7FDD0B1E2EC2A9F047DC8">
+								<Chunk type="NoRef">&quot;Confirm delete&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["This will permanently delete " & Get ( FoundCount ) & " related Digital Media record(s)."]]></Text>
+							<ChunkList hash="0021C76CECFFEDFEF14D85031722D8FF">
+								<Chunk type="NoRef">&quot;This will permanently delete &quot; &amp; </Chunk>
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">FoundCount</Chunk>
+								<Chunk type="NoRef"> ) &amp; &quot; related Digital Media record(s).&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="Delete">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
+							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
+								<Chunk type="FunctionRef">Get</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
+								<Chunk type="NoRef"> ) = 1</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="10" name="Delete All Records" enable="True">
+			<Options>128</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="89" name="# (comment)" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Comment">
+					<Comment></Comment>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="121" name="Close Window" enable="True">
+			<Options>-2147483646</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="0" type="current"></Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="80" name="Refresh Window" enable="True">
+			<ParameterValues membercount="2">
+				<Parameter type="Boolean">
+					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Flush cached external data" id="512" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

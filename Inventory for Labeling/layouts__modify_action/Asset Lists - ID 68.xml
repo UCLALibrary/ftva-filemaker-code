@@ -1,0 +1,88 @@
+<Layout>
+	<LayoutReference id="68" name="Asset Lists"></LayoutReference>
+	<PartsList>
+		<Part>
+			<ObjectList membercount="5">
+				<LayoutObjectReference id="215" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="46" name="General Search"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="170" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="74" name="Go to Related Record" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="TableOccurrenceReference">
+										<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
+									</Parameter>
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="1" type="current"></LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="19" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="74" name="Go to Related Record" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="TableOccurrenceReference">
+										<TableOccurrenceReference id="1065096" name="Donor Codes"></TableOccurrenceReference>
+									</Parameter>
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="1" type="current"></LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="150" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="74" name="Go to Related Record" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="TableOccurrenceReference">
+										<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
+									</Parameter>
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="1" type="current"></LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="152" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="74" name="Go to Related Record" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="TableOccurrenceReference">
+										<TableOccurrenceReference id="1065106" name="Traffic Records"></TableOccurrenceReference>
+									</Parameter>
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="1" type="current"></LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+			</ObjectList>
+		</Part>
+	</PartsList>
+</Layout>

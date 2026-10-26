@@ -1,0 +1,18 @@
+Show Custom Dialog [ Title: "Cleanup Inventory No" ; Message: "Cleanup Inventory No Field in all found records?" ; Default Button: "Yes" ; Button 2: "Cancel" ]
+If [ Get ( LastMessageChoice ) = 1 ]
+	Set Error Capture [ ON ]
+	Enter Browse Mode [ Pause: OFF ]
+	Go to Record/Request/Page [ First ]
+	Freeze Window
+	Loop
+		Set Variable [ $Text ; Inventory for Labeling::inventory_no ]
+		Set Variable [ $Text ; Substitute ( Trim ( $Text ) ; ["  " ; " " ]; ["  ";" "]; ["  "; " "]) ]
+		If [ not PatternCount ( "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+-={}|[]\:;'<>?,./"; Right ($Text;1)) ]
+			Set Variable [ $Text ; Left ($Text; Length ($Text)-1) ]
+		End If
+		Set Field [ Inventory for Labeling::inventory_no ; $Text ]
+		Commit Records/Requests [ With dialog: ON ]
+		Go to Record/Request/Page [ Next ; Exit after last: ON ]
+	End Loop
+End If
+

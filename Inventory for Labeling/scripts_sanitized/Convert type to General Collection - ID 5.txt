@@ -1,0 +1,15 @@
+Show Custom Dialog [ Title: "Message" ; Message: "Are you sure you want change this item to be a General Collection item? This will clear any data entered as a Newsreel item." ; Default Button: "Change" ; Button 2: "Leave" ]
+If [ Get(LastMessageChoice)=1 ]
+	Set Field [ Inventory for Labeling::type ; "General Collection" ]
+	Set Field [ Inventory for Labeling::hearst_prefix ; "" ]
+	Set Field [ Inventory for Labeling::volume ; "" ]
+	Set Field [ Inventory for Labeling::issue ; "" ]
+	Set Field [ Inventory for Labeling::can ; "" ]
+	Set Field [ Inventory for Labeling::roll ; "" ]
+	Set Field [ Inventory for Labeling::neg_no_prefix ; "" ]
+	Set Field [ Inventory for Labeling::neg_no ; "" ]
+	Set Field [ Inventory for Labeling::length ; "" ]
+	Go to Layout [ Layout: "🚨🚨🚨 <BROKEN REFERENCE> 🚨🚨🚨" ; Animation: None ]
+	Adjust Window [ Resize to Fit ]
+End If
+

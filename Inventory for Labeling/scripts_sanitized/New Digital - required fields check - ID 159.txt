@@ -1,0 +1,55 @@
+If [ $$DISABLE_VALIDATION =1 ]
+	Exit Script [ True ]
+End If
+
+Set Error Capture [ ON ]
+Allow User Abort [ OFF ]
+If [ Inventory for Labeling::digital_record = 1 ]
+	Set Variable [ $missing ; "" ]
+	If [ IsEmpty ( Trim ( Inventory for Labeling::inventory_no) ) ]
+		Set Variable [ $missing ; List ( $missing ; "Inventory No") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::media_type ) ]
+		Set Variable [ $missing ; List ( $missing ; "Media Type") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::asset_type) ]
+		Set Variable [ $missing ; List ( $missing ; "Asset Type") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::object_purpose) ]
+		Set Variable [ $missing ; List ( $missing ; "Object Purpose") ]
+	End If
+	If [ IsEmpty (Inventory for Labeling::wrapper_format) ]
+		Set Variable [ $missing ; List ( $missing ; "Wrapper Format") ]
+	End If
+	If [ IsEmpty (Inventory for Labeling::specific_carrier_type) ]
+		Set Variable [ $missing ; List ( $missing ; "File Type") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::director ) ]
+		Set Variable [ $missing ; List ( $missing ; "Director") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::date_received ) ]
+		Set Variable [ $missing ; List ( $missing ; "Date Received") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::total_item_units ) ]
+		Set Variable [ $missing ; List ( $missing ; "Total Item Units") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::Language) ]
+		Set Variable [ $missing ; List ( $missing ; "Language") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::retention_status ) ]
+		Set Variable [ $missing ; List ( $missing ; "Retention Status") ]
+	End If
+	If [ IsEmpty ( Inventory for Labeling::release_broadcast_year) ]
+		Set Variable [ $missing ; List ( $missing ; "Release/Broadcast Year") ]
+	End If
+	
+	If [ Length ( $missing ) > 0 ]
+		Show Custom Dialog [ Title: "Missing information" ; Message: "Please fill in required fields:" & ¶ & 
+						"• " &Substitute ( $missing ; "¶" ; ¶ & "• " ) ; Default Button: "OK" ; Button 2: "Cancel" ]
+		Exit Script [ False ]
+	End If
+	
+	Refresh Portal [ Object Name: "Portal_DM_Items" ]
+End If
+Exit Script [ True ]
+

@@ -1,0 +1,10 @@
+Copy [ Select: ON ; Inventory for Labeling::inventory_id ]
+If [ GetAsNumber(Inventory for Labeling::total_reels) ≠ "" and GetAsNumber(Inventory for Labeling::total_reels)>0 ]
+	Copy [ Select: ON ; Inventory for Labeling::inventory_id ]
+	Go to Related Record [ Table: Labeling Database_InvID ; Layout: <original layout> ; Show related ]
+	Perform Script [ "Create Label Rows for Item Copy" ; Specified: From list ; File: "Labeling Database 2" ; Parameter: ]
+	Select Window [ Name: "Labeling Database" ]
+Else
+	Show Custom Dialog [ Title: "Message" ; Message: "You must specify the total number or reels before you can use this feature." ; Default Button: "Doh!" ]
+End If
+

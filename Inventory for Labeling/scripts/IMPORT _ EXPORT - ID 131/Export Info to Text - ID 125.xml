@@ -1,0 +1,57 @@
+<Script>
+	<ScriptReference id="125" name="Export Info to Text"></ScriptReference>
+	<ObjectList membercount="1">
+		<Step id="36" name="Export Records" enable="True">
+			<Options>33587232</Options>
+			<ParameterValues membercount="4">
+				<Parameter type="Boolean">
+					<Boolean type="With dialog" id="128" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Create folders" id="512" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="UniversalPathList">
+					<UniversalPathList fileType="COMS" membercount="2">
+						<ObjectList>
+							<Location><![CDATA[file:/C:/Documents and Settings/jborders/Desktop/Preservation Preprints to Excel.csv]]></Location>
+							<Location><![CDATA[file:Preservation Preprints to Excel.csv]]></Location>
+						</ObjectList>
+					</UniversalPathList>
+				</Parameter>
+				<Parameter type="Export">
+					<Export>
+						<Options name="Windows (ANSI)" value="0" Formatting="False"></Options>
+						<Order type="Group"></Order>
+						<Order type="Field">
+							<Field value="1">
+								<FieldReference id="21" name="title">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+							<Field value="2">
+								<FieldReference id="9" name="episode_title">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+							<Field value="3">
+								<FieldReference id="29" name="inventory_no">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+							<Field value="4">
+								<FieldReference id="81" name="item holdings">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+							<Field value="5">
+								<FieldReference id="10" name="element_info">
+									<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+								</FieldReference>
+							</Field>
+						</Order>
+					</Export>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

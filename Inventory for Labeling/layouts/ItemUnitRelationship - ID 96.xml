@@ -1,0 +1,65 @@
+<Layout id="96" name="ItemUnitRelationship" width="1024">
+	<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+	<LayoutThemeReference id="3" name="com.filemaker.theme.apex_blue" Base="com.filemaker.theme.minimalist_touch"></LayoutThemeReference>
+	<PartsList membercount="2">
+		<Part type="Top Navigation" kind="12">
+			<Definition type="Top Navigation" kind="12" size="110" absolute="0" Options="0"></Definition>
+		</Part>
+		<Part type="Body" kind="4">
+			<Definition type="Body" kind="4" size="658" absolute="110" Options="0"></Definition>
+			<ObjectList membercount="2">
+				<LayoutObject id="1" type="Text" name="" kind="2">
+					<Bounds top="120" left="37" bottom="142" right="127"></Bounds>
+					<Options>805306368</Options>
+					<Text>
+						<StyledText>
+							<Data><![CDATA[source_uuid]]></Data>
+						</StyledText>
+					</Text>
+					<LocalCSS name=""><![CDATA[self:normal .self
+{
+	text-align: right;
+}
+]]></LocalCSS>
+				</LayoutObject>
+				<LayoutObject id="2" type="Edit Box" name="" kind="1">
+					<Bounds top="114" left="138" bottom="146" right="391"></Bounds>
+					<Options>805306368</Options>
+					<Field>
+						<FieldReference id="6" name="source_uuid" repetition="1">
+							<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+						</FieldReference>
+						<Options>32</Options>
+						<Display Style="0" show="1"></Display>
+						<Usage inputMode="0" type="1"></Usage>
+					</Field>
+					<ExtendedAttributes>
+						<Formatting>
+							<Graphic>
+								<Options>5</Options>
+							</Graphic>
+							<Time>
+								<Options>143</Options>
+							</Time>
+							<Numeric>
+								<Options>2304</Options>
+								<Style>
+									<Negative>
+										<Color red="221" green="0" blue="0" alpha="1.00"></Color>
+									</Negative>
+								</Style>
+								<DecimalDigits>2</DecimalDigits>
+							</Numeric>
+						</Formatting>
+					</ExtendedAttributes>
+					<Accessibility>
+						<Label>1</Label>
+					</Accessibility>
+				</LayoutObject>
+			</ObjectList>
+		</Part>
+	</PartsList>
+	<UUID modifications="1" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:57:16">7CEA289A-43AF-D041-A2AC-F08B03B9F0C6</UUID>
+	<ClientType>0</ClientType>
+	<Options hidden="True">15927297</Options>
+</Layout>

@@ -1,0 +1,4 @@
+Perform Script [ "Initialize globals imported" ; Specified: From list ; Parameter: ]
+Perform Script [ "Position and Resize Window" ; Specified: From list ; Parameter: ]
+Go to Layout [ Layout: "Search Inventory" ; Animation: None ]
+

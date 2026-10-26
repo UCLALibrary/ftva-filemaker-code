@@ -1,0 +1,35 @@
+<Relationship id="6">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">D48C4CAF-605A-394B-B96F-0A141FB233A7</UUID>
+	<LeftTable cascadeCreate="False" cascadeDelete="False" type="Local">
+		<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+		<SortSpecification value="False" maintain="True"></SortSpecification>
+	</LeftTable>
+	<RightTable cascadeCreate="False" cascadeDelete="False" type="External">
+		<TableOccurrenceReference id="1065106" name="Traffic Records"></TableOccurrenceReference>
+		<SortSpecification value="True" maintain="True">
+			<SortList membercount="1">
+				<Sort type="Descending">
+					<PrimaryField>
+						<FieldReference id="10" name="Reserved by date">
+							<TableOccurrenceReference id="1065106" name="Traffic Records"></TableOccurrenceReference>
+						</FieldReference>
+					</PrimaryField>
+				</Sort>
+			</SortList>
+		</SortSpecification>
+	</RightTable>
+	<JoinPredicateList membercount="1">
+		<JoinPredicate type="Equal">
+			<LeftField>
+				<FieldReference id="29" name="inventory_no">
+					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				</FieldReference>
+			</LeftField>
+			<RightField>
+				<FieldReference id="4" name="Inventory Number">
+					<TableOccurrenceReference id="1065106" name="Traffic Records"></TableOccurrenceReference>
+				</FieldReference>
+			</RightField>
+		</JoinPredicate>
+	</JoinPredicateList>
+</Relationship>

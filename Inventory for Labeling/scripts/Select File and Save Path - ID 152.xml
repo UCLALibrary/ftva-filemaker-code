@@ -1,0 +1,246 @@
+<Script>
+	<ScriptReference id="152" name="Select File and Save Path"></ScriptReference>
+	<ObjectList membercount="12">
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value></value>
+					<Name value="$Path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value></value>
+					<Name value="$sysPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="131" name="Insert File" enable="True">
+			<Options>18949</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="Options">
+					<Options type="Title">
+						<Title>
+							<Calculation datatype="1" position="0">
+								<Calculation>
+									<Text><![CDATA["Choose File"]]></Text>
+									<ChunkList hash="F0BAA3FF78F622F3F52E838BFB4E7572">
+										<Chunk type="NoRef">&quot;Choose File&quot;</Chunk>
+									</ChunkList>
+								</Calculation>
+							</Calculation>
+						</Title>
+					</Options>
+					<Options type="Filters">
+						<Filters size="0"></Filters>
+					</Options>
+					<Options type="Storage">
+						<Storage name="Reference" value="1"></Storage>
+					</Options>
+					<Options type="Display">
+						<Display name="" value="0"></Display>
+					</Options>
+					<Options type="Compress">
+						<Compress name="Never compress" value="1"></Compress>
+					</Options>
+				</Parameter>
+				<Parameter type="Target">
+					<Variable value="$FMFilePath">
+						<repetition value="1"></repetition>
+					</Variable>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[GetAsText ( $FMFilePath )]]></Text>
+								<ChunkList hash="AF16899C2FD64B45CEA76E22E622A805">
+									<Chunk type="FunctionRef">GetAsText</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$FMFilePath</Chunk>
+									<Chunk type="NoRef"> )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$Path"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[GetValue ( $Path ; ValueCount ( $Path ) )]]></Text>
+								<ChunkList hash="A4C378D8FF325D414D48D5AB37A95574">
+									<Chunk type="FunctionRef">GetValue</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$Path</Chunk>
+									<Chunk type="NoRef"> ; </Chunk>
+									<Chunk type="FunctionRef">ValueCount</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$Path</Chunk>
+									<Chunk type="NoRef"> ) )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$OSPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="68" name="If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[PatternCount ( $FMFilePath ; "filewin:" )]]></Text>
+							<ChunkList hash="527FC0FA6FB7E88FD06BD06FAC9FBAD7">
+								<Chunk type="FunctionRef">PatternCount</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$FMFilePath</Chunk>
+								<Chunk type="NoRef"> ; &quot;filewin:&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( $OSPath ; "filewin:/" ; "" )]]></Text>
+								<ChunkList hash="8CC7E375654263AEAA3BA4ED8BDC53F7">
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$OSPath</Chunk>
+									<Chunk type="NoRef"> ; &quot;filewin:/&quot; ; &quot;&quot; )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$sysPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="141" name="Set Variable" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Variable">
+					<value>
+						<Calculation datatype="1" position="1">
+							<Calculation>
+								<Text><![CDATA[Substitute ( $sysPath ; "/" ; "\\" )]]></Text>
+								<ChunkList hash="5CFC55486081B740A8EE7C02AF43A723">
+									<Chunk type="FunctionRef">Substitute</Chunk>
+									<Chunk type="NoRef"> ( </Chunk>
+									<Chunk type="VariableReference">$sysPath</Chunk>
+									<Chunk type="NoRef"> ; &quot;/&quot; ; &quot;\\&quot; )</Chunk>
+								</ChunkList>
+							</Calculation>
+						</Calculation>
+					</value>
+					<Name value="$sysPath"></Name>
+					<repetition></repetition>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="125" name="Else If" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Calculation">
+					<Calculation datatype="7" position="0">
+						<Calculation>
+							<Text><![CDATA[PatternCount ( $FMFilePath ; "filemac:" )]]></Text>
+							<ChunkList hash="8F6CABDADD2922E3176935DEFD4B9FA6">
+								<Chunk type="FunctionRef">PatternCount</Chunk>
+								<Chunk type="NoRef"> ( </Chunk>
+								<Chunk type="VariableReference">$FMFilePath</Chunk>
+								<Chunk type="NoRef"> ; &quot;filemac:&quot; )</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="87" name="Show Custom Dialog" enable="True">
+			<Options>16388</Options>
+			<ParameterValues membercount="5">
+				<Parameter type="Title">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA["Not Supported"]]></Text>
+							<ChunkList hash="DF05630F81E1BB717013F78767B2E3D8">
+								<Chunk type="NoRef">&quot;Not Supported&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Message">
+					<Calculation datatype="1" position="1">
+						<Calculation>
+							<Text><![CDATA["This has to be done on a Windows computer. Mac OS not supported yet."]]></Text>
+							<ChunkList hash="D0855DCF9A8441309B2836F5FE3C0ECB">
+								<Chunk type="NoRef">&quot;This has to be done on a Windows computer. Mac OS not supported yet.&quot;</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+				<Parameter type="Button1" value="OK">
+					<Boolean type="Commit" value="True"></Boolean>
+				</Parameter>
+				<Parameter type="Button2" value="Cancel">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+				<Parameter type="Button3">
+					<Boolean type="Commit" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="70" name="End If" enable="True">
+		</Step>
+		<Step id="76" name="Set Field" enable="True">
+			<Options>16385</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="FieldReference">
+					<FieldReference id="0" name="">
+						<repetition value="1"></repetition>
+						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					</FieldReference>
+				</Parameter>
+				<Parameter type="Calculation">
+					<Calculation datatype="1" position="0">
+						<Calculation>
+							<Text><![CDATA[$sysPath]]></Text>
+							<ChunkList hash="8FE3D5973602B27BC1591B3EBF234F29">
+								<Chunk type="VariableReference">$sysPath</Chunk>
+							</ChunkList>
+						</Calculation>
+					</Calculation>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

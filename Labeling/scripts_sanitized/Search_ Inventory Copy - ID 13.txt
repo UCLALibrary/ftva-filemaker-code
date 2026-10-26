@@ -1,0 +1,4 @@
+Perform Script [ "Intialize search string" ; Specified: From list ; File: "Inventory for Labeling" ; Parameter: ]
+Perform Script [ "Layout: Search Inventory" ; Specified: From list ; File: "Inventory for Labeling" ; Parameter: ]
+Select Window [ Name: "Inventory for Labeling" ]
+

@@ -1,0 +1,4 @@
+Set Field [ Inventory for Labeling::search_results ; "" ]
+Set Field [ Inventory for Labeling::search_error ; "" ]
+Set Field [ Inventory for Labeling::found ; -1 ]
+

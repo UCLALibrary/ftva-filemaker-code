@@ -1,0 +1,69 @@
+<Layout>
+	<LayoutReference id="37" name="Dan&apos;s Starting Page"></LayoutReference>
+	<PartsList>
+		<Part>
+			<ObjectList membercount="4">
+				<LayoutObjectReference id="11" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="33" name="Inventory Record-PRINT"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="13" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="35" name="Inventory Record-PRE-PRINT"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="15" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="38" name="Inventory Record-SOUND"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+				<LayoutObjectReference id="17" type="Grouped Button" name="" kind="8">
+					<GroupedButton>
+						<action>
+							<Step id="6" name="Go to Layout" enable="True">
+								<ParameterValues membercount="1">
+									<Parameter type="LayoutReferenceContainer">
+										<LayoutReferenceContainer value="5" type="LayoutReference">
+											<LayoutReference id="30" name="Inventory Record-VIDEO"></LayoutReference>
+										</LayoutReferenceContainer>
+									</Parameter>
+								</ParameterValues>
+							</Step>
+						</action>
+					</GroupedButton>
+				</LayoutObjectReference>
+			</ObjectList>
+		</Part>
+	</PartsList>
+</Layout>

@@ -1,0 +1,8 @@
+Show Custom Dialog [ Title: "Export NDM Label Scans" ; Message: "Do you want to export NDM label scans for duplicate items?" ; Default Button: "OK" ; Button 2: "Cancel" ]
+If [ Get ( LastMessageChoice ) = 1 ]
+	New Window [ Style: Document ; Layout: "StorageFormat-ALLFields" ]
+	Enter Browse Mode [ Pause: OFF ]
+	Sort Records [ With dialog: OFF ; Restore ; Sort order: StorageFormat::Barcode (Ascending) ; Keep records in sorted order ]
+	Export Records [ With dialog: ON ; Create folders: OFF ; Windows (ANSI) ]
+End If
+

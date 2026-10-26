@@ -1,0 +1,8 @@
+Show Custom Dialog [ Title: "Import NDM Label Scans" ; Message: "Do you want to import NDM label scans?" ; Default Button: "OK" ; Button 2: "Cancel" ]
+If [ Get ( LastMessageChoice ) = 1 ]
+	Enter Browse Mode [ Pause: OFF ]
+	Go to Layout [ Layout: "StorageFormat-ALLFields" ; Animation: None ]
+	Show All Records
+	Import Records [ Verify SSL Certificates: OFF ; With dialog: ON ; Table: StorageFormat ; Update ; Perform auto-enter options ; Windows ANSI ]
+End If
+

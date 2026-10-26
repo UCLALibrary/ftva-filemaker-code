@@ -1,0 +1,7 @@
+<ValueList id="53" name="Audio bit rate">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[16 bit24 bit]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">73F95E59-1CB6-7344-97AC-E62057FF70AC</UUID>
+</ValueList>

@@ -1,0 +1,14 @@
+<Account id="8" kind="1" type="External" enable="True">
+	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-16T10:24:55">B2C4039B-FD2F-0F4B-8F2E-CA6DC0F1619D</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMAPIReadOnly</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>+O+EI3Z5B7ykcw==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="7" name="READ ONLY API"></PrivilegeSetReference>
+</Account>

@@ -1,0 +1,3 @@
+Perform Script [ "Edit" ; Specified: From list ; File: "form_term" ; Parameter: ]
+Select Window [ Name: "form_term" ]
+

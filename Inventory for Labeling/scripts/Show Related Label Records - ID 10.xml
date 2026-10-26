@@ -1,0 +1,53 @@
+<Script>
+	<ScriptReference id="10" name="Show Related Label Records"></ScriptReference>
+	<ObjectList membercount="3">
+		<Step id="74" name="Go to Related Record" enable="True">
+			<Options>33554696</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="Related">
+					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
+					<LayoutReferenceContainer External="True" value="1">
+						<Label>original layout</Label>
+					</LayoutReferenceContainer>
+					<Animation name="None" value="0"></Animation>
+					<Options ShowRelated="True"></Options>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="1" name="Perform Script" enable="True">
+			<Options>82</Options>
+			<ParameterValues membercount="2">
+				<Parameter type="List">
+					<List name="From list" value="1">
+						<DataSourceReference id="1" name="Labeling Database"></DataSourceReference>
+						<ScriptReference id="8" name="Position and Resize Window"></ScriptReference>
+					</List>
+				</Parameter>
+				<Parameter type="Parameter">
+					<Parameter></Parameter>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+		<Step id="123" name="Select Window" enable="True">
+			<Options>16384</Options>
+			<ParameterValues membercount="1">
+				<Parameter type="WindowReference">
+					<WindowReference>
+						<Select kind="1" type="Calculated">
+							<Name current="False">
+								<Calculation datatype="1" position="0">
+									<Calculation>
+										<Text><![CDATA["Labeling Database"]]></Text>
+										<ChunkList hash="542D40BC1C14473BC2FEE7845DC5A4F5">
+											<Chunk type="NoRef">&quot;Labeling Database&quot;</Chunk>
+										</ChunkList>
+									</Calculation>
+								</Calculation>
+							</Name>
+						</Select>
+					</WindowReference>
+				</Parameter>
+			</ParameterValues>
+		</Step>
+	</ObjectList>
+</Script>

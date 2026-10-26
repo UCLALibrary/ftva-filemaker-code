@@ -1,0 +1,6 @@
+Go to Layout [ Layout: "Goldbergs Radio [finding aid view]" ; Animation: None ]
+Enter Find Mode [ Pause: OFF ; Restore ; Find requests: Find (Inventory for Labeling::title: "goldbergs", Inventory for Labeling::inventory_no: "!", Inventory for Labeling::Announcer open: "*"), Find (Inventory for Labeling::title: "goldbergs", Inventory for Labeling::inventory_no: "!", Inventory for Labeling::Announcer Close: "*") ]
+Perform Find [ Restore ; Find requests: Find (Inventory for Labeling::title: "goldbergs", Inventory for Labeling::Announcer open: "*") ]
+Sort Records [ With dialog: OFF ; Restore ; Sort order: Inventory for Labeling::inventory_no (Ascending) ; Keep records in sorted order ]
+Sort Records [ With dialog: OFF ; Restore ; Sort order: Inventory for Labeling::inventory_no (Ascending) ; Keep records in sorted order ]
+

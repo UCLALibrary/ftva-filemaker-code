@@ -1,0 +1,3 @@
+Export Records [ With dialog: ON ; Create folders: OFF ; "file:/C:/Documents and Settings/jborders/Desktop/Preservation Preprints to Excel.csv
+file:Preservation Preprints to Excel.csv" ; Windows (ANSI) ]
+

@@ -1,0 +1,7 @@
+<ValueList id="79" name="dm_retention_status">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[PermanentTemporary]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:28:28">19527391-C62D-4A47-9AF1-455EF2C1AA72</UUID>
+</ValueList>

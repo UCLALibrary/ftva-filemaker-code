@@ -1,0 +1,328 @@
+<PrivilegeSet id="4" name="Entry">
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:07">1D4FE6BC-472C-1D4D-ABCA-1DDA2FDC245C</UUID>
+	<Description></Description>
+	<access>
+		<Records Custom="True">
+			<Custom>
+				<ObjectList membercount="9">
+					<Table type="existing">
+						<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All">
+							<Field type="existing" access="NoAccess">
+								<FieldReference id="26" name="date_created">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="NoAccess">
+								<FieldReference id="25" name="date_modified">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="NoAccess">
+								<FieldReference id="24" name="user_last_modified">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="ReadOnly">
+								<FieldReference id="20" name="inventory_id">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="ReadOnly">
+								<FieldReference id="18" name="neg_no">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="ReadOnly">
+								<FieldReference id="17" name="neg_no_prefix">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="ReadOnly">
+								<FieldReference id="15" name="can">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="ReadOnly">
+								<FieldReference id="14" name="issue">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="existing" access="ReadOnly">
+								<FieldReference id="12" name="hearst_prefix">
+									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
+								</FieldReference>
+							</Field>
+							<Field type="New" access="ReadWrite"></Field>
+						</Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="130" name="SearchGlobals"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="131" name="Digital Media_Item Unit"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="132" name="Languages"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="133" name="StorageFormat"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="134" name="Inventory_StorageFormat_JT"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="137" name="ItemUnitRelationship"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="existing">
+						<BaseTableReference id="138" name="ItemUnitRelationshipType"></BaseTableReference>
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="All"></Fields>
+					</Table>
+					<Table type="New" View="ReadWrite" Edit="ReadWrite" Create="ReadWrite" Delete="NoAccess" Fields="ReadWrite"></Table>
+				</ObjectList>
+			</Custom>
+		</Records>
+		<Layouts Custom="True">
+			<Custom Create="False">
+				<ObjectList membercount="65">
+					<Layout type="existing" access="NoAccess" records="NoAccess">
+						<LayoutReference id="1" name="Layout #1"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="8" name="Form - Newsreels"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="10" name="Search Inventory"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="11" name="Search Inventory Results"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="12" name="Search Inventory (Newsreels)"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="13" name="Search Inventory Results (Can/Roll)"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="15" name="Administration"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="18" name="Newsreel Layout"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="19" name="ALL FIELDS"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="20" name="Search Inventory Results (Vol/Issue)"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="21" name="FIELDS nm"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="22" name="Form - General Copy"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="24" name="Form - Finding Aids"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="25" name="Table - Finding Aids"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="26" name="Donor Layout"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="27" name="Inventory Record"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="28" name="Finding Aids Administration"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="30" name="Inventory Record-VIDEO"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="32" name="PRINT-Video Inventory Card"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="33" name="Inventory Record-PRINT"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="34" name="PRINT-Print Inventory Card"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="35" name="Inventory Record-PRE-PRINT"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="36" name="PRINT-PrePrint Inventory Card"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="37" name="Dan&apos;s Starting Page"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="38" name="Inventory Record-SOUND"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="39" name="PRINT-SOUND Inventory Card "></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="40" name="Vitaphone"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="41" name="General Entry Form"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="44" name="Layout #30"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="45" name="Donor List"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="46" name="General Search"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="47" name="Layout #32"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="53" name="General Entry Form Copy"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="55" name="Layout #35"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="56" name="Layout #35"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="57" name="Layout #36"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="58" name="Layout #37"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="60" name="Form - General Copy2"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="61" name="General Entry Form nm"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="62" name="Pres List layout"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="64" name="Labeling_InvID_DATA"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="65" name="Data Tables"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="66" name="--"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="67" name="Goldbergs Radio [finding aid view]"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="68" name="Asset Lists"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="69" name="ALLFIELDS"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="71" name="MetadataExportOnly"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="73" name="InventoryForLabeling_API"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="74" name="SearchGlobals"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="75" name="Digital Media_Item Unit"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="76" name="Languages"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="77" name="StorageFormat"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="78" name="Inventory_StorageFormat_JT"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="81" name="NEW DIGITAL"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="82" name="NEW DIGITAL Storage"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="86" name="New Digital DMIU"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="87" name="Digital Media_Carrier"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="90" name="StorageFormat-ALLFields"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="91" name="SF_Picker_List"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="93" name="NEW DIGITAL_API"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="94" name="NEW DIGITAL STORAGE_API"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="95" name="StorageFormat_labels"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="96" name="ItemUnitRelationship"></LayoutReference>
+					</Layout>
+					<Layout type="existing" access="ReadOnly" records="ReadWrite">
+						<LayoutReference id="97" name="ItemUnitRelationshipType"></LayoutReference>
+					</Layout>
+					<Layout type="New" access="ReadOnly" records="ReadWrite"></Layout>
+				</ObjectList>
+			</Custom>
+		</Layouts>
+		<ValueLists Create="True" Edit="True" Delete="True"></ValueLists>
+		<Scripts viewState="ReadOnly"></Scripts>
+		<Other value="25345" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" disconnectIdle="True" commands="All">
+			<Password prohibitModification="True"></Password>
+		</Other>
+	</access>
+</PrivilegeSet>

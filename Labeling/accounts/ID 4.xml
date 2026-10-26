@@ -1,0 +1,14 @@
+<Account id="4" kind="1" type="External" enable="True">
+	<UUID modifications="12" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">7F0B7185-062D-D245-83EF-F6149036416C</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMFullAccess</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>MDjF9/KxWixIhQ==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="1" name="[Full Access]"></PrivilegeSetReference>
+</Account>

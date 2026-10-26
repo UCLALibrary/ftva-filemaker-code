@@ -1,0 +1,14 @@
+<Account id="7" kind="1" type="External" enable="True">
+	<UUID modifications="11" userName="uae" accountName="uae" timestamp="2026-04-08T12:18:38">AE72AC3C-4FB4-9D4C-B376-8B60ECB50425</UUID>
+	<Description></Description>
+	<Authentication>
+		<AccountName>
+			<INSECURE_TEXT>FMDataAPIReadWrite</INSECURE_TEXT>
+		</AccountName>
+		<INSECURE_PASSWORD>
+			<Context>XW8kmFA//Clxiw==</Context>
+			<Data></Data>
+		</INSECURE_PASSWORD>
+	</Authentication>
+	<PrivilegeSetReference id="6" name="FMAPI-ReadWrite-SystemsTeam"></PrivilegeSetReference>
+</Account>

@@ -1,0 +1,7 @@
+<ExtendedPrivilege id="9" name="fmwebdirect">
+	<Description>Access via FileMaker WebDirect</Description>
+	<UUID modifications="1" userName="" accountName="ssultan" timestamp="2025-03-05T10:41:21">5C9628E2-F14C-2242-A151-B6F751DC796C</UUID>
+	<ObjectList membercount="1">
+		<PrivilegeSetReference id="6" name="FMAPI-ReadWrite-SystemsTeam"></PrivilegeSetReference>
+	</ObjectList>
+</ExtendedPrivilege>

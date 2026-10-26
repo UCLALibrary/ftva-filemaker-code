@@ -1,0 +1,7 @@
+<ValueList id="84" name="dm_source_condition">
+	<Source value="Custom"></Source>
+	<CustomValues>
+		<Text><![CDATA[FadedAudio Out of SyncAudio DistortionScratchedContent IncompleteUnstable PictureVisible DecompositionVisible Tears]]></Text>
+	</CustomValues>
+	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-30T05:29:28">550030F6-96F6-B64E-84CF-4A6086006FFF</UUID>
+</ValueList>
