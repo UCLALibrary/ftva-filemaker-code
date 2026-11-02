@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="6" name="Remove Label Records"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step hash="8C7C5F29D9F78BF441974C7AA7DA68C7" id="74" name="Go to Related Record" enable="True">
+		<Step hash="9A86DE9211DB58D08F750C4800E7D399" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
+			<DDRREF kind="StepText" hash="3CBC8DF72C8823427E2811FEE9F125A1">_AA29C28831E59D42A5F91A727E75F0B0</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="56631FCC8AA90A9F2F7CE2406E6C47B1" id="1" name="Perform Script" enable="True">
+		<Step hash="00B30C7C36A8504DA0DCA758F9C99D2D" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="643861A1EC3056F8C0F1A0A4A9EEE3F2">_5C139FF86F30724AB4194C0463BA5669</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -28,8 +30,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="E54A9BF5024C800469E6EA6E3B02773C" id="123" name="Select Window" enable="True">
+		<Step hash="46F4788FF4570D5D20FBB480BDD8B829" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="EBE82A434EB0D4578B046B436F5AB82B">_5ABCA71DB7A4B8479A1D415174924AB4</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -37,6 +40,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="542D40BC1C14473BC2FEE7845DC5A4F5">_79E9BF14366658459BE57071D68B03D6</DDRREF>
 										<Text><![CDATA["Labeling Database"]]></Text>
 									</Calculation>
 								</Calculation>

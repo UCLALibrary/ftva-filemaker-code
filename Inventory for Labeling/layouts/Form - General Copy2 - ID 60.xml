@@ -643,7 +643,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="660D62D2A392C2C76532B58AB9050506" id="14" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="B00058FA0472CA5231A557745AA2B212" id="14" type="Edit Box" name="" kind="1">
 					<Bounds top="32" left="329" bottom="48" right="402"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -710,7 +710,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_431DDB1E8BE1D744B4A52DD9571C033B</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -1027,12 +1029,13 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject hash="F81871E0212DC0B06EA4804A6C8BC918" id="43" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="A4EF92D243985B59AB0886FFBC09C514" id="43" type="Grouped Button" name="" kind="8">
 								<Bounds top="1" left="311" bottom="14" right="347"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="24F0F0013C81C3E99C1C5C7646826F61" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_5BAA3B0FD7012A43A5AB877ED2E3028A</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>

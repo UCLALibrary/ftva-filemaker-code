@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065121" name="ItemUnitRelationshipType"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="F8FC751FEE733A347BA2266C54DEC7A0">_63DCC95140D8F4478E5B8AE66FB2CBA9</DDRREF>
 						<Text><![CDATA[Get( UUID )]]></Text>
 					</Calculation>
 				</Calculated>

@@ -798,13 +798,14 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject hash="7554E7E7010188EAA425332917D1DE3D" id="36" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="E8C0FB4D2FDFCD71199856918358F6D6" id="36" type="Grouped Button" name="" kind="8">
 					<Bounds top="338" left="18" bottom="357" right="509"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="F08FB3B519ECAE946CEB3D9824E71324" id="6" name="Go to Layout" enable="True">
+							<Step hash="4988ED31D89A7F404BBCFCC9221F603C" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="CFD71C16E137A51F6FF0F8CDD25B6DEE">_1BD89F5494BAED4DBE4FF1CE7CB30183</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">

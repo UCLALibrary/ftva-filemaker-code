@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065117" name="Inventory_StorageFormat_JT"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="F8FC751FEE733A347BA2266C54DEC7A0">_761567F7E8938A4582FB9C80B04AC7DF</DDRREF>
 						<Text><![CDATA[Get( UUID )]]></Text>
 					</Calculation>
 				</Calculated>

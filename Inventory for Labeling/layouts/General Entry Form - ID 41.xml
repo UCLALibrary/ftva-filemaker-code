@@ -173,13 +173,14 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="5F4CDF1B0AAF87944CA01647EE209B4F" id="215" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="3647B5F641A318DAA33949BEF8A38919" id="215" type="Grouped Button" name="" kind="8">
 					<Bounds top="2" left="4" bottom="22" right="120"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="716B60D8F84C4F7D68168BB3B1B90169" id="6" name="Go to Layout" enable="True">
+							<Step hash="B28D4C4B280BEC01C9D628B677925A0A" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="740E3D78E8E093FB3C217AB4E5170A5D">_7366D0CAF7152242922E1CCE9E6BF2E4</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">
@@ -346,13 +347,14 @@ self:normal .row
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="9CF7E007EDAEF0546E84135831BA91CB" id="170" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="08AADA49DE53C4F105A94D72685DA3E6" id="170" type="Grouped Button" name="" kind="8">
 					<Bounds top="20" left="373" bottom="40" right="472"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="EEC12087571568454C6994C126402FD2" id="74" name="Go to Related Record" enable="True">
+							<Step hash="BD4187BAADBA8B579DAA7A493CD6625B" id="74" name="Go to Related Record" enable="True">
 								<Options>33554696</Options>
+								<DDRREF kind="StepText" hash="28271A933BF4C0D5DC6F6FAF3A742D06">_B0E2EB34AC3B284C9CAF41F25A607E57</DDRREF>
 								<ParameterValues membercount="1">
 									<Parameter type="Related">
 										<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
@@ -1250,13 +1252,14 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject hash="937637D4E061DC2D70A8C3675839F2B9" id="19" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="5F48963B64B9EA00275B4499806CA463" id="19" type="Grouped Button" name="" kind="8">
 					<Bounds top="65" left="31" bottom="79" right="103"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="6A56696C580C766DBDFDDE6CB6864C51" id="74" name="Go to Related Record" enable="True">
+							<Step hash="30970436A27B50DE74E9F2C6B3895D20" id="74" name="Go to Related Record" enable="True">
 								<Options>33554696</Options>
+								<DDRREF kind="StepText" hash="20571F7B303700B8A762C04148999526">_0ACF015B5014F642A8183A87BB5DA9AA</DDRREF>
 								<ParameterValues membercount="1">
 									<Parameter type="Related">
 										<TableOccurrenceReference id="1065096" name="Donor Codes"></TableOccurrenceReference>
@@ -1619,7 +1622,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="F4ED4622D3092BDB1C94E172B34776BA" id="27" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="C187CEC8CDFB48B25EED57A3FA4656F5" id="27" type="Edit Box" name="" kind="1">
 					<Bounds top="47" left="121" bottom="63" right="194"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -1684,7 +1687,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_B80F5928BC0CCB48B39F1E5BE7E05759</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -2574,7 +2579,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="CA3E39D779E9F66C9176A04C51327B08" id="50" type="Drop-down List" name="" kind="1">
+				<LayoutObject hash="2F74B00AA39FE195779F27CC2984A7D7" id="50" type="Drop-down List" name="" kind="1">
 					<Bounds top="80" left="122" bottom="96" right="165"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -2588,6 +2593,7 @@ self:normal .inner_border
 						<Display Style="1" show="1">
 							<Placeholder findMode="True">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="0E740DBD44874D6BFC6DF33257A819D4">_2C653F4771C2264D852877D4C4173443</DDRREF>
 									<Text><![CDATA["N/A"]]></Text>
 								</Calculation>
 							</Placeholder>
@@ -4123,12 +4129,13 @@ self:normal .inner_border
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject hash="FBEA994D733723052236291848D6FFB9" id="197" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="80D15A0F0627CC30D117F1239EB1DC9B" id="197" type="Grouped Button" name="" kind="8">
 								<Bounds top="2" left="559" bottom="15" right="595"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="D5E57AA7F057597DB19C362BE2F332BF" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_190F4559624F794582D5E3DBB7B44DD6</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -6976,13 +6983,14 @@ self:normal .row
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="FE35EEF7242CE3419788A613B907AF06" id="150" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="1ACAA81A211C17D9B4072034916A38CC" id="150" type="Grouped Button" name="" kind="8">
 					<Bounds top="553" left="770" bottom="583" right="895"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="EEC12087571568454C6994C126402FD2" id="74" name="Go to Related Record" enable="True">
+							<Step hash="7DE630C277CF02A578C3424EC4698FC5" id="74" name="Go to Related Record" enable="True">
 								<Options>33554696</Options>
+								<DDRREF kind="StepText" hash="28271A933BF4C0D5DC6F6FAF3A742D06">_A723FD65F20BF84AAEF2C912C3BB039D</DDRREF>
 								<ParameterValues membercount="1">
 									<Parameter type="Related">
 										<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
@@ -7041,13 +7049,14 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject hash="44A42D0FAC47F4A22843C312267473A9" id="152" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="F44062FD328F8489DB8ACF3B9CD2A9E1" id="152" type="Grouped Button" name="" kind="8">
 					<Bounds top="553" left="763" bottom="601" right="902"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="7A3F71C6DEAB30191FFFA36B40AEA03F" id="74" name="Go to Related Record" enable="True">
+							<Step hash="8340B9D17185A34683E0D96F89B68CC3" id="74" name="Go to Related Record" enable="True">
 								<Options>33554696</Options>
+								<DDRREF kind="StepText" hash="695D20756C22DFDC383AD3A14AD5E643">_D376344A801D6D4B82CC2956787FC2C4</DDRREF>
 								<ParameterValues membercount="1">
 									<Parameter type="Related">
 										<TableOccurrenceReference id="1065106" name="Traffic Records"></TableOccurrenceReference>
@@ -7465,20 +7474,21 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject hash="35CB661FC787974B3564947DBADBBDDD" id="182" type="Portal" name="" kind="9">
+				<LayoutObject hash="35EFA6EB35CA3A3185019FF908D03E69" id="182" type="Portal" name="" kind="9">
 					<Bounds top="678" left="634" bottom="738" right="1101"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065103" name="Film Inspection History"></TableOccurrenceReference>
 						<Options show="3">1</Options>
 						<ObjectList membercount="5">
-							<LayoutObject hash="B3A7E0F5E73A47A57CE9284CD77FAEC5" id="223" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="DC34EEFD5EB47BEF3D70C0C6EB5A2C4F" id="223" type="Grouped Button" name="" kind="8">
 								<Bounds top="1" left="2" bottom="16" right="77"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="BC439AC10915C16A25BF6B9F70FC0E34" id="39" name="Sort Records" enable="True">
+										<Step hash="209560AB284061605B9775781A9DDB49" id="39" name="Sort Records" enable="True">
 											<Options>128</Options>
+											<DDRREF kind="StepText" hash="3B41ED56EDA9CD7638A170860470A85A">_153CFD7D2EADE4429F277AC2BE61F824</DDRREF>
 											<ParameterValues membercount="2">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -8349,7 +8359,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="F576EFEDA35B70A3B8D3E8819D52E75C" id="265" type="Button" name="" kind="10">
+				<LayoutObject hash="ACB540E7BD85F95BC6EC65E1EBBAC237" id="265" type="Button" name="" kind="10">
 					<Bounds top="757" left="1075" bottom="787" right="1101"></Bounds>
 					<Options>805306368</Options>
 					<Button>
@@ -8363,8 +8373,9 @@ self:normal .inner_border
 						</Label>
 						<IconData type="0" size="8"></IconData>
 						<action>
-							<Step hash="1F7CE793236937E23ABDB844316142AE" id="74" name="Go to Related Record" enable="True">
+							<Step hash="2D4F09B005A7D6E6FC94713E7E629703" id="74" name="Go to Related Record" enable="True">
 								<Options>33685768</Options>
+								<DDRREF kind="StepText" hash="3C0144CFF77198626B3949B1B89F752D">_76D9F0F4A3E81942BEF76078BE25451E</DDRREF>
 								<ParameterValues membercount="1">
 									<Parameter type="Related">
 										<TableOccurrenceReference id="1065112" name="InventoryItem"></TableOccurrenceReference>

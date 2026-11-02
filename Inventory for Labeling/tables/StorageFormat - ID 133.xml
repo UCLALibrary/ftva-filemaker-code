@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="354F879500DAEBE964A323A1800558F0">_7DC5B8048E1AFE43BBC68E8533E68B07</DDRREF>
 						<Text><![CDATA["SF" & Right ( "00000" & serial_id ; 5 )]]></Text>
 					</Calculation>
 				</Calculated>

@@ -1,58 +1,67 @@
 <Script>
 	<ScriptReference id="164" name="Analog_Search"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step hash="EB4B5FC1E3C1F93915B1EECE4098CB13" id="22" name="Enter Find Mode" enable="True">
+		<Step hash="C81D2CDB617E820C164A09E08BECBE58" id="22" name="Enter Find Mode" enable="True">
 			<Options>16777216</Options>
+			<DDRREF kind="StepText" hash="D760D3D9E8440D0221AC8AC6510CFBE8">_E4D46DA5E9AC0048B66AD084B82E0589</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="281CCEB6BF0677015C08F8B62C430DEB" id="86" name="Set Error Capture" enable="True">
+		<Step hash="212FF1FB8D3BBEFCF105284B5C0FF761" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
+			<DDRREF kind="StepText" hash="1F7990FBAA691E5F1ED64A10E1BECE45">_08607173B59D184B902130C57BBA7F16</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="06E642AAAED0B6B0B98F1A23CAE47C13" id="89" name="# (comment)" enable="True">
+		<Step hash="9258C76B1344FC5E3A2CAA362547FB2F" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="DEDCE8EF88153AE7D2749170315AC098">_711252F95F46ED46B0FB5516A73F723E</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="F95F26BCDCC0010F57E2B27765AC74A8" id="28" name="Perform Find" enable="True">
+		<Step hash="62B51932F76CE9F8A84BC008AF0C8F55" id="28" name="Perform Find" enable="True">
+			<DDRREF kind="StepText" hash="4DBF565012BF39F39FEB3BE74FE15396">_633C40D34942E544AEC996DD42A99F27</DDRREF>
 		</Step>
-		<Step hash="2A61A45A5E50339239416AEC5FC02757" id="68" name="If" enable="True">
+		<Step hash="598D782DE7BDF072F42F22656829C67E" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="7BAA99E9C2FB4B5CD7378300A62B06B4">_93D7266335F5254A9765BFE03B7567B5</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="54FC8B91DE327952E1E920710D4432A7">_242B4FB436318447A07F3067DB5259CF</DDRREF>
 							<Text><![CDATA[Get ( lastError ) = 0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="77B7679012D5A4E67328CCFA00087CCF" id="22" name="Enter Find Mode" enable="True">
+		<Step hash="DF0250376541F87CFE75D88A2CECE6F3" id="22" name="Enter Find Mode" enable="True">
+			<DDRREF kind="StepText" hash="0D367022C56121EA5A217C8679457CEA">_E5B02FEA8DB2C242AFAFB28EF01CDD20</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="5ABD84B46FF59E61C66BC6C39B661ECB" id="76" name="Set Field" enable="True">
+		<Step hash="D10614F0B746DE435A6DBAA1C7772253" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="577D57DC85E47CF526DE304A83ED27DB">_256A818EDCCF2B40B016C14B3BAD5A53</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="198" name="digital_record">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_0E16C334DDE83744B21B0D092A06D85D</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -63,23 +72,27 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="9BF55A5D51230A8EA20D4BAA0F468EEC">_2394BC310C2F184896E0CB25605732EF</DDRREF>
 							<Text><![CDATA[0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A78961EA2099B5DD2AEA0985CACE0469" id="126" name="Constrain Found Set" enable="True">
+		<Step hash="89F0EBAC943CD49A6888C498F3A7213A" id="126" name="Constrain Found Set" enable="True">
+			<DDRREF kind="StepText" hash="55C2A866170CE17FECC9940FBBDBBFF1">_5BB620D815B41D459D26AC156E672880</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Find without indexes" id="256" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="178FF6137DDEEDFD0580BFE712EEAD83" id="70" name="End If" enable="True">
+		<Step hash="D28237BDBF2969C9C4BE0C4E6A011A8A" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="9AC14DC28813B8DEE3E2F5156F63FFC8">_313E8B130A81EA4F8C247D8B05926F1F</DDRREF>
 		</Step>
-		<Step hash="2FE88679898872B5E5F755E45976574F" id="86" name="Set Error Capture" enable="True">
+		<Step hash="E79E8D6016E07AA7032D453506E11A3C" id="86" name="Set Error Capture" enable="True">
 			<Options>65536</Options>
+			<DDRREF kind="StepText" hash="975512E5641E7885EFDD6224EA5F6623">_B62A0A0102EC954484EE95FE6266B1CA</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="False"></Boolean>

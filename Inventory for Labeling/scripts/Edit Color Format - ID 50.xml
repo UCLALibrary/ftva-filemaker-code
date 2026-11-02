@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="50" name="Edit Color Format"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step hash="106EA9EC5FA746E21E29DE52D1A9C479" id="1" name="Perform Script" enable="True">
+		<Step hash="D903EFBCE9ED1051F45FD2CFAA1C1FB5" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="68C6F363F5A3DDD9451D692599BA6F6F">_C7D2E3F3DDC4C847B177F7CA41A539C7</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="CEFEE1404F7D073C82DB88E5B69D17F5" id="123" name="Select Window" enable="True">
+		<Step hash="77E34E0C8842ED4014CBAB61DE150FD0" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="9C6636C3652B65D1B9B256493192CD6E">_C7CC13311F3B964DA0450910BFF6850B</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,6 +25,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="9CEBB0737937C91FAC93684A1657525C">_7381D3DA062AFF4BABE595063D4DC231</DDRREF>
 										<Text><![CDATA["color_format"]]></Text>
 									</Calculation>
 								</Calculation>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="108" name="NITRATE PULL SHEET"></ScriptReference>
 	<ObjectList membercount="9">
-		<Step hash="3214AEE546F253BA2869382AA2407764" id="28" name="Perform Find" enable="True">
+		<Step hash="BF367CA3BD6C6A5690FDFAE8DA217C76" id="28" name="Perform Find" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="E505B62B7A27E30B7E311EFE6D0D0DB5">_983F40615AA5524D8267CE5F63A00430</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="FindRequest">
 					<FindRequestSet membercount="1">
@@ -11,20 +12,23 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B4E957BD264AF9D3F064F8C973827123" id="68" name="If" enable="True">
+		<Step hash="CE274567F45B0FF0D55923B181CC7370" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="FDF603D383785C2D3E56BF456AE89693">_DE7BADB9A33D0F4BB182B2928F6BD839</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_BB361DB8FC3BCF4A82833AEC5F0B1B20</DDRREF>
 							<Text><![CDATA[Inventory for Labeling::<Field Missing> >= "pull"]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="00B3F6F40625E01D7FDAC064F5B351E9" id="6" name="Go to Layout" enable="True">
+		<Step hash="533481E401C48102FE68BAA00A20A5E1" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="1CA766F25820697F69A3DB85F61013C5">_BB71CDC2EBF4A74CB7C2F160940AA0CA</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -36,8 +40,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A45CEB766386B36E1AE7D1DB9AC745C6" id="39" name="Sort Records" enable="True">
+		<Step hash="292060413A9312D130568395031B2A8A" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="0C3B223254024B0D1F2CEE6FEBC6D542">_7D732C2D34D4C74DAAB2169CCA5C4541</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -47,30 +52,34 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="0CC2CCD9AB0DD53782C8F4406E7565A7" id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="BD88FBEF199C59C82619AB3C685321D1" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="E904E71D95D166B9398FFA040DF45CE8">_86427E785ECB124D9BFD56053C9672AE</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="DD3B7BAB13C2E1BBBD210F7A0DF17DE6" id="41" name="Enter Preview Mode" enable="True">
+		<Step hash="3AADBCEB367002685A07565E4F0F944E" id="41" name="Enter Preview Mode" enable="True">
 			<Options>16777216</Options>
+			<DDRREF kind="StepText" hash="9BFA7FE03359970B7A18FC52C50BC108">_CBA1A77F7CD12F40AA56C435CCEC8C77</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B07895A2CDE41A714A3FC5AB3CBA7B69" id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="35C62469DA631B67B80023F7704AFF9D" id="55" name="Enter Browse Mode" enable="True">
+			<DDRREF kind="StepText" hash="301B918CB62E4FDBDB8DB0708D692E74">_430B6D3A1A227E41AF751E82A1FAEE21</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="961ECDDA9E09269EF0B3481FEA7654A7" id="6" name="Go to Layout" enable="True">
+		<Step hash="4F0BFD4B2BE4C7963CE831FC4C6BC73A" id="6" name="Go to Layout" enable="True">
+			<DDRREF kind="StepText" hash="AD05D2AE29BC88856D5195D9FBD5AFBE">_C7B093143717D14C93877455033202E8</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">
@@ -82,7 +91,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="EA498F2A2A16ED90B2786650682F3FC9" id="70" name="End If" enable="True">
+		<Step hash="5494811AD49477DEDC9272DAAA4E25DF" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="9AC14DC28813B8DEE3E2F5156F63FFC8">_F161AB808D265648B68AB81C44031EA4</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

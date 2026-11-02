@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="30" name="Open Finding Aids Copy2"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step hash="9A2DEA0F4922DA35A48D6CB1AA5F53A1" id="1" name="Perform Script" enable="True">
+		<Step hash="F633CF583FDB4BFEB7AA1B8A2C9AD4F3" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="5B05D8E017ECE0D18AAEC9BAF3A8B269">_EE47786C86B98245866C6B2A85E52CC2</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A0F52B71E3FAE0001C020EE43426185B" id="123" name="Select Window" enable="True">
+		<Step hash="548F095A603C6517069C6F86859C5EF5" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="8664CD501A3E805EA96201EFF61543BA">_F1412A4817D8354BB695BB796106576F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -24,6 +26,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="70705CA9E8D101BE7A5E0885F9B6D35B">_18A25ADE47EA684D89894E1482AD48DD</DDRREF>
 										<Text><![CDATA["Inventory for Labeling"]]></Text>
 									</Calculation>
 								</Calculation>

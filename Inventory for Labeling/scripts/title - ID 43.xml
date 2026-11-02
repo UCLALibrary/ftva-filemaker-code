@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="43" name="title"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step hash="6E87682FEA767C8299C1B3509127385D" id="6" name="Go to Layout" enable="True">
+		<Step hash="0933D0A30CC5ACA76D4FFE8D441A2907" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="82CC1C9ECF62A78F3702EA36BF2728E9">_1C7857A228F0534C80968DBC412D22CA</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="01F4244F00EF9E0A469C37323A5B3080" id="22" name="Enter Find Mode" enable="True">
+		<Step hash="58A8422E8DAD83A52F34E2F1C22E0675" id="22" name="Enter Find Mode" enable="True">
 			<Options>50364416</Options>
+			<DDRREF kind="StepText" hash="ED307E3D72F51BD7EB5EDF8A5072B8A7">_846B329F9619D9478DA99F65BEE09EC1</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="True"></Boolean>

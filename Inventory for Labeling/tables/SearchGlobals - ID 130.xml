@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="F8FC751FEE733A347BA2266C54DEC7A0">_3B309107CD61F2439F9666081FC69622</DDRREF>
 						<Text><![CDATA[Get( UUID )]]></Text>
 					</Calculation>
 				</Calculated>

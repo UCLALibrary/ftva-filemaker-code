@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="101" name="go to donor information Copy"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step hash="9D2B6684592E505D2CC1C1E7EC536545" id="74" name="Go to Related Record" enable="True">
+		<Step hash="48BE6024CE8B56D5578A5647B5625E59" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
+			<DDRREF kind="StepText" hash="20571F7B303700B8A762C04148999526">_BC2082B01A4637488DAF05DE8F0AD572</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065096" name="Donor Codes"></TableOccurrenceReference>
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="6A294356996B14598336D70E5B1CF7F8" id="1" name="Perform Script" enable="True">
+		<Step hash="0423B8066775D2D849ED8C3F7AA4CAD5" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="F01AB2F9A2035C75FDD9F5211E9B86A8">_1ECAE3233A422D41B743309170939013</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -28,8 +30,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="797C65146EA69EBAA23979B02063FE27" id="123" name="Select Window" enable="True">
+		<Step hash="4314713E65858EABBFFD7F5EF93F3DF6" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="0E3313ECA6CEA328116B8B9C642EDACD">_6F32FD68123E5640B9096642E74C5C35</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -37,6 +40,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="675753934107B7C2F18F83499928F0FF">_F27EBB9E0CAEE04BAC6CC79B3E3331F5</DDRREF>
 										<Text><![CDATA["Donor Codes"]]></Text>
 									</Calculation>
 								</Calculation>

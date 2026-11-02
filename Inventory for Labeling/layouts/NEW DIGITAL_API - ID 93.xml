@@ -10358,19 +10358,20 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="FCB00E6746E068E8E5EB9EF717F240B5" id="1698" type="Portal" name="" kind="9">
+				<LayoutObject hash="7A6D38315A6D26AC07934A32E41A84C6" id="1698" type="Portal" name="" kind="9">
 					<Bounds top="319" left="484" bottom="425" right="1338"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065117" name="Inventory_StorageFormat_JT"></TableOccurrenceReference>
 						<Options show="5">1</Options>
 						<ObjectList membercount="17">
-							<LayoutObject hash="09AC38C537FEC955C1BD030A10A49E21" id="1699" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="CDB9C302E3279B224649A883996A3AB1" id="1699" type="Grouped Button" name="" kind="8">
 								<Bounds top="2" left="794" bottom="17" right="830"></Bounds>
 								<Options>805371912</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="C4A12887D211661562B916C0C6E21623" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_384AE9680530C743AC523ECBC54439D9</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -11761,7 +11762,7 @@ self:normal .text
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject hash="3B002D145BDEF91BE54541E752D5C52A" id="1723" type="Drop-down List" name="" kind="1">
+							<LayoutObject hash="1E312091C07A50A753D5F80B75EA3AFC" id="1723" type="Drop-down List" name="" kind="1">
 								<Bounds top="2" left="1170" bottom="94" right="1417"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -11772,6 +11773,7 @@ self:normal .text
 									<Display Style="1" show="1">
 										<Placeholder findMode="True">
 											<Calculation>
+												<DDRREF kind="ChunkList" hash="0D584821EA1115366956EF01D9A448D2">_6409FE90FB2A2E41A1CF2E5A105DB435</DDRREF>
 												<Text><![CDATA["Please Select Value from Drop-Down"]]></Text>
 											</Calculation>
 										</Placeholder>
@@ -12019,12 +12021,13 @@ self:normal .text
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject hash="2F94E96E001142FE9981890CAAF397C0" id="1729" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="73114C81E898A985D7886CD02FD81D63" id="1729" type="Grouped Button" name="" kind="8">
 								<Bounds top="36" left="1495" bottom="51" right="1531"></Bounds>
 								<Options>805371912</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="1781E268115A7FE984016D18F06C3FCB" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_7ED772B65704914A85E62E02817E818E</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>

@@ -16,7 +16,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="12">
-				<LayoutObject hash="E4100DC3E55DD3CAB23E299D0CFF1975" id="1" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="7B1C3B724B3144AE99C22772293A19E0" id="1" type="Edit Box" name="" kind="1">
 					<Bounds top="24" left="138" bottom="40" right="391"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -79,7 +79,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_F7391A5084E9E647ACAF01AE42535656</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>

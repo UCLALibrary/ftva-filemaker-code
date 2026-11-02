@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="49" name="Edit Sound Format"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step hash="CB56493891450DD60768A454287CB176" id="1" name="Perform Script" enable="True">
+		<Step hash="086BDB14BDCC925697CFE5C30C1C7966" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="2C2F73D7AB94B3FFDCAE72D75B05AD42">_A0275469317D864D9591F4E3126650EB</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="8E318D8D19E5488E3A50B09FCF7B3EBE" id="123" name="Select Window" enable="True">
+		<Step hash="CFC7B14A323B788E9E13A800F0EC3CEF" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="50105296B69B395DC6EE8B5E5A4FD185">_ABC2A5A83EDFCA4A9D8EF7E692818832</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,6 +25,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="3DE6B12AEE55CE3081AFEAF9786CF20C">_68C914B880A5D04BBFA60541E0BEADEF</DDRREF>
 										<Text><![CDATA["sound_format"]]></Text>
 									</Calculation>
 								</Calculation>

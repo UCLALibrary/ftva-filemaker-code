@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="122" name="Import from Newsreel PrePrint Inv"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step hash="7EC0CB701B7AC4AE84F40E23F2C6B90E" id="35" name="Import Records" enable="True">
+		<Step hash="65747FB9E5A9E8B61B899BF40A02305A" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
+			<DDRREF kind="StepText" hash="F42937FAC9DE6E0B4EC3A9D72AF3A475">_49084C0F67A3864E9D0134D52F720971</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>

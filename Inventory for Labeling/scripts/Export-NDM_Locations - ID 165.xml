@@ -1,12 +1,14 @@
 <Script>
 	<ScriptReference id="165" name="Export-NDM_Locations"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step hash="C97170212B33A61CFF5EDE121D8336B4" id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="6A5BEE7FAF477FDFB4837D0DD2D36E1C" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16389</Options>
+			<DDRREF kind="StepText" hash="9B95FC74FD2973C987F8126854A6524D">_69078A8BD75C5147BD32AB9FD659C7DB</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="8DE5652D76F1D796EEC88F1C35AE583E">_AA2DF37011A65441B54F8B7A8451C48B</DDRREF>
 							<Text><![CDATA["Export NDM Label Scans"]]></Text>
 						</Calculation>
 					</Calculation>
@@ -14,6 +16,7 @@
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="75EC74DB84B16768B5DA19F4FCDCF3FE">_3D8FB15A27F83D44A22F8D652A7CAFF1</DDRREF>
 							<Text><![CDATA["Do you want to export NDM label scans for duplicate items?"]]></Text>
 						</Calculation>
 					</Calculation>
@@ -29,20 +32,23 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="C9B2E34F185DB6489133AD70F577112C" id="68" name="If" enable="True">
+		<Step hash="C8224F232AFC9F23393A3B761D230048" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="3D2742E4C424BE13B9E6045A707B7A37">_B30440A4A9240D44B4918B2517EF3C71</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="8C579970D437A4505D25C8DA36467E6A">_9FB962D0D1152F49B90D855714C31905</DDRREF>
 							<Text><![CDATA[Get ( lastMessageChoice ) = 1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="777335A169E230CFF07B1DD885715996" id="122" name="New Window" enable="True">
+		<Step hash="F5D188BBB66F48CD58A920DBBD3FCA47" id="122" name="New Window" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="039B516DE888EDDFB39D5E7D86711B8A">_A9A497924B36DD4BAD7464B2413372D8</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -70,15 +76,17 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B694C5820FC4A2D1E3E61803C2FDCBBB" id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="51E6E85E805F3C1A88C04D4868EDEAA1" id="55" name="Enter Browse Mode" enable="True">
+			<DDRREF kind="StepText" hash="C5157439E4BF0314678C003AAFED42CB">_98BB5456312CE145AF0F62E577BB092A</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="9729A34917CA939EA94A3E04AD82F807" id="39" name="Sort Records" enable="True">
+		<Step hash="82EDEA40A5CF4CB9418E29E4E6086D66" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="8BE6F20914F99207591283B0DFFD56C0">_240E823D632FB042A7AFFD0F18CB7D2A</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -101,8 +109,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="9CC8FFDE2D1099E6BF3FAE94187CE2EB" id="36" name="Export Records" enable="True">
+		<Step hash="D0B59AE82BFBEA4DC601D4BE87CB8F5C" id="36" name="Export Records" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="3F1AF433B16C68F8D34C91B3274B41D4">_FE65DF92DC4B0C40BB18436B2378BDC1</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -141,7 +150,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="4E21DF11A1C14730CDAA2B550FCA2362" id="70" name="End If" enable="True">
+		<Step hash="5014DF4A749FA7514B8AEC6CBE4B8A60" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="65E4BB5534599478E61D8714DD0F2EB1">_84A293F20A9D9F4D98C3D375750A43A5</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

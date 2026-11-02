@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="124" name="Import from Preservation Preprint Inv"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step hash="2AAD72725582FF4F3D19F8554D168F94" id="35" name="Import Records" enable="True">
+		<Step hash="22C720D67257D70CEE3FD29F836DE11F" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
+			<DDRREF kind="StepText" hash="B6F703FC587862C3C54D3244E5B9B16E">_B6748BBF9FA87B45BA4E1CD15CDFAA51</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>

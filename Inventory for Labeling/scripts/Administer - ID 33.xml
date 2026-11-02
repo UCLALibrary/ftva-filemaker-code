@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="33" name="Administer"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step hash="DF0915A094B1F77A90514A9202CF657F" id="1" name="Perform Script" enable="True">
+		<Step hash="B6B9A3CF54C9533599413BA0A62F6859" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="77090B52A33566D0E233CC61055CD9DF">_DD8F0AAC3F4AF140B371F3232386B85B</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B81B8C3BEC0B7D2F0DB27ACA88508D22" id="6" name="Go to Layout" enable="True">
+		<Step hash="B4273C3E7BDB244B4D909E870130C882" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="DC9C02BC027216804854C372FF0344C5">_C1F5A07D62A58A4998EA8F0D7A720D20</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -27,8 +29,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="D12BFA7093E677B336AA7EFBEC42B105" id="39" name="Sort Records" enable="True">
+		<Step hash="65CDF1F82345F75A63C6204CF6158282" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="AA9429493AB7DE01643BD1BDB46424CC">_C6CE4862F249F942B5BBBEAE973F5CA4</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -72,8 +75,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="732ACDAA08554641542EA76B5625CF51" id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="EA8DBC3C71EBFFABA6B706772A9731BD" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="FF2C60D6B76F730A5136E06A3443AA0E">_33FC0D27F5BB3148BF0606B26A782772</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>

@@ -182,7 +182,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="EF6FF3517C5694E3A9EDE93FE4EF7B45" id="50" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="595C42814A6F4E4A3C01D8DD00843D3E" id="50" type="Edit Box" name="" kind="1">
 					<Bounds top="27" left="103" bottom="43" right="176"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -246,7 +246,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_3592E8EF6CBFFA439A6F953828DE3F1C</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>

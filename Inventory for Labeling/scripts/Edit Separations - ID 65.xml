@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="65" name="Edit Separations"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step hash="8C3472CD6A8694021346538580685A72" id="1" name="Perform Script" enable="True">
+		<Step hash="5089604895F9217755B3166E69C92C9E" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="3C4D8A604CCF62D9D228C6587A586336">_5BD7C24A53FF2841A1A31EB5B0AA7679</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A76795DD30CB10CDC23C745D57E81137" id="123" name="Select Window" enable="True">
+		<Step hash="EDAFCB4145C7FAA1B66F21E30002FDA3" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="D2DB6B861982D3135A0CFA33B1D39245">_0B941093FF657A4493E55D6DFD1C4D08</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,6 +25,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="EDCAF7C683ABF23B00C7E1B0509B9466">_802A54ECAA8ABC4FBA00177618335F85</DDRREF>
 										<Text><![CDATA["aperture"]]></Text>
 									</Calculation>
 								</Calculation>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="13" name="Search: Inventory Copy"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step hash="C2A7CE7BA159CD6370F401B9BFDE9D27" id="1" name="Perform Script" enable="True">
+		<Step hash="F6635297A98C453E3232520221932156" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="925FA429991F7727E67A3947067C86A1">_A7554B6C78F2CB4BB9FEE5751E6AFA69</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="AA3FCAEC87CD6422F372EDB2437EC92E" id="1" name="Perform Script" enable="True">
+		<Step hash="168DD7292A83A0250A3FB3930212F82B" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="E0E1E5CEDB04228FA72B2053377F90BD">_E145958B6C761644B0A7ADE8C93914F4</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -29,8 +31,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="60552FF0240876D93EB3FCFB2C4BB3F9" id="123" name="Select Window" enable="True">
+		<Step hash="5309B205960FEB8A2136C2A2D35CFD11" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="8A159D9C81AC8283672AE79F78116922">_450061E276F53A43BCE72C0881E604A0</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -38,6 +41,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="70705CA9E8D101BE7A5E0885F9B6D35B">_894367A5F771974C878B5AFB75BF412E</DDRREF>
 										<Text><![CDATA["Inventory for Labeling"]]></Text>
 									</Calculation>
 								</Calculation>

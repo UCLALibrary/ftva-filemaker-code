@@ -1099,7 +1099,7 @@ self:normal .text
 									<Label>23</Label>
 								</Accessibility>
 							</LayoutObject>
-							<LayoutObject hash="42C3DB2A4FCD0C20E4AD6564660DD790" id="18" type="Button" name="" kind="10">
+							<LayoutObject hash="C1643DC8B2CB2DAEF5386D75CCD0164B" id="18" type="Button" name="" kind="10">
 								<Bounds top="22" left="1729" bottom="44" right="1784"></Bounds>
 								<Options>805371912</Options>
 								<Button>
@@ -1113,7 +1113,8 @@ self:normal .text
 									</Label>
 									<IconData type="0" size="12"></IconData>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="5E554019DFC2A591D5BCA02C45406DDA" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_30F25EC4C46A6D49873FE2C54AD4C25A</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>

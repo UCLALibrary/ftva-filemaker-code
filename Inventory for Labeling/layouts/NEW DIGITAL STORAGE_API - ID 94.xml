@@ -469,7 +469,7 @@ self:normal .text
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject hash="8746406005C6546D1A81EB0A2F447FEE" id="7" type="Button" name="" kind="10">
+							<LayoutObject hash="45C39B09E60EB157E2ECA0B53B849F56" id="7" type="Button" name="" kind="10">
 								<Bounds top="22" left="1729" bottom="44" right="1784"></Bounds>
 								<Options>805371912</Options>
 								<Button>
@@ -483,7 +483,8 @@ self:normal .text
 									</Label>
 									<IconData type="0" size="12"></IconData>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="A487843C47A45E732E2E72DFD4A7FA66" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_73BD078D2260014DB8F6DD5B5D9331EF</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>

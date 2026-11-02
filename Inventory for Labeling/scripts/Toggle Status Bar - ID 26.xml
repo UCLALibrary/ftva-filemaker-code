@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="26" name="Toggle Status Bar"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step hash="7B5DFC19A46C9DF60665D98A7711F0E2" id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="FD28CA354DEA1706B68BB69BDF23EE4B" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="BD49D5F7383DF130F98DD77F1AEE83F5">_1648B4AFFE9AC5408C0ABBF5C43371D2</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Lock" id="524288" value="False"></Boolean>

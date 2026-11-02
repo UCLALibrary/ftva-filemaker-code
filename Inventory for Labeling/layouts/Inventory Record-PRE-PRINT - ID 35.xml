@@ -626,7 +626,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject hash="E3DE12045C02F20871DAEE598D71E373" id="9" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="9A6FCAA734392371A34AD104B38592C8" id="9" type="Edit Box" name="" kind="1">
 					<Bounds top="66" left="513" bottom="119" right="683"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -677,7 +677,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_5580132578DB9C4DAEE81591F5D19DB1</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -1908,19 +1910,20 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="0179898FC3CDEA97EF9BA848E29945DA" id="146" type="Portal" name="" kind="9">
+				<LayoutObject hash="A7A7151B800E249CB0A3F99947610112" id="146" type="Portal" name="" kind="9">
 					<Bounds top="188" left="520" bottom="308" right="841"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="7">3</Options>
 						<ObjectList membercount="11">
-							<LayoutObject hash="179FC00BC53B92DDE2F51E4A0D999FBC" id="163" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="7D9900633D2581C0B7B56DF541EB7F3D" id="163" type="Grouped Button" name="" kind="8">
 								<Bounds top="0" left="270" bottom="28" right="306"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="A86564469C4CD39FF3AE2C5CBCDCCB5C" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_7DC1F4319BB8884A83D568ECEE774DDE</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>

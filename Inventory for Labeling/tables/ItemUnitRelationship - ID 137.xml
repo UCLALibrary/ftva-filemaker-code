@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="F8FC751FEE733A347BA2266C54DEC7A0">_F7932E945861574692D200C05404F08B</DDRREF>
 						<Text><![CDATA[Get( UUID )]]></Text>
 					</Calculation>
 				</Calculated>
@@ -82,6 +83,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="ED6A4F56495F5DFA38D07C85722989CC">_6228A7A31AFB414AADFC3ABC81213B89</DDRREF>
 				<Text><![CDATA[source_uuid & ¶ & target_uuid]]></Text>
 			</Calculation>
 		</Field>

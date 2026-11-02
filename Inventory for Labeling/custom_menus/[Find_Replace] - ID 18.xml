@@ -3,6 +3,7 @@
 	<MenuItemList membercount="0"></MenuItemList>
 	<Conditions>
 		<Install>
+			<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_72964BD3661A97479854D8410C2E4CF5</DDRREF>
 			<Calculation><![CDATA[1]]></Calculation>
 		</Install>
 	</Conditions>

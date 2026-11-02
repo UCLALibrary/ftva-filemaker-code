@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="139" name="ChangeField"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step hash="A3E8FC13D86883B4F8201925298D38BA" id="91" name="Replace Field Contents" enable="True">
+		<Step hash="9560A47D7B222EBDE302ED22E1EF776B" id="91" name="Replace Field Contents" enable="True">
 			<Options>16389</Options>
+			<DDRREF kind="StepText" hash="ECFE3D326D61A26F6637DBA2E41E549D">_93EEBD600802A5459AC2C875B96599B0</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -12,6 +13,7 @@
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_33F204A989861548B19FAA4B73E969C4</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -23,6 +25,7 @@
 					<List name="Replace with calculation: " value="3">
 						<Calculation datatype="1" position="0">
 							<Calculation>
+								<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_3E30574D2AD62F468D4E9A4C6FB4F68C</DDRREF>
 								<Text><![CDATA[1]]></Text>
 							</Calculation>
 						</Calculation>

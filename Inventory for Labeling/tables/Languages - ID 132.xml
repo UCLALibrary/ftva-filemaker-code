@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065115" name="Languages"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="F8FC751FEE733A347BA2266C54DEC7A0">_0129D27F08A4B74CAB6B788AC5F3AD83</DDRREF>
 						<Text><![CDATA[Get( UUID )]]></Text>
 					</Calculation>
 				</Calculated>

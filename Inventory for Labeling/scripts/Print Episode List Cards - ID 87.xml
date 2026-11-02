@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="87" name="Print Episode List Cards"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step hash="5E97D736EDD3287F381DFBC7DAE62F36" id="6" name="Go to Layout" enable="True">
+		<Step hash="B86C5D81171DABA2957EC276960D6A4A" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="9B2265EB0E49858EA593D5CF95E78736">_89A87961B0C4DC4793FBB56CA697D337</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="EAF2D39DA6C569D1BCE5F55FD0BF923E" id="42" name="Print Setup" enable="True">
+		<Step hash="033E7B87248492733C289826B6E1F21D" id="42" name="Print Setup" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="A86711B2505BA23E4390F3D4DDEC44F4">_130BC55D86494249AA7488E26B4FB45F</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
 					<Restore value="True"></Restore>
@@ -32,8 +34,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="213920E44BBDCEDFB6C6A6ACEFE85F96" id="39" name="Sort Records" enable="True">
+		<Step hash="10EED88C57D3703310DD8DCAA1BF9AEB" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="548B5EA024417A4D010767D6415AFD70">_47FB86AE6066F24BB3D1F1E4D78EFC93</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -77,16 +80,18 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="1F19564FFAF5B7AF99322F02F92E67CD" id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="93AF9223363324FBBA2B866920C63846" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="FF2C60D6B76F730A5136E06A3443AA0E">_60D3304609934D49A7C8A3017A2FDB27</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="410EAAA2F23836D039C23A1C713E4CF7" id="43" name="Print" enable="True">
+		<Step hash="FBB467824248FB864A92476299615ADB" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="3575CFF1C71C567EA74B6D96211A6CFF">_6CD742DA6553534DB07EE37833CE0FD1</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -109,7 +114,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="231DAB424C766E6C08F10EA77DA8F99F" id="6" name="Go to Layout" enable="True">
+		<Step hash="6B4150AFFC2C713E9DCFDF1D4FAFAB7F" id="6" name="Go to Layout" enable="True">
+			<DDRREF kind="StepText" hash="475861B95BA05C7D7B763190F43E1A4C">_593703545B8A7C478E4F2B2AFF7EFAE4</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

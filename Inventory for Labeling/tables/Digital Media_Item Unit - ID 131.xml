@@ -8,6 +8,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="F8FC751FEE733A347BA2266C54DEC7A0">_5C46EAC010520A4896FE8A3848CF3EE1</DDRREF>
 						<Text><![CDATA[Get( UUID )]]></Text>
 					</Calculation>
 				</Calculated>
@@ -152,6 +153,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="5F5E491C7D74ED8796F762C1D24E7096">_C40455071923F64FB7883AB775BF3080</DDRREF>
 						<Text><![CDATA[Let ([  total = running_time;  h = Int ( total / 3600 ) ;  m = Int ( Mod ( total ; 3600 ) / 60 ) ;  s = Int ( Mod ( total ; 60 ) )] ;  Right ( "0" & h ; 2 ) & ":" &  Right ( "0" & m ; 2 ) & ":" &  Right ( "0" & s ; 2 ))]]></Text>
 					</Calculation>
 				</Calculated>
@@ -313,6 +315,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065114" name="Digital Media_Item Unit"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="7C0D3E5A58C5A8CF7D36EE7D63B242D6">_96E480882436184A9EBC211FB1C74632</DDRREF>
 				<Text><![CDATA[UUID]]></Text>
 			</Calculation>
 		</Field>

@@ -1,12 +1,14 @@
 <Script>
 	<ScriptReference id="4" name="Convert type to Newsreel"></ScriptReference>
 	<ObjectList membercount="9">
-		<Step hash="07396285DC1FF081AA9534CD9BD59BED" id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="2198C8386D32E467091DB89D231416D7" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="1E18CC14D2FD726440261FCFFDDFE406">_5B1588B364BA6A4EADE22E52A85F49B5</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="C9485CF1D0FAC40956B37FB15B23BB91">_6EC4E4065CFE494981641182A6627D10</DDRREF>
 							<Text><![CDATA["Message"]]></Text>
 						</Calculation>
 					</Calculation>
@@ -14,6 +16,7 @@
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="2C4739ED09A78CC323AEF7F50A8A66FC">_D7C364C200960B4793280DA0BFB1F491</DDRREF>
 							<Text><![CDATA["Are you sure you want change this item to be a Newsreel item? This will clear any data entered as a General Collection item."]]></Text>
 						</Calculation>
 					</Calculation>
@@ -29,26 +32,30 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="F5CCD960402103E6E900D0F556B035DA" id="68" name="If" enable="True">
+		<Step hash="EC2A9DDD4166A11A8D0C1BEF755A58CB" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="685D92CDF563585893D5A69D06378412">_1A9E2022BD884849966EDB64BD4CE6CF</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="F87E7A418908918009B2E4AF808480DA">_42AB3F8F1F8C8345BE05B631E3334EAC</DDRREF>
 							<Text><![CDATA[Get(lastMessageChoice)=1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="94BA85D851D662FD4D30AC3CF781CB22" id="76" name="Set Field" enable="True">
+		<Step hash="743B8440AD103CE43F391521B578ED6A" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="4B432A87A8AEC8E8D0AC526397F0CD17">_A73ADA2D2A504942BD7FCC57887921F0</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="23" name="type">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_B0B729649139534496E175F7710AB0E6</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -59,20 +66,23 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="887796C870BC29C2308EA3E54A3303BF">_7981D50B3CC3C041A9F9B746AFA9F293</DDRREF>
 							<Text><![CDATA["Newsreel"]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="F98F7B67760B03629D6732CE653E4FB4" id="76" name="Set Field" enable="True">
+		<Step hash="1B4A12F7066FB86E8A0BB1B710A1C0B9" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="A20EEBA3156EA49A50F30A77D6299C3D">_C7FD361393489C4A80B9E6876917B95A</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="9" name="episode_title">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_45EEDA4F4B84F4439B3398119927B612</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -83,20 +93,23 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="26631CDF3EEB0CE74C7FC665903CAC32">_C51B0E5130240C40AAEBDF99A594D6D8</DDRREF>
 							<Text><![CDATA[""]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A4B26ADA1DF6772428F3E1FFC7EA3145" id="76" name="Set Field" enable="True">
+		<Step hash="76FAEA26F9681BBB9E1FFDD2A98CD814" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="2822DF4BF715A0CECF523DB959F3ED55">_B4735D200F59764080F437EDB3FAB2C5</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="10" name="element_info">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_3CBC7CD3D4DBAB47A4D121EF04EAA9CA</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -107,20 +120,23 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="26631CDF3EEB0CE74C7FC665903CAC32">_CF4EF0DE99E5B042A5EB0E78FED95599</DDRREF>
 							<Text><![CDATA[""]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="015798AAC90930693404905B8814A4FD" id="76" name="Set Field" enable="True">
+		<Step hash="FBF644E52147CDD77903F4172CBE879F" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="090A4CE59E61AD4187EE03BB8AA1624D">_0C225BAD61019E4F98D476C5961A61A3</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="11" name="donor_code">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_8DA9DDCA588B5C458008D4DD3B2E0021</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -131,14 +147,16 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="26631CDF3EEB0CE74C7FC665903CAC32">_9E9C1B1CAEEA0547943F842A361FD4B6</DDRREF>
 							<Text><![CDATA[""]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="9B633D6A56F6F9B379E9ABE28FAC1289" id="6" name="Go to Layout" enable="True">
+		<Step hash="2B6B84A41D8ADD9702BF2AC4FB4AE179" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="B73B94C64BEF8A6326C4C76BD6048C29">_22B40888B630124F850E4A4A92BD9295</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5"></LayoutReferenceContainer>
@@ -148,15 +166,17 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="E4B339AF9C8CEE8ADC4253B89DA8FD0C" id="31" name="Adjust Window" enable="True">
+		<Step hash="D1A8AE2DA14D496B29A54F5505BED2C9" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="95D0686758AB364BF903B6F15DA94DDF">_E8174067C536364B928B0BAA85D22D25</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Resize to Fit" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A824FECAD897EB89AEDE86154B7CDD29" id="70" name="End If" enable="True">
+		<Step hash="0F5BDF20FF46430B2EB129D3B07329D9" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="9AC14DC28813B8DEE3E2F5156F63FFC8">_51063341028E5F40B80D82584FBA40DE</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

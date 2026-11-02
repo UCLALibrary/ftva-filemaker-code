@@ -227,6 +227,7 @@
 	</MenuItemList>
 	<Conditions>
 		<Install>
+			<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_0FF9B24491D71440918592ED81FEBD84</DDRREF>
 			<Calculation><![CDATA[1]]></Calculation>
 		</Install>
 	</Conditions>

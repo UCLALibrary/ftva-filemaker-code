@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="25" name="Hide Window"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step hash="02C1932A96783006BCD207EB1DEDA05B" id="31" name="Adjust Window" enable="True">
+		<Step hash="EEF5EECEDF730077BA9CB8559C7BB41E" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="A99B36BCF463AC093AB6D460B55292A4">_2D37AA1A888456439A2E4FD00EA2D50A</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Hide" value="5"></List>

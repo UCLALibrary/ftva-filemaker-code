@@ -348,6 +348,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="D68986E5B6B52D0437C8BA57A8D95BFD">_4FF553BE5E26A741819BEF1E4FCC07C5</DDRREF>
 				<Text><![CDATA[If(episode_title=""; ""; "-")]]></Text>
 			</Calculation>
 		</Field>
@@ -359,6 +360,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="7D788859455A6AFD2AE61D97DCEBE50B">_A5159E48F50FD64298603545FC8EF605</DDRREF>
 				<Text><![CDATA[Left( title; 50)]]></Text>
 			</Calculation>
 		</Field>
@@ -370,6 +372,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="F739095406BF65A4FDB19A9887995DB0">_9563B029DF638942B3CB051C1C513103</DDRREF>
 				<Text><![CDATA[Left( episode_title; 50)]]></Text>
 			</Calculation>
 		</Field>
@@ -397,6 +400,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="985B9DB6876D65D05D534FBB7D6C478C">_2F227CE6A238514983B524681B443EE6</DDRREF>
 				<Text><![CDATA[Left( format_type; 1)]]></Text>
 			</Calculation>
 		</Field>
@@ -1308,6 +1312,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="04E03FAEE1622ED32100F3D9DF1F2768">_671369EBC70BCE48AF01616C16332489</DDRREF>
 						<Text><![CDATA[GetAsBoolean ( Self )]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1420,6 +1425,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="9BEC4C5D2CF1659E640FE3DBFE5C12E3">_014628E090B6944FB13D29589BBC8F03</DDRREF>
 						<Text><![CDATA[Get ( UUID )]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1435,6 +1441,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="CF373C1B6FD4B990C4E61D39F4EE28BC">_5F87DBB193653B4B97D285DD104F87C6</DDRREF>
 						<Text><![CDATA[If ( Get ( layoutName ) = "NEW DIGITAL" ; 1 ; 0 )]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1451,6 +1458,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="0C26B47330DC9FCC9A259415DFD07BAA">_03A94B00E0AEA6498DABE201AA3E4F1C</DDRREF>
 						<Text><![CDATA[Case (  digital_record = 1 ; Not IsEmpty ( media_type ) ;  1)]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1468,6 +1476,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="CF10F7F25F29BB7DF4C97B844B4B7120">_52343963CB86C3408E3514DBC6BB0863</DDRREF>
 						<Text><![CDATA[Case (  digital_record = 1 ; Not IsEmpty ( asset_type ) ;  1)]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1569,6 +1578,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="235AAF55566A8C8AE7F9B7DE46B66D2A">_1C377D6E1A97FA4BA962754F5F11AA3B</DDRREF>
 						<Text><![CDATA[Case (  digital_record = 1 ; Not IsEmpty ( specific_carrier_type ) ;  1)]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1586,6 +1596,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="956E8673FF2B70C04D54F9195B7FCF90">_00524051423C9C44936E92951D205B26</DDRREF>
 						<Text><![CDATA[Case (  digital_record = 1 ; Not IsEmpty ( wrapper_format ) ;  1)]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1688,6 +1699,7 @@
 				<Calculated>
 					<Calculation>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+						<DDRREF kind="ChunkList" hash="EC258F085738967644CC555939C4D1B6">_ACEF19A130A66C47A620620605D01ABC</DDRREF>
 						<Text><![CDATA[Case (  digital_record = 1 ; Not IsEmpty ( object_purpose ) ;  1)]]></Text>
 					</Calculation>
 				</Calculated>
@@ -1786,6 +1798,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="8576D38E363B60A136029EFCFAD9C0EB">_AAEE55AD987AF745830A1EFFEBC5FB4D</DDRREF>
 				<Text><![CDATA[UUID]]></Text>
 			</Calculation>
 		</Field>
@@ -1797,6 +1810,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="5022F5CBCA08DD2232E1689E81F149B2">_AA8A31F385BF2147B0B1D96D82D4F50B</DDRREF>
 				<Text><![CDATA[Count ( Digital Media_Item Unit::UUID )]]></Text>
 			</Calculation>
 		</Field>
@@ -1816,6 +1830,7 @@
 			</Storage>
 			<Calculation>
 				<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+				<DDRREF kind="ChunkList" hash="11B60B6E83B046D06B0EFBF20B1C4819">_F48FB736FE91204BA7BE79153274971D</DDRREF>
 				<Text><![CDATA[Case ( digital_record = 0 ; "Analog Record";digital_record = 1 ; "Digital Record";"Not defined")]]></Text>
 			</Calculation>
 		</Field>

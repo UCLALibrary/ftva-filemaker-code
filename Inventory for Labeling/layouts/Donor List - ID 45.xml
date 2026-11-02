@@ -363,7 +363,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject hash="A5270FAF579C6E22C2C0BECB739B2D6B" id="12" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="3C40CFE3A66898138B158D27520F626E" id="12" type="Edit Box" name="" kind="1">
 					<Bounds top="65" left="511" bottom="90" right="581"></Bounds>
 					<Options>805306448</Options>
 					<Field>
@@ -403,7 +403,9 @@
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_0B96A2F76ACC3C4E9F2E283694DF4054</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>

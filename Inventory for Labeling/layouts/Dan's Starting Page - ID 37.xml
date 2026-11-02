@@ -58,13 +58,14 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="3823C872A3ABA4C92DDC415AB85A9BD2" id="11" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="6F8F96DB367159F20E86A914723C1BF1" id="11" type="Grouped Button" name="" kind="8">
 					<Bounds top="238" left="147" bottom="323" right="269"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="42C0FF5A842D2D96BB93B54DA67B3303" id="6" name="Go to Layout" enable="True">
+							<Step hash="756B934C4DC43D89589AB63D61434EBC" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="20743FCFDCA514F1A80FEE99615E1DFD">_32D344C9150EF746AF69994E932ECF06</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">
@@ -154,13 +155,14 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject hash="A3543FCB568902F5887C2D7AEFF436D2" id="13" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="51B7E60B356C8ED909DBF278B90B709D" id="13" type="Grouped Button" name="" kind="8">
 					<Bounds top="238" left="279" bottom="323" right="401"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="EE277F7792EDC3BFC3B9F1CAC15833B0" id="6" name="Go to Layout" enable="True">
+							<Step hash="550C7284D3C1C15B02EB21C796018064" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="8F952BA6DDB32F1FC094A65971D7D31E">_B3DD211301F3F64A9208B50AE4331BE5</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">
@@ -250,13 +252,14 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject hash="1314AC282A8FE572B9ADC05F8D1B61A2" id="15" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="1BE46A164107F7D9C26BF953BAA15573" id="15" type="Grouped Button" name="" kind="8">
 					<Bounds top="238" left="411" bottom="323" right="533"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="76D3C0AC4D2157BDA75A006A236C3D56" id="6" name="Go to Layout" enable="True">
+							<Step hash="55F30C7527A5259EBE459EE2EAD4BC88" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="BD9E3C1B55B9DFEB6ACD29E750B11067">_B9DB72977CC6C4479407A92FEFD7398C</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">
@@ -392,13 +395,14 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="7A08607141A9144EE1342F91B65C1F8F" id="17" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="225151AA099E68A7952862118A03764A" id="17" type="Grouped Button" name="" kind="8">
 					<Bounds top="238" left="15" bottom="323" right="137"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="33ABE7E855A763B3E3BE5BD139E9E5DF" id="6" name="Go to Layout" enable="True">
+							<Step hash="F2C83A012C03161965D32B764686EBD4" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="4BC4044E5F26BE55E12411DA51DE5916">_7496D5942688564B9B6CDDF06F3290ED</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">

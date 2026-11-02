@@ -1,40 +1,45 @@
 <Script>
 	<ScriptReference id="12" name="close labeling"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step hash="F02DF465D43456590DB9E058C71013F5" id="34" name="Close File" enable="False">
+		<Step hash="00231D79732AA09E574E732742EE2686" id="34" name="Close File" enable="False">
 			<Options>16</Options>
+			<DDRREF kind="StepText" hash="F317FB45395619333909EC074213483E">_28CB1A4E90309A488238632315C4AC09</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
 					<DataSourceReference id="5" name="Boolean"></DataSourceReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="0B87DF4217293D2F8EA3B4C6753ED267" id="34" name="Close File" enable="True">
+		<Step hash="6AE19AA84C30E623CD7B45FD2E4E05DA" id="34" name="Close File" enable="True">
 			<Options>16</Options>
+			<DDRREF kind="StepText" hash="146D7A5A27EE87E926283AEE5FEBF87E">_CD17488E0FB4A14BB91593CC207D0D88</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
 					<DataSourceReference id="1" name="Inventory for Labeling"></DataSourceReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="BE1045076A9844814F7E15D0047B59F9" id="34" name="Close File" enable="True">
+		<Step hash="61C050E2BBACF2CEA4BED0A75C0AC7DD" id="34" name="Close File" enable="True">
 			<Options>16</Options>
+			<DDRREF kind="StepText" hash="01BECB52BC0FCF5B009A614A15E59C0A">_AB7E2331F612654398FCD1BD7891651D</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
 					<DataSourceReference id="13" name="Labeling"></DataSourceReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="9241A2225E4835C293605A4483FB208E" id="34" name="Close File" enable="True">
+		<Step hash="136DEF28EDE2796B5D6C6F0E204255D2" id="34" name="Close File" enable="True">
 			<Options>16</Options>
+			<DDRREF kind="StepText" hash="3DF2CE614870E09289CB62E6E31784B6">_81521692E1263F43BE66DC63892EB996</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
 					<DataSourceReference id="2" name="Labeling Database"></DataSourceReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="975FE67C6A86802799D94F9FDB3CE9E8" id="34" name="Close File" enable="True">
+		<Step hash="1726485420F91EC1F9720551DCEDBC5F" id="34" name="Close File" enable="True">
 			<Options>16</Options>
+			<DDRREF kind="StepText" hash="3AB6A3FCEC7F9A7BE0129E42C4E99674">_3DB3F529889BE44182B09BF2DAD7AFA4</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
 					<DataSourceReference id="28" name="Film Inspection History"></DataSourceReference>

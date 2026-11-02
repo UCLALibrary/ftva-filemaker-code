@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="100" name="Insert Det Field"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step hash="ECCBDD3BDC87D66C319FA3F24045190D" id="6" name="Go to Layout" enable="True">
+		<Step hash="8D9A154050F6BFF68137DD45C51D5219" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="4518E3EE319C6EF897E365635498A622">_70FB8A7368173445A7E8FCD40AFC1604</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,15 +15,17 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A54F71A7C9D4E7CA65F5DC7003517F7D" id="71" name="Loop" enable="True">
+		<Step hash="8A6AEA99D56A3DAD889F3AA70EB403C5" id="71" name="Loop" enable="True">
+			<DDRREF kind="StepText" hash="78EF25C5C64BD30241A728A8B7D355EE">_C298A63518B7E445B02F6209B52409C5</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Always" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="C8DCE6EEEA3EBEF858974DCD444689E8" id="61" name="Insert Text" enable="True">
+		<Step hash="02BBEDA76E550901D58024B188963653" id="61" name="Insert Text" enable="True">
 			<Options>4101</Options>
+			<DDRREF kind="StepText" hash="8BE171EE1ABED10A214849FA754584AA">_DB5A74D37042164C849FE239FCD5A907</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
@@ -32,6 +35,7 @@
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_D4CB48C03C532F4B959EB7CFE2B2E5DA</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -44,8 +48,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B610663CC9E23D2AC2AF3D35DF263AB0" id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="0E8C7FEBFF4AA32BC2B87B1EE930FA48" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>8194</Options>
+			<DDRREF kind="StepText" hash="4D8ED7602A9BA7AA2BBCDFB972BED242">_C1A9DEB394E4744180AF61027E84894F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Next" value="4">
@@ -54,7 +59,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="825696C17CDB03CEFE572283EA315BD6" id="73" name="End Loop" enable="True">
+		<Step hash="9EA59C5EA71FD04F223C55AC21C3F76C" id="73" name="End Loop" enable="True">
+			<DDRREF kind="StepText" hash="506A1956DC5DD3B5D2AF1C053AB993CD">_0AB4CBEA3944154785284369179861AB</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

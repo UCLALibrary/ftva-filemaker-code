@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="113" name="Cut Barcode from Type and Paste in Barcode item field"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step hash="8F245A8AA4CCFEA254B28F129CBD3760" id="6" name="Go to Layout" enable="True">
+		<Step hash="A991C2587E1A8A54AF5FC69BC836318D" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="4518E3EE319C6EF897E365635498A622">_D75B90C7A93E47438822F6B1C8C4ECFA</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,15 +15,17 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="368FDFDB46DFA259D1587B5DA6407C3F" id="71" name="Loop" enable="True">
+		<Step hash="C795005EA5A071B60BE9442521C2C2D6" id="71" name="Loop" enable="True">
+			<DDRREF kind="StepText" hash="78EF25C5C64BD30241A728A8B7D355EE">_82E09E15E7AB4C458E0EED4BAC240492</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Always" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="B2253185367BFA85DEBA081CD6EB0599" id="17" name="Go to Field" enable="True">
+		<Step hash="C4C6DAF2BFEFF53424049B584B8457C9" id="17" name="Go to Field" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="BAF55B03129A16CD5152670D52E6B48D">_72A2C6770004434C9D28FCCBF4503957</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select/perform" id="4096" value="True"></Boolean>
@@ -32,6 +35,7 @@
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_D173A45B3F625449BFEBEF30662D2A86</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -41,8 +45,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="35B3F1DFDD7C89EA76ED271D20DD0072" id="46" name="Cut" enable="True">
+		<Step hash="DB42BBB7D1130526B50DF29D536D5B58" id="46" name="Cut" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="C0B12E90058E9687F7B587FA54D10773">_1B3F6E5E6FC7434CBDB3E95C4265DD23</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
@@ -52,6 +57,7 @@
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_489CB9AEA1111343B75AAC33981F2331</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -61,8 +67,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="E740012E79C7FA972788738F4440B24D" id="48" name="Paste" enable="True">
+		<Step hash="A3EFB19296D181B7077C20B0D7C53ED9" id="48" name="Paste" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="FB798C68E83BFFF5C3BFEE79B0CA46BD">_942E86156615364D86A0F8FFE3D0376F</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
@@ -75,6 +82,7 @@
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_1F31C08C8A911845BEB8FD03448BF5B8</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -84,8 +92,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="ECC9529A40829856FF6FAD699E01F0C1" id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="8CA3F13A4614567D066338A84275BE6E" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>8194</Options>
+			<DDRREF kind="StepText" hash="0EE92A6A8A8DD171F53B9688547FB9CC">_13A7FB7A3ABE894C946DA5E28BBAA1DE</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Next" value="4">
@@ -94,7 +103,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="887207C461318D55C5AE610A84421057" id="73" name="End Loop" enable="True">
+		<Step hash="F1EDD060FAFC0C8F585A414DFA891F78" id="73" name="End Loop" enable="True">
+			<DDRREF kind="StepText" hash="B2F23E1725AA724A584501B7F4D6D4D1">_3CE2F6E469CDD442A0508600848BF0D4</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

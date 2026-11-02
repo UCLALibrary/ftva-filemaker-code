@@ -47,7 +47,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="7DC5963F13ED90949D685584C9ECA48E" id="10" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="A29FF30E2F77911C764C28385C057548" id="10" type="Edit Box" name="" kind="1">
 					<Bounds top="35" left="195" bottom="57" right="448"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -157,7 +157,9 @@ self:focus .repeat_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="3" action="OnObjectModify" browseMode="True">
 							<ScriptReference id="155" name="JT_filter">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_E79F6FD59244FD4294C6A9D28C598894</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -483,7 +485,9 @@ self:normal .icon
 	<ScriptTriggers membercount="1">
 		<ScriptTrigger id="101" action="OnLayoutEnter" browseMode="True">
 			<ScriptReference id="155" name="JT_filter">
-				<Calculation></Calculation>
+				<Calculation>
+					<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_9D86D7B05A205C4FA8FE042161AD3B0C</DDRREF>
+				</Calculation>
 			</ScriptReference>
 		</ScriptTrigger>
 	</ScriptTriggers>

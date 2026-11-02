@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="39" name="Edit Format Size"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step hash="5E8C286428AD162B132B9A2EDF833A66" id="1" name="Perform Script" enable="True">
+		<Step hash="5B3D341C9D9E02F64D3403E7E3A71658" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="E3148BFFE2E43CC38D7DF4C8A521A4DF">_714CB3D06EF1EC49A6FCE0D746AC3674</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="BE44F067DA97F842F381A36BCB6BB719" id="123" name="Select Window" enable="True">
+		<Step hash="25272F54746608F57160367EDABEAAFC" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="D4AF5C6478148572C44D9E09FF8B9ED9">_6A34CD6D83AC0E419055A19C80C49959</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,6 +25,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="0F76F955650CC189E96A58E467133B29">_EA3D4C8D4CFBDC46A14C38C1841744B5</DDRREF>
 										<Text><![CDATA["film_size"]]></Text>
 									</Calculation>
 								</Calculation>

@@ -79,7 +79,7 @@ self:normal .inner_border
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="6">
-				<LayoutObject hash="AD56DA50C2C2017621FDD3D723B36281" id="1" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="38D52151A003A04CAEE8C3988FF58BEA" id="1" type="Edit Box" name="" kind="1">
 					<Bounds top="60" left="18" bottom="76" right="91"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -142,7 +142,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_4F4489C19C7B8B4FAEA683DCAE6B791F</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>

@@ -5,6 +5,7 @@
 			<FieldReference id="8" name="participant_uuids" repetition="1">
 				<Calculation>
 					<TableOccurrenceReference id="1065120" name="ItemUnitRelationship"></TableOccurrenceReference>
+					<DDRREF kind="ChunkList" hash="ED6A4F56495F5DFA38D07C85722989CC">_D04C5B8891013849B4F1CF63B27A8F3A</DDRREF>
 					<Text><![CDATA[source_uuid & ¶ & target_uuid]]></Text>
 				</Calculation>
 				<BaseTableReference id="137" name="ItemUnitRelationship"></BaseTableReference>

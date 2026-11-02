@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="78" name="open url"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step hash="49A4C5F571F924E9DA9F6031F981D132" id="111" name="Open URL" enable="True">
+		<Step hash="67D963A3E023C2B257E3F09A5B22C1FF" id="111" name="Open URL" enable="True">
 			<Options>16512</Options>
+			<DDRREF kind="StepText" hash="D6C5E4DE90AC5018879F5A387663928C">_89A4E4B79BB11943AD5A798CD072661C</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="In external browser" id="256" value="False"></Boolean>
@@ -14,6 +15,7 @@
 					<URL autoEncode="True">
 						<Calculation datatype="1" position="0">
 							<Calculation>
+								<DDRREF kind="ChunkList" hash="89FB4A905E980838B1E5A636E721EC6E">_656DA97EE09AE444A478A694782C1FC6</DDRREF>
 								<Text><![CDATA[Inventory for Labeling::orion]]></Text>
 							</Calculation>
 						</Calculation>

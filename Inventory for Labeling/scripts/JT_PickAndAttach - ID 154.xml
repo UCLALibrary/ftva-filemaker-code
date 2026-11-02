@@ -1,13 +1,15 @@
 <Script>
 	<ScriptReference id="154" name="JT_PickAndAttach"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step hash="7CC9D5BF98C2F6C6930E316F31B4CB5E" id="141" name="Set Variable" enable="True">
+		<Step hash="3B70C69E75C0C496B64B0BF1AEB2426B" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="07E84DE817C49B4B6749BDC1A92985C1">_34504BD4E23E5D4E8A54F223018FB0FC</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
 					<value>
 						<Calculation datatype="1" position="1">
 							<Calculation>
+								<DDRREF kind="ChunkList" hash="F9E9D4914FBB816A2AABEBBF4025B686">_CB90802CAA6C9F44BB62A11BEB054A6B</DDRREF>
 								<Text><![CDATA[Inventory for Labeling::inventory_id]]></Text>
 							</Calculation>
 						</Calculation>
@@ -16,6 +18,7 @@
 					<repetition>
 						<Calculation datatype="1" position="2">
 							<Calculation>
+								<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_CDB33A6ED43C344FBB9A9B75859E3438</DDRREF>
 								<Text><![CDATA[1]]></Text>
 							</Calculation>
 						</Calculation>
@@ -23,8 +26,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="6CE76E439E7366B8D6D2C29D952B6095" id="122" name="New Window" enable="True">
+		<Step hash="D6B83CFC4DA25C3C735223D8AD541878" id="122" name="New Window" enable="True">
 			<Options>16394</Options>
+			<DDRREF kind="StepText" hash="23D056956C26C1A8ADDEF1C8701BE632">_08519C56F52EB847BC46F4A09C9C39D9</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -32,6 +36,7 @@
 						<Name>
 							<Calculation datatype="1" position="0">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="2ACBB2BB79B09BDEEDA4A9748312AC50">_50F592BB4960C04E8D080DA2471DFDCC</DDRREF>
 									<Text><![CDATA["Pick Carrier"]]></Text>
 								</Calculation>
 							</Calculation>
@@ -43,6 +48,7 @@
 							<height>
 								<Calculation datatype="1" position="1">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="DE31D0DD746953C1568B6BEB661A72C2">_0709973407C06245BD87DDADA30C5233</DDRREF>
 										<Text><![CDATA[500]]></Text>
 									</Calculation>
 								</Calculation>
@@ -64,7 +70,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="1CF6FC7C2031C0834E434FA4337DD46C" id="80" name="Refresh Window" enable="True">
+		<Step hash="3C66C48B7EA3641E2FE25040FD5471E8" id="80" name="Refresh Window" enable="True">
+			<DDRREF kind="StepText" hash="930902DAAA0FA020907460419E3C7A46">_27B7C44517634E4A8FBC7D1F73A30061</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
@@ -74,14 +81,16 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="0C2070F2DF6887A73858E817713E69D7" id="76" name="Set Field" enable="True">
+		<Step hash="528B712135E143D35DAA3973B55FF83B" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="DEADAD77AB6846595CC2A33624250D4D">_B3AA4A13DE6B1048A8C7188D42CD2C2F</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="10" name="gSF_Query">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_982888132BA3EF4CA79662EAAECE9F7D</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -92,6 +101,7 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="26631CDF3EEB0CE74C7FC665903CAC32">_A1C1B4AE1C196245B7718B047103BAFB</DDRREF>
 							<Text><![CDATA[""]]></Text>
 						</Calculation>
 					</Calculation>

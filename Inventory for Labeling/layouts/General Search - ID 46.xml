@@ -49,12 +49,13 @@
 					</ExtendedAttributes>
 					<FieldList></FieldList>
 				</LayoutObject>
-				<LayoutObject hash="078DCB4925F9D5F944F76D1CD0A20977" id="27" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="2BFE2B9CAD51CA21E9D7FC8BB32E66AB" id="27" type="Grouped Button" name="" kind="8">
 					<Bounds top="19" left="5" bottom="54" right="137"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="D2CCAD1A3892B3E41FFF0BE83649A2E9" id="28" name="Perform Find" enable="True">
+							<Step hash="58C45C8791F8157323A004DB1F177241" id="28" name="Perform Find" enable="True">
+								<DDRREF kind="StepText" hash="A72DD7A3F37C164F37A9D6D941D3FEC4">_8AF26A7A5A993B4DA1EA014BB061D519</DDRREF>
 							</Step>
 						</action>
 						<ObjectList membercount="1">
@@ -960,13 +961,14 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="2CA8ED076D8B972F045EC86FC11FBA9E" id="29" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="1DBAA04A14B48F2C483F263A72BF46B3" id="29" type="Grouped Button" name="" kind="8">
 					<Bounds top="103" left="14" bottom="117" right="134"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="9B9A6E787041348ABB28637E64F2B802" id="6" name="Go to Layout" enable="True">
+							<Step hash="02E41A3A6E34FB0F126892BBEDA4FCE7" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="568E6BBB83D31EDD9798CFB7C5F25CB8">_C4036057BA15AE4D882A96622942103D</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">

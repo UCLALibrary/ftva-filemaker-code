@@ -594,7 +594,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="745BBC24AC4D14D6D2A40ECE4FFA1F1F" id="7" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="AF35BDE590BF9096102DBD2FD17097BA" id="7" type="Edit Box" name="" kind="1">
 					<Bounds top="66" left="513" bottom="119" right="683"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -645,7 +645,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_038F1C21DB7F204B937BAE9A6DD004A3</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -1733,19 +1735,20 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="A7748CEDBE03A841E8783F8AF9204683" id="112" type="Portal" name="" kind="9">
+				<LayoutObject hash="F553246061FBAF31E8E9EC5D3A991E4B" id="112" type="Portal" name="" kind="9">
 					<Bounds top="188" left="616" bottom="308" right="937"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="7">3</Options>
 						<ObjectList membercount="11">
-							<LayoutObject hash="593B0019322D6226E2FBAEE75B44C481" id="133" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="90AD83972C4DE37445DD2CD080116E8D" id="133" type="Grouped Button" name="" kind="8">
 								<Bounds top="0" left="270" bottom="28" right="306"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="F487E905597A96CF0831C0FDA3783EB2" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_984AC0132F450A488F524616ADBA9D7B</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>

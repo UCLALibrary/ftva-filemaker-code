@@ -207,7 +207,7 @@ self:normal .text
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="CE5C2FD48E5EBF04547950002A590C1D" id="178" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="6288E48A40406047A43FC2744D80F35A" id="178" type="Edit Box" name="" kind="1">
 					<Bounds top="43" left="161" bottom="66" right="310"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -309,7 +309,9 @@ self:normal .baseline
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="4" action="OnObjectSave" browseMode="True">
 							<ScriptReference id="160" name="NDM-UniqueInventory_no">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_D14A49D616C9C344812FB87677FEEE33</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -3320,19 +3322,20 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="3AC2D0D0D52DD6DDAB8DAC82F316E087" id="228" type="Portal" name="" kind="9">
+				<LayoutObject hash="49DE1807DE80A743056B99922F316C5F" id="228" type="Portal" name="" kind="9">
 					<Bounds top="140" left="731" bottom="246" right="1585"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065117" name="Inventory_StorageFormat_JT"></TableOccurrenceReference>
 						<Options show="5">1</Options>
 						<ObjectList membercount="17">
-							<LayoutObject hash="BD9C7F27D7D375BCE4089BA37CDFADD6" id="229" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="59B066AD9DA9DB430C20B73BD4E0E8C9" id="229" type="Grouped Button" name="" kind="8">
 								<Bounds top="2" left="794" bottom="17" right="830"></Bounds>
 								<Options>805371912</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="62C493A651B26CE99B1A0D19755431E0" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_B674ED5CA23F8E489E738886890E1534</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -8955,7 +8958,7 @@ self:normal .text
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject hash="1A950B220E7D0C81642085C53FD6270F" id="320" type="Drop-down List" name="" kind="1">
+							<LayoutObject hash="EFAD9CECCA0567BD6CA50955ADAF3953" id="320" type="Drop-down List" name="" kind="1">
 								<Bounds top="2" left="1170" bottom="94" right="1417"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -8966,6 +8969,7 @@ self:normal .text
 									<Display Style="1" show="1">
 										<Placeholder findMode="True">
 											<Calculation>
+												<DDRREF kind="ChunkList" hash="0D584821EA1115366956EF01D9A448D2">_9BF7731E34EA0E4AB809BA1833F720B2</DDRREF>
 												<Text><![CDATA["Please Select Value from Drop-Down"]]></Text>
 											</Calculation>
 										</Placeholder>
@@ -9213,12 +9217,13 @@ self:normal .text
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject hash="4E8756433CE0DA980069631391E2CFC9" id="326" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="7B14E428DF5D9CA8293DFDD8248A4DB4" id="326" type="Grouped Button" name="" kind="8">
 								<Bounds top="36" left="1495" bottom="51" right="1531"></Bounds>
 								<Options>805371912</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="E37673C63D63E45605AB46190DA73B5F" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_CC6210C27D11024EAC875D6AAEE14966</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -10192,12 +10197,16 @@ self:normal .baseline
 	<ScriptTriggers membercount="2">
 		<ScriptTrigger id="101" action="OnLayoutEnter" browseMode="True">
 			<ScriptReference id="161" name="Show Digital">
-				<Calculation></Calculation>
+				<Calculation>
+					<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_2D549DB29989484DA60B0867029F4665</DDRREF>
+				</Calculation>
 			</ScriptReference>
 		</ScriptTrigger>
 		<ScriptTrigger id="104" action="OnRecordCommit" browseMode="True">
 			<ScriptReference id="159" name="New Digital - required fields check">
-				<Calculation></Calculation>
+				<Calculation>
+					<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_8DEB8582C6ACB4488FA37A956F64EE04</DDRREF>
+				</Calculation>
 			</ScriptReference>
 		</ScriptTrigger>
 	</ScriptTriggers>

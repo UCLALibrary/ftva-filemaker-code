@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="97" name="go to traffic information Copy"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step hash="811C1048B5BC83E44AF70BD42ACC2BA3" id="74" name="Go to Related Record" enable="True">
+		<Step hash="6CD7A6A6B4EEFBB478F67DFC36CD5C97" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
+			<DDRREF kind="StepText" hash="695D20756C22DFDC383AD3A14AD5E643">_D682C8CDD39FBC4DBBEB5B8EB2B5F554</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065106" name="Traffic Records"></TableOccurrenceReference>
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="27DE9943C85E190E479CCD9D6B7EBA97" id="1" name="Perform Script" enable="True">
+		<Step hash="5E7594AB6E3651D9F9A8EFB963FF8EA5" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="7D0E537701F951D3F5D39A8AE5ACD0FC">_F78CAD5F7F42E34CB8820BCFC4F3D09B</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -27,8 +29,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="0E55AFBE47EE23C991DCAD5B99900E20" id="123" name="Select Window" enable="True">
+		<Step hash="BD15B71147C915E0AFE1F63B5613B71A" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="07DD29E042563164D6CA568E135A474B">_45EA0B805D30DC4FA859B1DA115FF46D</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -36,6 +39,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="F55801C1B463C080D43313B98E1BBD5E">_06F29847A2B62C4B981A83EA8C849D96</DDRREF>
 										<Text><![CDATA["Traffic Record"]]></Text>
 									</Calculation>
 								</Calculation>

@@ -249,13 +249,14 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="BCB98BCA6C1477C370B530C0F8FE68D8" id="196" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="E32A930FDC57135704DD7F61525BEC9A" id="196" type="Grouped Button" name="" kind="8">
 					<Bounds top="2" left="4" bottom="22" right="120"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="716B60D8F84C4F7D68168BB3B1B90169" id="6" name="Go to Layout" enable="True">
+							<Step hash="9EAC6D8F8854C2B93D93625C1DED6FD7" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="740E3D78E8E093FB3C217AB4E5170A5D">_88C5C2D27B747640A01AFE3735C3A30D</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">
@@ -1655,7 +1656,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="7D731FC5C40DA32923E484A717D7CE86" id="28" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="3EEB1D993F7A8104956133735B6353C6" id="28" type="Edit Box" name="" kind="1">
 					<Bounds top="47" left="121" bottom="63" right="194"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -1720,7 +1721,9 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_650684A1357882408F747312C12A28CF</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
@@ -4280,12 +4283,13 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject hash="6FDAAB86E046590C717D0CDAF83171FF" id="178" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="3B9257CDA530950877DDE33BF6D95205" id="178" type="Grouped Button" name="" kind="8">
 								<Bounds top="2" left="330" bottom="15" right="366"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
+										<Step hash="EB0E33600DBA04FD5878E5F3B4D3A29F" id="104" name="Delete Portal Row" enable="True">
+											<DDRREF kind="StepText" hash="88593D1A8439140F2CA8A680FA3A7635">_2F405764D69A814099C6B6B3C5D90E0B</DDRREF>
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -6852,13 +6856,14 @@ self:normal .row
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="A07FA1545A5C6F04C19C48686E7A2338" id="153" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="F4558F749D5CFB0ACB27D34C575AC058" id="153" type="Grouped Button" name="" kind="8">
 					<Bounds top="553" left="770" bottom="583" right="895"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="EEC12087571568454C6994C126402FD2" id="74" name="Go to Related Record" enable="True">
+							<Step hash="E5D76E520700F8382ABF036BE3861CD3" id="74" name="Go to Related Record" enable="True">
 								<Options>33554696</Options>
+								<DDRREF kind="StepText" hash="28271A933BF4C0D5DC6F6FAF3A742D06">_99EBB27DD220F143B63EE354626571FE</DDRREF>
 								<ParameterValues membercount="1">
 									<Parameter type="Related">
 										<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>

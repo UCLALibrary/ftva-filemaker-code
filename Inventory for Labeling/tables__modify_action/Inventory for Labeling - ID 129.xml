@@ -5,6 +5,7 @@
 			<FieldReference id="235" name="digital_record_calc" repetition="1">
 				<Calculation>
 					<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
+					<DDRREF kind="ChunkList" hash="11B60B6E83B046D06B0EFBF20B1C4819">_0015EDCA4FCF3C4293DE75A69099917D</DDRREF>
 					<Text><![CDATA[Case ( digital_record = 0 ; "Analog Record";digital_record = 1 ; "Digital Record";"Not defined")]]></Text>
 				</Calculation>
 				<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="110" name="vault check"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step hash="D6F0968B0BF86003A19C4505FB16EE11" id="6" name="Go to Layout" enable="True">
+		<Step hash="86FBFFF7E35BDD883E33ACFA6E596B0F" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="65B4CBC6CF4C6C81677CE4C6EB840B27">_31C5B5E2B28F8240A8F2D352E1648422</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="8CCA82C60888DD598AE63B362FAC3C2D" id="39" name="Sort Records" enable="True">
+		<Step hash="2C13691A5BBDB3BC20D9FB8997D30595" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="5C600EAB71FBABCECB2068C933726AE9">_D6BF49977CACE04D8F0516D345EB1F58</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -38,30 +40,34 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="C8D3C4BA4B383B8E5721531FD9169DEA" id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="CD20005FE07D9A7FFF6B85A8BA662B00" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="5617D5D23B50DEF6B13B70849E0B7171">_4F46C3A16B749942A7CB654EA603D778</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="21E54E82F8ADDD847ED49F640EC18468" id="41" name="Enter Preview Mode" enable="True">
+		<Step hash="4FC40C305A306DC9A16657FEC4FC0372" id="41" name="Enter Preview Mode" enable="True">
 			<Options>16777216</Options>
+			<DDRREF kind="StepText" hash="42059429C15EC96454D3E39E58507BEC">_529D2E78F5694540B9706E7A2B741A9E</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="CC85B64200B142E9EEB9E5CB13F4EA1F" id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="66F6C70AF81568C84A2BC4945FF286A7" id="55" name="Enter Browse Mode" enable="True">
+			<DDRREF kind="StepText" hash="E17606D02CD53D7D291FAC4E40418B25">_45542FA167E3304E8632630E943CEC3E</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A273FB23C5DBAB455E797A0E1E6ED8B5" id="6" name="Go to Layout" enable="True">
+		<Step hash="F0C2BEF14AE2DC1430A5EADFF97DB04E" id="6" name="Go to Layout" enable="True">
+			<DDRREF kind="StepText" hash="475861B95BA05C7D7B763190F43E1A4C">_CF06D79AC3011D4A8820F6CA7BEE0FB7</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

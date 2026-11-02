@@ -697,13 +697,14 @@ self:normal .inner_border
 ]]></LocalCSS>
 			</Definition>
 			<ObjectList membercount="1">
-				<LayoutObject hash="897882B1791BFE16FF5413496A1BF571" id="33" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="E4833EFFDFDF1C91E3543D56455F82C3" id="33" type="Grouped Button" name="" kind="8">
 					<Bounds top="337" left="18" bottom="359" right="641"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
 						<action>
-							<Step hash="F08FB3B519ECAE946CEB3D9824E71324" id="6" name="Go to Layout" enable="True">
+							<Step hash="6BDD8624B12889A6319C62737F08D953" id="6" name="Go to Layout" enable="True">
 								<Options>8</Options>
+								<DDRREF kind="StepText" hash="CFD71C16E137A51F6FF0F8CDD25B6DEE">_FFEBD69DAB68634F8DB0A342BB65588C</DDRREF>
 								<ParameterValues membercount="2">
 									<Parameter type="LayoutReferenceContainer">
 										<LayoutReferenceContainer value="5">

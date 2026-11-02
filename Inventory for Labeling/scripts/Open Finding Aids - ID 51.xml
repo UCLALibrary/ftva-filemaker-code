@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="51" name="Open Finding Aids"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step hash="EB236D4C6BAF3C7348909784C268002A" id="6" name="Go to Layout" enable="True">
+		<Step hash="C6ECD3743AE6110AFB4C5FDDD7808A5E" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="6290AA158A3D28DF73B4C986BCE9C66F">_51D320831C800D4A9C5AB2E027B39718</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,22 +15,25 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="A9EDC89B1CB0CB08E11A9AAAA03D8056" id="22" name="Enter Find Mode" enable="True">
+		<Step hash="10B606AA5B1809BA9D73E8ECEC559CA7" id="22" name="Enter Find Mode" enable="True">
 			<Options>32768</Options>
+			<DDRREF kind="StepText" hash="9912FA4F00EE3B57B9B81978965F91A2">_95FDF8EEC0F8C74B91E1E173FC743CE5</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="FF65B3E51675C2EC470E9DDCCF20A2C6" id="76" name="Set Field" enable="True">
+		<Step hash="03ACC2A5B3F1DC673D7AA9A38AB7A73F" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="6B93F8ABB71FB8FB2571178E31A6EE75">_4E16E6F6F1063D4DA083B54C622072AE</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="23" name="type">
 						<repetition>
 							<Calculation datatype="1" position="10">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_808C042199DBE741B8285C680A6201E5</DDRREF>
 									<Text><![CDATA[1]]></Text>
 								</Calculation>
 							</Calculation>
@@ -40,17 +44,20 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="1E2FF690B4ACC7AD086A4ECD7955192D">_CD02486426019D48AF9BCC0E1337D2DB</DDRREF>
 							<Text><![CDATA["Finding Aids"]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="8B655B5D2F9B3DDC3E42473C65FCFBF8" id="28" name="Perform Find" enable="True">
+		<Step hash="58AC1E77630E7F0C72D0DFCA6A1F461E" id="28" name="Perform Find" enable="True">
 			<Options>32768</Options>
+			<DDRREF kind="StepText" hash="4DBF565012BF39F39FEB3BE74FE15396">_D13761DFA902004A925CDF59264812EF</DDRREF>
 		</Step>
-		<Step hash="B4C6A1D88A69831143CCAD69C5C1025C" id="6" name="Go to Layout" enable="True">
+		<Step hash="BEC0F3DC6E9B2DAE4A658F152D839539" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="C64EBE1F6CD3FDB73360E598C2B6E4EF">_FCFD99F57655CE44B0E2870D56261370</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -62,8 +69,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="6D9F3D24FC3253CD75DBE4AF387A04B3" id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="665FF249D21B1B5593100D85C319BF2E" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="E6C14348EE7DF1D75F623B886C651872">_DD6B00E89E9D91409DEAD2B0C885EC29</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Lock" id="524288" value="False"></Boolean>

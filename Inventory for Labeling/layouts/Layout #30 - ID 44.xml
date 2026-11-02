@@ -445,7 +445,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject hash="C2EEAF008D27B57F6FB4806EE7E81A37" id="14" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="7594F86C4FC69C7B5B291D3CDF64BB4E" id="14" type="Edit Box" name="" kind="1">
 					<Bounds top="39" left="437" bottom="70" right="536"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -491,7 +491,9 @@
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_075EB61D9498964BB0AA64F511579306</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>

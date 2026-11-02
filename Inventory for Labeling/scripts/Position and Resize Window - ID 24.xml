@@ -1,32 +1,36 @@
 <Script>
 	<ScriptReference id="24" name="Position and Resize Window"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step hash="A340B8DBD9A17F76FD464BED63C1B13C" id="30" name="View As" enable="True">
+		<Step hash="32DACF2230152C97834C81E4B70820AC" id="30" name="View As" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="6007AF557FD3877DFC8EBCE0266EB8FF">_54A504E037204944A7FAFCC6FA6FEA55</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="View as Form" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="49B8FC0FA544022BA72025621A5D46A9" id="31" name="Adjust Window" enable="True">
+		<Step hash="16CC721FDA9072184496CD3B100537AE" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="3D762E1EEEAAF9B4B742C396FBAD305B">_F06910993473A34DA7A459CDFC357E69</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Restore" value="4"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="D68E8FDB8554A33E9781F4240950CBE4" id="92" name="Show/Hide Text Ruler" enable="True">
+		<Step hash="F523456816A7813D2185C344EE5DE69F" id="92" name="Show/Hide Text Ruler" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="DD4A8DDE783E01A2F3C7C2B641028677">_807E93C7351B944CA20CD248AA682D7F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Hide" value="2"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="4AF2E4F959269EBB028D25A137C2CD77" id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="9D3BD9AC7AAC402A53DB1395F838D6AE" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>524290</Options>
+			<DDRREF kind="StepText" hash="3170CA5DBA0DA845072C165F867496E9">_481C19EF9E488548B39039F33132D3B9</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Lock" id="524288" value="True"></Boolean>

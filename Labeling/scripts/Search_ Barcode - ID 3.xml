@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="3" name="Search: Barcode"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step hash="E41CA33228911542644FCC30A84CED4A" id="1" name="Perform Script" enable="True">
+		<Step hash="C4997E59BB48296A2E6FB96FFA0B0821" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="0571C115AA77FEBA7C2D42D9319EF3B3">_5D6076FAB711EF458DDCDDD541D4185A</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="AFC79E0786A17B3DDF71B5C41271308F" id="1" name="Perform Script" enable="True">
+		<Step hash="5D7F5E4704D26FFEB736147256A62505" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="E695C686D98BF582B1030B8457BFE169">_31988909327E114AB0343B7299E6944D</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -29,8 +31,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="DC5D4A7D7C6FE4E3A08B840FDF1126A1" id="123" name="Select Window" enable="True">
+		<Step hash="7502FBD50B8DA904A773FF2EAF8EA957" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="3B1502287D187E073508B2836391CB81">_3058A7C9736E944C858EA33853A1023F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -38,6 +41,7 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="542D40BC1C14473BC2FEE7845DC5A4F5">_F8EF1ED7192923428AB57AF7A95018B6</DDRREF>
 										<Text><![CDATA["Labeling Database"]]></Text>
 									</Calculation>
 								</Calculation>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="137" name="Goldbergs Search"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step hash="03F8780C830A5CC913584B9345382EC5" id="6" name="Go to Layout" enable="True">
+		<Step hash="A954682A3059692AC864F0B76B7D38C5" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="A8F64079623B0DC6056F84183EB0C06E">_1489A98E1E7086468FEC45A5F8D30287</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="E92D69BEBA6D7DEB545FC2580F156D14" id="22" name="Enter Find Mode" enable="True">
+		<Step hash="801CDEFFCF699877CCEF4C1310B8B8C4" id="22" name="Enter Find Mode" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="0A1FC26DF410919CF3D7E3572644F0CA">_33B46B3DA5C655408D08E31E59603365</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
@@ -60,8 +62,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="D525476025A1568663A4998D48646D45" id="28" name="Perform Find" enable="True">
+		<Step hash="8216C120A988283BE5F391B9FA2C34D1" id="28" name="Perform Find" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="8487319094AA0C790FC1F4E2BA887D02">_CF537D1216F7B348885A5269962346C4</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="FindRequest">
 					<FindRequestSet membercount="1">
@@ -81,8 +84,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="7A815B3C802B9C5B7D00AC501E48395B" id="39" name="Sort Records" enable="True">
+		<Step hash="8078AA10EF87378C47EDFCB70871C7E1" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="DB57EC82667E20F3234E317D126B52DF">_7F691569A3CE7A43B959E2FAEDE423B4</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -105,8 +109,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step hash="83B5836782148945B0DE4550C1AAF23F" id="39" name="Sort Records" enable="True">
+		<Step hash="B3D8E9986D87FDCE7D4724000F1EEE43" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="EC0F3EAADECF096E3FA1A7D0A0DFD9BF">_BEA8DF7CD2F7A24C8ED4513E5143E698</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
