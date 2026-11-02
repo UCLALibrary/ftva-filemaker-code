@@ -1,46 +1,46 @@
-Set Variable [ $$DISABLE_VALIDATION ; 1 ]
+Set Variable [ $$DISABLE_VALIDATION[1] ; 1 ]
 
 Set Error Capture [ ON ]
 Allow User Abort [ OFF ]
 If [ IsEmpty ( Inventory for Labeling::inventory_id ) ]
-	Set Variable [ $$DISABLE_VALIDATION ; "" ]
+	Set Variable [ $$DISABLE_VALIDATION[1] ; "" ]
 	Show Custom Dialog [ Title: "No Record" ; Message: "Create or select an Inventory Record first." ; Default Button: "OK" ; Button 2: "Cancel" ]
 	Exit Script []
 End If
 
-Set Variable [ $Path ;  ]
-Set Variable [ $sysPath ;  ]
+Set Variable [ $Path[1] ;  ]
+Set Variable [ $sysPath[1] ;  ]
 
-Go to Object [ "Portal_DM_Items" ]
+Go to Object [ "Portal_DM_Items" ; Repetition: 1 ]
 
 Insert File [ Dialog title: "Choose File" ; Filters: "Digital Media SIdecars" (*.json) ; Storage: Reference ; Display:  ; Compress: Never compress ; Target: $FMFilePath ]
-Set Variable [ $Path ; GetAsText ( $FMFilePath ) ]
-Set Variable [ $OSPath ; GetValue ( $Path ; ValueCount ( $Path ) ) ]
+Set Variable [ $Path[1] ; GetAsText ( $FMFilePath ) ]
+Set Variable [ $OSPath[1] ; GetValue ( $Path ; ValueCount ( $Path ) ) ]
 
 If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
-	Set Variable [ $sysPath ; Substitute ( $OSPath ; "filewin:/" ; "" ) ]
-	Set Variable [ $sysPath ; Substitute ( $sysPath ; "/" ; "\\" ) ]
-	Set Variable [ $uri ; GetAsText ( $sysPath ) ]
+	Set Variable [ $sysPath[1] ; Substitute ( $OSPath ; "filewin:/" ; "" ) ]
+	Set Variable [ $sysPath[1] ; Substitute ( $sysPath ; "/" ; "\\" ) ]
+	Set Variable [ $uri[1] ; GetAsText ( $sysPath ) ]
 	If [ IsEmpty ( $uri ) ]
-		Set Variable [ $$DISABLE_VALIDATION ; "" ]
+		Set Variable [ $$DISABLE_VALIDATION[1] ; "" ]
 		Exit Script [ "Nothing Selected" ]
 	End If
 	
-	Set Variable [ $path_text ; Substitute ( Substitute ( $uri ; "filewin:"; ""); "/" ; "\\" ) ]
-	Set Variable [ $lastSeg ; GetValue ( Substitute ( $path_text ; "\\" ; "¶"); ValueCount ( Substitute ( $path_text; "\\" ; "¶") )) ]
-	Set Variable [ $parent ; Left ( $path_text ;
+	Set Variable [ $path_text[1] ; Substitute ( Substitute ( $uri ; "filewin:"; ""); "/" ; "\\" ) ]
+	Set Variable [ $lastSeg[1] ; GetValue ( Substitute ( $path_text ; "\\" ; "¶"); ValueCount ( Substitute ( $path_text; "\\" ; "¶") )) ]
+	Set Variable [ $parent[1] ; Left ( $path_text ;
 					           Position ( $path_text ; "\\" ; 1 ;
 					             ValueCount ( Substitute ( $path_text ; "\\" ; "¶" ) ) - 1
 					           )
 					         ) ]
 	
-	Set Variable [ $sidecar_path ; $parent & "sidecars\\" & $lastSeg & ".mediainfo.json" ]
-	Set Variable [ $filewin_sidecar_path ; Substitute ( "filewin:/" & $sidecar_path ; "\\" ; "/") ]
+	Set Variable [ $sidecar_path[1] ; $parent & "sidecars\\" & $lastSeg & ".mediainfo.json" ]
+	Set Variable [ $filewin_sidecar_path[1] ; Substitute ( "filewin:/" & $sidecar_path ; "\\" ; "/") ]
 	
 	
 	// # if path is too long, subst/mount
-	// Set Variable [ $tempDir ; Get ( TemporaryPath ) ]
-	// Set Variable [ $ps ; "$LongPath=" & "\"" & $parent & "\""  & Char ( 13 ) & Char ( 10 ) &
+	// Set Variable [ $tempDir[1] ; Get ( temporaryPath ) ]
+	// Set Variable [ $ps[1] ; "$LongPath=" & "\"" & $parent & "\""  & Char ( 13 ) & Char ( 10 ) &
 					
 					"if (-not (Get-PSDrive -Name 'Q' -ErrorAction SilentlyContinue)) {" & Char ( 13 ) & Char ( 10 ) &
 					"$DriveLetter = 'Q:'" & Char ( 13 ) & Char ( 10 ) &
@@ -48,10 +48,10 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 					
 					"cmd /c \"subst $DriveLetter `\"$LongPath`\"\"" & Char ( 13 ) & Char ( 10 ) &
 					"pause" & Char ( 13 ) & Char ( 10 ) ]
-	// Set Variable [ $psscript ; Get ( TemporaryPath ) & "substlongpath.ps1" ]
-	// Set Variable [ $psscriptbat ; Get ( TemporaryPath ) & "substlongpath.bat" ]
-	// Set Variable [ $psscriptpath ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
-	// Set Variable [ $psbat ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) ]
+	// Set Variable [ $psscript[1] ; Get ( temporaryPath ) & "substlongpath.ps1" ]
+	// Set Variable [ $psscriptbat[1] ; Get ( temporaryPath ) & "substlongpath.bat" ]
+	// Set Variable [ $psscriptpath[1] ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
+	// Set Variable [ $psbat[1] ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) ]
 	// 
 	// Create Data File [ "$psscript" ; Create folders: OFF ]
 	// Create Data File [ "$psscriptbat" ; Create folders: OFF ]
@@ -65,33 +65,33 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 	// Send Event [ Event: open document/application ; Document: "$psscriptbat" ; Bring target application to foreground: ON ; Wait for event completion: OFF ; Copy event result: OFF ]
 	// Pause/Resume Script [ Duration (seconds): 2 ]
 	
-	// Set Variable [ $sidecarfilename ; Let (
+	// Set Variable [ $sidecarfilename[1] ; Let (
 					[
 					    parts = Substitute ( $sidecar_path ; Char ( 92 ) ; ¶ )
 					] ;
 					    GetValue ( parts ; ValueCount ( parts ) )
 					) ]
-	// Set Variable [ $substfilewin_sidecar_path ; "filewin:/Q:/sidecars/" & $sidecarfilename ]
+	// Set Variable [ $substfilewin_sidecar_path[1] ; "filewin:/Q:/sidecars/" & $sidecarfilename ]
 	// # open from subst/mount
 	// 
 	// Pause/Resume Script [ Duration (seconds): 4 ]
 	Open Data File [ "$OSPath" ; Target: $sidecar_pathID ]
-	If [ Get ( LastError )  ≠ 0 ]
+	If [ Get ( lastError )  ≠ 0 ]
 		Show Custom Dialog [ Title: "Media Info Sidecar missing" ; Message: "Sidecar file not found at location " & $sidecar_path &
 						" Please run the MediInfo Sidecar Generator application first and run again." ; Default Button: "OK" ; Button 2: "Cancel" ]
-		Set Variable [ $$DISABLE_VALIDATION ; "" ]
+		Set Variable [ $$DISABLE_VALIDATION[1] ; "" ]
 		Exit Script []
 	End If
 	
 	Read from Data File [ File ID: $sidecar_pathID ; Target: $json ]
 	Close Data File [ File ID: $sidecar_pathID ]
-	If [ Get ( LastError ) ≠ 0 or IsEmpty ( $json ) ]
+	If [ Get ( lastError ) ≠ 0 Or IsEmpty ( $json ) ]
 		Show Custom Dialog [ Title: "Sidecar read error" ; Message: "The Sidecar exists but could not be read." ; Default Button: "OK" ; Button 2: "Cancel" ]
-		Set Variable [ $$DISABLE_VALIDATION ; "" ]
+		Set Variable [ $$DISABLE_VALIDATION[1] ; "" ]
 		Exit Script []
 	End If
 	# Item_unit_number-auto enter
-	Set Variable [ $nextRow ; Let (
+	Set Variable [ $nextRow[1] ; Let (
 					        [
 					            maxNo = Max ( Digital Media_Item Unit::Item_unit_number )
 					        ] ;
@@ -100,38 +100,38 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 	
 	
 	# Item_unit_number-auto enter
-	Set Variable [ $tracks ; "media.track" ]
-	Set Variable [ $count ; ValueCount ( JSONListKeys ( $json ; $tracks ) ) ]
+	Set Variable [ $tracks[1] ; "media.track" ]
+	Set Variable [ $count[1] ; ValueCount ( JSONListKeys ( $json ; $tracks ) ) ]
 	
-	Set Variable [ $g ; "" ]
-	Set Variable [ $v ; "" ]
-	Set Variable [ $a ; "" ]
+	Set Variable [ $g[1] ; "" ]
+	Set Variable [ $v[1] ; "" ]
+	Set Variable [ $a[1] ; "" ]
 	
-	Set Variable [ $i ; 0 ]
+	Set Variable [ $i[1] ; 0 ]
 	
-	Loop
-		Exit Loop If [ $i  ≥ $count  or ( not IsEmpty ( $g ) and not IsEmpty ( $v ) and not IsEmpty ( $a )) ]
-		Set Variable [ $json_elementpath ; $tracks & "[" & $i & "]" ]
-		Set Variable [ $type ; JSONGetElement ( $json ; $json_elementpath & ".@type" ) ]
+	Loop [ Flush: Always ]
+		Exit Loop If [ $i  ≥ $count  Or ( Not IsEmpty ( $g ) And Not IsEmpty ( $v ) And Not IsEmpty ( $a )) ]
+		Set Variable [ $json_elementpath[1] ; $tracks & "[" & $i & "]" ]
+		Set Variable [ $type[1] ; JSONGetElement ( $json ; $json_elementpath & ".@type" ) ]
 		
 		
-		If [ IsEmpty ( $g ) and $type = "General" ]
-			Set Variable [ $g ; $json_elementpath ]
-		Else If [ IsEmpty ( $v ) and $type = "Video" ]
-			Set Variable [ $v ; $json_elementpath ]
-		Else If [ IsEmpty ( $a ) and $type = "Audio" ]
-			Set Variable [ $a ; $json_elementpath ]
+		If [ IsEmpty ( $g ) And $type = "General" ]
+			Set Variable [ $g[1] ; $json_elementpath ]
+		Else If [ IsEmpty ( $v ) And $type = "Video" ]
+			Set Variable [ $v[1] ; $json_elementpath ]
+		Else If [ IsEmpty ( $a ) And $type = "Audio" ]
+			Set Variable [ $a[1] ; $json_elementpath ]
 		End If
-		Set Variable [ $i ; $i + 1 ]
+		Set Variable [ $i[1] ; $i + 1 ]
 	End Loop
 	
-	Go to Object [ "Portal_DM_Items" ]
+	Go to Object [ "Portal_DM_Items" ; Repetition: 1 ]
 	Go to Portal Row [ Select: ON ; Last ]
 	Go to Portal Row [ Exit after last: OFF ; Next ]
 	
-	Set Variable [ $mediaRef ; JSONGetElement ( $json ; "media.@ref" ) ]
-	Set Variable [ $mediaRefClean ; Substitute ( $mediaRef ; "\\\?\\" ; "" ) ]
-	If [ not IsEmpty ( $g ) ]
+	Set Variable [ $mediaRef[1] ; JSONGetElement ( $json ; "media.@ref" ) ]
+	Set Variable [ $mediaRefClean[1] ; Substitute ( $mediaRef ; "\\\?\\" ; "" ) ]
+	If [ Not IsEmpty ( $g ) ]
 		Set Field [ Digital Media_Item Unit::Item_unit_number ; $nextRow ]
 		Set Field [ Digital Media_Item Unit::file_path ; $mediaRefClean ]
 		Set Field [ Digital Media_Item Unit::specific_carrier_type ; JSONGetElement ( $json ; $g & ".FileExtension" ) ]
@@ -143,32 +143,32 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 		Set Field [ Inventory for Labeling::playing_speed ; Digital Media_Item Unit::playing_speed ]
 		Set Field [ Digital Media_Item Unit::wrapper_format ; Let (
 						   wrapformat = JSONGetElement ( $json ; $g & ".Format_Profile" );
-						   If ( IsEmpty ( Digital Media_Item Unit::wrapper_format ) and not IsEmpty ( wrapformat ) ; wrapformat ; "Not Applicable"
+						   If ( IsEmpty ( Digital Media_Item Unit::wrapper_format ) And Not IsEmpty ( wrapformat ) ; wrapformat ; "Not Applicable"
 						   )
 						) ]
 		Set Field [ Inventory for Labeling::wrapper_format ; Digital Media_Item Unit::wrapper_format ]
-		Set Variable [ $json_creation_date ; JSONGetElement ( $json ; $g & ".Encoded_Date") ]
+		Set Variable [ $json_creation_date[1] ; JSONGetElement ( $json ; $g & ".Encoded_Date") ]
 		
 		
 		If [ IsEmpty ( $json_creation_date ) ]
-			Set Variable [ $json_creation_date ; JSONGetElement ( $json ; $g & ".File_Created_Date") ]
+			Set Variable [ $json_creation_date[1] ; JSONGetElement ( $json ; $g & ".File_Created_Date") ]
 		End If
 		If [ IsEmpty ( $json_creation_date ) ]
 			Show Custom Dialog [ Title: "Missing Date" ; Message: "The json file is missing a valid \"Encoded_date\" or \"File_Created_date\" value. ¶A default date of 1900/1/1 has been entered instead. Please update manualy with correct creation date. ¶" & "Encoded_Date:" & JSONGetElement ( $json ; $g & ".Encoded_Date") &
 							"¶File_Created_Date:" & JSONGetElement ( $json ; $g & ".File_Created_Date") ; Default Button: "OK" ]
-			Set Variable [ $json_creation_date ; "1900-01-01 00:00:00.000 UTC" ]
+			Set Variable [ $json_creation_date[1] ; "1900-01-01 00:00:00.000 UTC" ]
 		End If
 		If [ EvaluationError ( Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) ) )  ≠ 0 ]
 			Show Custom Dialog [ Title: "Invalid Date" ; Message: "The date creation value from json is invalid: " & $json_creation_date ; Default Button: "OK" ]
-			Set Variable [ $json_creation_date ; "1900-01-01 00:00:00.000 UTC" ]
-			Set Variable [ $formattedDate ; $json_creation_date ]
+			Set Variable [ $json_creation_date[1] ; "1900-01-01 00:00:00.000 UTC" ]
+			Set Variable [ $formattedDate[1] ; $json_creation_date ]
 		Else
-			Set Variable [ $formattedDate ; Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) ) ]
+			Set Variable [ $formattedDate[1] ; Date ( GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 2 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date; 1 ) ; "-" ; ¶ ) ; 3 ) ; GetValue ( Substitute ( LeftWords ( $json_creation_date ; 1 ) ; "-" ; ¶ ) ; 1 ) ) ]
 		End If
 		Set Field [ Digital Media_Item Unit::Creation_date ; ( $formattedDate) ]
 	End If
 	
-	If [ not IsEmpty ( $v ) ]
+	If [ Not IsEmpty ( $v ) ]
 		Set Field [ Digital Media_Item Unit::video_codec ; JSONGetElement ( $json ; $v & ".Format" ) ]
 		Set Field [ Inventory for Labeling::video_codec ; Digital Media_Item Unit::video_codec ]
 		Set Field [ Digital Media_Item Unit::video_codec_profile ; JSONGetElement ( $json ; $v & ".Format_Profile" ) ]
@@ -188,36 +188,36 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 						lang = Lower ( rawLang ) ;
 						
 						    mappedLang = Case (
-						        lang = "am" or lang = "amh" ; "Amharic (am)" ;
-						        lang = "ar" or lang = "ara" ; "Arabic (ar)" ;
-						        lang = "zh" or lang = "zho" or lang = "chi" ; "Chinese (zh)" ;
-						        lang = "cs" or lang = "ces" or lang = "cze" ; "Czech (cs)" ;
-						        lang = "da" or lang = "dan" ; "Danish (da)" ;
-						        lang = "nl" or lang = "nld" or lang = "dut" ; "Dutch (nl)" ;
-						        lang = "en" or lang = "eng" ; "English (en)" ;
+						        lang = "am" Or lang = "amh" ; "Amharic (am)" ;
+						        lang = "ar" Or lang = "ara" ; "Arabic (ar)" ;
+						        lang = "zh" Or lang = "zho" Or lang = "chi" ; "Chinese (zh)" ;
+						        lang = "cs" Or lang = "ces" Or lang = "cze" ; "Czech (cs)" ;
+						        lang = "da" Or lang = "dan" ; "Danish (da)" ;
+						        lang = "nl" Or lang = "nld" Or lang = "dut" ; "Dutch (nl)" ;
+						        lang = "en" Or lang = "eng" ; "English (en)" ;
 						        lang = "gez" ; "Ethiopic (gez)" ;
-						        lang = "fr" or lang = "fra" or lang = "fre" ; "French (fr)" ;
-						        lang = "de" or lang = "deu" or lang = "ger" ; "German (de)" ;
-						        lang = "he" or lang = "heb" ; "Hebrew (he)" ;
-						        lang = "hi" or lang = "hin" ; "Hindi (hi)" ;
-						        lang = "hu" or lang = "hun" ; "Hungarian (hu)" ;
-						        lang = "id" or lang = "ind" ; "Indonesian (id)" ;
-						        lang = "it" or lang = "ita" ; "Italian (it)" ;
-						        lang = "ja" or lang = "jpn" ; "Japanese (ja)" ;
-						        lang = "ko" or lang = "kor" ; "Korean (ko)" ;
-						        lang = "nv" or lang = "nav" ; "Navajo (nv)" ;
+						        lang = "fr" Or lang = "fra" Or lang = "fre" ; "French (fr)" ;
+						        lang = "de" Or lang = "deu" Or lang = "ger" ; "German (de)" ;
+						        lang = "he" Or lang = "heb" ; "Hebrew (he)" ;
+						        lang = "hi" Or lang = "hin" ; "Hindi (hi)" ;
+						        lang = "hu" Or lang = "hun" ; "Hungarian (hu)" ;
+						        lang = "id" Or lang = "ind" ; "Indonesian (id)" ;
+						        lang = "it" Or lang = "ita" ; "Italian (it)" ;
+						        lang = "ja" Or lang = "jpn" ; "Japanese (ja)" ;
+						        lang = "ko" Or lang = "kor" ; "Korean (ko)" ;
+						        lang = "nv" Or lang = "nav" ; "Navajo (nv)" ;
 						        lang = "zxx" ; "No linguistic content (zxx)" ;
-						        lang = "no" or lang = "nor" ; "Norwegian (no)" ;
-						        lang = "fa" or lang = "fas" or lang = "per" ; "Persian (fa)" ;
-						        lang = "pl" or lang = "pol" ; "Polish (pl)" ;
-						        lang = "pt" or lang = "por" ; "Portuguese (pt)" ;
-						        lang = "ru" or lang = "rus" ; "Russian (ru)" ;
-						        lang = "es" or lang = "spa" ; "Spanish (es)" ;
-						        lang = "sv" or lang = "swe" ; "Swedish (sv)" ;
-						        lang = "th" or lang = "tha" ; "Thai (th)" ;
-						        lang = "uk" or lang = "ukr" ; "Ukrainian (uk)" ;
+						        lang = "no" Or lang = "nor" ; "Norwegian (no)" ;
+						        lang = "fa" Or lang = "fas" Or lang = "per" ; "Persian (fa)" ;
+						        lang = "pl" Or lang = "pol" ; "Polish (pl)" ;
+						        lang = "pt" Or lang = "por" ; "Portuguese (pt)" ;
+						        lang = "ru" Or lang = "rus" ; "Russian (ru)" ;
+						        lang = "es" Or lang = "spa" ; "Spanish (es)" ;
+						        lang = "sv" Or lang = "swe" ; "Swedish (sv)" ;
+						        lang = "th" Or lang = "tha" ; "Thai (th)" ;
+						        lang = "uk" Or lang = "ukr" ; "Ukrainian (uk)" ;
 						        lang = "und" ; "Undetermined (und)" ;
-						        lang = "vi" or lang = "vie" ; "Vietnamese (vi)" ;
+						        lang = "vi" Or lang = "vie" ; "Vietnamese (vi)" ;
 						        lang = "ypk" ; "Yupik languages (ypk)" ;
 						        rawLang
 						    )
@@ -225,7 +225,7 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 						
 						If (
 						    IsEmpty ( Inventory for Labeling::Language )
-						    and not IsEmpty ( rawLang ) ;
+						    And Not IsEmpty ( rawLang ) ;
 						    mappedLang ;
 						    Inventory for Labeling::Language
 						)
@@ -233,7 +233,7 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 		Set Field [ Digital Media_Item Unit::language ; Inventory for Labeling::Language ]
 	End If
 	
-	If [ not IsEmpty ( $a ) ]
+	If [ Not IsEmpty ( $a ) ]
 		If [ IsEmpty (Inventory for Labeling::media_type ) ]
 			Set Field [ Digital Media_Item Unit::media_type ; JSONGetElement ( $json ; $a & ".@type" ) ]
 			Set Field [ Inventory for Labeling::media_type ; Digital Media_Item Unit::media_type ]
@@ -247,36 +247,36 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 						lang = Lower (rawLang) ;
 						
 						    mappedLang = Case (
-						        lang = "am" or lang = "amh" ; "Amharic (am)" ;
-						        lang = "ar" or lang = "ara" ; "Arabic (ar)" ;
-						        lang = "zh" or lang = "zho" or lang = "chi" ; "Chinese (zh)" ;
-						        lang = "cs" or lang = "ces" or lang = "cze" ; "Czech (cs)" ;
-						        lang = "da" or lang = "dan" ; "Danish (da)" ;
-						        lang = "nl" or lang = "nld" or lang = "dut" ; "Dutch (nl)" ;
-						        lang = "en" or lang = "eng" ; "English (en)" ;
+						        lang = "am" Or lang = "amh" ; "Amharic (am)" ;
+						        lang = "ar" Or lang = "ara" ; "Arabic (ar)" ;
+						        lang = "zh" Or lang = "zho" Or lang = "chi" ; "Chinese (zh)" ;
+						        lang = "cs" Or lang = "ces" Or lang = "cze" ; "Czech (cs)" ;
+						        lang = "da" Or lang = "dan" ; "Danish (da)" ;
+						        lang = "nl" Or lang = "nld" Or lang = "dut" ; "Dutch (nl)" ;
+						        lang = "en" Or lang = "eng" ; "English (en)" ;
 						        lang = "gez" ; "Ethiopic (gez)" ;
-						        lang = "fr" or lang = "fra" or lang = "fre" ; "French (fr)" ;
-						        lang = "de" or lang = "deu" or lang = "ger" ; "German (de)" ;
-						        lang = "he" or lang = "heb" ; "Hebrew (he)" ;
-						        lang = "hi" or lang = "hin" ; "Hindi (hi)" ;
-						        lang = "hu" or lang = "hun" ; "Hungarian (hu)" ;
-						        lang = "id" or lang = "ind" ; "Indonesian (id)" ;
-						        lang = "it" or lang = "ita" ; "Italian (it)" ;
-						        lang = "ja" or lang = "jpn" ; "Japanese (ja)" ;
-						        lang = "ko" or lang = "kor" ; "Korean (ko)" ;
-						        lang = "nv" or lang = "nav" ; "Navajo (nv)" ;
+						        lang = "fr" Or lang = "fra" Or lang = "fre" ; "French (fr)" ;
+						        lang = "de" Or lang = "deu" Or lang = "ger" ; "German (de)" ;
+						        lang = "he" Or lang = "heb" ; "Hebrew (he)" ;
+						        lang = "hi" Or lang = "hin" ; "Hindi (hi)" ;
+						        lang = "hu" Or lang = "hun" ; "Hungarian (hu)" ;
+						        lang = "id" Or lang = "ind" ; "Indonesian (id)" ;
+						        lang = "it" Or lang = "ita" ; "Italian (it)" ;
+						        lang = "ja" Or lang = "jpn" ; "Japanese (ja)" ;
+						        lang = "ko" Or lang = "kor" ; "Korean (ko)" ;
+						        lang = "nv" Or lang = "nav" ; "Navajo (nv)" ;
 						        lang = "zxx" ; "No linguistic content (zxx)" ;
-						        lang = "no" or lang = "nor" ; "Norwegian (no)" ;
-						        lang = "fa" or lang = "fas" or lang = "per" ; "Persian (fa)" ;
-						        lang = "pl" or lang = "pol" ; "Polish (pl)" ;
-						        lang = "pt" or lang = "por" ; "Portuguese (pt)" ;
-						        lang = "ru" or lang = "rus" ; "Russian (ru)" ;
-						        lang = "es" or lang = "spa" ; "Spanish (es)" ;
-						        lang = "sv" or lang = "swe" ; "Swedish (sv)" ;
-						        lang = "th" or lang = "tha" ; "Thai (th)" ;
-						        lang = "uk" or lang = "ukr" ; "Ukrainian (uk)" ;
+						        lang = "no" Or lang = "nor" ; "Norwegian (no)" ;
+						        lang = "fa" Or lang = "fas" Or lang = "per" ; "Persian (fa)" ;
+						        lang = "pl" Or lang = "pol" ; "Polish (pl)" ;
+						        lang = "pt" Or lang = "por" ; "Portuguese (pt)" ;
+						        lang = "ru" Or lang = "rus" ; "Russian (ru)" ;
+						        lang = "es" Or lang = "spa" ; "Spanish (es)" ;
+						        lang = "sv" Or lang = "swe" ; "Swedish (sv)" ;
+						        lang = "th" Or lang = "tha" ; "Thai (th)" ;
+						        lang = "uk" Or lang = "ukr" ; "Ukrainian (uk)" ;
 						        lang = "und" ; "Undetermined (und)" ;
-						        lang = "vi" or lang = "vie" ; "Vietnamese (vi)" ;
+						        lang = "vi" Or lang = "vie" ; "Vietnamese (vi)" ;
 						        lang = "ypk" ; "Yupik languages (ypk)" ;
 						        rawLang
 						    )
@@ -284,7 +284,7 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 						
 						If (
 						    IsEmpty (Inventory for Labeling::Language )
-						    and not IsEmpty ( rawLang ) ;
+						    And Not IsEmpty ( rawLang ) ;
 						    mappedLang ;
 						    Inventory for Labeling::Language
 						)
@@ -295,11 +295,11 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 	# remove the mounted Q
 	
 	
-	// Set Variable [ $ps ; "cmd /c \"subst Q: /d\"" & Char ( 13 ) & Char ( 10 ) ]
-	// Set Variable [ $psscript ; Get ( TemporaryPath ) & "desubstlongpath.ps1" ]
-	// Set Variable [ $psscriptbat ; Get ( TemporaryPath ) & "desubstlongpath.bat" ]
-	// Set Variable [ $psscriptpath ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
-	// Set Variable [ $psbat ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) ]
+	// Set Variable [ $ps[1] ; "cmd /c \"subst Q: /d\"" & Char ( 13 ) & Char ( 10 ) ]
+	// Set Variable [ $psscript[1] ; Get ( temporaryPath ) & "desubstlongpath.ps1" ]
+	// Set Variable [ $psscriptbat[1] ; Get ( temporaryPath ) & "desubstlongpath.bat" ]
+	// Set Variable [ $psscriptpath[1] ; Right ( $psscript ; Length ( $psscript ) - 1 ) ]
+	// Set Variable [ $psbat[1] ; "@echo off" & Char(13) & Char(10) & "SET PowerShellScriptPath=" & $psscriptpath & Char(13) & Char(10) & "powershell.exe -NoProfile -ExecutionPolicy Bypass -File %PowerShellScriptPath%" & Char(13) & Char(10) ]
 	// 
 	// Create Data File [ "$psscript" ; Create folders: OFF ]
 	// Create Data File [ "$psscriptbat" ; Create folders: OFF ]
@@ -314,7 +314,7 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 	// Pause/Resume Script [ Duration (seconds): 1.5 ]
 	# remove mounted Q
 	
-	Set Variable [ $$DISABLE_VALIDATION ; "" ]
+	Set Variable [ $$DISABLE_VALIDATION[1] ; "" ]
 	Perform Script [ "New Digital - required fields check" ; Specified: From list ; Parameter: ]
 	If [ Get ( ScriptResult ) = False ]
 		Exit Script [ False ]
@@ -323,7 +323,7 @@ If [ PatternCount ( $FMFilePath ; "filewin:" ) ]
 	Refresh Portal [ Object Name: "Portal_DM_Items" ]
 	
 Else If [ PatternCount ( $FMFilePath ; "filemac:" ) ]
-	Set Variable [ $$DISABLE_VALIDATION ; "" ]
+	Set Variable [ $$DISABLE_VALIDATION[1] ; "" ]
 	Show Custom Dialog [ Title: "Not Supported" ; Message: "This has to be done on a Windows computer. Mac OS not supported yet." ; Default Button: "OK" ; Button 2: "Cancel" ]
 End If
 

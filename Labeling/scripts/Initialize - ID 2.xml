@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="2" name="Initialize"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step id="115" name="Allow Formatting Bar" enable="True">
+		<Step hash="F22CBF5410C596735A05CE6D30942063" id="115" name="Allow Formatting Bar" enable="True">
 			<Options>65536</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="0245F5CF11A4BB0C139FABDCB9E5C30B" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -23,7 +23,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="92" name="Show/Hide Text Ruler" enable="True">
+		<Step hash="2C4571E1BD7933471FBE47935C175995" id="92" name="Show/Hide Text Ruler" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -31,7 +31,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="1B87EC17D925F6E62AE4C9534CE1EEAE" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -39,7 +39,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="True">
+		<Step hash="D41DE31894735A2E98279901C88BF92D" id="33" name="Open File" enable="True">
 			<Options>272</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -50,7 +50,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="True">
+		<Step hash="18ED225FD0B57833B15743B5C117950F" id="33" name="Open File" enable="True">
 			<Options>272</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -61,7 +61,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="False">
+		<Step hash="BC58EC372384C0E0C99329297634FDC2" id="33" name="Open File" enable="False">
 			<Options>272</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -72,7 +72,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="CD650C9CEC4F8DF1B7AB7AE6D3421ADD" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -86,7 +86,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="3EF1FB73C6AF695FC7B9C56D259FA403" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -100,7 +100,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="F7B4456DE413E5A49BAAD1F212EA1411" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -110,9 +110,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["Labeling"]]></Text>
-										<ChunkList hash="98E383E8004A38B016337EC6D8716F8C">
-											<Chunk type="NoRef">&quot;Labeling&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

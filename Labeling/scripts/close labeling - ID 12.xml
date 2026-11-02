@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="12" name="close labeling"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="34" name="Close File" enable="False">
+		<Step hash="F02DF465D43456590DB9E058C71013F5" id="34" name="Close File" enable="False">
 			<Options>16</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="34" name="Close File" enable="True">
+		<Step hash="0B87DF4217293D2F8EA3B4C6753ED267" id="34" name="Close File" enable="True">
 			<Options>16</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
@@ -17,7 +17,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="34" name="Close File" enable="True">
+		<Step hash="BE1045076A9844814F7E15D0047B59F9" id="34" name="Close File" enable="True">
 			<Options>16</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
@@ -25,7 +25,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="34" name="Close File" enable="True">
+		<Step hash="9241A2225E4835C293605A4483FB208E" id="34" name="Close File" enable="True">
 			<Options>16</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">
@@ -33,7 +33,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="34" name="Close File" enable="True">
+		<Step hash="975FE67C6A86802799D94F9FDB3CE9E8" id="34" name="Close File" enable="True">
 			<Options>16</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="DataSourceReference">

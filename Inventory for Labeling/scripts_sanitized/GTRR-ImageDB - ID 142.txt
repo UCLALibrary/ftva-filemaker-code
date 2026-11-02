@@ -1,6 +1,6 @@
-Set Variable [ $$CurrentUser ; Get( UserName) ]
+Set Variable [ $$CurrentUser[1] ; Get( userName) ]
 If [ IsEmpty ( InventoryItem::InventoryID_FK ) ]
-	If [ $$CurrentUser = "Ssultan"  or $$CurrentUser = "lfuguet" or $$CurrentUser = "Shogsett" ]
+	If [ $$CurrentUser = "Ssultan"  Or $$CurrentUser = "lfuguet" Or $$CurrentUser = "Shogsett" ]
 		Set Field [ InventoryItem::InventoryID_FK ; Inventory for Labeling::inventory_id ]
 		Commit Records/Requests [ With dialog: ON ]
 	Else

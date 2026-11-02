@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="53" name="Edit Availability"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="F03E62C141E8634A614DBD6D23809E05" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="6F630C40807E3F8ADCC877DE53F72269" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["availability"]]></Text>
-										<ChunkList hash="835621E760891AE89FDF2E4F7CCA380C">
-											<Chunk type="NoRef">&quot;availability&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

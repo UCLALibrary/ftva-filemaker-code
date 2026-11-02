@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="163" name="NDM_Search"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="F077B3A43771EE60E421EE7E44C3B199" id="22" name="Enter Find Mode" enable="True">
 			<Options>16777216</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="ACC6167A3CF0199C2FF2F5AB22956B8E" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -17,46 +17,46 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="6CEB58598A7EE7F1E737084469A21D47" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="EF1F56F85671B29C8743ACB62C643B44" id="28" name="Perform Find" enable="True">
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="08C22FFD64B4A262A5F601D754DA9DB2" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastError ) = 0]]></Text>
-							<ChunkList hash="54FC8B91DE327952E1E920710D4432A7">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastError</Chunk>
-								<Chunk type="NoRef"> ) = 0</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get ( lastError ) = 0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="E5107DE8AB2648D4A76566A3058F459B" id="22" name="Enter Find Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="536D4B782D070F7CA119018EF6F41802" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="198" name="digital_record">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -64,19 +64,21 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[1]]></Text>
-							<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-								<Chunk type="NoRef">1</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="126" name="Constrain Found Set" enable="True">
+		<Step hash="F6EB75EF49E4850722C9A577392FE9C9" id="126" name="Constrain Found Set" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean type="Find without indexes" id="256" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="7B20FB7979211DAA6BB87CA3104A3BC4" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="1BA5B059D74CA03BDE3BB91698D3BBA2" id="86" name="Set Error Capture" enable="True">
 			<Options>65536</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">

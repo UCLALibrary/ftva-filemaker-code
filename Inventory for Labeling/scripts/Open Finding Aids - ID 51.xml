@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="51" name="Open Finding Aids"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="EB236D4C6BAF3C7348909784C268002A" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="A9EDC89B1CB0CB08E11A9AAAA03D8056" id="22" name="Enter Find Mode" enable="True">
 			<Options>32768</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -22,12 +22,18 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="FF65B3E51675C2EC470E9DDCCF20A2C6" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="23" name="type">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -35,18 +41,15 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Finding Aids"]]></Text>
-							<ChunkList hash="1E2FF690B4ACC7AD086A4ECD7955192D">
-								<Chunk type="NoRef">&quot;Finding Aids&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="8B655B5D2F9B3DDC3E42473C65FCFBF8" id="28" name="Perform Find" enable="True">
 			<Options>32768</Options>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="B4C6A1D88A69831143CCAD69C5C1025C" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -59,7 +62,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="6D9F3D24FC3253CD75DBE4AF387A04B3" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">

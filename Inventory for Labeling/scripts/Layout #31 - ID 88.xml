@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="88" name="Layout #31"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="5CB994D83F616B0E4C484DEBEDAF8A9B" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="1125E0ACB70DC3F9EE3EE2B997A9B530" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -38,7 +38,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="8BE645A95D1302DA779D48D1517ADBF2" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
@@ -46,7 +46,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="41" name="Enter Preview Mode" enable="True">
+		<Step hash="449E5C07FECF4E35E89A240AC313B0CE" id="41" name="Enter Preview Mode" enable="True">
 			<Options>16777216</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -54,14 +54,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="42A3231EB7BAAEACEBE2D443B3051864" id="55" name="Enter Browse Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="70666C0E4C3FEF6F874A0D0FF1514864" id="6" name="Go to Layout" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

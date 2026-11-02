@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="60" name="Edit Form Term"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="2320654D5237FC3151E94BDE6A9CCF9C" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -15,7 +15,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="EBBE4127828A847BFA4BBB017AC9D609" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -25,9 +25,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["form_term"]]></Text>
-										<ChunkList hash="D692ED05C0E393B809A94E32A36046E4">
-											<Chunk type="NoRef">&quot;form_term&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

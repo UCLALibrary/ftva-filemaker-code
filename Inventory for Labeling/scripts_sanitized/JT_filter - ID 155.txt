@@ -1,10 +1,10 @@
 Set Error Capture [ ON ]
 Freeze Window
-Set Variable [ $q ; Trim ( SearchGlobals::gSF_Query ) ]
+Set Variable [ $q[1] ; Trim ( SearchGlobals::gSF_Query ) ]
 If [ IsEmpty ( $q ) ]
 	Show All Records
-	Constrain Found Set [ Restore ; Find requests: Find (StorageFormat 2::Inventory_number: "=1") ]
-	Omit Multiple Records [ With dialog: OFF ; Get ( FoundCount ) ]
+	Constrain Found Set [ Restore ; Find requests: Find (StorageFormat 2::Inventory_number: "=1") ; Find without indexes: OFF ]
+	Omit Multiple Records [ With dialog: OFF ; Get ( foundCount ) ]
 	Exit Script []
 End If
 Enter Find Mode [ Pause: OFF ]

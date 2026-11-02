@@ -1,34 +1,25 @@
 <Script>
 	<ScriptReference id="7" name="Authorization"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="68" name="If" enable="True">
+		<Step hash="997CA3C1429CACDDB4FA85198B849D94" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get(CurrentPrivilegeSetName) ="admin"]]></Text>
-							<ChunkList hash="343944B8F0DECB122CB849863E4C3DEE">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">CurrentPrivilegeSetName</Chunk>
-								<Chunk type="NoRef">) =&quot;admin&quot;</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get(currentPrivilegeSetName) ="admin"]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="D1CFD3884CFBF28B71984C57E8AC9B99" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -36,9 +27,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["yay¶"]]></Text>
-							<ChunkList hash="F56FC6A37AC7D7EF201F8C68579E4A38">
-								<Chunk type="NoRef">&quot;yay¶&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -53,18 +41,15 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="6E69521C16C426DA715A096E856B034D" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="655BD9903639DE82E4084E46D59D059F" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -72,9 +57,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["nay"]]></Text>
-							<ChunkList hash="BB1951791BCF106C9A2CE97A3793B4D6">
-								<Chunk type="NoRef">&quot;nay&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -89,7 +71,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="449AFBF1753E3DB4AB0F012D0B2C41FC" id="70" name="End If" breakpoint="True" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

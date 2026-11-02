@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="30" name="Open Finding Aids Copy2"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="9A2DEA0F4922DA35A48D6CB1AA5F53A1" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -15,7 +15,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="A0F52B71E3FAE0001C020EE43426185B" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -25,9 +25,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["Inventory for Labeling"]]></Text>
-										<ChunkList hash="70705CA9E8D101BE7A5E0885F9B6D35B">
-											<Chunk type="NoRef">&quot;Inventory for Labeling&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="99" name="sort"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="FBA954E4DF74501BD336EDCA5CE396A3" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -25,7 +25,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="48E967377A3BE00EA2C2486CC3AEFD36" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">

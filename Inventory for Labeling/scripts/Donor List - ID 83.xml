@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="83" name="Donor List"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="020FBA40A9E4680FBF06AF2FFC845E6A" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="74ED839589F273E711228FEC8EED43C5" id="42" name="Print Setup" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
@@ -32,7 +32,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="75B2979BFBDF50AC9B6F0DFED8DCFCAF" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -77,7 +77,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="B85CCF5C594199A18A7850732E1CEE3F" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
@@ -85,7 +85,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="00B712BFD4B6973BB7199DE4C4AF8722" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
@@ -109,7 +109,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="7F8064066393D280AAF949DAE0CA85FD" id="6" name="Go to Layout" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

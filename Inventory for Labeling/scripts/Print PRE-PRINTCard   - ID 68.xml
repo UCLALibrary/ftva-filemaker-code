@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="68" name="Print PRE-PRINTCard  "></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="BB6864790D0ACC58E69DA83DC1DC8232" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="6D927EC3317BD3FA2284AD581BEA27F0" id="43" name="Print" enable="True">
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -26,7 +26,7 @@
 				<Parameter type="PageSetup"></Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="D459EDC1422B78E0ACBBE36F4FC4BE01" id="42" name="Print Setup" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
@@ -44,7 +44,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="CB456185000D0ADFD1A533A5E7F4D05D" id="6" name="Go to Layout" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">
@@ -56,7 +56,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="80" name="Refresh Window" enable="True">
+		<Step hash="AF89F9E5E37609D7EE3F07480707FC52" id="80" name="Refresh Window" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>

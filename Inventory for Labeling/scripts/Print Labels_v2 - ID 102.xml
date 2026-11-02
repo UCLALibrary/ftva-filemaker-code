@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="102" name="Print Labels_v2"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="6A78D70446A456B1A1F5CCCC8C96671C" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="33C652685E95AA03E710A38725BBFDF0" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -28,7 +28,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="False">
+		<Step hash="F9528EF4A67AA9868E34A28BE783A380" id="123" name="Select Window" enable="False">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -38,9 +38,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["Labeling Database"]]></Text>
-										<ChunkList hash="542D40BC1C14473BC2FEE7845DC5A4F5">
-											<Chunk type="NoRef">&quot;Labeling Database&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

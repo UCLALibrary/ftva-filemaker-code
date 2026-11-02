@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="87" name="Print Episode List Cards"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="5E97D736EDD3287F381DFBC7DAE62F36" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="EAF2D39DA6C569D1BCE5F55FD0BF923E" id="42" name="Print Setup" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
@@ -32,7 +32,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="213920E44BBDCEDFB6C6A6ACEFE85F96" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -77,7 +77,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="1F19564FFAF5B7AF99322F02F92E67CD" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
@@ -85,7 +85,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="410EAAA2F23836D039C23A1C713E4CF7" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
@@ -109,7 +109,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="231DAB424C766E6C08F10EA77DA8F99F" id="6" name="Go to Layout" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

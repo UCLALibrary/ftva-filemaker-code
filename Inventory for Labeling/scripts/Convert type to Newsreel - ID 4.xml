@@ -1,16 +1,13 @@
 <Script>
 	<ScriptReference id="4" name="Convert type to Newsreel"></ScriptReference>
 	<ObjectList membercount="9">
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="07396285DC1FF081AA9534CD9BD59BED" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -18,9 +15,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["Are you sure you want change this item to be a Newsreel item? This will clear any data entered as a General Collection item."]]></Text>
-							<ChunkList hash="2C4739ED09A78CC323AEF7F50A8A66FC">
-								<Chunk type="NoRef">&quot;Are you sure you want change this item to be a Newsreel item? This will clear any data entered as a General Collection item.&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -35,30 +29,30 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="F5CCD960402103E6E900D0F556B035DA" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get(LastMessageChoice)=1]]></Text>
-							<ChunkList hash="F87E7A418908918009B2E4AF808480DA">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
-								<Chunk type="NoRef">)=1</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get(lastMessageChoice)=1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="94BA85D851D662FD4D30AC3CF781CB22" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="23" name="type">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -66,20 +60,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Newsreel"]]></Text>
-							<ChunkList hash="887796C870BC29C2308EA3E54A3303BF">
-								<Chunk type="NoRef">&quot;Newsreel&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="F98F7B67760B03629D6732CE653E4FB4" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="9" name="episode_title">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -87,20 +84,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="A4B26ADA1DF6772428F3E1FFC7EA3145" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="10" name="element_info">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -108,20 +108,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="015798AAC90930693404905B8814A4FD" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="11" name="donor_code">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -129,15 +132,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="9B633D6A56F6F9B379E9ABE28FAC1289" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -148,7 +148,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="E4B339AF9C8CEE8ADC4253B89DA8FD0C" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -156,7 +156,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="A824FECAD897EB89AEDE86154B7CDD29" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="59" name="Print Print Record"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="273ED57E129DC616CA8D57C33EFFD3CB" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="B563995876713B1FCA9F7A785F4CC187" id="42" name="Print Setup" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
@@ -32,7 +32,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="2AF80D766654E9E3D11D3A0FA4C87331" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
@@ -56,7 +56,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="BA199DA252F9C8FD94163BACAA6D5C08" id="6" name="Go to Layout" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

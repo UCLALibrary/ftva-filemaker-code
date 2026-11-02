@@ -1,5 +1,5 @@
 Go to Layout [ Layout: "Newsreel Layout" ; Animation: None ]
-Loop
+Loop [ Flush: Always ]
 	Insert Text [ Select ; Target: Inventory for Labeling::Vault ; "SRLF" ]
 	Go to Record/Request/Page [ Next ; Exit after last: ON ]
 End Loop

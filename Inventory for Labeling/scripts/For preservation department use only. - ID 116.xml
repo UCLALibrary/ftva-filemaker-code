@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="116" name="For preservation department use only."></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="61" name="Insert Text" enable="True">
+		<Step hash="45C00058B849D6017D7E5B4835B2EAB7" id="61" name="Insert Text" enable="True">
 			<Options>4</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">

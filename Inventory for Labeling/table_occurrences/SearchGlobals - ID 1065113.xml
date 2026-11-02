@@ -1,4 +1,4 @@
-<TableOccurrence viewState="Full" height="80" id="1065113" name="SearchGlobals" type="Local">
+<TableOccurrence View="Full" height="80" id="1065113" name="SearchGlobals" type="Local">
 	<UUID modifications="3" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">B10B9CF6-1ED5-3B46-97AB-ED3F2DC8BDCD</UUID>
 	<BaseTableSourceReference type="BaseTableReference">
 		<BaseTableReference id="130" name="SearchGlobals"></BaseTableReference>

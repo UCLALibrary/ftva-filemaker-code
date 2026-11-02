@@ -1,154 +1,111 @@
 <CustomMenu name="Insert Copy" id="5">
 	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">CAC41C1C-A159-1745-BA2F-A6C07AD88367</UUID>
 	<MenuItemList membercount="12">
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="FA7161FEF5AA2A3EADCEE77A84E74E26" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Picture..." id="50257"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="00C3188AE2CACBA6ED3132E1AC621157" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="" id="50168"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="7238D523F04948F68B88F91A03F5E92D" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="" id="49252"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="6578332DA71DF28E21EA3F12B813A592" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="File..." id="50216"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="531C6E0B71B228BE449B7C16984378E2" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[If( Abs(Get( SystemPlatform )) = 2; 1; 0 )]]></Calculation>
-					<ChunkList hash="E62B4F55AE0CC9EF21640EC028CAB70F">
-						<Chunk type="FunctionRef">If</Chunk>
-						<Chunk type="NoRef">( </Chunk>
-						<Chunk type="FunctionRef">Abs</Chunk>
-						<Chunk type="NoRef">(</Chunk>
-						<Chunk type="FunctionRef">Get</Chunk>
-						<Chunk type="NoRef">( </Chunk>
-						<Chunk type="FunctionRef">SystemPlatform</Chunk>
-						<Chunk type="NoRef"> )) = 2; 1; 0 )</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="" id="57856"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="True">
+		<CustomMenuItem hash="8116C0D181CE1C5BDAC894A5C91361B6" isSubMenuItem="False" isSeparatorItem="True">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="C249729DC71F8A65137540D5BAAD4CCA" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Shortcut key="45" modifier="4"></Shortcut>
 			<Command name="Current Date" id="49243"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="EF0C203559BF1E5F478DC96D5FFB6E9B" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Shortcut key="59" modifier="4"></Shortcut>
 			<Command name="Current Time" id="49244"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="084FE62393B141693B0F5670BC5D928A" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Shortcut key="78" modifier="5"></Shortcut>
 			<Command name="Current User Name" id="49248"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="True">
+		<CustomMenuItem hash="D27219F52ED2BC71B4F753077E4B97CF" isSubMenuItem="False" isSeparatorItem="True">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="68955F8CE0600C14EE7D03A2826CD41B" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Shortcut key="73" modifier="4"></Shortcut>
 			<Command name="From Index..." id="49246"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="1E9792843D5123E1D2E759691BEB3E4F" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Shortcut key="39" modifier="4"></Shortcut>
@@ -159,9 +116,6 @@
 	<Conditions>
 		<Install>
 			<Calculation><![CDATA[1]]></Calculation>
-			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-				<Chunk type="NoRef">1</Chunk>
-			</ChunkList>
 		</Install>
 	</Conditions>
 	<Comment></Comment>

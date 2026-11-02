@@ -4,9 +4,6 @@
 	<Conditions>
 		<Install>
 			<Calculation><![CDATA[1]]></Calculation>
-			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-				<Chunk type="NoRef">1</Chunk>
-			</ChunkList>
 		</Install>
 	</Conditions>
 	<Comment></Comment>

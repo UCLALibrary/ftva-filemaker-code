@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="37" name="New General Collection Item"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="38CE0325A0AFAC70F423941BD32A6028" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -12,9 +12,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="7" name="New Record/Request" enable="True">
+		<Step hash="D123C535A944560298B6231F6A39AEC2" id="7" name="New Record/Request" enable="True">
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="B13D396A943DD4CCE3597035101E0CB0" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">

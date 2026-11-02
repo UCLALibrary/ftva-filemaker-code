@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="9" name="Show All Newsreels"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="2B92AAA1C118FE2E603D43E695D45BF5" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="85" name="Allow User Abort" enable="True">
+		<Step hash="E3C86ABAF797CC40DBC1972589428976" id="85" name="Allow User Abort" enable="True">
 			<Options>65536</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -17,7 +17,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="9FFDDA2D11A70146F011D1739E0A6533" id="22" name="Enter Find Mode" enable="True">
 			<Options>32768</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -25,12 +25,18 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="608D3B214699A1E97FFD40C6DF38EF19" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="23" name="type">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -38,15 +44,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Newsreels"]]></Text>
-							<ChunkList hash="B2AE9F48252C86BDC1F979ABDBAA82D1">
-								<Chunk type="NoRef">&quot;Newsreels&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="FE222C0DA3E90AA03AF3BDB4A6848F0C" id="28" name="Perform Find" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="FindRequest">

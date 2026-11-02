@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="118" name="Cut Barcode from Barcode Field and Paste in Type field"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="81397887768CFDCD395B4ECDC7B1EAF2" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,9 +14,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="71" name="Loop" enable="True">
+		<Step hash="829AEFCCC74E6866AE334A695D2AC09C" id="71" name="Loop" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Always" value="1"></List>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="17" name="Go to Field" enable="True">
+		<Step hash="F01544181C85D0FD009DD604348C1332" id="17" name="Go to Field" enable="True">
 			<Options>4097</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -24,13 +29,19 @@
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="4" name="barcode_item">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="47" name="Copy" enable="True">
+		<Step hash="B6DE092F986AE733F38F87F98DE65820" id="47" name="Copy" enable="True">
 			<Options>4097</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -38,13 +49,19 @@
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="4" name="barcode_item">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="48" name="Paste" enable="True">
+		<Step hash="412AD62453CDF5183F900270D947244F" id="48" name="Paste" enable="True">
 			<Options>4097</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -55,23 +72,29 @@
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="23" name="type">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="E38EDB9DC1CDA704F5F39F95224701BF" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>8194</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Next" value="4">
-						<Boolean type="Exit after last" position="184" value="True"></Boolean>
+						<Boolean type="Exit after last" position="185" value="True"></Boolean>
 					</List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="73" name="End Loop" enable="True">
+		<Step hash="7549481646AE9FC2056DEED1380DD923" id="73" name="End Loop" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

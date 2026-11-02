@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="38" name="Edit Element Info"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="66653391EA15C94451F078556F18661C" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -15,7 +15,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="E2FEAFF0A4C985A12E08204707DE5B4D" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -25,9 +25,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["element_info"]]></Text>
-										<ChunkList hash="4CCB0BE319C474DF21A4E6F48D9923CF">
-											<Chunk type="NoRef">&quot;element_info&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

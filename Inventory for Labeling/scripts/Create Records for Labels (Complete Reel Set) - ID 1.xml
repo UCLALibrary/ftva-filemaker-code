@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="1" name="Create Records for Labels (Complete Reel Set)"></ScriptReference>
 	<ObjectList membercount="26">
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="2ABD9FEA3508CEB4E53A1FFCA8B8660A" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -9,22 +9,21 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Inventory for Labeling::inventory_id]]></Text>
-								<ChunkList hash="F9E9D4914FBB816A2AABEBBF4025B686">
-									<Chunk type="FieldRef">
-										<FieldReference id="20" name="inventory_id" repetition="1">
-											<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$InventoryID"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="A9B8C45801102E09532848F92D6B9420" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -32,22 +31,21 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Inventory for Labeling::label_type]]></Text>
-								<ChunkList hash="4B9AEA00C91AD86E57F7F9576E543559">
-									<Chunk type="FieldRef">
-										<FieldReference id="45" name="label_type" repetition="1">
-											<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$LabelType"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="0E7C325D69BF58DCF18D7899C5010FAC" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -55,22 +53,21 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Inventory for Labeling::total_reels]]></Text>
-								<ChunkList hash="46C857BFDAF3A033660A6E72843284F5">
-									<Chunk type="FieldRef">
-										<FieldReference id="22" name="total_reels" repetition="1">
-											<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$TotalReels"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="813EA5A81E4FD8B14326FE3143264450" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -78,75 +75,51 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[0]]></Text>
-								<ChunkList hash="9BF55A5D51230A8EA20D4BAA0F468EEC">
-									<Chunk type="NoRef">0</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$CurrentReelCount"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="02C90FD80202507DE40FE8FE240831E3" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[not IsEmpty ($TotalReels) and GetAsNumber($TotalReels)>0]]></Text>
-							<ChunkList hash="EEB0DEC81CA282996E88408C9218F8F5">
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">IsEmpty</Chunk>
-								<Chunk type="NoRef"> (</Chunk>
-								<Chunk type="VariableReference">$TotalReels</Chunk>
-								<Chunk type="NoRef">) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">GetAsNumber</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="VariableReference">$TotalReels</Chunk>
-								<Chunk type="NoRef">)&gt;0</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Not IsEmpty ($TotalReels) And GetAsNumber($TotalReels)>0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="12E2AE6328292AA7776CC36F062C2356" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[Count ( Labeling Database_InvID::inventory_id ) > 0]]></Text>
-							<ChunkList hash="C8E6EA01928D9E17100377DA32F9D2F4">
-								<Chunk type="FunctionRef">Count</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="27" name="inventory_id" repetition="1">
-										<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef"> ) &gt; 0</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="D865628D66FDDDAAC634CE24D63B7729" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -154,9 +127,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["Label records have already been created for this item."]]></Text>
-							<ChunkList hash="2FC43A152A1C4D069CDB93884DCE56D7">
-								<Chunk type="NoRef">&quot;Label records have already been created for this item.&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -171,11 +141,11 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="C8D64A6D1E7190B30E840277958F4048" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="79" name="Freeze Window" enable="True">
+		<Step hash="26B137BB3A22FD53CB5CB7BD2AA74166" id="79" name="Freeze Window" enable="True">
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="44B9A89122FC82D8F23E3D641EE34DF9" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -188,9 +158,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="71" name="Loop" enable="True">
+		<Step hash="2DEFF2EEB0D6B40943BC03EE6100FE8C" id="71" name="Loop" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Always" value="1"></List>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="B9C980F8DAD450BDF189B6FBCB5AB138" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -198,26 +173,34 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[$CurrentReelCount+1]]></Text>
-								<ChunkList hash="FCCD912947B83C1670D4697715C133DC">
-									<Chunk type="VariableReference">$CurrentReelCount</Chunk>
-									<Chunk type="NoRef">+1</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$CurrentReelCount"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="7" name="New Record/Request" enable="True">
+		<Step hash="D3695777B1F4FF95A8099C6718CCB081" id="7" name="New Record/Request" enable="True">
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="ABD01DB3E801664A21765D6ABB5B0CB5" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="27" name="inventory_id">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -225,20 +208,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$InventoryID]]></Text>
-							<ChunkList hash="C8FFA5278A85094FF137D16C7D7472A2">
-								<Chunk type="VariableReference">$InventoryID</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="23DB26A3FCA1C420C0D431D7C964C622" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="11" name="end_reel_range">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -246,20 +232,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$TotalReels]]></Text>
-							<ChunkList hash="C36844E584B15D672FC79DFDF0F4D285">
-								<Chunk type="VariableReference">$TotalReels</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="D47AC949C04149184FDA3AC7B6ED595D" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="5" name="reel_no">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -267,20 +256,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$CurrentReelCount]]></Text>
-							<ChunkList hash="CCBDCAB9E7D1C33DB8FAEE40C2F5BD1D">
-								<Chunk type="VariableReference">$CurrentReelCount</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="EE040F524E31467EA724EEB8D09540E3" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="28" name="reel_text">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -288,20 +280,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$CurrentReelCount]]></Text>
-							<ChunkList hash="CCBDCAB9E7D1C33DB8FAEE40C2F5BD1D">
-								<Chunk type="VariableReference">$CurrentReelCount</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="555DBF9F3D700CC3CF4905A125AC7468" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="12" name="notes">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -309,15 +304,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$LabelType]]></Text>
-							<ChunkList hash="C3CBC59FD26A04625A22C59DB4857D14">
-								<Chunk type="VariableReference">$LabelType</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="75" name="Commit Records/Requests" enable="True">
+		<Step hash="CBC3B973AD2B4D21833EF36FD2763EEF" id="75" name="Commit Records/Requests" enable="True">
 			<Options>128</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -331,26 +323,21 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="72" name="Exit Loop If" enable="True">
+		<Step hash="7E6DC51C911C48422C2AD34CD278CDD7" id="72" name="Exit Loop If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[$CurrentReelCount ≥ $TotalReels]]></Text>
-							<ChunkList hash="8609DD927C4043FA1CF8EC09B3AD47F7">
-								<Chunk type="VariableReference">$CurrentReelCount</Chunk>
-								<Chunk type="NoRef"> ≥ </Chunk>
-								<Chunk type="VariableReference">$TotalReels</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="73" name="End Loop" enable="True">
+		<Step hash="8543E4BE60E28EAD7D0FC9425A13712F" id="73" name="End Loop" enable="True">
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="8AC76250211DCAF380FEB261FD7B650B" id="6" name="Go to Layout" enable="True">
 			<Options>10</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -363,20 +350,17 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="B69AC89DDC016D1BEF7166FB2AE5CA96" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="478B9D87B51F5D9EEAE666EBA50A1759" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="D2234544731A1B0388AA6676C570CD5D" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -384,9 +368,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["You must specify the total number or reels before you can use this feature."]]></Text>
-							<ChunkList hash="A558589FBCF999F5C3B164F1FD8F6952">
-								<Chunk type="NoRef">&quot;You must specify the total number or reels before you can use this feature.&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -401,7 +382,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="A059D0C4DD75C3F1A32C1EC512CD9C6D" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

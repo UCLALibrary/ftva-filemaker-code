@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="125" name="Export Info to Text"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="36" name="Export Records" enable="True">
+		<Step hash="E8EA8CE5EBD2FA48790B3EC49ECFD9A9" id="36" name="Export Records" enable="True">
 			<Options>33587232</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">

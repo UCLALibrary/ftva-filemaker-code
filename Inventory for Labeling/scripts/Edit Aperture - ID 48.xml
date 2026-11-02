@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="48" name="Edit Aperture"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="AFC842E6003BBCFD91B0A076C0BDF15C" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="D800CA0FE008F4801875BDFFF075F5F3" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["aperture"]]></Text>
-										<ChunkList hash="EDCAF7C683ABF23B00C7E1B0509B9466">
-											<Chunk type="NoRef">&quot;aperture&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

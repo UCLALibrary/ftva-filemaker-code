@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="61" name="Edit Preprint"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="8E23D1AB56AB3087106B3B25577316A3" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -15,7 +15,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="6502F9110E3A929115E6E90250368240" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -25,9 +25,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["preprint"]]></Text>
-										<ChunkList hash="6A117143131B5CF8E19BE3305C9E2BD5">
-											<Chunk type="NoRef">&quot;preprint&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

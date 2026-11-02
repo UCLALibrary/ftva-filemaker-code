@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="40" name="Edit Format Type"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="02747F098D3F080F460023C151D3555B" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="9F64C9876121964C8E8C89E506484A33" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["format_type"]]></Text>
-										<ChunkList hash="2432C940A3877F8F97CB138BE2448551">
-											<Chunk type="NoRef">&quot;format_type&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

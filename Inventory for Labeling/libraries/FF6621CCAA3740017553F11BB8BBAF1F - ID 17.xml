@@ -1,0 +1,9 @@
+<BinaryData>
+	<LibraryReference id="17" key="FF6621CCAA3740017553F11BB8BBAF1F"></LibraryReference>
+	<StreamList>
+		<Stream name="MAIN" type="id">BMPf</Stream>
+		<Stream name="SIZE" type="Hex" size="4">00080008</Stream>
+		<Stream name="JPEG" type="Base64" size="668">/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1TV/3H9pf8sfs32q5/wCefkbv7T/e/wDLLyt3/PX/AEbd/wA/U3coooA//9k=</Stream>
+		<Stream name="BMPf" type="Base64" size="310">Qk02AQAAAAAAADYAAAAoAAAACAAAAAgAAAABACAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA////////////////AAAA/////////////////wAAAP//////AAAA/////////////////wAAAP///////////////////////////wAAAP////////////////8AAAD//////wAAAP////////////////8AAAD///////////////////////////8AAAD/////////////////AAAA//////8AAAD/////////////////AAAA////////////////////////////AAAA/////////////////wAAAP//////AAAA/////////////////wAAAP///////////w==</Stream>
+	</StreamList>
+</BinaryData>

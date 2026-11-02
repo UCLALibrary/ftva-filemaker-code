@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="49" name="Edit Sound Format"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="CB56493891450DD60768A454287CB176" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="8E318D8D19E5488E3A50B09FCF7B3EBE" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["sound_format"]]></Text>
-										<ChunkList hash="3DE6B12AEE55CE3081AFEAF9786CF20C">
-											<Chunk type="NoRef">&quot;sound_format&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

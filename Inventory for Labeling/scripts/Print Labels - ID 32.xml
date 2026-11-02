@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="32" name="Print Labels"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="C5E5DA983E83C5C3694ABEAB02D2D777" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="28A96C4C2B0A2B638014D81B603B14B5" id="123" name="Select Window" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,7 +23,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="166239E058D2A74CBEE4C8705B079B6E" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">

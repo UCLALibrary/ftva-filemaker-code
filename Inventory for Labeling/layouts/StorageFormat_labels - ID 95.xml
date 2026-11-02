@@ -5,7 +5,7 @@
 		<Part type="Body" kind="4">
 			<Definition type="Body" kind="4" size="36" absolute="0" Options="1024"></Definition>
 			<ObjectList membercount="2">
-				<LayoutObject id="1" type="Text" name="" kind="2">
+				<LayoutObject hash="F2AA04AFEEFC22C1543CCBF704A674E9" id="1" type="Text" name="" kind="2">
 					<Bounds top="4" left="7" bottom="34" right="717"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -47,7 +47,7 @@ self:normal .icon
 						</FieldReference>
 					</FieldList>
 				</LayoutObject>
-				<LayoutObject id="2" type="Text" name="" kind="2">
+				<LayoutObject hash="B851708D066CF7C9313C295A9AF79518" id="2" type="Text" name="" kind="2">
 					<Bounds top="19" left="12" bottom="36" right="148"></Bounds>
 					<Options>2952790016</Options>
 					<Text>
@@ -102,4 +102,7 @@ self:normal .icon
 	<UUID modifications="16" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2026-07-09T16:35:37">B244D2CA-0C28-2A4B-AD65-837699525B69</UUID>
 	<ClientType>3</ClientType>
 	<Options hidden="False">15927819</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

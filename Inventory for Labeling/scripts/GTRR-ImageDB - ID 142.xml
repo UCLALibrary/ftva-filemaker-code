@@ -1,80 +1,64 @@
 <Script>
 	<ScriptReference id="142" name="GTRR-ImageDB"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="B20C1D404390D660E04BF75EF3F6CD22" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
 					<value>
 						<Calculation datatype="1" position="1">
 							<Calculation>
-								<Text><![CDATA[Get( UserName)]]></Text>
-								<ChunkList hash="AADB87CFC9E6933F1963C013839F3350">
-									<Chunk type="FunctionRef">Get</Chunk>
-									<Chunk type="NoRef">( </Chunk>
-									<Chunk type="FunctionRef">UserName</Chunk>
-									<Chunk type="NoRef">)</Chunk>
-								</ChunkList>
+								<Text><![CDATA[Get( userName)]]></Text>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$$CurrentUser"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="875CE2F4980BCCB64412E6FEAE59440F" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[IsEmpty ( InventoryItem::InventoryID_FK )]]></Text>
-							<ChunkList hash="34A1BB8C28A3BBD7399A78C82E6EE4FE">
-								<Chunk type="FunctionRef">IsEmpty</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="1" name="InventoryID_FK" repetition="1">
-										<TableOccurrenceReference id="1065112" name="InventoryItem"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef"> )</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="27662760492BDFA17DD9870630733366" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[$$CurrentUser = "Ssultan"  or $$CurrentUser = "lfuguet" or $$CurrentUser = "Shogsett"]]></Text>
-							<ChunkList hash="B7612822C235133C2FDCFD1326CB2384">
-								<Chunk type="VariableReference">$$CurrentUser</Chunk>
-								<Chunk type="NoRef"> = &quot;Ssultan&quot;  </Chunk>
-								<Chunk type="FunctionRef">or</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="VariableReference">$$CurrentUser</Chunk>
-								<Chunk type="NoRef"> = &quot;lfuguet&quot; </Chunk>
-								<Chunk type="FunctionRef">or</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="VariableReference">$$CurrentUser</Chunk>
-								<Chunk type="NoRef"> = &quot;Shogsett&quot;</Chunk>
-							</ChunkList>
+							<Text><![CDATA[$$CurrentUser = "Ssultan"  Or $$CurrentUser = "lfuguet" Or $$CurrentUser = "Shogsett"]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="C0F8B9809A1A7B2B8BE29FB9C9ADBED6" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="1" name="InventoryID_FK">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065112" name="InventoryItem"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -82,19 +66,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[Inventory for Labeling::inventory_id]]></Text>
-							<ChunkList hash="F9E9D4914FBB816A2AABEBBF4025B686">
-								<Chunk type="FieldRef">
-									<FieldReference id="20" name="inventory_id" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="75" name="Commit Records/Requests" enable="True">
+		<Step hash="1BFA3E17D2306E4D92DA3D8F66D3802E" id="75" name="Commit Records/Requests" enable="True">
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Skip data entry validation" id="256" value="False"></Boolean>
@@ -107,18 +84,15 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="873EFA9BC485322DF329503536F15BA0" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="3AED8769B03E91E1796BFF7FB6EE07E6" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16389</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Oops!"]]></Text>
-							<ChunkList hash="F06C758FA872C1AB26E30AE4271143E6">
-								<Chunk type="NoRef">&quot;Oops!&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -126,9 +100,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["sorry no images yet"]]></Text>
-							<ChunkList hash="8EF1A8296BC85EABEBBEC2AFF1922FDE">
-								<Chunk type="NoRef">&quot;sorry no images yet&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -143,11 +114,11 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="B0619918116206C3171046E04502B2C6" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="432BCCAFC53225F6BA0FA1884506A551" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="C453CF63FC972048993AAA3CCCD8E69B" id="74" name="Go to Related Record" enable="True">
 			<Options>33685768</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">

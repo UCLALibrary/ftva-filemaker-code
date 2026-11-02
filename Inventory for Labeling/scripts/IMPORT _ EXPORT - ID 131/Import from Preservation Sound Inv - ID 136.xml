@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="136" name="Import from Preservation Sound Inv"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="C2154FCC2F3A7E094A8741A8DD2BBD3B" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">

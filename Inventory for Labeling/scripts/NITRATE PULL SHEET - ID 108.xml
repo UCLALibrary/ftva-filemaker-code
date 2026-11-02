@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="108" name="NITRATE PULL SHEET"></ScriptReference>
 	<ObjectList membercount="9">
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="3214AEE546F253BA2869382AA2407764" id="28" name="Perform Find" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="FindRequest">
@@ -11,20 +11,19 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="B4E957BD264AF9D3F064F8C973827123" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[Inventory for Labeling::<Field Missing> >= "pull"]]></Text>
-							<ChunkList hash="D41D8CD98F00B204E9800998ECF8427E"></ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="00B3F6F40625E01D7FDAC064F5B351E9" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -37,7 +36,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="A45CEB766386B36E1AE7D1DB9AC745C6" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -48,7 +47,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="0CC2CCD9AB0DD53782C8F4406E7565A7" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
@@ -56,7 +55,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="41" name="Enter Preview Mode" enable="True">
+		<Step hash="DD3B7BAB13C2E1BBBD210F7A0DF17DE6" id="41" name="Enter Preview Mode" enable="True">
 			<Options>16777216</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -64,14 +63,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="B07895A2CDE41A714A3FC5AB3CBA7B69" id="55" name="Enter Browse Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="961ECDDA9E09269EF0B3481FEA7654A7" id="6" name="Go to Layout" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">
@@ -83,7 +82,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="EA498F2A2A16ED90B2786650682F3FC9" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

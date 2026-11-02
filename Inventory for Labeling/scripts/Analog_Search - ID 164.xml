@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="164" name="Analog_Search"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="EB4B5FC1E3C1F93915B1EECE4098CB13" id="22" name="Enter Find Mode" enable="True">
 			<Options>16777216</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="281CCEB6BF0677015C08F8B62C430DEB" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -17,46 +17,46 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="06E642AAAED0B6B0B98F1A23CAE47C13" id="89" name="# (comment)" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="F95F26BCDCC0010F57E2B27765AC74A8" id="28" name="Perform Find" enable="True">
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="2A61A45A5E50339239416AEC5FC02757" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastError ) = 0]]></Text>
-							<ChunkList hash="54FC8B91DE327952E1E920710D4432A7">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastError</Chunk>
-								<Chunk type="NoRef"> ) = 0</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get ( lastError ) = 0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="77B7679012D5A4E67328CCFA00087CCF" id="22" name="Enter Find Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="5ABD84B46FF59E61C66BC6C39B661ECB" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="198" name="digital_record">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -64,19 +64,21 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[0]]></Text>
-							<ChunkList hash="9BF55A5D51230A8EA20D4BAA0F468EEC">
-								<Chunk type="NoRef">0</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="126" name="Constrain Found Set" enable="True">
+		<Step hash="A78961EA2099B5DD2AEA0985CACE0469" id="126" name="Constrain Found Set" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="Boolean">
+					<Boolean type="Find without indexes" id="256" value="False"></Boolean>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="178FF6137DDEEDFD0580BFE712EEAD83" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="2FE88679898872B5E5F755E45976574F" id="86" name="Set Error Capture" enable="True">
 			<Options>65536</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">

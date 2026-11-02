@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="137" name="Goldbergs Search"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="03F8780C830A5CC913584B9345382EC5" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="E92D69BEBA6D7DEB545FC2580F156D14" id="22" name="Enter Find Mode" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -60,7 +60,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="D525476025A1568663A4998D48646D45" id="28" name="Perform Find" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="FindRequest">
@@ -81,7 +81,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="7A815B3C802B9C5B7D00AC501E48395B" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -105,7 +105,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="83B5836782148945B0DE4550C1AAF23F" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">

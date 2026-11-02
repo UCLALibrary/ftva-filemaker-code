@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="13" name="Search Inventory Number"></ScriptReference>
 	<ObjectList membercount="25">
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="F4FADE69D917D520B2111D0F2AD63E48" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,9 +9,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="ED00E9E65C1701D272AE012D17CF9E34" id="23" name="Show All Records" enable="True">
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="B2C74874E11B1BA16A2D60CF32D621C4" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -24,12 +24,18 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="D9E5CF869D4D4AB15AD5240DC980A54F" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="31" name="found">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -37,20 +43,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[-1]]></Text>
-							<ChunkList hash="DD8A6EB299C18E11DDFC3F09B80E8D23">
-								<Chunk type="NoRef">-1</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="B78D86158C011FA954247F2BABD0DC54" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="32" name="search_error">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -58,20 +67,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="A164B6E08E7AEF4AF2D5628E31DFD952" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="30" name="search_results">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -79,15 +91,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="32FD3E5814CD2DE2416ABD2BB5AE40F8" id="22" name="Enter Find Mode" enable="True">
 			<Options>32768</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -95,12 +104,18 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="D7E078385D0DE77D6F7F29BBA5B03DC2" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="29" name="inventory_no">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -108,183 +123,38 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["=="&Trim(Inventory for Labeling::inventory_no_search)]]></Text>
-							<ChunkList hash="BFA5985FC34CA74B1F31A5A6AAF54F3D">
-								<Chunk type="NoRef">&quot;==&quot;&amp;</Chunk>
-								<Chunk type="FunctionRef">Trim</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">)</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="B70473EDC14D797C457349EA6888DB58" id="28" name="Perform Find" enable="True">
 			<Options>32768</Options>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="0222E324F5DAAC763731BF083A507863" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get(LastError)=401  or  Inventory for Labeling::inventory_no_search="" or Get(LastError)=502 or  ((not PatternCount(Inventory for Labeling::inventory_no_search; "0")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "1")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "2")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "3")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "4")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "5")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "6")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "7")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "8")) and(not PatternCount(Inventory for Labeling::inventory_no_search; "9")))]]></Text>
-							<ChunkList hash="49D20684F31B5A1242A87D1DC57FDC27">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">LastError</Chunk>
-								<Chunk type="NoRef">)=401  </Chunk>
-								<Chunk type="FunctionRef">or</Chunk>
-								<Chunk type="NoRef">  </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">=&quot;&quot; </Chunk>
-								<Chunk type="FunctionRef">or</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">LastError</Chunk>
-								<Chunk type="NoRef">)=502 </Chunk>
-								<Chunk type="FunctionRef">or</Chunk>
-								<Chunk type="NoRef">  &#13;((</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;0&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;1&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;2&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;3&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;4&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;5&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;6&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;7&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;8&quot;)) </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef">&#13;(</Chunk>
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="33" name="inventory_no_search" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;9&quot;)))</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get(lastError)=401  Or  Inventory for Labeling::inventory_no_search="" Or Get(lastError)=502 Or  ((Not PatternCount(Inventory for Labeling::inventory_no_search; "0")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "1")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "2")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "3")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "4")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "5")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "6")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "7")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "8")) And(Not PatternCount(Inventory for Labeling::inventory_no_search; "9")))]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="D8F70322BC131074903885F02865E4D5" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="31" name="found">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -292,20 +162,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[0]]></Text>
-							<ChunkList hash="9BF55A5D51230A8EA20D4BAA0F468EEC">
-								<Chunk type="NoRef">0</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="C284A7330322FE31DF3E3A0A8D044563" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="30" name="search_results">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -313,20 +186,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="982EAF872BD7C79915AC169409BCD3AA" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="32" name="search_error">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -334,15 +210,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Item not found. Please try different search"]]></Text>
-							<ChunkList hash="DE53CE396B50E3A94D79D0E324C06407">
-								<Chunk type="NoRef">&quot;Item not found. Please try different search&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="AAF513F0EFE1A03E6BA8F9E5C6D2A1CC" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -355,14 +228,20 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="1902AF6BA8472D37CB541E50E98F79E4" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="E1A7CE6ED0D880E80F3382596A25E8F6" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="31" name="found">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -370,20 +249,23 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[1]]></Text>
-							<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-								<Chunk type="NoRef">1</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="854C6EC9DAA22026F3A0755C469DA955" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="30" name="search_results">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -391,70 +273,24 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[If(GetAsNumber(Inventory for Labeling::found)=1; "Inventory Number: " & Inventory for Labeling::inventory_no & "¶¶" & "Title: " & Inventory for Labeling::title & "¶¶" & "Total Reels: "& GetAsNumber(Inventory for Labeling::total_reels) & "¶¶" & "Type: "& Inventory for Labeling::type; "")]]></Text>
-							<ChunkList hash="FF40E643EE8358692BE1FD3363B56D62">
-								<Chunk type="FunctionRef">If</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">GetAsNumber</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="31" name="found" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">)=1; &quot;Inventory Number: &quot; &amp; </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="29" name="inventory_no" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef"> &amp; &quot;¶¶&quot; &amp; &quot;Title: &quot; &amp; </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="21" name="title" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef"> &amp; &quot;¶¶&quot; &amp; &quot;Total Reels: &quot;&amp; </Chunk>
-								<Chunk type="FunctionRef">GetAsNumber</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="22" name="total_reels" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">) &amp; &quot;¶¶&quot; &amp; &quot;Type: &quot;&amp; </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="23" name="type" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">; &quot;&quot;)</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="3277C0DB05BA4F6EDDD81994F17511B0" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[Inventory for Labeling::type="General Collection"]]></Text>
-							<ChunkList hash="D9F0ABF2D67F6BF0A1CD1E70CE7AFCB3">
-								<Chunk type="FieldRef">
-									<FieldReference id="23" name="type" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">=&quot;General Collection&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="2FC0A79DC707E9DADCF90A69BE720A21" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -465,7 +301,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="80" name="Refresh Window" enable="True">
+		<Step hash="1D607E89440DFB81EB426DBED845F548" id="80" name="Refresh Window" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
@@ -475,9 +311,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="39A9954E1CF51A9DEE59401A14C28F30" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="958BB799E4155C70396ACEA8AA1B5EA3" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -490,7 +326,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="80" name="Refresh Window" enable="True">
+		<Step hash="53FB78195CF230A72398EDCB00D0B11F" id="80" name="Refresh Window" enable="True">
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
@@ -500,9 +336,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="0369EC9AA51BC1B7EFDD0EFB96631FEC" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="944D9EEC4273A28C6854C4458E75A30B" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

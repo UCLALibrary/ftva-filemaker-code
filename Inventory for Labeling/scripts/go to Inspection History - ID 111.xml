@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="111" name="go to Inspection History"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="8264BB5234669B6D6040A21F79D52CA0" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="7E83A5A99136D83A1B87C700EBC4B456" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["Film Inspection History"]]></Text>
-										<ChunkList hash="FDB6162277EA2CAA1F6C4440F2DEB12C">
-											<Chunk type="NoRef">&quot;Film Inspection History&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

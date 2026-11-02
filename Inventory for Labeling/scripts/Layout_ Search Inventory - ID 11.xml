@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="11" name="Layout: Search Inventory"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="E21127D10AF27557BC2105811FFB500F" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="995444885F0352FD2892D76311AFDBC5" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -27,7 +27,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="162D3330EC841E3AFBCE2DF94A3C3962" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">

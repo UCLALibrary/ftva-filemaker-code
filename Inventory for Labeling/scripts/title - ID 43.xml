@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="43" name="title"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="6E87682FEA767C8299C1B3509127385D" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="01F4244F00EF9E0A469C37323A5B3080" id="22" name="Enter Find Mode" enable="True">
 			<Options>50364416</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">

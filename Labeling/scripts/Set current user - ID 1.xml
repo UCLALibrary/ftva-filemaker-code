@@ -1,25 +1,25 @@
 <Script>
 	<ScriptReference id="1" name="Set current user"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="D265807D94FAD5CD892E83F3BB8C8FD7" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="1" name="current_user">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
-							<Text><![CDATA[Get(UserName)]]></Text>
-							<ChunkList hash="29C8C24315810B6F40A97FE8402C83E9">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">UserName</Chunk>
-								<Chunk type="NoRef">)</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get(userName)]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>

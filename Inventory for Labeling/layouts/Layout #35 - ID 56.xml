@@ -16,14 +16,14 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="2">
-				<LayoutObject id="3" type="Portal" name="" kind="9">
+				<LayoutObject hash="ABEC65EA7F7CC01DDFE6A8BD5AD20956" id="3" type="Portal" name="" kind="9">
 					<Bounds top="42" left="30" bottom="845" right="130"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="50">0</Options>
 						<ObjectList membercount="1">
-							<LayoutObject id="1" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="AABEC7852BF2030E2D702092961E80F7" id="1" type="Edit Box" name="" kind="1">
 								<Bounds top="1" left="3" bottom="15" right="94"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -101,14 +101,14 @@ self:normal .row
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="4" type="Portal" name="" kind="9">
+				<LayoutObject hash="5302D7AD6D411E4AEA95D7BDBAC497DC" id="4" type="Portal" name="" kind="9">
 					<Bounds top="43" left="136" bottom="846" right="236"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="50">0</Options>
 						<ObjectList membercount="1">
-							<LayoutObject id="2" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="64CCD30D0A40B632984FFC1E36F03714" id="2" type="Edit Box" name="" kind="1">
 								<Bounds top="1" left="6" bottom="15" right="90"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -199,4 +199,7 @@ self:normal .row
 	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:06">664BB653-80CF-324A-BCE3-15DF9F0B466D</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="False">7536672</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

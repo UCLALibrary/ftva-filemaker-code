@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="98" name="Go to General Entry"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="1AF67F6B036499DBE346AEB917A7C805" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">

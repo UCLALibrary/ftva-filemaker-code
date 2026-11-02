@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="24" name="Position and Resize Window"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step id="30" name="View As" enable="True">
+		<Step hash="A340B8DBD9A17F76FD464BED63C1B13C" id="30" name="View As" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="49B8FC0FA544022BA72025621A5D46A9" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -17,7 +17,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="92" name="Show/Hide Text Ruler" enable="True">
+		<Step hash="D68E8FDB8554A33E9781F4240950CBE4" id="92" name="Show/Hide Text Ruler" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -25,7 +25,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="4AF2E4F959269EBB028D25A137C2CD77" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>524290</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">

@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="36" name="Newsreel Layout"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="3DC8CAEC542B7B0A08C63621181271A3" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="B662B9E1E18D3F45677101CAC9A5AA7E" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -27,7 +27,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="5285A2BADACC70EC110F9272DD0FB06B" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -86,7 +86,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="8B9A56784AA49FED7E9811DB58E986A6" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">

@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="3" name="Search: Barcode"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="E41CA33228911542644FCC30A84CED4A" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -15,7 +15,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="AFC79E0786A17B3DDF71B5C41271308F" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -29,7 +29,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="DC5D4A7D7C6FE4E3A08B840FDF1126A1" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -39,9 +39,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["Labeling Database"]]></Text>
-										<ChunkList hash="542D40BC1C14473BC2FEE7845DC5A4F5">
-											<Chunk type="NoRef">&quot;Labeling Database&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="4" name="Search: Inventory"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="5AF12A682EB8F8D98DCACB48C5019F3B" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -15,7 +15,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="D9C12D08BB44AA9229F3010E77D975B1" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -29,7 +29,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="769F7EA4A5C06ECD807D6A46F8EB47CE" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -39,9 +39,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["Inventory for Labeling"]]></Text>
-										<ChunkList hash="70705CA9E8D101BE7A5E0885F9B6D35B">
-											<Chunk type="NoRef">&quot;Inventory for Labeling&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="95" name="status"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="5A854EC72768DF9B3028B31C372FE8EE" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="34DCF3F3155EEF9C9F3FE55693F87F5C" id="123" name="Select Window" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,7 +23,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="77" name="Insert Calculated Result" enable="True">
+		<Step hash="CE5B88D3447C91683CDC99A598350041" id="77" name="Insert Calculated Result" enable="True">
 			<Options>4097</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -31,7 +31,13 @@
 				</Parameter>
 				<Parameter type="Target">
 					<FieldReference id="48" name="">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>

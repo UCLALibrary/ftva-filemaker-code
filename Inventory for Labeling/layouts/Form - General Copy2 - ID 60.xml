@@ -14,7 +14,7 @@
 ]]></LocalCSS>
 			</Definition>
 			<ObjectList membercount="35">
-				<LayoutObject id="1" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="891F4E3559BF2299CCE2BB5480878D42" id="1" type="Edit Box" name="" kind="1">
 					<Bounds top="449" left="347" bottom="465" right="420"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -79,7 +79,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="2" type="Text" name="" kind="2">
+				<LayoutObject hash="F0AB72FD0A09544FFD837CA77AEC24CB" id="2" type="Text" name="" kind="2">
 					<Bounds top="452" left="288" bottom="465" right="346"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -102,7 +102,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="36" type="Rectangle" name="" kind="5">
+				<LayoutObject hash="AAE96C19CAF63BBDC8ADCC425F5FD9E1" id="36" type="Rectangle" name="" kind="5">
 					<Bounds top="18" left="18" bottom="247" right="421"></Bounds>
 					<Options>805306370</Options>
 					<Rectangle renderFormat="0"></Rectangle>
@@ -140,7 +140,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="37" type="Rectangle" name="" kind="5">
+				<LayoutObject hash="29A38D93A8ECBE0DA95AD46193CD3EA5" id="37" type="Rectangle" name="" kind="5">
 					<Bounds top="404" left="18" bottom="441" right="421"></Bounds>
 					<Options>805306368</Options>
 					<Rectangle renderFormat="0"></Rectangle>
@@ -178,7 +178,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="3" type="Drop-down List" name="" kind="1">
+				<LayoutObject hash="C2BAA408A1ABD445EDAF37BB1DEEE3CA" id="3" type="Drop-down List" name="" kind="1">
 					<Bounds top="419" left="118" bottom="435" right="191"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -245,7 +245,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="4" type="Text" name="" kind="2">
+				<LayoutObject hash="EF1FF82347413EBEF033A753AB9AB136" id="4" type="Text" name="" kind="2">
 					<Bounds top="420" left="37" bottom="433" right="107"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -269,7 +269,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="5" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="31C1CDB756E1ED209D317B9116771DA7" id="5" type="Edit Box" name="" kind="1">
 					<Bounds top="137" left="36" bottom="153" right="403"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -333,7 +333,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="6" type="Text" name="" kind="2">
+				<LayoutObject hash="7212F40D181F1DE1C7AA9DB171BFA3A5" id="6" type="Text" name="" kind="2">
 					<Bounds top="120" left="35" bottom="133" right="152"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -356,7 +356,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="7" type="Text" name="" kind="2">
+				<LayoutObject hash="F8A67A609CCB785C869D843E604B67D2" id="7" type="Text" name="" kind="2">
 					<Bounds top="162" left="349" bottom="175" right="379"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -380,7 +380,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="8" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="F304BD119C4A4CA2268725F78F676104" id="8" type="Edit Box" name="" kind="1">
 					<Bounds top="180" left="17" bottom="400" right="420"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -442,7 +442,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="9" type="Text" name="" kind="2">
+				<LayoutObject hash="3637CA1B98706AADAEFB033C534D2DC2" id="9" type="Text" name="" kind="2">
 					<Bounds top="162" left="35" bottom="175" right="67"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -466,7 +466,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="10" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="E8193929EB4C49BC1C71F7CDFB34AB7A" id="10" type="Edit Box" name="" kind="1">
 					<Bounds top="72" left="35" bottom="112" right="402"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -530,7 +530,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="11" type="Text" name="" kind="2">
+				<LayoutObject hash="5FF87F66312E4C5C278E0D6CA73989B0" id="11" type="Text" name="" kind="2">
 					<Bounds top="54" left="35" bottom="67" right="61"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -554,7 +554,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="12" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="AD2E1282637CD26A798B2D5730C4D7A6" id="12" type="Edit Box" name="" kind="1">
 					<Bounds top="51" left="329" bottom="67" right="402"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -619,7 +619,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="13" type="Text" name="" kind="2">
+				<LayoutObject hash="863B2A8B549753DF4FAE72ED7B5ACA38" id="13" type="Text" name="" kind="2">
 					<Bounds top="52" left="265" bottom="65" right="324"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -643,7 +643,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="14" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="660D62D2A392C2C76532B58AB9050506" id="14" type="Edit Box" name="" kind="1">
 					<Bounds top="32" left="329" bottom="48" right="402"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -715,7 +715,7 @@ self:normal .inner_border
 						</ScriptTrigger>
 					</ScriptTriggers>
 				</LayoutObject>
-				<LayoutObject id="15" type="Text" name="" kind="2">
+				<LayoutObject hash="7191E58498E2E3946964447C88AA714C" id="15" type="Text" name="" kind="2">
 					<Bounds top="35" left="270" bottom="48" right="328"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -738,7 +738,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="38" type="Rectangle" name="" kind="5">
+				<LayoutObject hash="48E508625B4F3A8169B9A323810A84B3" id="38" type="Rectangle" name="" kind="5">
 					<Bounds top="404" left="18" bottom="663" right="421"></Bounds>
 					<Options>805306368</Options>
 					<Rectangle renderFormat="0"></Rectangle>
@@ -776,7 +776,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="16" type="Text" name="" kind="2">
+				<LayoutObject hash="41DB32BFB3AEB4626EDD107F57926B2B" id="16" type="Text" name="" kind="2">
 					<Bounds top="448" left="38" bottom="461" right="78"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -800,7 +800,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="17" type="Text" name="" kind="2">
+				<LayoutObject hash="6F2E00EFF6E64E09FCF954F9A4FA326D" id="17" type="Text" name="" kind="2">
 					<Bounds top="448" left="125" bottom="461" right="173"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -824,7 +824,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="18" type="Text" name="" kind="2">
+				<LayoutObject hash="A108B32E5D0234A85EB26682701B988F" id="18" type="Text" name="" kind="2">
 					<Bounds top="448" left="258" bottom="461" right="306"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -848,14 +848,14 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="35" type="Portal" name="" kind="9">
+				<LayoutObject hash="8CEF21950E4EF601B09B09474742D1EE" id="35" type="Portal" name="" kind="9">
 					<Bounds top="469" left="35" bottom="657" right="404"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="11">3</Options>
 						<ObjectList membercount="11">
-							<LayoutObject id="19" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="C03017AA4072D00EFAB5B08BB142BED9" id="19" type="Edit Box" name="" kind="1">
 								<Bounds top="0" left="0" bottom="16" right="43"></Bounds>
 								<Options>805306368</Options>
 								<TabOrder membercount="1">
@@ -901,16 +901,12 @@ self:normal .inner_border
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject id="41" type="Group" name="" kind="8">
+							<LayoutObject hash="E79B548D226F0D1DAFEF76FAF6E2B4B6" id="41" type="Group" name="" kind="8">
 								<Bounds top="0" left="43" bottom="16" right="188"></Bounds>
 								<Options>805306368</Options>
 								<GroupedButton>
-									<action>
-										<Step id="0" name="&lt;unknown&gt; [0]" enable="True">
-										</Step>
-									</action>
 									<ObjectList membercount="2">
-										<LayoutObject id="20" type="Edit Box" name="" kind="1">
+										<LayoutObject hash="846B99DE602501A701D83AB12522C6EC" id="20" type="Edit Box" name="" kind="1">
 											<Bounds top="0" left="0" bottom="17" right="145"></Bounds>
 											<Options>805306376</Options>
 											<TabOrder membercount="1">
@@ -956,7 +952,7 @@ self:normal .inner_border
 												</Formatting>
 											</ExtendedAttributes>
 										</LayoutObject>
-										<LayoutObject id="40" type="Line" name="" kind="4">
+										<LayoutObject hash="884B7915BAFE57DA68F53DAAB20D8F43" id="40" type="Line" name="" kind="4">
 											<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 											<Options>805318656</Options>
 											<Line></Line>
@@ -972,7 +968,7 @@ self:normal .inner_border
 									</ObjectList>
 								</GroupedButton>
 							</LayoutObject>
-							<LayoutObject id="20" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="846B99DE602501A701D83AB12522C6EC" id="20" type="Edit Box" name="" kind="1">
 								<Bounds top="0" left="0" bottom="17" right="145"></Bounds>
 								<Options>805306376</Options>
 								<TabOrder membercount="1">
@@ -1018,7 +1014,7 @@ self:normal .inner_border
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject id="40" type="Line" name="" kind="4">
+							<LayoutObject hash="884B7915BAFE57DA68F53DAAB20D8F43" id="40" type="Line" name="" kind="4">
 								<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 								<Options>805318656</Options>
 								<Line></Line>
@@ -1031,12 +1027,12 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject id="43" type="Grouped Button" name="" kind="8">
+							<LayoutObject hash="F81871E0212DC0B06EA4804A6C8BC918" id="43" type="Grouped Button" name="" kind="8">
 								<Bounds top="1" left="311" bottom="14" right="347"></Bounds>
 								<Options>805371904</Options>
 								<GroupedButton>
 									<action>
-										<Step id="104" name="Delete Portal Row" enable="True">
+										<Step hash="60D10FE6AD9F4B899C52C6A253AB864F" id="104" name="Delete Portal Row" enable="True">
 											<ParameterValues membercount="1">
 												<Parameter type="Boolean">
 													<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -1045,7 +1041,7 @@ self:normal .inner_border
 										</Step>
 									</action>
 									<ObjectList membercount="1">
-										<LayoutObject id="21" type="Text" name="" kind="2">
+										<LayoutObject hash="B95A837470BCDEFE904C099932B009EA" id="21" type="Text" name="" kind="2">
 											<Bounds top="0" left="0" bottom="13" right="36"></Bounds>
 											<Options>805306368</Options>
 											<Text>
@@ -1073,7 +1069,7 @@ self:normal .inner_border
 									</ObjectList>
 								</GroupedButton>
 							</LayoutObject>
-							<LayoutObject id="21" type="Text" name="" kind="2">
+							<LayoutObject hash="B95A837470BCDEFE904C099932B009EA" id="21" type="Text" name="" kind="2">
 								<Bounds top="0" left="0" bottom="13" right="36"></Bounds>
 								<Options>805306368</Options>
 								<Text>
@@ -1098,25 +1094,17 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject id="49" type="Group" name="" kind="8">
+							<LayoutObject hash="BC516AC50225B1D3B0516FCDED1FA071" id="49" type="Group" name="" kind="8">
 								<Bounds top="0" left="188" bottom="16" right="304"></Bounds>
 								<Options>805306368</Options>
 								<GroupedButton>
-									<action>
-										<Step id="0" name="&lt;unknown&gt; [0]" enable="True">
-										</Step>
-									</action>
 									<ObjectList membercount="2">
-										<LayoutObject id="47" type="Group" name="" kind="8">
+										<LayoutObject hash="BFAB7EF6DCBD1C3E9A89F3577420B200" id="47" type="Group" name="" kind="8">
 											<Bounds top="0" left="1" bottom="17" right="116"></Bounds>
 											<Options>805306368</Options>
 											<GroupedButton>
-												<action>
-													<Step id="0" name="&lt;unknown&gt; [0]" enable="True">
-													</Step>
-												</action>
 												<ObjectList membercount="2">
-													<LayoutObject id="46" type="Line" name="" kind="4">
+													<LayoutObject hash="B76887E29CE5B90F59D9CE2A085F989A" id="46" type="Line" name="" kind="4">
 														<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 														<Options>805310464</Options>
 														<Line></Line>
@@ -1129,7 +1117,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 													</LayoutObject>
-													<LayoutObject id="22" type="Edit Box" name="" kind="1">
+													<LayoutObject hash="AB54E3F4D3C60170559CBCFF6646B6C7" id="22" type="Edit Box" name="" kind="1">
 														<Bounds top="0" left="0" bottom="17" right="115"></Bounds>
 														<Options>805306376</Options>
 														<TabOrder membercount="1">
@@ -1178,7 +1166,7 @@ self:normal .inner_border
 												</ObjectList>
 											</GroupedButton>
 										</LayoutObject>
-										<LayoutObject id="48" type="Line" name="" kind="4">
+										<LayoutObject hash="9D4E21A2078B348E77916628E548A27B" id="48" type="Line" name="" kind="4">
 											<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 											<Options>805318656</Options>
 											<Line></Line>
@@ -1194,16 +1182,12 @@ self:normal .inner_border
 									</ObjectList>
 								</GroupedButton>
 							</LayoutObject>
-							<LayoutObject id="47" type="Group" name="" kind="8">
+							<LayoutObject hash="BFAB7EF6DCBD1C3E9A89F3577420B200" id="47" type="Group" name="" kind="8">
 								<Bounds top="0" left="1" bottom="17" right="116"></Bounds>
 								<Options>805306368</Options>
 								<GroupedButton>
-									<action>
-										<Step id="0" name="&lt;unknown&gt; [0]" enable="True">
-										</Step>
-									</action>
 									<ObjectList membercount="2">
-										<LayoutObject id="46" type="Line" name="" kind="4">
+										<LayoutObject hash="B76887E29CE5B90F59D9CE2A085F989A" id="46" type="Line" name="" kind="4">
 											<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 											<Options>805310464</Options>
 											<Line></Line>
@@ -1216,7 +1200,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 										</LayoutObject>
-										<LayoutObject id="22" type="Edit Box" name="" kind="1">
+										<LayoutObject hash="AB54E3F4D3C60170559CBCFF6646B6C7" id="22" type="Edit Box" name="" kind="1">
 											<Bounds top="0" left="0" bottom="17" right="115"></Bounds>
 											<Options>805306376</Options>
 											<TabOrder membercount="1">
@@ -1265,7 +1249,7 @@ self:normal .inner_border
 									</ObjectList>
 								</GroupedButton>
 							</LayoutObject>
-							<LayoutObject id="46" type="Line" name="" kind="4">
+							<LayoutObject hash="B76887E29CE5B90F59D9CE2A085F989A" id="46" type="Line" name="" kind="4">
 								<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 								<Options>805310464</Options>
 								<Line></Line>
@@ -1278,7 +1262,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 							</LayoutObject>
-							<LayoutObject id="22" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="AB54E3F4D3C60170559CBCFF6646B6C7" id="22" type="Edit Box" name="" kind="1">
 								<Bounds top="0" left="0" bottom="17" right="115"></Bounds>
 								<Options>805306376</Options>
 								<TabOrder membercount="1">
@@ -1324,7 +1308,7 @@ self:normal .inner_border
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject id="48" type="Line" name="" kind="4">
+							<LayoutObject hash="9D4E21A2078B348E77916628E548A27B" id="48" type="Line" name="" kind="4">
 								<Bounds top="0" left="0" bottom="16" right="0"></Bounds>
 								<Options>805318656</Options>
 								<Line></Line>
@@ -1366,7 +1350,7 @@ self:normal .row_alt
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="23" type="Text" name="" kind="2">
+				<LayoutObject hash="F01E2A1CC4CCCFC99AA5E9B074CC0365" id="23" type="Text" name="" kind="2">
 					<Bounds top="448" left="342" bottom="461" right="390"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -1390,7 +1374,7 @@ self:normal .row_alt
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="51" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="96BB94E730B149AEB1BB0A469ADE6A0F" id="51" type="Grouped Button" name="" kind="8">
 					<Bounds top="673" left="19" bottom="692" right="101"></Bounds>
 					<Options>805306368</Options>
 					<GroupedButton>
@@ -1399,7 +1383,7 @@ self:normal .row_alt
 							<ScriptReference id="28" name="Open: Main"></ScriptReference>
 						</action>
 						<ObjectList membercount="1">
-							<LayoutObject id="24" type="Text" name="" kind="2">
+							<LayoutObject hash="DACD839AF666AAE17179A8897BD77E0C" id="24" type="Text" name="" kind="2">
 								<Bounds top="0" left="0" bottom="19" right="82"></Bounds>
 								<Options>822083584</Options>
 								<Text>
@@ -1449,7 +1433,7 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject id="53" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="6D71A5787D2EF5FE8995BAAED455E4CD" id="53" type="Grouped Button" name="" kind="8">
 					<Bounds top="673" left="109" bottom="692" right="191"></Bounds>
 					<Options>805306368</Options>
 					<GroupedButton>
@@ -1458,7 +1442,7 @@ self:normal .inner_border
 							<ScriptReference id="13" name="Search Inventory Number"></ScriptReference>
 						</action>
 						<ObjectList membercount="1">
-							<LayoutObject id="25" type="Text" name="" kind="2">
+							<LayoutObject hash="5667E5E5441571AE465D92016F2C0158" id="25" type="Text" name="" kind="2">
 								<Bounds top="0" left="0" bottom="19" right="82"></Bounds>
 								<Options>822083584</Options>
 								<Text>
@@ -1508,7 +1492,7 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject id="54" type="Line" name="" kind="4">
+				<LayoutObject hash="5CA4122278F2E11DECDC63E076F85652" id="54" type="Line" name="" kind="4">
 					<Bounds top="12" left="0" bottom="12" right="432"></Bounds>
 					<Options>805318656</Options>
 					<Line></Line>
@@ -1521,7 +1505,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="56" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="7C1BBEF339581D8001AF34984CA55CF8" id="56" type="Grouped Button" name="" kind="8">
 					<Bounds top="420" left="193" bottom="433" right="216"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
@@ -1530,7 +1514,7 @@ self:normal .inner_border
 							<ScriptReference id="38" name="Edit Element Info"></ScriptReference>
 						</action>
 						<ObjectList membercount="1">
-							<LayoutObject id="26" type="Text" name="" kind="2">
+							<LayoutObject hash="D5B026EBACA56586102DCA7EF0DBABB0" id="26" type="Text" name="" kind="2">
 								<Bounds top="0" left="0" bottom="13" right="23"></Bounds>
 								<Options>805306368</Options>
 								<Text>
@@ -1557,7 +1541,7 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject id="27" type="Drop-down List" name="" kind="1">
+				<LayoutObject hash="44DCB24489AB697AA4DC3E4872EEA372" id="27" type="Drop-down List" name="" kind="1">
 					<Bounds top="417" left="328" bottom="433" right="401"></Bounds>
 					<Options>805306368</Options>
 					<TabOrder membercount="1">
@@ -1623,7 +1607,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="28" type="Text" name="" kind="2">
+				<LayoutObject hash="ABD3305F958919B87CF76B604064BCC0" id="28" type="Text" name="" kind="2">
 					<Bounds top="417" left="252" bottom="431" right="317"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -1647,7 +1631,7 @@ self:normal .inner_border
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="29" type="Drop-down List" name="" kind="1">
+				<LayoutObject hash="BBBA7C1B85BF73614BECC9BE00A800E2" id="29" type="Drop-down List" name="" kind="1">
 					<Bounds top="32" left="111" bottom="48" right="184"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -1710,7 +1694,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="30" type="Drop-down List" name="" kind="1">
+				<LayoutObject hash="4505152D921C66010B0E20FDA33960CE" id="30" type="Drop-down List" name="" kind="1">
 					<Bounds top="32" left="35" bottom="48" right="108"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -1773,7 +1757,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="58" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="F56D893C942F24B078806B0B00CEEDB3" id="58" type="Grouped Button" name="" kind="8">
 					<Bounds top="46" left="160" bottom="59" right="183"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
@@ -1782,7 +1766,7 @@ self:normal .inner_border
 							<ScriptReference id="40" name="Edit Format Type"></ScriptReference>
 						</action>
 						<ObjectList membercount="1">
-							<LayoutObject id="31" type="Text" name="" kind="2">
+							<LayoutObject hash="CBE254F76B13398E4586D7FEFA03F07E" id="31" type="Text" name="" kind="2">
 								<Bounds top="0" left="0" bottom="13" right="23"></Bounds>
 								<Options>805306368</Options>
 								<Text>
@@ -1809,7 +1793,7 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject id="60" type="Grouped Button" name="" kind="8">
+				<LayoutObject hash="717EF15C0D3D6721C34537A1C4DB921A" id="60" type="Grouped Button" name="" kind="8">
 					<Bounds top="46" left="83" bottom="59" right="106"></Bounds>
 					<Options>805371904</Options>
 					<GroupedButton>
@@ -1818,7 +1802,7 @@ self:normal .inner_border
 							<ScriptReference id="39" name="Edit Format Size"></ScriptReference>
 						</action>
 						<ObjectList membercount="1">
-							<LayoutObject id="32" type="Text" name="" kind="2">
+							<LayoutObject hash="51ED83B7CA698E9371026396BDDD5A1F" id="32" type="Text" name="" kind="2">
 								<Bounds top="0" left="0" bottom="13" right="23"></Bounds>
 								<Options>805306368</Options>
 								<Text>
@@ -1845,7 +1829,7 @@ self:normal .inner_border
 						</ObjectList>
 					</GroupedButton>
 				</LayoutObject>
-				<LayoutObject id="33" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="305867FEB739249A8522663A3677F90B" id="33" type="Edit Box" name="" kind="1">
 					<Bounds top="682" left="493" bottom="697" right="566"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -1883,7 +1867,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="34" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="3976E49661D23A0079916CC40DD4B4A8" id="34" type="Edit Box" name="" kind="1">
 					<Bounds top="700" left="446" bottom="715" right="567"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -1939,4 +1923,7 @@ self:normal .inner_border
 	<UUID modifications="8" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:06">0E7346F2-F22F-2742-8B83-23EDABF37D28</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="False">7536672</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

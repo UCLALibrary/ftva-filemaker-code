@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="96" name="go to traffic information"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="DFFCF9FEBF72757EBF7A406AA08C38FB" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="92CA950216FFA9C011A24EE5D50BE9CB" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -28,7 +28,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="942BAAAB5F8326815DE049E9CD1C7F54" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -38,9 +38,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["TRAFFIC RECORDS"]]></Text>
-										<ChunkList hash="AC374537504C67880C5CE5F6B8B8BFF5">
-											<Chunk type="NoRef">&quot;TRAFFIC RECORDS&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

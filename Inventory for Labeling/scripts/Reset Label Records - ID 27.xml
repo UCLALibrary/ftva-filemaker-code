@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="27" name="Reset Label Records"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="0B93567725551A27A9435E9B2D2CC24B" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="F469CF956F0D56E9C3C63012E9B3A365" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -22,7 +22,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="EFE0AAC1507860FFA8096B733B2A8052" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">

@@ -3,7 +3,7 @@
 	<PartsList>
 		<Part>
 			<ObjectList membercount="1">
-				<LayoutObjectReference id="29" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="CC5D442DDEC17A5F337954EEFB197BEF" id="29" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="6" name="Go to Layout" enable="True">

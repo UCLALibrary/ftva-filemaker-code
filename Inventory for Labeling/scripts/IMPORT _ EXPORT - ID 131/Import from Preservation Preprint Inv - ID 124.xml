@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="124" name="Import from Preservation Preprint Inv"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="2AAD72725582FF4F3D19F8554D168F94" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">

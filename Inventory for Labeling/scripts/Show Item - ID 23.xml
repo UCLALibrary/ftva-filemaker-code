@@ -1,27 +1,19 @@
 <Script>
 	<ScriptReference id="23" name="Show Item"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="68" name="If" enable="True">
+		<Step hash="857DCBFFC28DE3D73FBBD1155FF526DF" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[Inventory for Labeling::type="Newsreel"]]></Text>
-							<ChunkList hash="2F333FF7F05AFC9E731C326EC56BC995">
-								<Chunk type="FieldRef">
-									<FieldReference id="23" name="type" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">=&quot;Newsreel&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="EA7A02B88581C8324F8844AE86A77A71" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -34,9 +26,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="873C69E10BD3EB117C459820550B24F9" id="69" name="Else" enable="True">
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="9449152A14EAE2C474E581744D7A2161" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -49,7 +41,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="CAA5C3A8DE45749F5ACED98C14C43E79" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

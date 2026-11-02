@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="31" name="Layout: Search Newsreels"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="71A5687B2884EE9886B7DC8A9DE60C00" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="1F32AB988484A6E4F6E2A9003EC864C3" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -27,7 +27,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="599BEF9893910E54FD5CAF8073DFACEB" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">

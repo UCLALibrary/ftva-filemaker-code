@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="18" name="Layout: General"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="57589EE407745548B5A32DE3F847316F" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -12,7 +12,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="08FBEB18D5CF2E743F021A7CB7D700B3" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">

@@ -15,7 +15,7 @@ Set Field [ Inventory for Labeling::volume ; Inventory for Labeling::hearst_can_
 Set Field [ Inventory for Labeling::issue ; Inventory for Labeling::hearst_roll_issue_search ]
 Set Field [ Inventory for Labeling::format Newsreels ; Inventory for Labeling::hearst_positive_negative_search ]
 Perform Find
-If [ Get(LastError)=401 or Get(LastError)=502 ]
+If [ Get(lastError)=401 Or Get(lastError)=502 ]
 	Set Field [ Inventory for Labeling::found ; 0 ]
 	Set Field [ Inventory for Labeling::search_results ; "" ]
 	Set Field [ Inventory for Labeling::search_error ; "Item not found. Please try different search" ]

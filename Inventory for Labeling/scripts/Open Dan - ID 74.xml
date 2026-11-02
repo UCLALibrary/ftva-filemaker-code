@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="74" name="Open Dan"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="161340757146F4AEB8696F41F2EAFABD" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="9CDAF6257D19EF53CA2015DDF33D0705" id="22" name="Enter Find Mode" enable="True">
 			<Options>32768</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -22,9 +22,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="F10A54F2339ABDC26DDD4C49FD576B83" id="23" name="Show All Records" enable="True">
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="889213C61C4D2D09C93C1A701257CD5B" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -37,7 +37,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="1DDC0E14D9742FB0E8C888B01BD1CAB6" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">

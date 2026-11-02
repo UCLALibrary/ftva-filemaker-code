@@ -1,16 +1,13 @@
 <Script>
 	<ScriptReference id="165" name="Export-NDM_Locations"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="C97170212B33A61CFF5EDE121D8336B4" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16389</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Export NDM Label Scans"]]></Text>
-							<ChunkList hash="8DE5652D76F1D796EEC88F1C35AE583E">
-								<Chunk type="NoRef">&quot;Export NDM Label Scans&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -18,9 +15,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["Do you want to export NDM label scans for duplicate items?"]]></Text>
-							<ChunkList hash="75EC74DB84B16768B5DA19F4FCDCF3FE">
-								<Chunk type="NoRef">&quot;Do you want to export NDM label scans for duplicate items?&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -35,25 +29,19 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="C9B2E34F185DB6489133AD70F577112C" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
-							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
-								<Chunk type="NoRef"> ) = 1</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get ( lastMessageChoice ) = 1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="122" name="New Window" enable="True">
+		<Step hash="777335A169E230CFF07B1DD885715996" id="122" name="New Window" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -82,14 +70,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="B694C5820FC4A2D1E3E61803C2FDCBBB" id="55" name="Enter Browse Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="9729A34917CA939EA94A3E04AD82F807" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -113,7 +101,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="36" name="Export Records" enable="True">
+		<Step hash="9CC8FFDE2D1099E6BF3FAE94187CE2EB" id="36" name="Export Records" enable="True">
 			<Options>33587200</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -153,7 +141,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="4E21DF11A1C14730CDAA2B550FCA2362" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

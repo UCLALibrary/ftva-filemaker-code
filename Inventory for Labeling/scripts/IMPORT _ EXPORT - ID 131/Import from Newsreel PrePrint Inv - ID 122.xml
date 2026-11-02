@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="122" name="Import from Newsreel PrePrint Inv"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="7EC0CB701B7AC4AE84F40E23F2C6B90E" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">

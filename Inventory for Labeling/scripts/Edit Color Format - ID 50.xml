@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="50" name="Edit Color Format"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="106EA9EC5FA746E21E29DE52D1A9C479" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="CEFEE1404F7D073C82DB88E5B69D17F5" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["color_format"]]></Text>
-										<ChunkList hash="9CEBB0737937C91FAC93684A1657525C">
-											<Chunk type="NoRef">&quot;color_format&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

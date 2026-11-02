@@ -16,7 +16,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="4">
-				<LayoutObject id="1" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="995C451540DB96D53A5AAB2F60E4545B" id="1" type="Edit Box" name="" kind="1">
 					<Bounds top="132" left="120" bottom="164" right="193"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -75,7 +75,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="2" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="DD399A0428E35C5265332DCCBB0536E4" id="2" type="Edit Box" name="" kind="1">
 					<Bounds top="78" left="114" bottom="110" right="187"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -134,7 +134,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="3" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="8FDB3CE0E935DF34C06F99CA39018E90" id="3" type="Edit Box" name="" kind="1">
 					<Bounds top="90" left="258" bottom="122" right="331"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -193,7 +193,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="4" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="14613D04F5414C8D13B9AC974F0F2BC2" id="4" type="Edit Box" name="" kind="1">
 					<Bounds top="102" left="408" bottom="134" right="481"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -261,7 +261,7 @@ self:normal .inner_border
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="2">
-				<LayoutObject id="5" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="C027997FD20C8DBE51D2E1F4DB8E0EE7" id="5" type="Edit Box" name="" kind="1">
 					<Bounds top="258" left="108" bottom="271" right="361"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -322,7 +322,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="6" type="Text" name="" kind="2">
+				<LayoutObject hash="FDE05A8B49DB50EF4495E001526B1760" id="6" type="Text" name="" kind="2">
 					<Bounds top="258" left="46" bottom="272" right="97"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -351,4 +351,7 @@ self:normal .inner_border
 	<UUID modifications="4" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">DD491A8C-91FD-E749-B8AB-D4D97DADDCFF</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="True">7553568</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

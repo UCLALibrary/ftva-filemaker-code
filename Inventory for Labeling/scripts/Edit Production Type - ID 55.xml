@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="55" name="Edit Production Type"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="C7588BE580F6E05617DA8133D6FD8A93" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
@@ -14,7 +14,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="130BCC0F7037A3A9B1BD9499113CE7C7" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
@@ -24,9 +24,6 @@
 								<Calculation datatype="1" position="0">
 									<Calculation>
 										<Text><![CDATA["production_type"]]></Text>
-										<ChunkList hash="0C1E3CCCC843E7A68366CC764F1957C5">
-											<Chunk type="NoRef">&quot;production_type&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

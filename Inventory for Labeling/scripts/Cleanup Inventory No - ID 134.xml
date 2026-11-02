@@ -1,16 +1,13 @@
 <Script>
 	<ScriptReference id="134" name="Cleanup Inventory No"></ScriptReference>
 	<ObjectList membercount="17">
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="B04D510F12571666F5FA1F165D53BCE6" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16389</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Cleanup Inventory No"]]></Text>
-							<ChunkList hash="1072D2278451854C0D94AAC73430C497">
-								<Chunk type="NoRef">&quot;Cleanup Inventory No&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -18,9 +15,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["Cleanup Inventory No Field in all found records?"]]></Text>
-							<ChunkList hash="A8FAD6EFD984E44AAD70E634310AF682">
-								<Chunk type="NoRef">&quot;Cleanup Inventory No Field in all found records?&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -35,25 +29,19 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="C1E979175ED6E0E55DCD64B7A3F5C805" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
-							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
-								<Chunk type="NoRef"> ) = 1</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get ( lastMessageChoice ) = 1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="EF812F7237A31A1227DBB4F808D73F8C" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -61,14 +49,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="84AC9BA68320DE9E19220E75865F0F7C" id="55" name="Enter Browse Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="5EEE7DDFBBCE074CC8C8C40960FC62D2" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
@@ -76,11 +64,16 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="79" name="Freeze Window" enable="True">
+		<Step hash="625240FEEF05CB96D64ABC499BB5DA09" id="79" name="Freeze Window" enable="True">
 		</Step>
-		<Step id="71" name="Loop" enable="True">
+		<Step hash="211E19231F2660A026849A9705DE10E9" id="71" name="Loop" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Always" value="1"></List>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="646D809112AAA9983134F3346AA90D35" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -88,22 +81,21 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Inventory for Labeling::inventory_no]]></Text>
-								<ChunkList hash="2480E1CD046F511754690B16AE233EFF">
-									<Chunk type="FieldRef">
-										<FieldReference id="29" name="inventory_no" repetition="1">
-											<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$Text"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="BC4A636457465A8D44BED372EA669E11" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -111,45 +103,33 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Substitute ( Trim ( $Text ) ; ["  " ; " " ]; ["  ";" "]; ["  "; " "])]]></Text>
-								<ChunkList hash="515F0AC4E0126396B41A6CC5DBE3B46F">
-									<Chunk type="FunctionRef">Substitute</Chunk>
-									<Chunk type="NoRef"> ( </Chunk>
-									<Chunk type="FunctionRef">Trim</Chunk>
-									<Chunk type="NoRef"> ( </Chunk>
-									<Chunk type="VariableReference">$Text</Chunk>
-									<Chunk type="NoRef"> ) ; [&quot;  &quot; ; &quot; &quot; ]; [&quot;  &quot;;&quot; &quot;]; [&quot;  &quot;; &quot; &quot;])</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$Text"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="55D25478CA14B5161379B1CD0E453367" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[not PatternCount ( "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+-={}|[]\:;'<>?,./"; Right ($Text;1))]]></Text>
-							<ChunkList hash="903C1A647DDB2CD8408CE16F28CD3813">
-								<Chunk type="FunctionRef">not</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">PatternCount</Chunk>
-								<Chunk type="NoRef"> ( &quot;abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&amp;*()_+-={}|[]\:;&apos;&lt;&gt;?,./&quot;; </Chunk>
-								<Chunk type="FunctionRef">Right</Chunk>
-								<Chunk type="NoRef"> (</Chunk>
-								<Chunk type="VariableReference">$Text</Chunk>
-								<Chunk type="NoRef">;1))</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Not PatternCount ( "abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+-={}|[]\:;'<>?,./"; Right ($Text;1))]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="0CB9ACFEE71786A583C11DBC5BF6C385" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -157,32 +137,34 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Left ($Text; Length ($Text)-1)]]></Text>
-								<ChunkList hash="689FB982DB786BF79433B54EA0F0B14A">
-									<Chunk type="FunctionRef">Left</Chunk>
-									<Chunk type="NoRef"> (</Chunk>
-									<Chunk type="VariableReference">$Text</Chunk>
-									<Chunk type="NoRef">; </Chunk>
-									<Chunk type="FunctionRef">Length</Chunk>
-									<Chunk type="NoRef"> (</Chunk>
-									<Chunk type="VariableReference">$Text</Chunk>
-									<Chunk type="NoRef">)-1)</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$Text"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="31A64A343A6EB8ECFA03B31F35FFBCB9" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="7B5F1443F11042BB3510329B6E83F7D9" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="29" name="inventory_no">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -190,15 +172,12 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$Text]]></Text>
-							<ChunkList hash="D0793E4A802B7E393EE6BE99A46F6B2D">
-								<Chunk type="VariableReference">$Text</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="75" name="Commit Records/Requests" enable="True">
+		<Step hash="FC5335C3F2A31D231543199147180F2A" id="75" name="Commit Records/Requests" enable="True">
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Skip data entry validation" id="256" value="False"></Boolean>
@@ -211,19 +190,19 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="94ADC51A0B950A6220EE4729B3A6C6BD" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>8194</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Next" value="4">
-						<Boolean type="Exit after last" position="184" value="True"></Boolean>
+						<Boolean type="Exit after last" position="185" value="True"></Boolean>
 					</List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="73" name="End Loop" enable="True">
+		<Step hash="C5CFC7E2215F61D3B9515ABF2838A378" id="73" name="End Loop" enable="True">
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="9AEA9D02FC6E81C623E71FA7CB2E391F" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

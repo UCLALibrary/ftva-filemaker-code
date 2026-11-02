@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="28" name="Open: Main"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="48E3551E0F9079F15C640864A94112BE" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
@@ -9,7 +9,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="True">
+		<Step hash="47AB77FAA4BBF9FF5278E9B1FFB11AAC" id="33" name="Open File" enable="True">
 			<Options>16</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">

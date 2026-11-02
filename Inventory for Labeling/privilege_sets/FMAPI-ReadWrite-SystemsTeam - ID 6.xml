@@ -5,8 +5,8 @@
 		<Records Create="True" Edit="True" Delete="False"></Records>
 		<Layouts Create="True" Edit="True" Delete="True"></Layouts>
 		<ValueLists Create="True" Edit="True" Delete="True"></ValueLists>
-		<Scripts viewState="ReadOnly"></Scripts>
-		<Other value="29185" Print="False" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" disconnectIdle="True" commands="All">
+		<Scripts View="ReadOnly"></Scripts>
+		<Other value="29185" Print="False" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
 			<Password prohibitModification="True"></Password>
 		</Other>
 	</access>

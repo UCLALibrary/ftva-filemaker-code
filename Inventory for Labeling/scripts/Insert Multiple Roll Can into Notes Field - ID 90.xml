@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="90" name="Insert Multiple Roll Can into Notes Field"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="BD672D81ABC6078735E937D26F4EB9F4" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -14,9 +14,14 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="71" name="Loop" enable="True">
+		<Step hash="0AC2FC53A9A231BADDEDE5DECC678BB4" id="71" name="Loop" enable="True">
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Always" value="1"></List>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="61" name="Insert Text" enable="True">
+		<Step hash="CDDDF863072A1D8655A1838FAC9A5AE8" id="61" name="Insert Text" enable="True">
 			<Options>4101</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
@@ -24,7 +29,13 @@
 				</Parameter>
 				<Parameter type="Target">
 					<FieldReference id="27" name="notes">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -33,17 +44,17 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="CF307453877CDDED1BD75E08878A8C32" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>8194</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Next" value="4">
-						<Boolean type="Exit after last" position="184" value="True"></Boolean>
+						<Boolean type="Exit after last" position="185" value="True"></Boolean>
 					</List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="73" name="End Loop" enable="True">
+		<Step hash="314B9E898FA8DD59A62FFB4BC60B98EB" id="73" name="End Loop" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

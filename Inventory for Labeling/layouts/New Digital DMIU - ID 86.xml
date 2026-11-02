@@ -21,4 +21,7 @@
 	<UUID modifications="5" userName="uae" accountName="uae" timestamp="2026-03-30T07:57:43">F9D0EA03-60A7-B746-BDCC-2903840B28FE</UUID>
 	<ClientType>3</ClientType>
 	<Options hidden="True">284379655</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

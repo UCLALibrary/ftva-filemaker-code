@@ -4,12 +4,9 @@
 	<Conditions>
 		<Install>
 			<Calculation><![CDATA[1]]></Calculation>
-			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-				<Chunk type="NoRef">1</Chunk>
-			</ChunkList>
 		</Install>
 	</Conditions>
 	<Comment></Comment>
-	<Base name="Product Documentation" value="198"></Base>
+	<Base name="&lt;&lt;Unknown&gt;&gt;" value="198"></Base>
 	<Options browseMode="True" findMode="True" previewMode="True"></Options>
 </CustomMenu>

@@ -3,7 +3,7 @@
 	<PartsList>
 		<Part>
 			<ObjectList membercount="4">
-				<LayoutObjectReference id="11" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="09B7FFA52E25F78F0F817E05BF361025" id="11" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="6" name="Go to Layout" enable="True">
@@ -18,7 +18,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="13" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="7EF3ACCD61BE43338119FF89EFF42518" id="13" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="6" name="Go to Layout" enable="True">
@@ -33,7 +33,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="15" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="75986D73AA3E6379A96329A8A72EEC77" id="15" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="6" name="Go to Layout" enable="True">
@@ -48,7 +48,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="17" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="1560081CE0165C2221C99154E2F0FD19" id="17" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="6" name="Go to Layout" enable="True">

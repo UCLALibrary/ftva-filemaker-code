@@ -1,16 +1,13 @@
 <Script>
 	<ScriptReference id="166" name="Import-NDM_Locations"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="402FDF13746547D497F444BDBAD8F868" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16389</Options>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA["Import NDM Label Scans"]]></Text>
-							<ChunkList hash="F8A33DF630BB9028173BB7399387D8B0">
-								<Chunk type="NoRef">&quot;Import NDM Label Scans&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -18,9 +15,6 @@
 					<Calculation datatype="1" position="1">
 						<Calculation>
 							<Text><![CDATA["Do you want to import NDM label scans?"]]></Text>
-							<ChunkList hash="E94180DA8A703770E8366794BABA958B">
-								<Chunk type="NoRef">&quot;Do you want to import NDM label scans?&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -35,32 +29,26 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="B9BBE6EC9A96EC8DA57E7570A48EC0C1" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
-							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
-								<Chunk type="NoRef"> ) = 1</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get ( lastMessageChoice ) = 1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="40CB517575B66AC0EBE8B695688E7E93" id="55" name="Enter Browse Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="4FFB35FA7127C721CC461C9090EE091B" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
@@ -73,9 +61,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="0A0C709924D9A893E705CA09897CDCAC" id="23" name="Show All Records" enable="True">
 		</Step>
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="6A7A25DF4CF8ED6C2C81D25C0DDAC6D6" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
@@ -165,7 +153,7 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="170CEA3B3D4307AE26DA3ADA055135E6" id="70" name="End If" enable="True">
 		</Step>
 	</ObjectList>
 </Script>

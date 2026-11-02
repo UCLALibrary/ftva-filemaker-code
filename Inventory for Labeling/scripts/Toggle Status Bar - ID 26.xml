@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="26" name="Toggle Status Bar"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="7B5DFC19A46C9DF60665D98A7711F0E2" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">

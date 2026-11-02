@@ -1,7 +1,7 @@
 <Script>
 	<ScriptReference id="155" name="JT_filter"></ScriptReference>
 	<ObjectList membercount="14">
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="14E24639E1AA45F04AFCB892A1B2154D" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
@@ -9,9 +9,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="79" name="Freeze Window" enable="True">
+		<Step hash="8C732FCBBFF49586020A2303326567D0" id="79" name="Freeze Window" enable="True">
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="1EE8865BE76FCDF9C6897D508A3D3F00" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
@@ -19,47 +19,37 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Trim ( SearchGlobals::gSF_Query )]]></Text>
-								<ChunkList hash="2B9E82894E91F03CAA96FDC62275D7A9">
-									<Chunk type="FunctionRef">Trim</Chunk>
-									<Chunk type="NoRef"> ( </Chunk>
-									<Chunk type="FieldRef">
-										<FieldReference id="10" name="gSF_Query" repetition="1">
-											<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-									<Chunk type="NoRef"> )</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$q"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="D9B4C453729AD5AB422B93663101A0CE" id="68" name="If" enable="True">
 			<Options>16384</Options>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
 							<Text><![CDATA[IsEmpty ( $q )]]></Text>
-							<ChunkList hash="15DF1395370CB002A4BFC80C890EA184">
-								<Chunk type="FunctionRef">IsEmpty</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="VariableReference">$q</Chunk>
-								<Chunk type="NoRef"> )</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="4157B7102989B5E19A48BB004B1D7143" id="23" name="Show All Records" enable="True">
 		</Step>
-		<Step id="126" name="Constrain Found Set" enable="True">
+		<Step hash="FBB78725831F16BE7EFEA51BC6572F8E" id="126" name="Constrain Found Set" enable="True">
 			<Options>33587200</Options>
-			<ParameterValues membercount="1">
+			<ParameterValues membercount="2">
 				<Parameter type="FindRequest">
 					<FindRequestSet membercount="1">
 						<FindRequest membercount="1" action="find">
@@ -71,9 +61,12 @@
 						</FindRequest>
 					</FindRequestSet>
 				</Parameter>
+				<Parameter type="Boolean">
+					<Boolean type="Find without indexes" id="256" value="False"></Boolean>
+				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="26" name="Omit Multiple Records" enable="True">
+		<Step hash="3DDA28670DFF2D7B7A81A9ADCEDE2722" id="26" name="Omit Multiple Records" enable="True">
 			<Options>16512</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -82,35 +75,35 @@
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( FoundCount )]]></Text>
-							<ChunkList hash="2EA01E8E21BCB4EAC44A87918D36BE9E">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">FoundCount</Chunk>
-								<Chunk type="NoRef"> )</Chunk>
-							</ChunkList>
+							<Text><![CDATA[Get ( foundCount )]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="103" name="Exit Script" enable="True">
+		<Step hash="8C2DDCC6ADEDD4E25C7C81C21ACF4A52" id="103" name="Exit Script" enable="True">
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="723B5FCD75C02B7BE372568D40162440" id="70" name="End If" enable="True">
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="1E783936885A843F1A3CA17E89B6A1E4" id="22" name="Enter Find Mode" enable="True">
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="2267FE06CD2CCFDC0D21494B0EB71C4A" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="1" name="Inventory_number">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065119" name="StorageFormat 2"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -118,18 +111,14 @@
 					<Calculation datatype="1" position="0">
 						<Calculation>
 							<Text><![CDATA[$q & "*"]]></Text>
-							<ChunkList hash="C23B0F2D6C17600BE7858967122DB9A9">
-								<Chunk type="VariableReference">$q</Chunk>
-								<Chunk type="NoRef"> &amp; &quot;*&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="04085F793873FAC43367BCB21D5E28CB" id="28" name="Perform Find" enable="True">
 		</Step>
-		<Step id="17" name="Go to Field" enable="True">
+		<Step hash="F93BFDE50059343F273976B586C070BA" id="17" name="Go to Field" enable="True">
 			<Options>4097</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
@@ -137,18 +126,30 @@
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="10" name="gSF_Query">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="130" name="Set Selection" enable="True">
+		<Step hash="481748F4D97DA19A6D0145E8110CEC8B" id="130" name="Set Selection" enable="True">
 			<Options>16385</Options>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="10" name="gSF_Query">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
@@ -157,16 +158,6 @@
 						<Calculation datatype="1" position="0">
 							<Calculation>
 								<Text><![CDATA[Length ( SearchGlobals::gSF_Query ) + 1]]></Text>
-								<ChunkList hash="7FEBF6B61733C9F874EA5B0F5B169EF8">
-									<Chunk type="FunctionRef">Length</Chunk>
-									<Chunk type="NoRef"> ( </Chunk>
-									<Chunk type="FieldRef">
-										<FieldReference id="10" name="gSF_Query" repetition="1">
-											<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-									<Chunk type="NoRef"> ) + 1</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</Start>
@@ -174,16 +165,6 @@
 						<Calculation datatype="1" position="1">
 							<Calculation>
 								<Text><![CDATA[Length ( SearchGlobals::gSF_Query ) + 1]]></Text>
-								<ChunkList hash="7FEBF6B61733C9F874EA5B0F5B169EF8">
-									<Chunk type="FunctionRef">Length</Chunk>
-									<Chunk type="NoRef"> ( </Chunk>
-									<Chunk type="FieldRef">
-										<FieldReference id="10" name="gSF_Query" repetition="1">
-											<TableOccurrenceReference id="1065113" name="SearchGlobals"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-									<Chunk type="NoRef"> ) + 1</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</End>
