@@ -1,25 +1,28 @@
 <Script>
 	<ScriptReference id="1" name="Set current user"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="59DDC8A5AABD80C34665A691FF13D0A3" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="DD72ED9B6ED8176D283B609A6A723A21">_9502DFAC7ACCF7409EC7801C6E5882BE</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="1" name="current_user">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_6175682F50440F47A48D0BDAA7CE0E36</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
-							<Text><![CDATA[Get(UserName)]]></Text>
-							<ChunkList hash="29C8C24315810B6F40A97FE8402C83E9">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">UserName</Chunk>
-								<Chunk type="NoRef">)</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="29C8C24315810B6F40A97FE8402C83E9">_D862B5245B79464287B2388C7FC76512</DDRREF>
+							<Text><![CDATA[Get(userName)]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>

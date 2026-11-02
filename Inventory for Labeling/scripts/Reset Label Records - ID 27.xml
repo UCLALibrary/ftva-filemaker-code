@@ -1,16 +1,18 @@
 <Script>
 	<ScriptReference id="27" name="Reset Label Records"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="D194C15AD6968FAAB030F14B5C73CDD1" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
+			<DDRREF kind="StepText" hash="7D77612A22871E58D676F62FF2EA4042">_CE7F6B6B5F7A1C4B9F59838A11B1A1C9</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="C170B2A8DB209E1087578B78EFB10BDD" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="321411282D8C0C4A6714774AD7926B57">_670FEBF6AE20C0408C541574617AF2F4</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -22,8 +24,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="80CABAAF01965753148E7B095E78A452" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="83CF362AF681EFCBC09523C623356696">_F0150F30FD0E184FABFA929BB28E9B54</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">

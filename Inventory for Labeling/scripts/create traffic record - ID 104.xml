@@ -1,22 +1,31 @@
 <Script>
 	<ScriptReference id="104" name="create traffic record"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="47" name="Copy" enable="True">
+		<Step hash="E0A351E8EE9826CB0B2123B6A86D1C15" id="47" name="Copy" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="A7FBE188EE360626CA24A619F49C5592">_85862BC302F60848942E1ABC85796021</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="29" name="inventory_no">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_8552CB02702B4E4FBB354C798C820C98</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="C7C9804AB5A291F00B720FCA5F3E53F6" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="73F80388BCE06CEDF8474215877CBD71">_83931539496CD1469BDAC1C6E4B269F9</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -28,8 +37,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="DB848A4790736B234F141665F20CF839" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="6A8A3425DCE23D710D203EFE193AE1FC">_8B0E39F5DF51AF4EA8DBE1034A8C516F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -37,10 +47,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="F55801C1B463C080D43313B98E1BBD5E">_D2427F54D0B8E74ABACF908D3674FE37</DDRREF>
 										<Text><![CDATA["Traffic Record"]]></Text>
-										<ChunkList hash="F55801C1B463C080D43313B98E1BBD5E">
-											<Chunk type="NoRef">&quot;Traffic Record&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

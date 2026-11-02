@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="53" name="Edit Availability"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="062BB55FF108DFF81BC81D025AECED22" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="3F831FDF86FD59DBC5FF4614066B9C5C">_8E63B4B3CDD5E64D8EBB5BC3FF2C0B90</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="7B2B48D86C00A26D3BC3117971106CB9" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="4D73C65BD113A524F9482A7A8D888CD5">_0366220FE730254F98445799B7523385</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,10 +25,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="835621E760891AE89FDF2E4F7CCA380C">_F0A9710DD67C6940A150E9FE5AD9FD30</DDRREF>
 										<Text><![CDATA["availability"]]></Text>
-										<ChunkList hash="835621E760891AE89FDF2E4F7CCA380C">
-											<Chunk type="NoRef">&quot;availability&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="116" name="For preservation department use only."></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="61" name="Insert Text" enable="True">
+		<Step hash="9B2E18732C274AA93EE835FBD212325F" id="61" name="Insert Text" enable="True">
 			<Options>4</Options>
+			<DDRREF kind="StepText" hash="8179C22FFEA0C60F576CDA49C89053E8">_70A5FEB99292DD4BB3E1D9D0E6C3C68F</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="False"></Boolean>

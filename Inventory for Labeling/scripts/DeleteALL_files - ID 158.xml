@@ -1,17 +1,20 @@
 <Script>
 	<ScriptReference id="158" name="DeleteALL_files"></ScriptReference>
 	<ObjectList membercount="20">
-		<Step id="79" name="Freeze Window" enable="True">
+		<Step hash="9741C0692FF72BB8BE2C1455368E2EBB" id="79" name="Freeze Window" enable="True">
+			<DDRREF kind="StepText" hash="5AE0F600A3F44E1F815D6C5F6458BBC0">_5FB9EDA6371F1A4B92FC3E4CE6868201</DDRREF>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="BBA0517FE811FE0DC747C480477CF855" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="E6D3C2121BFC0FAC959BD163F2E54003">_6962C589FC46204F84D9687EBC08DB45</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="1D45F6FE3C400410964E779E62BCBB8E" id="74" name="Go to Related Record" enable="True">
 			<Options>33685514</Options>
+			<DDRREF kind="StepText" hash="FF1F42CDCFF839C09F5ADD99DD058FEC">_AED5D885B17996469F0DF04B7E91A7B4</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065118" name="Digital Media_carrier"></TableOccurrenceReference>
@@ -44,57 +47,45 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="3BD3DB7F01B2BAC82C1BF63A872EC1DE" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="DE7C6E7C8FD9A2ACB29CD8DEB24C1B4E">_AB7CBFF91626D54DB86C9CBCAD09B35B</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="3204427E8B0AA12E8F7892E20ED5D1F5" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="75C8ADAF6E0824356F2BD8F30641A1E7">_4B3D069CA803874A93614B07F6A8936B</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastError )  ≠ 0  or Get ( FoundCount ) = 0]]></Text>
-							<ChunkList hash="89780BBBB23A870738C05E00AE5EDDBF">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastError</Chunk>
-								<Chunk type="NoRef"> )  ≠ 0  </Chunk>
-								<Chunk type="FunctionRef">or</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">FoundCount</Chunk>
-								<Chunk type="NoRef"> ) = 0</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="89780BBBB23A870738C05E00AE5EDDBF">_7FE205706701F34698732095A6E14D4F</DDRREF>
+							<Text><![CDATA[Get ( lastError )  ≠ 0  Or Get ( foundCount ) = 0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="8C1601C6B816F3B9C9854D514E67ABF5" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="1AF4B90A0D3A148399A9E22A48CF313B">_1A9A37B06CFC464FB9C38C3E17606119</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="866B21519470B84853578D973C68E2AD">_CE59850A25D3E74EAA7FCB52C60A215F</DDRREF>
 							<Text><![CDATA["Nothing to delete"]]></Text>
-							<ChunkList hash="866B21519470B84853578D973C68E2AD">
-								<Chunk type="NoRef">&quot;Nothing to delete&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="61953CA2DA5E6FED59E00CD7F545DBEB">_D4BF697E740A0940A0F1272F3152EC7B</DDRREF>
 							<Text><![CDATA["There are no related records to delete."]]></Text>
-							<ChunkList hash="61953CA2DA5E6FED59E00CD7F545DBEB">
-								<Chunk type="NoRef">&quot;There are no related records to delete.&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -109,64 +100,63 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="103" name="Exit Script" enable="True">
+		<Step hash="F26C2DBD67DADCB219F9CC6B61B236DB" id="103" name="Exit Script" enable="True">
+			<DDRREF kind="StepText" hash="92BF61898CA2D5013438E53207DFD4A0">_3A99E56ADA45B243856FDD93B7F06122</DDRREF>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="1A923763409E5AD534F896983E1F61D0" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="01511D1E0C5403C2DF5065C534D4585E">_7F5C914799538C47A8DEB30736EDC348</DDRREF>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="B81272575E1DE49B688407B8F3767E1E" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="57CE7AE5D438B6B9CC7EEA9FAC368A38">_01C2D84A2BD23643957C36D305EF630E</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="30" name="View As" enable="True">
+		<Step hash="1ADC0ED302347FE63CAADD63D8407F1E" id="30" name="View As" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="09ABB7827DA90DB8FEAF6218FA8FABF8">_04675962D52E80478C7529D236571A6E</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="View as Table" value="3"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="47FE72EE09912FFE3D3A21036B42D369" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="80F38945346D5DC60D8619AA91F6A85A">_E41C68827D2E9947936F2820E2B75CB2</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Maximize" value="2"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="8B2EFF76171C17199B5936A1DAC236AF" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="872697CD04FE4D22CA77FCC2AFC669F7">_F7C1E7A39BD21040AF70767367AD604C</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="AEB3A57E854ACF162D7C8DC789985813" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="589BB50EF0B6B206E5450EC2C8343521">_BB0D86E9CFC4194FBFAB8767DF1AFDBA</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="3FDC6962E2F7FDD0B1E2EC2A9F047DC8">_C007DFBC841CE540B61D382C11ED9565</DDRREF>
 							<Text><![CDATA["Confirm delete"]]></Text>
-							<ChunkList hash="3FDC6962E2F7FDD0B1E2EC2A9F047DC8">
-								<Chunk type="NoRef">&quot;Confirm delete&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
-							<Text><![CDATA["This will permanently delete " & Get ( FoundCount ) & " related Digital Media record(s)."]]></Text>
-							<ChunkList hash="0021C76CECFFEDFEF14D85031722D8FF">
-								<Chunk type="NoRef">&quot;This will permanently delete &quot; &amp; </Chunk>
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">FoundCount</Chunk>
-								<Chunk type="NoRef"> ) &amp; &quot; related Digital Media record(s).&quot;</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="0021C76CECFFEDFEF14D85031722D8FF">_83315AC8EDD47641BAF91B386B072C8E</DDRREF>
+							<Text><![CDATA["This will permanently delete " & Get ( foundCount ) & " related Digital Media record(s)."]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -181,50 +171,51 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="C2D0F48682A83DA776D15480711405CE" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="F31FCBD74505956D96207383C9D3B4F8">_C35BF84A4AF0D04383957CFD877EB4C0</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="845C05A36441105ABDB678C6D00C3D66" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="CC917F039FD2607250B7C02F6740BA51">_2573691E8324CD489B4B5A73961892D0</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
-							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
-								<Chunk type="NoRef"> ) = 1</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="8C579970D437A4505D25C8DA36467E6A">_F9558A8DED1D294BB21D61B57C93EF8C</DDRREF>
+							<Text><![CDATA[Get ( lastMessageChoice ) = 1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="10" name="Delete All Records" enable="True">
+		<Step hash="C1D417B9A4E76C33100D1D0FBAEAC432" id="10" name="Delete All Records" enable="True">
 			<Options>128</Options>
+			<DDRREF kind="StepText" hash="84449F479F4CB5396A0823D86D5CA749">_515EE45247B33C44885AEAD0801C8643</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="CB10D8CC0F87C726476CA53E61AD005E" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="2941396CD768380F39A5D964B55D8529">_DB5F354E3B17DD4BB79B15C15D62B490</DDRREF>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="A92F2D53AA73D5227539BADE358129C3" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="1EBE39E9DAD465A28EC1FAC5325C1E5A">_06B6D10D4A775045A9C0114B5C8EE8AD</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="121" name="Close Window" enable="True">
+		<Step hash="D2BB38CC12C0BDD79A165CC7EC4BAA18" id="121" name="Close Window" enable="True">
 			<Options>-2147483646</Options>
+			<DDRREF kind="StepText" hash="D08F1FCB21F4A7A4AB17F3D73585FE86">_9C5F383FA3CF52408946FD4A52357666</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -233,7 +224,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="80" name="Refresh Window" enable="True">
+		<Step hash="41D926E4B208485DC3CC3289313911C7" id="80" name="Refresh Window" enable="True">
+			<DDRREF kind="StepText" hash="C52AD5845426D035B877603B539BDEC9">_32FAE62B70956849BAC950E5C7993D5F</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>

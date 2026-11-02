@@ -1,26 +1,23 @@
 <Script>
 	<ScriptReference id="166" name="Import-NDM_Locations"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="B87A791EB9A73CFEFF80F36389984ED3" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16389</Options>
+			<DDRREF kind="StepText" hash="C74AC8DA8F28204DC16F61614BAD162B">_4649DB790D95604E8FC997E036CC8C9E</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="F8A33DF630BB9028173BB7399387D8B0">_90F1CB53BDC41B448C8334D87A7242E4</DDRREF>
 							<Text><![CDATA["Import NDM Label Scans"]]></Text>
-							<ChunkList hash="F8A33DF630BB9028173BB7399387D8B0">
-								<Chunk type="NoRef">&quot;Import NDM Label Scans&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="E94180DA8A703770E8366794BABA958B">_BEEDF19628619847B04D1568BC99E91C</DDRREF>
 							<Text><![CDATA["Do you want to import NDM label scans?"]]></Text>
-							<ChunkList hash="E94180DA8A703770E8366794BABA958B">
-								<Chunk type="NoRef">&quot;Do you want to import NDM label scans?&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -35,33 +32,31 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="5DA02A1965DBE41963875FCE88B78C77" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="51D1E39781259475779A30AEE2F59326">_79B938B2BC558B4EB6C3F7152701D549</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastMessageChoice ) = 1]]></Text>
-							<ChunkList hash="8C579970D437A4505D25C8DA36467E6A">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastMessageChoice</Chunk>
-								<Chunk type="NoRef"> ) = 1</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="8C579970D437A4505D25C8DA36467E6A">_E0F8FCBDACB34044B58D805D79F8641E</DDRREF>
+							<Text><![CDATA[Get ( lastMessageChoice ) = 1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="0C435C94AC34D2AE68C0B9E01E285461" id="55" name="Enter Browse Mode" enable="True">
+			<DDRREF kind="StepText" hash="39E4C7779118D29DDDB2E715776E3A7A">_A1E3C5CB67C6694FA1184D4507590BC5</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="90065B25FA200F8F5C8F69CB8ABCB2DC" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="379CFC46520A681BA7CBF79E67416C8F">_96937A0D42B9564E8D5EB7E1BF345316</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -73,10 +68,12 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="0BB38D2191A3B405EEE1D5704952F3F4" id="23" name="Show All Records" enable="True">
+			<DDRREF kind="StepText" hash="1D19BA5682DAE0F441F88F9D8C180E58">_3186192C52C6664CADEC35A8BB4667F7</DDRREF>
 		</Step>
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="40C60031E012A264B2B7FAB856AA6735" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
+			<DDRREF kind="StepText" hash="7E38E27BADDE799362B0AA1515CBE1F4">_519B5B1515297E4BA62A1277C0C4BD39</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>
@@ -165,7 +162,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="D9624CBF87995460AC70B7C62C4EC129" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="65E4BB5534599478E61D8714DD0F2EB1">_9B55E26F3D96D742A639E6F169D9B767</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

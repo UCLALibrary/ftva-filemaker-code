@@ -1,2 +1,2 @@
-Open URL [ With dialog: OFF ; URL: Inventory for Labeling::orion ; Automatically encode URL: ON ]
+Open URL [ In external browser: OFF ; With dialog: OFF ; URL: Inventory for Labeling::orion ; Automatically encode URL: ON ]
 

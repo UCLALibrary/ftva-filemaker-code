@@ -1,16 +1,18 @@
 <Script>
 	<ScriptReference id="28" name="Open: Main"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="D71FCE6BB1F6E4FB840C996703C962CE" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="A99B36BCF463AC093AB6D460B55292A4">_ACB46ED576D5584E8D5F12BB5827E672</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Hide" value="5"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="True">
+		<Step hash="748D8AAA76AB109B56F3CC8557A9FF2B" id="33" name="Open File" enable="True">
 			<Options>16</Options>
+			<DDRREF kind="StepText" hash="93A3B48D918066D6A321207CCEC6A7F9">_31D299903A57E644AA712BF8AE249B83</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Open hidden" id="256" value="False"></Boolean>

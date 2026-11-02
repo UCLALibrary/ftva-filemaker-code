@@ -8,7 +8,7 @@
 		<Part type="Body" kind="4">
 			<Definition type="Body" kind="4" size="749" absolute="19" Options="0"></Definition>
 			<ObjectList membercount="30">
-				<LayoutObject id="2" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="B753999347C24B1BA772FBAD1721D06F" id="2" type="Edit Box" name="" kind="1">
 					<Bounds top="46" left="178" bottom="63" right="303"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -42,7 +42,7 @@
 						<Label>3</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="3" type="Text" name="" kind="2">
+				<LayoutObject hash="8AB61BCB9E6C99C19C61D390DFC0D7AD" id="3" type="Text" name="" kind="2">
 					<Bounds top="45" left="18" bottom="63" right="92"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -57,7 +57,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="4" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="77F95D35C71167BED3119D96E9A26A58" id="4" type="Edit Box" name="" kind="1">
 					<Bounds top="72" left="179" bottom="89" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -91,7 +91,7 @@
 						<Label>31</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="6" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="3922B067C9BC1C90C0BC3EB0FCAA03DA" id="6" type="Edit Box" name="" kind="1">
 					<Bounds top="99" left="179" bottom="116" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -125,7 +125,7 @@
 						<Label>32</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="8" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="350AB565B1A162BF16BB14143287315A" id="8" type="Edit Box" name="" kind="1">
 					<Bounds top="127" left="179" bottom="144" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -159,7 +159,7 @@
 						<Label>33</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="10" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="DD0A46E6F0A04C1DF2FCAAA9BF2A2797" id="10" type="Edit Box" name="" kind="1">
 					<Bounds top="153" left="179" bottom="170" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -193,7 +193,7 @@
 						<Label>34</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="12" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="001A7F4D6C0371241DCBBAD8986FF7EA" id="12" type="Edit Box" name="" kind="1">
 					<Bounds top="180" left="179" bottom="197" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -227,7 +227,7 @@
 						<Label>35</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="14" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="1A77F4534B4A270A7B25D24881EF2CA5" id="14" type="Edit Box" name="" kind="1">
 					<Bounds top="209" left="179" bottom="226" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -261,7 +261,7 @@
 						<Label>36</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="16" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="7F4275AF16CAC8E4749762E705CEC293" id="16" type="Edit Box" name="" kind="1">
 					<Bounds top="239" left="178" bottom="256" right="303"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -295,7 +295,7 @@
 						<Label>37</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="18" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="59652D732611210B19668C9B4767EE54" id="18" type="Edit Box" name="" kind="1">
 					<Bounds top="265" left="179" bottom="282" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -329,7 +329,7 @@
 						<Label>38</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="20" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="84BFB9AAF5C574C94288B37E2BADEA0C" id="20" type="Edit Box" name="" kind="1">
 					<Bounds top="292" left="179" bottom="309" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -363,7 +363,7 @@
 						<Label>39</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="22" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="B151B9A3201D2ED2A16AB7459904F19C" id="22" type="Edit Box" name="" kind="1">
 					<Bounds top="320" left="179" bottom="337" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -397,7 +397,7 @@
 						<Label>40</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="24" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="4E397C9CA48EC35A3D79CF57291E233C" id="24" type="Edit Box" name="" kind="1">
 					<Bounds top="346" left="179" bottom="363" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -431,7 +431,7 @@
 						<Label>41</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="26" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="C450BF05767C4DEF72E0F9C61D885811" id="26" type="Edit Box" name="" kind="1">
 					<Bounds top="373" left="179" bottom="390" right="304"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -465,7 +465,7 @@
 						<Label>42</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="31" type="Text" name="" kind="2">
+				<LayoutObject hash="F69FE4863391B160E5CF48936C10F367" id="31" type="Text" name="" kind="2">
 					<Bounds top="71" left="15" bottom="89" right="93"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -480,7 +480,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="32" type="Text" name="" kind="2">
+				<LayoutObject hash="6F3FDDA712E419CC0E8473B93CBF3029" id="32" type="Text" name="" kind="2">
 					<Bounds top="98" left="65" bottom="116" right="93"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -495,7 +495,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="33" type="Text" name="" kind="2">
+				<LayoutObject hash="D7C749E81ED68F9A4A38F30FBD403C97" id="33" type="Text" name="" kind="2">
 					<Bounds top="126" left="28" bottom="144" right="93"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -510,7 +510,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="34" type="Text" name="" kind="2">
+				<LayoutObject hash="AC39B371736A4D180C61329E3139955C" id="34" type="Text" name="" kind="2">
 					<Bounds top="152" left="0" bottom="170" right="143"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -525,7 +525,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="35" type="Text" name="" kind="2">
+				<LayoutObject hash="F1B1E18E07B1C07FE035AB45C9350DAA" id="35" type="Text" name="" kind="2">
 					<Bounds top="179" left="93" bottom="197" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -540,7 +540,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="36" type="Text" name="" kind="2">
+				<LayoutObject hash="62EF8FAB78D09F168B7CF820F2E11A36" id="36" type="Text" name="" kind="2">
 					<Bounds top="208" left="79" bottom="226" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -555,7 +555,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="37" type="Text" name="" kind="2">
+				<LayoutObject hash="E8CAAE59C16C1CF2A310C46E88A2C232" id="37" type="Text" name="" kind="2">
 					<Bounds top="238" left="118" bottom="256" right="167"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -570,7 +570,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="38" type="Text" name="" kind="2">
+				<LayoutObject hash="1DE4C67291A37540199F31223AD91EDF" id="38" type="Text" name="" kind="2">
 					<Bounds top="264" left="118" bottom="282" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -585,7 +585,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="39" type="Text" name="" kind="2">
+				<LayoutObject hash="215C12A9EA6A7D2CA675F7DD99C470DE" id="39" type="Text" name="" kind="2">
 					<Bounds top="291" left="94" bottom="309" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -600,7 +600,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="40" type="Text" name="" kind="2">
+				<LayoutObject hash="0FF6039525409310800A4112F559FE1E" id="40" type="Text" name="" kind="2">
 					<Bounds top="319" left="88" bottom="337" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -615,7 +615,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="41" type="Text" name="" kind="2">
+				<LayoutObject hash="AC6CDBC28F8588DF3B6E57C9F249ECB8" id="41" type="Text" name="" kind="2">
 					<Bounds top="345" left="81" bottom="363" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -630,7 +630,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="42" type="Text" name="" kind="2">
+				<LayoutObject hash="92B7184B8AE70FCD5209372A978ED99C" id="42" type="Text" name="" kind="2">
 					<Bounds top="372" left="107" bottom="390" right="168"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -645,14 +645,14 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="44" type="Portal" name="" kind="9">
+				<LayoutObject hash="491A6F71E9A2B231753D431DD6E093B5" id="44" type="Portal" name="" kind="9">
 					<Bounds top="101" left="394" bottom="353" right="871"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="10">1</Options>
 						<ObjectList membercount="1">
-							<LayoutObject id="45" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="4EAF44BC30BB039D49905FE013CAB00E" id="45" type="Edit Box" name="" kind="1">
 								<Bounds top="4" left="4" bottom="20" right="253"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -691,7 +691,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="46" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="CE0F2399E9C3EA5E56DF09BD7C6CE87B" id="46" type="Edit Box" name="" kind="1">
 					<Bounds top="401" left="178" bottom="418" right="303"></Bounds>
 					<Options>805306376</Options>
 					<Field>
@@ -725,7 +725,7 @@
 						<Label>48</Label>
 					</Accessibility>
 				</LayoutObject>
-				<LayoutObject id="48" type="Text" name="" kind="2">
+				<LayoutObject hash="D6ADF50CADA1530CF17274A02B472CD6" id="48" type="Text" name="" kind="2">
 					<Bounds top="400" left="130" bottom="418" right="167"></Bounds>
 					<Options>805306376</Options>
 					<Text>
@@ -740,7 +740,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="49" type="Button" name="" kind="10">
+				<LayoutObject hash="C416B8ECA58FE18D0E41EE60BC128258" id="49" type="Button" name="" kind="10">
 					<Bounds top="449" left="550" bottom="504" right="749"></Bounds>
 					<Options>805306376</Options>
 					<Button>
@@ -748,12 +748,6 @@
 						<IconData type="1" size="12">
 							<BinaryData>
 								<LibraryReference id="19" key="B4968989086EAEDAEEA766D20262704D"></LibraryReference>
-								<StreamList>
-									<Stream name="MAIN" type="id" size="4">SVG </Stream>
-									<Stream name="SVG " type="Base64" size="339">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0Ij4NCjxnIGNsYXNzPSJmbV9maWxsIj4NCjxwb2x5Z29uIHBvaW50cz0iMTAuMDk0LDguMzYzIDAsOC4zNjMgMCwxNS4zMTYgMTAuMDk0LDE1LjMxNiAxMC4wOTQsMjIuOTUxIDI0LDExLjk3NSAxMC4wOTQsMSAiLz4NCjwvZz4NCjwvc3ZnPg0K</Stream>
-									<Stream name="GLPH" type="Hex" size="1">01</Stream>
-									<Stream name="FNAM" type="Hex" size="30">000000010533373B3D3F00123B69630528333D322E1B2828352D74292C3D</Stream>
-								</StreamList>
 							</BinaryData>
 						</IconData>
 						<action>
@@ -768,4 +762,7 @@
 	<UUID modifications="7" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2025-01-10T12:36:57">B289B788-8EE6-3745-949D-457E211A233F</UUID>
 	<ClientType>3</ClientType>
 	<Options hidden="False">15944197</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

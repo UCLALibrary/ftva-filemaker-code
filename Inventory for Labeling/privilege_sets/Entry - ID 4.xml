@@ -11,7 +11,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All">
+						<Fields access="ReadWrite">
 							<Field type="existing" access="NoAccess">
 								<FieldReference id="26" name="date_created">
 									<BaseTableReference id="129" name="Inventory for Labeling"></BaseTableReference>
@@ -66,7 +66,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
 					<Table type="existing">
 						<BaseTableReference id="131" name="Digital Media_Item Unit"></BaseTableReference>
@@ -74,7 +74,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
 					<Table type="existing">
 						<BaseTableReference id="132" name="Languages"></BaseTableReference>
@@ -82,7 +82,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
 					<Table type="existing">
 						<BaseTableReference id="133" name="StorageFormat"></BaseTableReference>
@@ -90,7 +90,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
 					<Table type="existing">
 						<BaseTableReference id="134" name="Inventory_StorageFormat_JT"></BaseTableReference>
@@ -98,7 +98,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
 					<Table type="existing">
 						<BaseTableReference id="137" name="ItemUnitRelationship"></BaseTableReference>
@@ -106,7 +106,7 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
 					<Table type="existing">
 						<BaseTableReference id="138" name="ItemUnitRelationshipType"></BaseTableReference>
@@ -114,9 +114,15 @@
 						<Edit access="ReadWrite"></Edit>
 						<Create access="ReadWrite"></Create>
 						<Delete access="NoAccess"></Delete>
-						<Fields access="All"></Fields>
+						<Fields access="ReadWrite"></Fields>
 					</Table>
-					<Table type="New" View="ReadWrite" Edit="ReadWrite" Create="ReadWrite" Delete="NoAccess" Fields="ReadWrite"></Table>
+					<Table type="New">
+						<View access="ReadWrite"></View>
+						<Edit access="ReadWrite"></Edit>
+						<Create access="ReadWrite"></Create>
+						<Delete access="NoAccess"></Delete>
+						<Fields access="ReadWrite"></Fields>
+					</Table>
 				</ObjectList>
 			</Custom>
 		</Records>
@@ -320,8 +326,8 @@
 			</Custom>
 		</Layouts>
 		<ValueLists Create="True" Edit="True" Delete="True"></ValueLists>
-		<Scripts viewState="ReadOnly"></Scripts>
-		<Other value="25345" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" disconnectIdle="True" commands="All">
+		<Scripts View="ReadOnly"></Scripts>
+		<Other value="25345" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="False" allowOpenQuickly="False" disconnectIdle="True" commands="All">
 			<Password prohibitModification="True"></Password>
 		</Other>
 	</access>

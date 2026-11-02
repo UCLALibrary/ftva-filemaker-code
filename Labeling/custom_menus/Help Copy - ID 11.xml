@@ -1,185 +1,133 @@
 <CustomMenu name="Help Copy" id="11">
 	<UUID modifications="3" userName="uae" accountName="uae" timestamp="2026-03-25T12:05:33">D485AC71-1F8F-5146-9D04-607EC92F3380</UUID>
 	<MenuItemList membercount="15">
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="29FE7E9A462A4A53DD6C4626410DF005" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="FileMaker Pro Help" id="57670"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="A8BB50AAFF17B2305D43F20198233A26" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Keyboard Shortcuts" id="49290"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="998F59365844E5D41BEBAC2FCE5A48FA" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="" id="49365"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="True">
+		<CustomMenuItem hash="291AA60DA7D0BBED26252EEDC3346166" isSubMenuItem="False" isSeparatorItem="True">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="A1FB530C8DA242548A7431227481BF4E" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Learning Resources" id="50268"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="True" isSeparatorItem="False">
+		<CustomMenuItem hash="FBDA74C212E38E329171F1758D3C22A8" isSubMenuItem="True" isSeparatorItem="False">
 			<CustomMenuReference id="31" name="[Product Documentation]"></CustomMenuReference>
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="16A40DC5465D3DA117E9C1CD044CE5BC" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Consultants and Solutions" id="49366"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="True">
+		<CustomMenuItem hash="1DB2CBC5D850AE29CFC26DFD0841EDEF" isSubMenuItem="False" isSeparatorItem="True">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="3913D1B4FE46A01401430E7E8C974920" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Provide FileMaker Feedback" id="49317"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="9627139C9B28CBA2EF427E34ED1B9A03" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Check for Updates..." id="49289"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="EA750B40CEA2058D5DC2924968C87FA3" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Register FileMaker Pro" id="49288"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="True">
+		<CustomMenuItem hash="612A7AB56934A7C419570784F7E4CBFE" isSubMenuItem="False" isSeparatorItem="True">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="B7D1AAEC0D096D49282D494BD5B8B439" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Claris Community" id="49312"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="2C5A50285222DC325116D58F178245F8" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[1]]></Calculation>
-					<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-						<Chunk type="NoRef">1</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="Service and Support" id="49367"></Command>
 			<Override name="False" action="False" Shortcut="False"></Override>
 		</CustomMenuItem>
-		<CustomMenuItem isSubMenuItem="False" isSeparatorItem="False">
+		<CustomMenuItem hash="83FFF62FDC74EEF8C356FBCC33AA5627" isSubMenuItem="False" isSeparatorItem="False">
 			<Conditions>
 				<Install>
 					<Calculation><![CDATA[If( Abs(Get( SystemPlatform )) = 2; 1; 0 )]]></Calculation>
-					<ChunkList hash="E62B4F55AE0CC9EF21640EC028CAB70F">
-						<Chunk type="FunctionRef">If</Chunk>
-						<Chunk type="NoRef">( </Chunk>
-						<Chunk type="FunctionRef">Abs</Chunk>
-						<Chunk type="NoRef">(</Chunk>
-						<Chunk type="FunctionRef">Get</Chunk>
-						<Chunk type="NoRef">( </Chunk>
-						<Chunk type="FunctionRef">SystemPlatform</Chunk>
-						<Chunk type="NoRef"> )) = 2; 1; 0 )</Chunk>
-					</ChunkList>
 				</Install>
 			</Conditions>
 			<Command name="About FileMaker Pro..." id="57664"></Command>
@@ -188,10 +136,8 @@
 	</MenuItemList>
 	<Conditions>
 		<Install>
+			<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_97BA45EDEBAB8240B0616CED01889291</DDRREF>
 			<Calculation><![CDATA[1]]></Calculation>
-			<ChunkList hash="A93F17BC54CA1958073B692697D5ED21">
-				<Chunk type="NoRef">1</Chunk>
-			</ChunkList>
 		</Install>
 	</Conditions>
 	<Comment></Comment>

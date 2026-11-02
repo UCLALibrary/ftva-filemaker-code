@@ -1,44 +1,37 @@
 <Script>
 	<ScriptReference id="7" name="Authorization"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="68" name="If" enable="True">
+		<Step hash="4A7A7BE653D690B72E9608861E403CB3" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="6810A0675CFAB55CB366DCC5546E590F">_FE865E35DE85E94FB5AF818CFD8E40B1</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get(CurrentPrivilegeSetName) ="admin"]]></Text>
-							<ChunkList hash="343944B8F0DECB122CB849863E4C3DEE">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FunctionRef">CurrentPrivilegeSetName</Chunk>
-								<Chunk type="NoRef">) =&quot;admin&quot;</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="343944B8F0DECB122CB849863E4C3DEE">_3FCC8EA6D4C3AE4CA34313CD481D2EC8</DDRREF>
+							<Text><![CDATA[Get(currentPrivilegeSetName) ="admin"]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="798C254702CF88A5478A7182A1E8698E" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="F03A94FEF8B55B38F183587DACD770ED">_B13A496A2BCD6B4EAD636623FAE7EBD9</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="C9485CF1D0FAC40956B37FB15B23BB91">_E7C8ADDDD0D94D4BBFC522D32C9BA3A7</DDRREF>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="F56FC6A37AC7D7EF201F8C68579E4A38">_2447A99E43A31D408C31E2E219F2AB3C</DDRREF>
 							<Text><![CDATA["yay¶"]]></Text>
-							<ChunkList hash="F56FC6A37AC7D7EF201F8C68579E4A38">
-								<Chunk type="NoRef">&quot;yay¶&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -53,28 +46,26 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="42B31AFAEED6C64883DC68A51093C1C9" id="69" name="Else" enable="True">
+			<DDRREF kind="StepText" hash="7437154328F345BEB72C999AC2F7DB73">_0E179925ECD38B4480807F1F1CEE669E</DDRREF>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="4E2A06077AE005D921C06FD665C24D0A" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="AD3010621B2E9ED1E2F5C5AE40A2499C">_21A3A7D817B1F2419D00A2B9A7054F74</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="C9485CF1D0FAC40956B37FB15B23BB91">_ED0933A9B6E49B49A6B8DEC6B0CF0366</DDRREF>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="BB1951791BCF106C9A2CE97A3793B4D6">_2A9B55B35970E64FB71BC62DCB8EA09A</DDRREF>
 							<Text><![CDATA["nay"]]></Text>
-							<ChunkList hash="BB1951791BCF106C9A2CE97A3793B4D6">
-								<Chunk type="NoRef">&quot;nay&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -89,7 +80,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="4C6BC17BD5953DA979607AA8CC974898" id="70" name="End If" breakpoint="True" enable="True">
+			<DDRREF kind="StepText" hash="421D1C2F52E1A1CAFAE58504623AC6AC">_887BBBB9134180439B4D7A28FBEE3181</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

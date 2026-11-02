@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="11" name="Layout: Search Inventory"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="7A5C72507C54B93936E7E10D4A9FF694" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="E785D01BA243A07FC7143501568C1C61">_7C93D057D1752744BD6076A109DA7A44</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="B20789049A426C98F723C4A9D6888BCF" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="D53E3F10958F0906FD7ADBA257004735">_33C36DD7EC81634DB08BC090318CD2EE</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -27,8 +29,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="F3B323C11BA32FD4EC57D1D0FA7623C6" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="5E93607FA1CD3F134059D20CCEAAD36F">_FDD03E3FA46BA646AD2993B27B5B51B3</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">

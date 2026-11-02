@@ -2,7 +2,7 @@ Set Error Capture [ ON ]
 Enter Browse Mode [ Pause: OFF ]
 Go to Record/Request/Page [ First ]
 Freeze Window
-Loop
+Loop [ Flush: Always ]
 	Set Field [ Inventory for Labeling::inventory_no ; Trim ( Inventory for Labeling::inventory_no ) ]
 	Commit Records/Requests [ With dialog: ON ]
 	// If [ Right(Inventory for Labeling::inventory_no;1) = " " ]

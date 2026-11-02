@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="6" name="Search: Newsreels"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="10C10C5628E19201F07AB9D6573ED341" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="925FA429991F7727E67A3947067C86A1">_5B11E6E78CFBF9468C15766245BCF899</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="7BC4690C695B94F49D18F29F6D2A9632" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="32587F5D3636DB23AFC30F55ADFBF580">_B1F6676D954FBF40A1C718F687E608DD</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -29,8 +31,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="C3FD7B9091945FDFF7E87599EFB557A2" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="8D1C03E733B90DDC4B7A3E48C500E0CA">_D07B57C52C3AEE4D9E90A3707C96F1BE</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -38,10 +41,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="70705CA9E8D101BE7A5E0885F9B6D35B">_C3138AFBA81E6C47B6F468A672BFD2AC</DDRREF>
 										<Text><![CDATA["Inventory for Labeling"]]></Text>
-										<ChunkList hash="70705CA9E8D101BE7A5E0885F9B6D35B">
-											<Chunk type="NoRef">&quot;Inventory for Labeling&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

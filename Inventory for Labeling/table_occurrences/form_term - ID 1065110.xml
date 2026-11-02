@@ -1,4 +1,4 @@
-<TableOccurrence viewState="Full" height="80" id="1065110" name="form_term" type="External">
+<TableOccurrence View="Full" height="80" id="1065110" name="form_term" type="External">
 	<UUID modifications="5" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">4BEB9FB0-C972-1D4E-A8B7-E2B108D36DB1</UUID>
 	<BaseTableSourceReference type="ExternalDataSourceReference">
 		<DataSourceReference id="22" name="form_term"></DataSourceReference>

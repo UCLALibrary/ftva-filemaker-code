@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="59" name="Print Print Record"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="06AEACEDF7DDD98338FEAF4E9B8E67E2" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="ACBCDFE2F9B3BFC3677C8488EDDBAFBC">_DA511EA553CBFC49B8FC29BDD9C002A6</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="DCC1D3FF7C43AE923405726D9019A1EF" id="42" name="Print Setup" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="A67CAB77B6EC06E8DDF477F922DD08C6">_4388B2C88B65514FB66150086711CCF6</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
 					<Restore value="True"></Restore>
@@ -32,8 +34,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="20F906120325B94ECB0883F1C6F63706" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="7D95E951891E936A8E22F28E78BE2EC4">_EF3EB86FCA388F4BBA5D8205197A30E1</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -56,7 +59,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="4F6DC80FE6AD557EE0C767675A2BB238" id="6" name="Go to Layout" enable="True">
+			<DDRREF kind="StepText" hash="7B5D3A5FE8B9EDCF76F1890E220F37A5">_948F39EDF96B95489B5FFB99C60D24A8</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

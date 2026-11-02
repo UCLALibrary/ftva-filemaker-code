@@ -1,49 +1,55 @@
 <Script>
 	<ScriptReference id="169" name="printStorageLabels"></ScriptReference>
 	<ObjectList membercount="18">
-		<Step id="85" name="Allow User Abort" enable="True">
+		<Step hash="FA3FB5AED51B9B1B67E276AAC97058EE" id="85" name="Allow User Abort" enable="True">
 			<Options>65536</Options>
+			<DDRREF kind="StepText" hash="1A04A6D694E6CC5AD53BEFC4FCACE514">_19E74B20A99D0C43B51333BC2ACD5322</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="147D618A30E1848968FDA642610A9A57" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
+			<DDRREF kind="StepText" hash="1F7990FBAA691E5F1ED64A10E1BECE45">_30A55453337D07408CACD63F8DDFF127</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="79" name="Freeze Window" enable="True">
+		<Step hash="AAA6AE38577C710D94A1FB327F28D495" id="79" name="Freeze Window" enable="True">
+			<DDRREF kind="StepText" hash="BEBDBBD52AF3E2E8D6C3636E883EA75B">_E7A3D5A5ADD3284998C140452322F9EB</DDRREF>
 		</Step>
-		<Step id="141" name="Set Variable" enable="True">
+		<Step hash="A53004C3A720675D360071523AA54AF2" id="141" name="Set Variable" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="8B8372795AC7C502184871DE1848FD8B">_C5E4F286F3AEC34CA6C128DF3D325918</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Variable">
 					<value>
 						<Calculation datatype="1" position="1">
 							<Calculation>
+								<DDRREF kind="ChunkList" hash="10D6C69FB84FA1CC0D4729BC5AF73569">_E39A66003F209743B69461FFA718A580</DDRREF>
 								<Text><![CDATA[StorageFormat::Inventory_number]]></Text>
-								<ChunkList hash="10D6C69FB84FA1CC0D4729BC5AF73569">
-									<Chunk type="FieldRef">
-										<FieldReference id="1" name="Inventory_number" repetition="1">
-											<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
-										</FieldReference>
-									</Chunk>
-								</ChunkList>
 							</Calculation>
 						</Calculation>
 					</value>
 					<Name value="$recID"></Name>
-					<repetition></repetition>
+					<repetition>
+						<Calculation datatype="1" position="2">
+							<Calculation>
+								<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_BD1989909B841A408B948E605D3A6FF9</DDRREF>
+								<Text><![CDATA[1]]></Text>
+							</Calculation>
+						</Calculation>
+					</repetition>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="122" name="New Window" enable="True">
+		<Step hash="97113D42973DD7A20E6A6AE0BF9DAAB0" id="122" name="New Window" enable="True">
 			<Options>16394</Options>
+			<DDRREF kind="StepText" hash="99ACEB97D7CBCE4E1718FE88A93CEF5D">_286918E95C073A4A8554EEA148D779DA</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -51,10 +57,8 @@
 						<Name>
 							<Calculation datatype="1" position="0">
 								<Calculation>
+									<DDRREF kind="ChunkList" hash="F63716E091104E24B708BE96603B9693">_01EBE243AA76AD49A275E02841D11258</DDRREF>
 									<Text><![CDATA["Print Storage Label"]]></Text>
-									<ChunkList hash="F63716E091104E24B708BE96603B9693">
-										<Chunk type="NoRef">&quot;Print Storage Label&quot;</Chunk>
-									</ChunkList>
 								</Calculation>
 							</Calculation>
 						</Name>
@@ -80,77 +84,78 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="AD2C7B81678ADB88994B1FE4FC61286C" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="2198926BC487DB5BDD8346362F988C00">_819502EFCA63FB4B9A5BD186B96737F2</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="D48DE37E9DBF21E36905C72CF76F80EA" id="22" name="Enter Find Mode" enable="True">
+			<DDRREF kind="StepText" hash="457C3431980AE3C3C455685507084F52">_66D09DB4E344AB4B985A29658DB998EA</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="324AC798BE2548E768C566A7AE0213BD" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="FC48B67162F237DEA5F607C11BAC6D25">_01ED3043BEA1AD429069A03306B5974E</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="1" name="Inventory_number">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_071C8F7141A6D341AFE0BC7F081A3764</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065116" name="StorageFormat"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="0D8DEB29A34DF5BB37DE1110FBFE969A">_6A067E042FD0664CA42E8D91DAAA097F</DDRREF>
 							<Text><![CDATA[$recID]]></Text>
-							<ChunkList hash="0D8DEB29A34DF5BB37DE1110FBFE969A">
-								<Chunk type="VariableReference">$recID</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="EE8488859A4BE46E1E521E15D19968DA" id="28" name="Perform Find" enable="True">
+			<DDRREF kind="StepText" hash="3444BA2425402034583FD9D15947CEFC">_8A4333E284AB9F4D911094310400249D</DDRREF>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="164FDD15E1F306E21E50CA4832EA6EF3" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="C204F62051BAFB05AE005355AA021A88">_F01431CEF1932547B37D81DBBA14F03D</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( LastError ) = 0 and Get ( FoundCount ) =1]]></Text>
-							<ChunkList hash="B210A50392F08291E2D229481DA5DBF5">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">LastError</Chunk>
-								<Chunk type="NoRef"> ) = 0 </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">FoundCount</Chunk>
-								<Chunk type="NoRef"> ) =1</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="B210A50392F08291E2D229481DA5DBF5">_35C8FED372EAEA4C8C9F9E97BA7F19C4</DDRREF>
+							<Text><![CDATA[Get ( lastError ) = 0 And Get ( foundCount ) =1]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="FDF4F282ADB5771B3D90E106F14B74AB" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="3A8D7CBA8235BBF870A70EAEBEE7DEA8">_7ADB7F5040E6604592A205E4259E58D5</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="48C233602D462985A6D7C3E562244E04" id="42" name="Print Setup" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="80D04DAF86D287ADDB9273B55FAAB44E">_738082BBB7E4BE48BD3A2CC0669D6C8E</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
 					<Restore value="True"></Restore>
@@ -167,8 +172,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="7383E34322957615A9BADF0FBE5077A6" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="FCF69C3A82403081936AB71934A3CCB0">_80119B3D5440A54B9EBAE0B81C654A1F</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -191,28 +197,26 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="D2446F766B00323611C58066CFF4E54D" id="69" name="Else" enable="True">
+			<DDRREF kind="StepText" hash="7903F749B30EBF039BE4BBC804291948">_DFBBC430D7B03C47A21092E9E1922322</DDRREF>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="CE83E895AA468A89E3E99B5CAEB38EA5" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="E5F46815C9FC91DC6564859E5244226A">_3919A1FAEECB684ABCFDE1AACA54D3DA</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="D1D5937840E806E3DDB375B1883B548E">_4F077013A29BD84D87C7B91DB8B735F9</DDRREF>
 							<Text><![CDATA["Print Label"]]></Text>
-							<ChunkList hash="D1D5937840E806E3DDB375B1883B548E">
-								<Chunk type="NoRef">&quot;Print Label&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="0A409790CB26BA7899AC30EAF3F259D4">_736E4FDD1A9E204CBBB2DC4854240CA6</DDRREF>
 							<Text><![CDATA["Could not find the current record on the label layout."]]></Text>
-							<ChunkList hash="0A409790CB26BA7899AC30EAF3F259D4">
-								<Chunk type="NoRef">&quot;Could not find the current record on the label layout.&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -227,17 +231,20 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="E1A6E4E5B45FCC3934C685FB2815F553" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="98CDDC6CEC12AC2768A4F16CBBC2B285">_F1141044C5DB79429F67219EB082DF78</DDRREF>
 		</Step>
-		<Step id="89" name="# (comment)" enable="True">
+		<Step hash="965CAF7857CC5B4A11F1815776065A2F" id="89" name="# (comment)" enable="True">
+			<DDRREF kind="StepText" hash="CED9D55ED2A7442999B496838BDD695A">_635922384C8DE348802F36954A11BF5C</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Comment">
 					<Comment></Comment>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="121" name="Close Window" enable="True">
+		<Step hash="080C785B9F316E9D8904B97799E43746" id="121" name="Close Window" enable="True">
 			<Options>-2147483646</Options>
+			<DDRREF kind="StepText" hash="700F2AB36CA79479D731F03028281D5D">_B48767DF63F63B498BA9290F60776239</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>

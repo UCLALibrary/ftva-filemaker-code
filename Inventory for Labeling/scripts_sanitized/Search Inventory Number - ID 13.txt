@@ -7,17 +7,17 @@ Set Field [ Inventory for Labeling::search_results ; "" ]
 Enter Find Mode [ Pause: OFF ]
 Set Field [ Inventory for Labeling::inventory_no ; "=="&Trim(Inventory for Labeling::inventory_no_search) ]
 Perform Find
-If [ Get(LastError)=401  or  Inventory for Labeling::inventory_no_search="" or Get(LastError)=502 or  
-				((not PatternCount(Inventory for Labeling::inventory_no_search; "0")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "1")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "2")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "3")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "4")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "5")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "6")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "7")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "8")) and
-				(not PatternCount(Inventory for Labeling::inventory_no_search; "9"))) ]
+If [ Get(lastError)=401  Or  Inventory for Labeling::inventory_no_search="" Or Get(lastError)=502 Or  
+				((Not PatternCount(Inventory for Labeling::inventory_no_search; "0")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "1")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "2")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "3")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "4")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "5")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "6")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "7")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "8")) And
+				(Not PatternCount(Inventory for Labeling::inventory_no_search; "9"))) ]
 	Set Field [ Inventory for Labeling::found ; 0 ]
 	Set Field [ Inventory for Labeling::search_results ; "" ]
 	Set Field [ Inventory for Labeling::search_error ; "Item not found. Please try different search" ]

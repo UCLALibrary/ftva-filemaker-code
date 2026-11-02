@@ -1,15 +1,9 @@
 <Metadata membercount="1">
-	<AddAction membercount="7">
+	<AddAction membercount="8">
+		<HideClientSharing enable="True"></HideClientSharing>
 		<Encryption type="0"></Encryption>
 		<Minimum version="12.0" value="1208"></Minimum>
-		<Login type="1">
-			<UserName>
-				<INSECURE_TEXT></INSECURE_TEXT>
-			</UserName>
-			<INSECURE_PASSWORD>
-				<INSECURE_TEXT></INSECURE_TEXT>
-			</INSECURE_PASSWORD>
-		</Login>
+		<Login type="-1"></Login>
 		<SavePassword keychain="True" requireMobile="False"></SavePassword>
 		<ShowSignInFields enable="False"></ShowSignInFields>
 		<Text>

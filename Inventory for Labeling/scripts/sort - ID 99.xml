@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="99" name="sort"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="E338D6D4871936CDD3531B668F3B9D6E" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="71532A7FB6873057A49107FDB28DBA8C">_013E4BBA4233EA479CB59C978F79D4E7</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -25,8 +26,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="EC05FDC4D3EC55B89326E619175144C7" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="04BA73504ED948049E9A3C88D8621C55">_DFB67CBFC09AA942901E747D4C641971</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>

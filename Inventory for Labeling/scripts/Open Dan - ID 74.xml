@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="74" name="Open Dan"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="AD098BBFC8FFF3B08DCFE0841F2C48AF" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="6290AA158A3D28DF73B4C986BCE9C66F">_378A5AD8944BA84A928C7B02254437C7</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,18 +15,21 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="54FF8465C902064E9A1F5EEE9A9E195C" id="22" name="Enter Find Mode" enable="True">
 			<Options>32768</Options>
+			<DDRREF kind="StepText" hash="9912FA4F00EE3B57B9B81978965F91A2">_E330D27E82E4F0478FE08FF5A80F3B06</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="176BBA4AD1498181FC50A67E61016866" id="23" name="Show All Records" enable="True">
+			<DDRREF kind="StepText" hash="0F29A9B9892D7B09E2F8ADD334969AF2">_15507F209EF1904C89A1959FF83F4290</DDRREF>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="18F733C44E3525B89FF4EEE10DF1D0F4" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="37942BEA6B82E2E9E8DAB5616E0C3F15">_53EB1FC9541865459EB1735A30BE6BF0</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -37,8 +41,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="016E38D594716DFF277FC0DD050F3AEB" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="31189DFA95EC9B7308197990172871D9">_86E2C2A04965914EA3E36480924AC1D3</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Lock" id="524288" value="False"></Boolean>

@@ -9,7 +9,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="2">
-				<LayoutObject id="1" type="Text" name="" kind="2">
+				<LayoutObject hash="6971A8C63D8C49145891AB68FE325067" id="1" type="Text" name="" kind="2">
 					<Bounds top="42" left="12" bottom="56" right="72"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -31,7 +31,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="2" type="Text" name="" kind="2">
+				<LayoutObject hash="748155D51553A58F67A9D505FDA15F1F" id="2" type="Text" name="" kind="2">
 					<Bounds top="42" left="115" bottom="56" right="190"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -62,7 +62,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="2">
-				<LayoutObject id="3" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="5036B058B2E1BE44297F024F55C8CEA2" id="3" type="Edit Box" name="" kind="1">
 					<Bounds top="66" left="12" bottom="83" right="114"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -99,7 +99,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="4" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="8DA28E6FC0D416C930F72820863D87A9" id="4" type="Edit Box" name="" kind="1">
 					<Bounds top="66" left="115" bottom="83" right="217"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -142,4 +142,7 @@
 	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:06">DF7F58DE-6280-B940-A61A-9F4046AFDBD2</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="True">7539232</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

@@ -9,7 +9,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="1">
-				<LayoutObject id="7" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="054E873BB90D27C0ED2D8610CDB0AEC5" id="7" type="Edit Box" name="" kind="1">
 					<Bounds top="12" left="126" bottom="34" right="385"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -79,7 +79,7 @@ self:normal .inner_border
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="6">
-				<LayoutObject id="1" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="38D52151A003A04CAEE8C3988FF58BEA" id="1" type="Edit Box" name="" kind="1">
 					<Bounds top="60" left="18" bottom="76" right="91"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -142,12 +142,14 @@ self:normal .inner_border
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_4F4489C19C7B8B4FAEA683DCAE6B791F</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
 				</LayoutObject>
-				<LayoutObject id="2" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="53E4E1AE9385B084AAB5EC388038ED88" id="2" type="Edit Box" name="" kind="1">
 					<Bounds top="60" left="126" bottom="100" right="487"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -208,7 +210,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="3" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="6C2835D16E76F1E90DE5A2945AA57043" id="3" type="Edit Box" name="" kind="1">
 					<Bounds top="108" left="126" bottom="124" right="199"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -269,7 +271,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="4" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="DF3791DFF3C961433171480E156912B7" id="4" type="Edit Box" name="" kind="1">
 					<Bounds top="108" left="204" bottom="124" right="277"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -330,7 +332,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="5" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="2F21785C207897E10F4CA9B37403AE50" id="5" type="Edit Box" name="" kind="1">
 					<Bounds top="108" left="282" bottom="124" right="355"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -391,7 +393,7 @@ self:normal .inner_border
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="6" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="CD3DE44DE9EFA67EBAB78592E6B02DD7" id="6" type="Edit Box" name="" kind="1">
 					<Bounds top="138" left="126" bottom="190" right="487"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -465,4 +467,7 @@ self:normal .inner_border
 	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">6D884536-B626-AB4E-A874-0E5C71C68D8C</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="True">7536672</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

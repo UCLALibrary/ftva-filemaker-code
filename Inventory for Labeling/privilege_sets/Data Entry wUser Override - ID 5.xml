@@ -3,10 +3,10 @@
 	<Description></Description>
 	<access>
 		<Records Create="True" Edit="True" Delete="True"></Records>
-		<Layouts viewState="ReadOnly"></Layouts>
-		<ValueLists viewState="ReadOnly"></ValueLists>
-		<Scripts viewState="ReadOnly"></Scripts>
-		<Other value="26372" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="True" disconnectIdle="True" commands="All">
+		<Layouts View="ReadOnly"></Layouts>
+		<ValueLists View="ReadOnly"></ValueLists>
+		<Scripts View="ReadOnly"></Scripts>
+		<Other value="26372" Print="True" Export="True" manageAccounts="False" manageExtPrivs="False" allowOverride="True" allowOpenQuickly="False" disconnectIdle="True" commands="All">
 			<Password prohibitModification="False"></Password>
 		</Other>
 	</access>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="70" name="Print VIDEO Card "></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="DF21FC9AEBDE2768E5884187701ECCA8" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="AD0BFD0B94AFEEFEB6BF2E9F8C3A6317">_EB8866A4D442A041BC38B793622D9E01</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="42" name="Print Setup" enable="True">
+		<Step hash="E77DA1B0B7F82AE03C20B2EA6747C9E8" id="42" name="Print Setup" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="D127651994E5418DF80104AABBFDAEBD">_39D643A75877694B8610B579BEF08F7C</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Restore">
 					<Restore value="True"></Restore>
@@ -32,8 +34,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="43" name="Print" enable="True">
+		<Step hash="876F09A0676E76CC5FD0E444D7C2DF9C" id="43" name="Print" enable="True">
 			<Options>33587200</Options>
+			<DDRREF kind="StepText" hash="90F35E8089DC2C1673073A473AFC2479">_17D0795CC18EC742A7159ADE36D7D46C</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>
@@ -56,7 +59,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="60B08D7FC621894A7592FEC4F2EFF9B5" id="6" name="Go to Layout" enable="True">
+			<DDRREF kind="StepText" hash="7B5D3A5FE8B9EDCF76F1890E220F37A5">_80CF0FF52A071E498C904BAB6B7725B2</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">
@@ -68,7 +72,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="80" name="Refresh Window" enable="True">
+		<Step hash="8FC68F33E29D5C40A976EFAC58F787FF" id="80" name="Refresh Window" enable="True">
+			<DDRREF kind="StepText" hash="CE976A741E5AD3320A884BD58535DB23">_2EA5845D0728B845B3DDBC50C374BCCF</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>

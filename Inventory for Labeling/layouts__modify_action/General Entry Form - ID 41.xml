@@ -3,7 +3,7 @@
 	<PartsList>
 		<Part>
 			<ObjectList membercount="6">
-				<LayoutObjectReference id="215" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="4771D983207464F5AD3829D8DA289D3A" id="215" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="6" name="Go to Layout" enable="True">
@@ -18,7 +18,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="170" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="301CA7C4DE87138C31C161525FDEDAAD" id="170" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="74" name="Go to Related Record" enable="True">
@@ -34,7 +34,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="19" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="9EDA857918AE261644107F93A3422A87" id="19" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="74" name="Go to Related Record" enable="True">
@@ -50,7 +50,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="150" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="4D377630B1EA1B4D6F25ECD53CA6A24B" id="150" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="74" name="Go to Related Record" enable="True">
@@ -66,7 +66,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="152" type="Grouped Button" name="" kind="8">
+				<LayoutObjectReference hash="82C0A7B480C70C40D18FB4012F644BAC" id="152" type="Grouped Button" name="" kind="8">
 					<GroupedButton>
 						<action>
 							<Step id="74" name="Go to Related Record" enable="True">
@@ -82,7 +82,7 @@
 						</action>
 					</GroupedButton>
 				</LayoutObjectReference>
-				<LayoutObjectReference id="265" type="Button" name="" kind="10">
+				<LayoutObjectReference hash="4D9633FF20696CAE59D1DE960C37C3C9" id="265" type="Button" name="" kind="10">
 					<Button>
 						<action>
 							<Step id="74" name="Go to Related Record" enable="True">

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="8" name="Print Newsreels Labels"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="1BCD466E40C7D2E6E613E12165A8258A" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
+			<DDRREF kind="StepText" hash="3CBC8DF72C8823427E2811FEE9F125A1">_F55832DDBDDF3C46B1FA6F30C6719642</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
@@ -14,7 +15,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="4C864A75ABA297156F0D0FAF3F867B23" id="123" name="Select Window" enable="True">
+			<DDRREF kind="StepText" hash="3BCCFE70AE1E275E0ABEC84215A851D6">_769DFA13FB12EE4BA481BB8F85F2E6AA</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,8 +25,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="2FA46D66747D3CD81CA17F2B7D690FF9" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="628D040B63BD8BFC759EA8498BB18E0A">_3B821D881BC3A146AE8B870CB3BB0CE1</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">

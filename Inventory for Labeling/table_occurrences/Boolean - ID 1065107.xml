@@ -1,4 +1,4 @@
-<TableOccurrence viewState="Full" height="80" id="1065107" name="Boolean" type="External">
+<TableOccurrence View="Full" height="80" id="1065107" name="Boolean" type="External">
 	<UUID modifications="4" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T10:26:58">8B5981F3-B539-0549-8BA1-73E59CD039C7</UUID>
 	<BaseTableSourceReference type="ExternalDataSourceReference">
 		<DataSourceReference id="6" name="Boolean"></DataSourceReference>

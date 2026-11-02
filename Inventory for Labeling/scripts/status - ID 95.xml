@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="95" name="status"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="4A08BD7F57453EC906FDE07F175AB078" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="5DAF0E35972A201505633E1137CC0F99">_5B66B09B08F87641844C847661F7F950</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,7 +15,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="0A20ECAF5EDF7F6115A50902F35E4F2F" id="123" name="Select Window" enable="True">
+			<DDRREF kind="StepText" hash="3BCCFE70AE1E275E0ABEC84215A851D6">_C0EA2515444DFF42A59E93E1B9815361</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,15 +25,23 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="77" name="Insert Calculated Result" enable="True">
+		<Step hash="E623AAE3A2D6366EA30A0095BDB1B3F3" id="77" name="Insert Calculated Result" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="622F7B23262D0452B67B85EB35ADF233">_F178D9F2BFAAE443BABFC63586B9F40D</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
 				</Parameter>
 				<Parameter type="Target">
 					<FieldReference id="48" name="">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_03411EAC083D5945B3D9AE1020E34797</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="-1" name="&lt;Table Missing&gt;"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>

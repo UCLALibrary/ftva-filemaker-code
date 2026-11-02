@@ -1,9 +1,11 @@
 <Script>
 	<ScriptReference id="162" name="Show All - customized"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="C494F0E07DA63881E4677FC44AD1105F" id="23" name="Show All Records" enable="True">
+			<DDRREF kind="StepText" hash="3F899122C229595846B338E4E44C51E9">_C4A708BFBDB1154BA1A3E76785D45910</DDRREF>
 		</Step>
-		<Step id="80" name="Refresh Window" enable="True">
+		<Step hash="D1F0FB13EC51AD4EC96CB2CE52B63149" id="80" name="Refresh Window" enable="True">
+			<DDRREF kind="StepText" hash="548D569491847B818CE7B2F98D8CC6DC">_275DF4D66C0B8949BE419594DABCAB5F</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Flush cached join results" id="256" value="False"></Boolean>
@@ -13,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="8213CA8ED8341B6A82E789BD4ECB2FB9" id="1" name="Perform Script" enable="True">
 			<Options>64</Options>
+			<DDRREF kind="StepText" hash="A5822AFD8B4A4F4563BD2E4422610ED6">_E7AB345BE9112F49A6BD6D865767CAF8</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">

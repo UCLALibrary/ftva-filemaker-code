@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="52" name="Open Finding Aid Collections"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="23673B53D098AAA6826E8E43E36981E8" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="DC4566956F526D7D470321004BD3C935">_22FA26E2FCC5C84A93E9C2E0D9DEE8E1</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="81DD92FBCD704D563AB31AA36C630783" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="A220CF3815393DEFF348651D5AC4D691">_10FF3DB2E5EA2547BCC8610AEC8CB445</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -24,10 +26,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="AA3C6FB53286F44F3BA3BDB8FC2CA16D">_ACB299B7BE769A4CA14538316B8A2935</DDRREF>
 										<Text><![CDATA["collectioninventory"]]></Text>
-										<ChunkList hash="AA3C6FB53286F44F3BA3BDB8FC2CA16D">
-											<Chunk type="NoRef">&quot;collectioninventory&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

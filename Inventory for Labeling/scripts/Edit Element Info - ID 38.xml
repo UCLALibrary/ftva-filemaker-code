@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="38" name="Edit Element Info"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="C75EDB8DAC9DBDDA3ECB76F96E5180DE" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="9C2F4B8DC0E77EC37E23819C3D885EF2">_1C3E0948CBFE5C4CA6C1576AA9D6749A</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="BE791C9829D1ECC6527368915891B05E" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="57F25929359C07B170FA8970DA8A48FE">_625F7AA5E35D424EBDD121E3495419BA</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -24,10 +26,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="4CCB0BE319C474DF21A4E6F48D9923CF">_A625D195C89CCA46A9713902B774799F</DDRREF>
 										<Text><![CDATA["element_info"]]></Text>
-										<ChunkList hash="4CCB0BE319C474DF21A4E6F48D9923CF">
-											<Chunk type="NoRef">&quot;element_info&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

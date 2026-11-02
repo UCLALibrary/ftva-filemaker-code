@@ -1,16 +1,18 @@
 <Script>
 	<ScriptReference id="2" name="Initialize"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step id="115" name="Allow Formatting Bar" enable="True">
+		<Step hash="911CFBCBDDB6CA575265201B9C17E943" id="115" name="Allow Formatting Bar" enable="True">
 			<Options>65536</Options>
+			<DDRREF kind="StepText" hash="BEB94E96431F74C21638F0835F0CBB9C">_6CB4D9769F70F84DA35A099F69EEC5F0</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="29" name="Show/Hide Toolbars" enable="True">
+		<Step hash="F0AB3813EB161175D61F4EF3510A8F77" id="29" name="Show/Hide Toolbars" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="1FB318BF3458D3976777075DBC2C8060">_DDFF066866711D4DA911F4D86370E896</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="Lock" id="524288" value="False"></Boolean>
@@ -23,24 +25,27 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="92" name="Show/Hide Text Ruler" enable="True">
+		<Step hash="6ABCD6DB7453E798734A6BC1AADBAB82" id="92" name="Show/Hide Text Ruler" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="DD4A8DDE783E01A2F3C7C2B641028677">_78F27432713F8643BB0D3CC21E7336CE</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Hide" value="2"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="CFDCBBC487D226F2E9957218E83B90CE" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="ADECEE19EFB2D9D192DA700CCE420233">_7C74E4F5CF3D5945883067C17E969904</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Resize to Fit" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="True">
+		<Step hash="0DC1F36908EBB36FD48E92396497BAE4" id="33" name="Open File" enable="True">
 			<Options>272</Options>
+			<DDRREF kind="StepText" hash="497C50C2DD19673541F22F5004D04A2B">_9AF04548829AC441BB087DFF2CA94057</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Open hidden" id="256" value="True"></Boolean>
@@ -50,8 +55,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="True">
+		<Step hash="FF73EDCC7AEAE12E2B6159BA0A2B507C" id="33" name="Open File" enable="True">
 			<Options>272</Options>
+			<DDRREF kind="StepText" hash="820727BB9D24F487C35EA0F330DFC335">_BD283E36B258FF47B9B0EE0FD5B64A7E</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Open hidden" id="256" value="True"></Boolean>
@@ -61,8 +67,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="33" name="Open File" enable="False">
+		<Step hash="3FC7FBD16E5E45AD2720C39FF5F08632" id="33" name="Open File" enable="False">
 			<Options>272</Options>
+			<DDRREF kind="StepText" hash="C4F81B1E7D1C0104B6C81E1FA35B1ECD">_BC46A6687D2BD046A3877143B1E9761C</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Open hidden" id="256" value="True"></Boolean>
@@ -72,8 +79,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="F05C932379C07B66C27BABCFDCD459A2" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="539D3BEC37F7B5C11A3F552B1EB8E185">_B5BEEDC69BD83E468552D9A94040C8CB</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -86,8 +94,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="2A3C123438CD2C7A01AFA52D9EF649EA" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="CD253174B0AB6052738D8FE244A793E6">_5A78FABA24532649B95F7F3D3DF4547F</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -100,8 +109,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="AD365CEC00071B1730D7FAEE686BBBCC" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="A79D930892614A675833835B173A02B2">_400674F7B271644C9E4055A509F9F38B</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -109,10 +119,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="98E383E8004A38B016337EC6D8716F8C">_3B772F6255618A4785256DC4340361F1</DDRREF>
 										<Text><![CDATA["Labeling"]]></Text>
-										<ChunkList hash="98E383E8004A38B016337EC6D8716F8C">
-											<Chunk type="NoRef">&quot;Labeling&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

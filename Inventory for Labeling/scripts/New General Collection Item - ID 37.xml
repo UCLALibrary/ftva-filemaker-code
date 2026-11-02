@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="37" name="New General Collection Item"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="AD20EE7C7E743EBF9FAA1D72576CB066" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="48EC9C0E4E63E450A9D48C0B3F68782A">_1BE1B4B154CDFC4A9BFD1BA9966AF8CB</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5"></LayoutReferenceContainer>
@@ -12,10 +13,12 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="7" name="New Record/Request" enable="True">
+		<Step hash="1E30F471A610F6C6081280DC18E77E3B" id="7" name="New Record/Request" enable="True">
+			<DDRREF kind="StepText" hash="025526D12C0E947D0A22A83EF47076C9">_3E06A3733F0AB14A9B264F098CC38B52</DDRREF>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="F04E403C7ECEE10D823C2FAE152FE14C" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="D07AEF1E9899B09F9C3DD49C52B1DA7E">_DB46107B8CC61A41A3E253EBB74AB66F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Last" value="2"></List>

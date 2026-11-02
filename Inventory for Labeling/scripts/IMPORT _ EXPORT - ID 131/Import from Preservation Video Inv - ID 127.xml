@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="127" name="Import from Preservation Video Inv"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="92B5D0382D180BFF82EFB720B9ADDE5E" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
+			<DDRREF kind="StepText" hash="FC7BBE57FA3588992FE1AAE15DDA4067">_E176494F3BCCEE4FBFB458E0D2D82B47</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>

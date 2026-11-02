@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="107" name="SCV pull"></ScriptReference>
 	<ObjectList membercount="6">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="E94867D58A6EED68C0E22BD090AF3F8E" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="48EC9C0E4E63E450A9D48C0B3F68782A">_AE3DEF25BC679B44978954ED49BF01AB</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5"></LayoutReferenceContainer>
@@ -12,8 +13,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="4A093629D3293C845D41057B626918E3" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="5C600EAB71FBABCECB2068C933726AE9">_D74A4AA8EB944A439765140DF21D7035</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -36,30 +38,34 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="084992D9C0759FAC0B4BFA9F8B0A3E90" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="5617D5D23B50DEF6B13B70849E0B7171">_DA1B17623B9F6442A2A2A444FBDD983C</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="41" name="Enter Preview Mode" enable="True">
+		<Step hash="E7AB0E2FB398307269E4172BAA1F52B9" id="41" name="Enter Preview Mode" enable="True">
 			<Options>16777216</Options>
+			<DDRREF kind="StepText" hash="42059429C15EC96454D3E39E58507BEC">_704143D025E5E2479B5AD9EF4C4C6B7B</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="55" name="Enter Browse Mode" enable="True">
+		<Step hash="EA85A2D0FACEC41AC594C597196E717A" id="55" name="Enter Browse Mode" enable="True">
+			<DDRREF kind="StepText" hash="E17606D02CD53D7D291FAC4E40418B25">_46CB236159D2334A9A1764E10FCC0EC7</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="66082873266CAE431CBBFD9BE43233F9" id="6" name="Go to Layout" enable="True">
+			<DDRREF kind="StepText" hash="475861B95BA05C7D7B763190F43E1A4C">_5C600A09CEF06C4BB0C4EACD55A868FE</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="1">

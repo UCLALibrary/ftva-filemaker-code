@@ -1,4 +1,5 @@
-<ValueList id="12" name="collection_title">
+<ValueList>
+	<ValueListReference id="12" name="collection_title"></ValueListReference>
 	<Source value="FromField"></Source>
 	<Field>
 		<PrimaryField show="True" sort="True">
@@ -8,5 +9,4 @@
 		</PrimaryField>
 		<ShowRelated value="False"></ShowRelated>
 	</Field>
-	<UUID modifications="1" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:05">F1627628-4396-BB47-897D-153336EFD3E5</UUID>
 </ValueList>

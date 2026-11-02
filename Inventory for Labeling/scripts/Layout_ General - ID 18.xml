@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="18" name="Layout: General"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="4503370C00233DC7AFB35765642D0637" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="48EC9C0E4E63E450A9D48C0B3F68782A">_F86FA6A955FB2745AB958C54E9719430</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5"></LayoutReferenceContainer>
@@ -12,8 +13,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="F63A7F44A009CF531C3C510347217BD1" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="D53E3F10958F0906FD7ADBA257004735">_CF56C86715FB16428363AE00361711FD</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">

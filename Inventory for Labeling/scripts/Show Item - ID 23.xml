@@ -1,28 +1,23 @@
 <Script>
 	<ScriptReference id="23" name="Show Item"></ScriptReference>
 	<ObjectList membercount="5">
-		<Step id="68" name="If" enable="True">
+		<Step hash="392DCCA87A342546C68664DA52FFC932" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="92FF9BD2CAFE052154038DB836586A9E">_DBD4446FE328CB45844F298725AB3C0F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="2F333FF7F05AFC9E731C326EC56BC995">_4B64FE02734FBF499B5C99FFCF9D157B</DDRREF>
 							<Text><![CDATA[Inventory for Labeling::type="Newsreel"]]></Text>
-							<ChunkList hash="2F333FF7F05AFC9E731C326EC56BC995">
-								<Chunk type="FieldRef">
-									<FieldReference id="23" name="type" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">=&quot;Newsreel&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="063476E200B3EF2D1BC9EF575073F503" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="2A1C42F917545B8F08B1FBF769B1C8BD">_BA650BE346A8154BB5F648D52C2536AE</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -34,10 +29,12 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="4721FFA570E088A9E4DF309425969541" id="69" name="Else" enable="True">
+			<DDRREF kind="StepText" hash="7437154328F345BEB72C999AC2F7DB73">_D07E60BCB7C6284E9481562D085AE919</DDRREF>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="5F28119D5D02D098B3E4F3702B7D5C24" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="1E4A07858B397694ABC9BB0AE6732ED1">_707A167246CF93469B2CC29F5151C971</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -49,7 +46,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="571C3DD3FC3354BD52C794DE6D7426BD" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="10117A0D6FFB5C65C84DA06AD7A4C2FD">_08F8DAA4EF9B874293FC766D25301E5C</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

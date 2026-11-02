@@ -1,64 +1,82 @@
 <Script>
 	<ScriptReference id="14" name="Initialize globals imported"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="4FF5163DCE451986E32F986971944694" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="61D8EEE72B717BCABA0D02C718178421">_2FFA6F11BD92CC44984634AF8EAF9DFB</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="30" name="search_results">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_4131BF250476E146A058B0A1D032BE8E</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="26631CDF3EEB0CE74C7FC665903CAC32">_962B167293C6FA4A9A696082B5CC172C</DDRREF>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="CA8ADF95C15D2DE5A30A8A8EE86E8216" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="AF482C2B4CF8FFDC083AB012450B5E03">_8BA6C11BF3485F4AB00D7847A3EDB2B3</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="32" name="search_error">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_D72BA1E0037EC945BA6EF3B78DA3D463</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="26631CDF3EEB0CE74C7FC665903CAC32">_546FC4DFC0822F4089716DA01CBA3735</DDRREF>
 							<Text><![CDATA[""]]></Text>
-							<ChunkList hash="26631CDF3EEB0CE74C7FC665903CAC32">
-								<Chunk type="NoRef">&quot;&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="2CEFA873E23789B5E65ECDBFC61DCAD5" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="74E5C4CB657723B9C810FAAB9CE120CB">_CC7D73D2BCC4404086154B2D61578ECC</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="31" name="found">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_31EDF5027767C543A972E7FAD3E6FA09</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="DD8A6EB299C18E11DDFC3F09B80E8D23">_1D871E8DA1535347B2391B1A52BCF784</DDRREF>
 							<Text><![CDATA[-1]]></Text>
-							<ChunkList hash="DD8A6EB299C18E11DDFC3F09B80E8D23">
-								<Chunk type="NoRef">-1</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>

@@ -16,7 +16,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="12">
-				<LayoutObject id="1" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="F4E52FFEB2C2FCF10289ECC2B3A9D6FD" id="1" type="Edit Box" name="" kind="1">
 					<Bounds top="174" left="138" bottom="346" right="487"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -56,7 +56,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="2" type="Text" name="" kind="2">
+				<LayoutObject hash="2A76090EFB2704D674E325A30532051F" id="2" type="Text" name="" kind="2">
 					<Bounds top="174" left="84" bottom="188" right="127"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -80,7 +80,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="3" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="45E2EB1943C9DE04A334999E0340F70D" id="3" type="Edit Box" name="" kind="1">
 					<Bounds top="138" left="138" bottom="154" right="391"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -120,7 +120,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="4" type="Text" name="" kind="2">
+				<LayoutObject hash="DB2545EEA892B7E8AAD513AE1C6E80DA" id="4" type="Text" name="" kind="2">
 					<Bounds top="138" left="48" bottom="152" right="127"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -144,7 +144,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="5" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="6C31F6E012FA57AC8D359DE119B11D71" id="5" type="Edit Box" name="" kind="1">
 					<Bounds top="156" left="138" bottom="172" right="391"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -184,7 +184,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="6" type="Text" name="" kind="2">
+				<LayoutObject hash="EFC317A525AA4C580E956F2B736322A8" id="6" type="Text" name="" kind="2">
 					<Bounds top="156" left="46" bottom="170" right="127"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -208,7 +208,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="7" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="A227FFAECAC7EACE690B3136CCD002E0" id="7" type="Edit Box" name="" kind="1">
 					<Bounds top="120" left="138" bottom="136" right="391"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -248,7 +248,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="8" type="Text" name="" kind="2">
+				<LayoutObject hash="810942459639B441B41AE6BB35326518" id="8" type="Text" name="" kind="2">
 					<Bounds top="120" left="99" bottom="134" right="127"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -272,7 +272,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="9" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="1D03CC28BFD4BEF4CE35D91DEB55CBF0" id="9" type="Edit Box" name="" kind="1">
 					<Bounds top="72" left="138" bottom="88" right="229"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -314,12 +314,14 @@
 					<ScriptTriggers membercount="1">
 						<ScriptTrigger id="2" action="OnObjectExit" browseMode="True">
 							<ScriptReference id="129" name="Trim Field">
-								<Calculation></Calculation>
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="D41D8CD98F00B204E9800998ECF8427E">_253B380A40A57048AA03C58DDDD85D56</DDRREF>
+								</Calculation>
 							</ScriptReference>
 						</ScriptTrigger>
 					</ScriptTriggers>
 				</LayoutObject>
-				<LayoutObject id="10" type="Text" name="" kind="2">
+				<LayoutObject hash="28CD8890D729811C0F97F1EE87D14D83" id="10" type="Text" name="" kind="2">
 					<Bounds top="72" left="44" bottom="86" right="127"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -343,14 +345,14 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="15" type="Portal" name="" kind="9">
+				<LayoutObject hash="D3CCF2B3906C4260CB04A5D1EA9470D1" id="15" type="Portal" name="" kind="9">
 					<Bounds top="358" left="138" bottom="616" right="487"></Bounds>
 					<Options>805306368</Options>
 					<Portal>
 						<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
 						<Options show="15">2</Options>
 						<ObjectList membercount="3">
-							<LayoutObject id="11" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="D426FBFB805373B74E016F8E33574192" id="11" type="Edit Box" name="" kind="1">
 								<Bounds top="0" left="-2" bottom="16" right="71"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -410,7 +412,7 @@ self:normal .inner_border
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject id="12" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="7EDFE8059BD1D7B6C94C02ACC9243ACA" id="12" type="Edit Box" name="" kind="1">
 								<Bounds top="0" left="76" bottom="16" right="215"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -470,7 +472,7 @@ self:normal .inner_border
 									</Formatting>
 								</ExtendedAttributes>
 							</LayoutObject>
-							<LayoutObject id="13" type="Edit Box" name="" kind="1">
+							<LayoutObject hash="B7A14AD7773D3476ACD65B1B02A1D987" id="13" type="Edit Box" name="" kind="1">
 								<Bounds top="0" left="220" bottom="16" right="347"></Bounds>
 								<Options>805306368</Options>
 								<Field>
@@ -572,7 +574,7 @@ self:normal .row_alt
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="14" type="Text" name="" kind="2">
+				<LayoutObject hash="D4E6009973E4F2A133DA503909344C87" id="14" type="Text" name="" kind="2">
 					<Bounds top="360" left="90" bottom="374" right="133"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -609,4 +611,7 @@ self:normal .row_alt
 	<UUID modifications="6" userName="uae" accountName="uae" timestamp="2026-03-25T12:07:06">55D1DCE4-AF88-5F49-B147-7C8F874C4664</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="True">7536672</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

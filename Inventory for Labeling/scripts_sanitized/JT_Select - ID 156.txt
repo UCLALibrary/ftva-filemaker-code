@@ -1,4 +1,4 @@
-Set Variable [ $SF_ID ; StorageFormat 2::Inventory_number ]
+Set Variable [ $SF_ID[1] ; StorageFormat 2::Inventory_number ]
 Go to Layout [ Layout: "Inventory_StorageFormat_JT" ; Animation: None ]
 New Record/Request
 Set Field [ Inventory_StorageFormat_JT::Inventory_id_fk ; $$INV_ID ]

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="9" name="New General Collection Item"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="4AFF5310D3C686CC1EC2FE3D0E5C4EE0" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="248455756805319557E34460821B0608">_02AF8DEA2EBE3B4FAB4BC99D5814E771</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -15,8 +16,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="6059FDE381E28E1C7F8FEC4CB726589F" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="F9883BE7E98A9B4A6574EA008A819966">_649918ADDC67274496AE34B295C5672F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -24,10 +26,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="70705CA9E8D101BE7A5E0885F9B6D35B">_C1C54FAE6B2A6341B581E82FD7FF3B54</DDRREF>
 										<Text><![CDATA["Inventory for Labeling"]]></Text>
-										<ChunkList hash="70705CA9E8D101BE7A5E0885F9B6D35B">
-											<Chunk type="NoRef">&quot;Inventory for Labeling&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

@@ -1,68 +1,67 @@
 <Script>
 	<ScriptReference id="76" name="Create Records for Labels (Complete Reel Set) Copy"></ScriptReference>
 	<ObjectList membercount="9">
-		<Step id="47" name="Copy" enable="True">
+		<Step hash="D7BF08073600A8CBFE37B62AB83A175E" id="47" name="Copy" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="56687983FE022B1BBB722B4D9DBD3403">_01A07D1BF14D724C8457E650EA636298</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="20" name="inventory_id">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_90BDDC2B135C4A4ABC5F328C0387EC64</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="DAB512E30C43E85863E77E963CD6E222" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="F557C328EC3F6E180CBD430E7C668C04">_CE714AC184AECF4CA75E0E52B271B26F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[GetAsNumber(Inventory for Labeling::total_reels) ≠ "" and GetAsNumber(Inventory for Labeling::total_reels)>0]]></Text>
-							<ChunkList hash="ADE4F943EEF922C3F674E847C38569F1">
-								<Chunk type="FunctionRef">GetAsNumber</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="22" name="total_reels" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">) ≠ &quot;&quot; </Chunk>
-								<Chunk type="FunctionRef">and</Chunk>
-								<Chunk type="NoRef"> </Chunk>
-								<Chunk type="FunctionRef">GetAsNumber</Chunk>
-								<Chunk type="NoRef">(</Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="22" name="total_reels" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef">)&gt;0</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="ADE4F943EEF922C3F674E847C38569F1">_A619958CE8814B4D88425E6DB65B8307</DDRREF>
+							<Text><![CDATA[GetAsNumber(Inventory for Labeling::total_reels) ≠ "" And GetAsNumber(Inventory for Labeling::total_reels)>0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="47" name="Copy" enable="True">
+		<Step hash="5EF1F1A852B3F308A5D36799B3B53AC6" id="47" name="Copy" enable="True">
 			<Options>4097</Options>
+			<DDRREF kind="StepText" hash="2FB1EA984FE541E2B3E424B8DBD2F2B7">_265E96FC460BDE4D931993097CA6BC3F</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="Boolean">
 					<Boolean type="Select" id="4096" value="True"></Boolean>
 				</Parameter>
 				<Parameter type="FieldReference">
 					<FieldReference id="20" name="inventory_id">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_DAD8AD14A4328C44A09FB9D91F4C6F85</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="6FAD3CDA05E50041DEF7AA0B551027D3" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
+			<DDRREF kind="StepText" hash="0A346CE4C12E33CC93ED65418AE8139B">_69E826299DD6944DBED087D6D57C1685</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065091" name="Labeling Database_InvID"></TableOccurrenceReference>
@@ -74,8 +73,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="C2E107002178FEE3238DDBE9A3AF4850" id="1" name="Perform Script" enable="True">
 			<Options>82</Options>
+			<DDRREF kind="StepText" hash="2F46FC3B85B4570837755F70A6E28474">_46D1C18F3E9CD2408F595365D32DF741</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -88,8 +88,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="27981D68D361F495097448AF8298203F" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="1EE2EE1176CB827056EA9EE326191D67">_4A420CCC5BF21E42994CEBF4C68BF483</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -97,10 +98,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="542D40BC1C14473BC2FEE7845DC5A4F5">_B024A0D8EC9D2E48820FD7EB21726958</DDRREF>
 										<Text><![CDATA["Labeling Database"]]></Text>
-										<ChunkList hash="542D40BC1C14473BC2FEE7845DC5A4F5">
-											<Chunk type="NoRef">&quot;Labeling Database&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>
@@ -109,28 +108,26 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="0CB3B3764D083A6FF11ED8074A144A53" id="69" name="Else" enable="True">
+			<DDRREF kind="StepText" hash="2EEC6CAA6933E05CAB7D4B9EAF39598C">_9B5F49F6B9050A4B8906DEC1AFB1276D</DDRREF>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="012AFBF979DDBD83280E4294E3D5A600" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="A3507B992FD81D6FE4FEAC9A55195524">_8BDE70439E95604D90A47230415F2BE7</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="C9485CF1D0FAC40956B37FB15B23BB91">_0A765AF94ED54B418737045C75D8624C</DDRREF>
 							<Text><![CDATA["Message"]]></Text>
-							<ChunkList hash="C9485CF1D0FAC40956B37FB15B23BB91">
-								<Chunk type="NoRef">&quot;Message&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="A558589FBCF999F5C3B164F1FD8F6952">_B16CFAAE7E007945802507ADF18B6544</DDRREF>
 							<Text><![CDATA["You must specify the total number or reels before you can use this feature."]]></Text>
-							<ChunkList hash="A558589FBCF999F5C3B164F1FD8F6952">
-								<Chunk type="NoRef">&quot;You must specify the total number or reels before you can use this feature.&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -145,7 +142,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="6B39A3C7BB3B76F68FC9C6170C084042" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="9AC14DC28813B8DEE3E2F5156F63FFC8">_91160A773EB6184A8E7722B364D4C426</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="111" name="go to Inspection History"></ScriptReference>
 	<ObjectList membercount="2">
-		<Step id="74" name="Go to Related Record" enable="True">
+		<Step hash="99E15C9CFC169FB047D6B7760F33075B" id="74" name="Go to Related Record" enable="True">
 			<Options>33554696</Options>
+			<DDRREF kind="StepText" hash="661209521904E9C1A5EC121845E2A9A3">_A3FE0ADBB08FED4386DBB62F33B61929</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Related">
 					<TableOccurrenceReference id="1065103" name="Film Inspection History"></TableOccurrenceReference>
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="123" name="Select Window" enable="True">
+		<Step hash="E23CEBC1F1B5D600746BB5258B8AAFB2" id="123" name="Select Window" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="5E319AC5279656F84B667816BBB8BDEA">_4C012B2677481E4A95950641E3072AD8</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="WindowReference">
 					<WindowReference>
@@ -23,10 +25,8 @@
 							<Name current="False">
 								<Calculation datatype="1" position="0">
 									<Calculation>
+										<DDRREF kind="ChunkList" hash="FDB6162277EA2CAA1F6C4440F2DEB12C">_53242B95F4F7894A802AF9C86134326E</DDRREF>
 										<Text><![CDATA["Film Inspection History"]]></Text>
-										<ChunkList hash="FDB6162277EA2CAA1F6C4440F2DEB12C">
-											<Chunk type="NoRef">&quot;Film Inspection History&quot;</Chunk>
-										</ChunkList>
 									</Calculation>
 								</Calculation>
 							</Name>

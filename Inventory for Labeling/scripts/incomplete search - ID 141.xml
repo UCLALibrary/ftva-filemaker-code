@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="141" name="incomplete search"></ScriptReference>
 	<ObjectList membercount="10">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="F7AC80D1D416887CD128A9D1D0812CFC" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="568E6BBB83D31EDD9798CFB7C5F25CB8">_9A6641BD2B7C0940BF49148975F44A07</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,60 +15,62 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="23" name="Show All Records" enable="True">
+		<Step hash="B876EF351A17F6A418EE5C5080414C44" id="23" name="Show All Records" enable="True">
+			<DDRREF kind="StepText" hash="937C3AD36FCCB4192F9F2237A3EC5656">_E25FE5F67044EF4CB7C93FB5934B5B7E</DDRREF>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="C3B4D1DBDE9CC82B06E78AD927DD1B05" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="5617D5D23B50DEF6B13B70849E0B7171">_A8A48AE48C28E74F83D288790CA5888F</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="71" name="Loop" enable="True">
+		<Step hash="DEEF56F9203F78E2ECC610206AC2305B" id="71" name="Loop" enable="True">
+			<DDRREF kind="StepText" hash="4F48FEF66C3B418CD20922F9FBFC049B">_EE1F1628840E3D459DA8C9AC73671EA8</DDRREF>
+			<ParameterValues membercount="1">
+				<Parameter type="List">
+					<List name="Always" value="1"></List>
+				</Parameter>
+			</ParameterValues>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="29F7F8F842CCBA75300001E9439A0DAB" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="CA4CA72985014AF1D5A2E140EB5C7596">_85435DF9AD492D4D8DF704C92C8A36BB</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="50AC6782C59DA9973018A7A0C923D57D">_66B550E5F9EF4E499F13C3C4A7A26576</DDRREF>
 							<Text><![CDATA[Inventory for Labeling::item holdings < Inventory for Labeling::total_reels]]></Text>
-							<ChunkList hash="50AC6782C59DA9973018A7A0C923D57D">
-								<Chunk type="FieldRef">
-									<FieldReference id="81" name="item holdings" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-								<Chunk type="NoRef"> &lt; </Chunk>
-								<Chunk type="FieldRef">
-									<FieldReference id="22" name="total_reels" repetition="1">
-										<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
-									</FieldReference>
-								</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="97082107E4E13B84CDC853E78BBBC408" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>8194</Options>
+			<DDRREF kind="StepText" hash="0EE92A6A8A8DD171F53B9688547FB9CC">_07086889BFBBB2438145DCDD99593ACE</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="Next" value="4">
-						<Boolean type="Exit after last" position="184" value="True"></Boolean>
+						<Boolean type="Exit after last" position="185" value="True"></Boolean>
 					</List>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="69" name="Else" enable="True">
+		<Step hash="44DC6577D3FB747462D930F8F8DC51CC" id="69" name="Else" enable="True">
+			<DDRREF kind="StepText" hash="2EEC6CAA6933E05CAB7D4B9EAF39598C">_CC159F7B182E9E468D761C8E955C86CC</DDRREF>
 		</Step>
-		<Step id="25" name="Omit Record" enable="True">
+		<Step hash="CDE1DC5C94823CDC813B3B8B7B6BE359" id="25" name="Omit Record" enable="True">
+			<DDRREF kind="StepText" hash="12A2FD0BED027DBC0149995A7FC4A4EC">_891A970C95690B44A6ABA7442AC6E6B8</DDRREF>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="A601785409118405296EAAF0A5B4F2ED" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="9AC14DC28813B8DEE3E2F5156F63FFC8">_FF39CB5E76832842BB730E6F430E967A</DDRREF>
 		</Step>
-		<Step id="73" name="End Loop" enable="True">
+		<Step hash="FA525329F635B4174314666570BE3238" id="73" name="End Loop" enable="True">
+			<DDRREF kind="StepText" hash="DEDB8AB2FEE3CCB53EA9B5A76301D197">_3B2717C2F55C424CBF178DCD3F446FC9</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

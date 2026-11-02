@@ -8,7 +8,7 @@
 		<Part type="Body" kind="4">
 			<Definition type="Body" kind="4" size="658" absolute="110" Options="0"></Definition>
 			<ObjectList membercount="2">
-				<LayoutObject id="12" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="83C1A971014296DF80B9FC65BD24AF89" id="12" type="Edit Box" name="" kind="1">
 					<Bounds top="112" left="4" bottom="144" right="257"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -39,7 +39,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="14" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="0CC848BCDD1546C37E74E9096456098C" id="14" type="Edit Box" name="" kind="1">
 					<Bounds top="112" left="257" bottom="144" right="510"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -76,4 +76,7 @@
 	<UUID modifications="7" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="akohler" timestamp="2026-10-06T11:12:40">F564C05B-5557-D44F-BBD7-8DC71747A357</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="True">83053063</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

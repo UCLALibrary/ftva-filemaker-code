@@ -1,83 +1,85 @@
 <Script>
 	<ScriptReference id="151" name="Show Non-Digital"></ScriptReference>
 	<ObjectList membercount="7">
-		<Step id="86" name="Set Error Capture" enable="True">
+		<Step hash="F94BA19F8A74B28D2BDD1223F20BEBFC" id="86" name="Set Error Capture" enable="True">
 			<Options>196608</Options>
+			<DDRREF kind="StepText" hash="7D77612A22871E58D676F62FF2EA4042">_02AA0CABEC1B144388AA5D2D4DA5D800</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean id="131072" value="True"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="22" name="Enter Find Mode" enable="True">
+		<Step hash="9276B2C45E7F93965F950C54DE3AC5F3" id="22" name="Enter Find Mode" enable="True">
+			<DDRREF kind="StepText" hash="9912FA4F00EE3B57B9B81978965F91A2">_928354A6677BD14A96319D6722EDE662</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Boolean">
 					<Boolean type="Pause" id="16777216" value="False"></Boolean>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="76" name="Set Field" enable="True">
+		<Step hash="A4D46E94C19D8FB7864BD706C9099D46" id="76" name="Set Field" enable="True">
 			<Options>16385</Options>
+			<DDRREF kind="StepText" hash="0ACC15BCEE0764C28B2D4E935C9AA002">_C0191A32D1A87F4B9B23A0B8E042C11A</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="FieldReference">
 					<FieldReference id="198" name="digital_record">
-						<repetition value="1"></repetition>
+						<repetition>
+							<Calculation datatype="1" position="10">
+								<Calculation>
+									<DDRREF kind="ChunkList" hash="A93F17BC54CA1958073B692697D5ED21">_2217C24F3272F149B5EFD4638403A946</DDRREF>
+									<Text><![CDATA[1]]></Text>
+								</Calculation>
+							</Calculation>
+						</repetition>
 						<TableOccurrenceReference id="1065089" name="Inventory for Labeling"></TableOccurrenceReference>
 					</FieldReference>
 				</Parameter>
 				<Parameter type="Calculation">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="9BF55A5D51230A8EA20D4BAA0F468EEC">_D68E6E16BAA633488BB6F2C73ECB216F</DDRREF>
 							<Text><![CDATA[0]]></Text>
-							<ChunkList hash="9BF55A5D51230A8EA20D4BAA0F468EEC">
-								<Chunk type="NoRef">0</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="28" name="Perform Find" enable="True">
+		<Step hash="EA39A69432DA7C057FC3398328A71548" id="28" name="Perform Find" enable="True">
 			<Options>32768</Options>
+			<DDRREF kind="StepText" hash="4DBF565012BF39F39FEB3BE74FE15396">_FCC24E2B5E37704A860A7AD5EF901D8A</DDRREF>
 		</Step>
-		<Step id="68" name="If" enable="True">
+		<Step hash="B5B9D2C9083F1F048702BA939E3F2B91" id="68" name="If" enable="True">
 			<Options>16384</Options>
+			<DDRREF kind="StepText" hash="221FD64B92E3AFEF3929F1003B4AD2FB">_3DD24017294D284C9865CB668EE558E1</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Calculation">
 					<Calculation datatype="7" position="0">
 						<Calculation>
-							<Text><![CDATA[Get ( FoundCount ) = 0]]></Text>
-							<ChunkList hash="76E06EDB5A39402889285D93858DC369">
-								<Chunk type="FunctionRef">Get</Chunk>
-								<Chunk type="NoRef"> ( </Chunk>
-								<Chunk type="FunctionRef">FoundCount</Chunk>
-								<Chunk type="NoRef"> ) = 0</Chunk>
-							</ChunkList>
+							<DDRREF kind="ChunkList" hash="76E06EDB5A39402889285D93858DC369">_EB613D0831B21348A133147DDFEAF1B1</DDRREF>
+							<Text><![CDATA[Get ( foundCount ) = 0]]></Text>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="87" name="Show Custom Dialog" enable="True">
+		<Step hash="7600164EE647150B368522829E4543B7" id="87" name="Show Custom Dialog" enable="True">
 			<Options>16388</Options>
+			<DDRREF kind="StepText" hash="0177B7FCF2EFEC7369BCE3D374B8C617">_D68A058145C4A247AE2A4C73E7700A48</DDRREF>
 			<ParameterValues membercount="5">
 				<Parameter type="Title">
 					<Calculation datatype="1" position="0">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="9692FD89D935BC234C61CE74ED07915B">_FE9157B99193A14BBA52EF5979B44AAB</DDRREF>
 							<Text><![CDATA["No records"]]></Text>
-							<ChunkList hash="9692FD89D935BC234C61CE74ED07915B">
-								<Chunk type="NoRef">&quot;No records&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
 				<Parameter type="Message">
 					<Calculation datatype="1" position="1">
 						<Calculation>
+							<DDRREF kind="ChunkList" hash="EEACF255F4D9F29E9C48D1D5ADE7A154">_2F92788D17963644B5AB384C69B0308D</DDRREF>
 							<Text><![CDATA["There are no non-digital records"]]></Text>
-							<ChunkList hash="EEACF255F4D9F29E9C48D1D5ADE7A154">
-								<Chunk type="NoRef">&quot;There are no non-digital records&quot;</Chunk>
-							</ChunkList>
 						</Calculation>
 					</Calculation>
 				</Parameter>
@@ -92,7 +94,8 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="70" name="End If" enable="True">
+		<Step hash="16E276A9BEF926D5694F48D8656D1A05" id="70" name="End If" enable="True">
+			<DDRREF kind="StepText" hash="65E4BB5534599478E61D8714DD0F2EB1">_C55711D65490CA4D80BF18A94294BD1A</DDRREF>
 		</Step>
 	</ObjectList>
 </Script>

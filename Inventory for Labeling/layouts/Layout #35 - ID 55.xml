@@ -9,7 +9,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="5">
-				<LayoutObject id="1" type="Text" name="" kind="2">
+				<LayoutObject hash="1F384CB687019322F7F189135E7ED03D" id="1" type="Text" name="" kind="2">
 					<Bounds top="0" left="0" bottom="18" right="211"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -31,7 +31,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="2" type="Text" name="" kind="2">
+				<LayoutObject hash="59CB4469C04C999829595BCE058D6E06" id="2" type="Text" name="" kind="2">
 					<Bounds top="0" left="254" bottom="14" right="334"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -71,7 +71,7 @@
 					</ExtendedAttributes>
 					<FieldList></FieldList>
 				</LayoutObject>
-				<LayoutObject id="3" type="Text" name="" kind="2">
+				<LayoutObject hash="330A16E253F339D3949A6EEFFC5AE45E" id="3" type="Text" name="" kind="2">
 					<Bounds top="48" left="12" bottom="62" right="72"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -93,7 +93,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="4" type="Text" name="" kind="2">
+				<LayoutObject hash="CC01F4A7BB81A2D115B31939F76341AB" id="4" type="Text" name="" kind="2">
 					<Bounds top="48" left="115" bottom="62" right="142"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -115,7 +115,7 @@
 }
 ]]></LocalCSS>
 				</LayoutObject>
-				<LayoutObject id="5" type="Text" name="" kind="2">
+				<LayoutObject hash="BC97E6E5A667504D954BF958505EC1F7" id="5" type="Text" name="" kind="2">
 					<Bounds top="52" left="294" bottom="66" right="331"></Bounds>
 					<Options>805306368</Options>
 					<Text>
@@ -146,7 +146,7 @@
 				</FieldReference>
 			</Definition>
 			<ObjectList membercount="3">
-				<LayoutObject id="6" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="0A7BAFB7D6C5B59C5CCF5B4FF28DBB75" id="6" type="Edit Box" name="" kind="1">
 					<Bounds top="66" left="6" bottom="83" right="66"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -183,7 +183,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="7" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="68F43D15739F391CCCD3525F13136B1E" id="7" type="Edit Box" name="" kind="1">
 					<Bounds top="66" left="67" bottom="83" right="223"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -221,7 +221,7 @@
 						</Formatting>
 					</ExtendedAttributes>
 				</LayoutObject>
-				<LayoutObject id="8" type="Edit Box" name="" kind="1">
+				<LayoutObject hash="7709D5726276C843DF6E2DCB7B189D82" id="8" type="Edit Box" name="" kind="1">
 					<Bounds top="67" left="222" bottom="84" right="582"></Bounds>
 					<Options>805306368</Options>
 					<Field>
@@ -264,4 +264,7 @@
 	<UUID modifications="6" userName="UCLA FILM &amp; TELEVISION ARCHIVE" accountName="uae" timestamp="2023-10-19T09:42:19">E2204FBF-A68D-2C43-85CB-CD51C410CE04</UUID>
 	<ClientType>0</ClientType>
 	<Options hidden="True">7539232</Options>
+	<MenuSet>
+		<CustomMenuSetReference id="0" name="[File Default]"></CustomMenuSetReference>
+	</MenuSet>
 </Layout>

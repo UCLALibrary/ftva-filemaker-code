@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="135" name="Import from Newsreel Sound Inv "></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="35" name="Import Records" enable="True">
+		<Step hash="555D8C79B0595B1E48A588C507322046" id="35" name="Import Records" enable="True">
 			<Options>33587232</Options>
+			<DDRREF kind="StepText" hash="DF98E5EC8C1CFA6F571C13B380A13BAC">_3EF940CA1E80CE47A117F2D07A7E4995</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="Verify SSL Certificates" id="268435456" value="False"></Boolean>

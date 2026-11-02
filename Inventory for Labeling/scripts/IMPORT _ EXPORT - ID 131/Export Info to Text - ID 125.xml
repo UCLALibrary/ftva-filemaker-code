@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="125" name="Export Info to Text"></ScriptReference>
 	<ObjectList membercount="1">
-		<Step id="36" name="Export Records" enable="True">
+		<Step hash="1598EC72A40740962862714896CE2C8A" id="36" name="Export Records" enable="True">
 			<Options>33587232</Options>
+			<DDRREF kind="StepText" hash="E0B6D8EB8A4450F3B7FB7E278307F7ED">_49A0EF0B37730145B6B0B64C5F77610A</DDRREF>
 			<ParameterValues membercount="4">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="True"></Boolean>

@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="17" name="Layout: Newsreels"></ScriptReference>
 	<ObjectList membercount="3">
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="3215C4E32CB8E287E811FF8CE6A43CC7" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="CFD71C16E137A51F6FF0F8CDD25B6DEE">_91F8BCF90C1FB744A9D7BA24B7F40E2D</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="CEF0D647567E63E818C497DE16025FCD" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="D53E3F10958F0906FD7ADBA257004735">_EAFF11EB48FF324085DE070FB7596AD4</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -27,8 +29,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="31" name="Adjust Window" enable="True">
+		<Step hash="F65EA694FB62CECBF6F0B2CFE59199BF" id="31" name="Adjust Window" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="07E9E1B5AFAA4881AF8EDD723139F017">_7374B6EB5BBFC140AC0BE2EF00524CAC</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="List">
 					<List name="Maximize" value="2"></List>

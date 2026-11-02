@@ -1,8 +1,9 @@
 <Script>
 	<ScriptReference id="36" name="Newsreel Layout"></ScriptReference>
 	<ObjectList membercount="4">
-		<Step id="1" name="Perform Script" enable="True">
+		<Step hash="2941AA6A1060B80D603019E49E8C0ACF" id="1" name="Perform Script" enable="True">
 			<Options>66</Options>
+			<DDRREF kind="StepText" hash="77090B52A33566D0E233CC61055CD9DF">_19C2A8D80CA59A45934F88D3C1705E3D</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="List">
 					<List name="From list" value="1">
@@ -14,8 +15,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="6" name="Go to Layout" enable="True">
+		<Step hash="5183867C8EFC166DB6E6AF900E80F73E" id="6" name="Go to Layout" enable="True">
 			<Options>8</Options>
+			<DDRREF kind="StepText" hash="7C01D2080867BC4D92A10E8ED5B8113E">_9AAD621B471D0A43BF78D9FE30D82B22</DDRREF>
 			<ParameterValues membercount="2">
 				<Parameter type="LayoutReferenceContainer">
 					<LayoutReferenceContainer value="5">
@@ -27,8 +29,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="39" name="Sort Records" enable="True">
+		<Step hash="F91C570E5CEB6E97B1B81557ABB54581" id="39" name="Sort Records" enable="True">
 			<Options>33587328</Options>
+			<DDRREF kind="StepText" hash="A7AC5A4B896CF55CC502A928829A48BA">_D3E614CC86881A4DB18F1A86F0E28C8C</DDRREF>
 			<ParameterValues membercount="3">
 				<Parameter type="Boolean">
 					<Boolean type="With dialog" id="128" value="False"></Boolean>
@@ -86,8 +89,9 @@
 				</Parameter>
 			</ParameterValues>
 		</Step>
-		<Step id="16" name="Go to Record/Request/Page" enable="True">
+		<Step hash="BF4CDA543B953AD876DB4482922B5672" id="16" name="Go to Record/Request/Page" enable="True">
 			<Options>2</Options>
+			<DDRREF kind="StepText" hash="FF2C60D6B76F730A5136E06A3443AA0E">_000A8FFC9923544CBE5EA61EE1F691BF</DDRREF>
 			<ParameterValues membercount="1">
 				<Parameter type="Records">
 					<List name="First" value="1"></List>
